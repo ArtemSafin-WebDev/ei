@@ -1,0 +1,32 @@
+{
+    "menuLinks": [
+        {
+            "title": "Реестры",
+            "url": "registers.html"
+        },
+        {
+            "title": "Услуги и тарифы",
+            "url": "services.html"
+        },
+        {
+            "title": "Вопросы и ответы",
+            "url": "faq.html"
+        },
+        {
+            "title": "О сервисе",
+            "url": "about.html"
+        },
+        {
+            "title": "Полезные статьи",
+            "url": "articles.html"
+        },
+        {
+            "title": "Партнерам",
+            "url": "partners.html"
+        },
+        {
+            "title": "Контакты",
+            "url": "contacts.html"
+        }
+    ]
+}

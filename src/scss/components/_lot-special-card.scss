@@ -1,0 +1,36 @@
+.lot-special-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    z-index: 1;
+    padding: 2.8rem;
+    min-height: 35rem;
+    background: #ebf1f5;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+}
+
+.lot-special-card__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+    z-index: -1;
+}
+
+.lot-special-card__title {
+    font-size: 4.7rem;
+    line-height: 4.6rem;
+    font-weight: 400;
+    margin-top: auto;
+    strong {
+        font-weight: 700;
+    }
+}

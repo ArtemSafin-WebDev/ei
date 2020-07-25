@@ -1,0 +1,44 @@
+<section class="offers">
+    <div class="container">
+
+        <h3 class="offers__heading">
+            <strong>Все торги в одном месте</strong> — банкротные и арестованные торги, имущество банков
+            и лизинговых компаний
+        </h3>
+        <div class="offers__slider js-offers-slider">
+            <button class="offers__arrow offers__arrow--prev">
+                <svg width="8" height="16" aria-hidden="true" class="icon-arrow-left">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+            </button>
+            <div class="offers__slider-inner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {{#each offers}}
+                        <div class="swiper-slide">
+                            <a href="#" class="offer-card">
+                                <img src="{{this.image}}" alt="" class="offer-card__image">
+                                <h4 class="offer-card__title">
+                                    {{this.title}}
+                                </h4>
+                                <span class="offer-card__btn">
+                                    {{this.btnText}}
+                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+             <button class="offers__arrow offers__arrow--next">
+                <svg width="8" height="16" aria-hidden="true" class="icon-arrow-right">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+</section>

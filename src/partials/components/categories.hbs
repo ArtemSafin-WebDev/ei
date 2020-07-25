@@ -1,0 +1,20 @@
+<section class="categories">
+    <div class="container">
+        <div class="inner-container">
+            <ul class="categories__list">
+                {{#each categories}}
+                <li class="categories__list-item">
+                    <a href="#" class="category-card">
+                        <div class="category-card__image-container">
+                            <img src="{{this.image}}" alt="" class="category-card__image">
+                        </div>
+                        <h4 class="category-card__title">
+                            {{this.name}}
+                        </h4>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</section>

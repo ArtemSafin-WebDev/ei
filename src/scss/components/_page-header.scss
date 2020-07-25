@@ -1,0 +1,220 @@
+.page-header {
+    position: relative;
+    z-index: 500;
+}
+
+.page-header__nav-row {
+    display: flex;
+    align-items: baseline;
+    padding: 1.8rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.page-header__main-nav {
+    margin-right: auto;
+}
+
+.page-header__how-to-use-link {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--primary-color);
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+.page-header__main-nav-list {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.page-header__main-nav-list-item {
+    margin-right: 2.5rem;
+}
+
+.page-header__main-nav-link {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.page-header__search-row {
+    display: flex;
+    align-items: center;
+    
+}
+
+.page-header__logo-link {
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+}
+
+.page-header__logo-image {
+    width: 19rem;
+    height: auto;
+    display: block;
+}
+
+.page-header__search-form {
+    width: 50%;
+    flex-grow: 1;
+    margin: 0 4.8rem;
+    background-color: #fff;
+    border-radius: 2.1rem;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2.2rem;
+}
+
+.page-header__catalog-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    position: relative;
+    padding-right: 2rem;
+    &::after {
+        content: '';
+        height: 3.7rem;
+        width: 0.2rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #edf0f5;
+    }
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+}
+
+.page-header__catalog-burger {
+    margin-left: 1.6rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    width: 2.2rem;
+    flex-shrink: 0;
+
+    & > span {
+        width: 100%;
+        height: 0.2rem;
+        display: block;
+        background-color: var(--primary-color);
+        border-radius: 0.1rem;
+        margin-bottom: 0.4rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.page-header__search-form-input {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--text-color);
+    padding: 0 1.8rem;
+    width: 50%;
+    flex-grow: 1;
+    @include placeholder {
+        color: #d1dae6;
+    }
+}
+
+.page-header__search-form-submit {
+    svg {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        fill: var(--primary-color);
+    }
+
+    &:hover {
+        svg {
+            fill: var(--text-color);
+        }
+    }
+}
+
+.page-header__user-links {
+    display: flex;
+    align-items: baseline;
+    align-self: flex-start;
+    margin-top: 1.6rem;
+}
+
+.page-header__user-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-right: 3rem;
+    flex-shrink: 0;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.page-header__user-link-icon-container {
+    width: 2.8rem;
+    height: 2.8rem;
+    flex-shrink: 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+    svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.page-header__user-link-amount {
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #ffffff;
+    background: #fc5555;
+    border-radius: 0.5rem;
+    padding: .3rem 0.4rem;
+    right: 0;
+    top: 0;
+    margin-top: -0.8rem;
+    margin-right: -1.2rem;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+.partners {
+    padding-top: 6.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.partners__heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    text-align: center;
+    margin-bottom: 6.5rem;
+}
+
+
+.partners__row {
+    height: 11.2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+.partners__items-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.partners__item {
+    flex-shrink: 0;
+    margin-right: 8rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.partners__link-logo {
+    display: block;
+    
+    max-height: 11rem;
+    max-width: 27.5rem;
+    height: auto;
+    flex-shrink: 0;
+    @include objectFitContain();
+}

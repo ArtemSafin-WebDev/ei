@@ -1,0 +1,230 @@
+.lot-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    // max-width: 27.5rem;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+
+    &:hover {
+        .lot-card__title {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.lot-card__image-container {
+    display: block;
+    position: relative;
+    color: white;
+    margin-bottom: 1.5rem;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-bottom: 72%;
+    }
+}
+
+.lot-card__image-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.3rem;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    color: white;
+    &:link,
+    &:visited {
+        color: white;
+    }
+    &::after {
+        content: '';
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 4.5rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 92.22%);
+    }
+}
+
+.lot-card__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+}
+
+.lot-card__indicators {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.4rem;
+    z-index: 12;
+    pointer-events: none;
+}
+
+.lot-card__indicators-top-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: auto;
+}
+
+.lot-card__like-btn {
+    margin-left: auto;
+    color: white;
+    pointer-events: all;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.lot-card__indicators-new-lot {
+    width: 5.7rem;
+    height: 4.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+    background-image: url('../img/new-lot-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: auto;
+}
+
+.lot-card__indicators-best-price {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 6.1rem;
+    height: 4rem;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../img/best-price-bg.svg');
+    background-repeat: no-repeat;
+    margin-right: auto;
+}
+
+.lot-card__remaining-time {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.lot-card__remaining-time-progress-circle {
+    width: 1.8rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    margin-right: 0.7rem;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+        circle:nth-child(2) {
+            transition: stroke-dashoffset 0.2s;
+            stroke-dashoffset: calc(500 - 500 * var(--lot-progress, 0));
+        }
+    }
+}
+
+.lot-card__price-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.lot-card__sold-out {
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    color: #99a6b6;
+}
+
+.lot-card__new-price {
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    white-space: nowrap;
+    margin-right: 0.5rem;
+}
+
+.lot-card__trend {
+    flex-shrink: 0;
+    color: #fc5555;
+    margin-right: 1.4rem;
+
+    &--up {
+        color: var(--primary-color);
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+    svg {
+        width: 1rem;
+        height: 0.6rem;
+        position: relative;
+        top: -0.25rem;
+    }
+}
+
+.lot-card__old-price {
+    color: #99a6b6;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.lot-card__title {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    transition: color .2s;
+}
+
+.lot-card__type {
+    color: #99a6b6;
+    font-size: 1.4rem;
+}
+
+.lot-card__content {
+    display: flex;
+    flex-direction: column;
+
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+}

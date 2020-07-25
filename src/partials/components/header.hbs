@@ -1,0 +1,83 @@
+<header class="page-header">
+    <div class="container">
+        <div class="page-header__nav-row">
+            <nav class="page-header__main-nav">
+                <ul class="page-header__main-nav-list">
+                    {{#each menuLinks}}
+                    <li class="page-header__main-nav-list-item">
+                        <a href="{{ this.url }}" class="page-header__main-nav-link">
+                            {{ this.title }}
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </nav>
+
+            <a href="#" class="page-header__how-to-use-link">
+                Как пользоваться сервисом
+            </a>
+        </div>
+        <div class="page-header__search-row">
+            <a href="#" class="page-header__logo-link">
+                <img src="img/logo.svg" width="190" alt="Логотип" class="page-header__logo-image">
+            </a>
+
+            <form action="/" method="GET" class="page-header__search-form">
+                <a href="#" class="page-header__catalog-link">
+                    Каталог
+                    <span class="page-header__catalog-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <input type="search" name="q" class="page-header__search-form-input" placeholder="Поиск по лотам">
+                <button type="submit" class="page-header__search-form-submit">
+                    <svg width="20" height="20" aria-hidden="true" class="icon-search">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="page-header__user-links">
+                <a href="#" class="page-header__user-link">
+                    <span class="page-header__user-link-icon-container">
+                        <svg width="28" height="28" aria-hidden="true" class="icon-person">
+                            <use xlink:href="#person"></use>
+                        </svg>
+                    </span>
+                    Профиль
+                </a>
+                <a href="#" class="page-header__user-link">
+                    <span class="page-header__user-link-icon-container">
+                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                            <use xlink:href="#heart"></use>
+                        </svg>
+                        <span class="page-header__user-link-amount">
+                            12
+                        </span>
+                    </span>
+                    Избранное
+                </a>
+                <a href="#" class="page-header__user-link">
+                    <span class="page-header__user-link-icon-container">
+                        <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                            <use xlink:href="#favourites"></use>
+                        </svg>
+                       
+                    </span>
+                    Сохраненные<br>
+                    поиски
+                </a>
+                <a href="#" class="page-header__user-link">
+                    <span class="page-header__user-link-icon-container">
+                        <svg width="28" height="28" aria-hidden="true" class="icon-bell">
+                            <use xlink:href="#bell"></use>
+                        </svg>
+                       
+                    </span>
+                    Уведомления
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
