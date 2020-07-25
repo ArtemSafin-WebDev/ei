@@ -13,6 +13,10 @@
         .lot-card__title {
             color: var(--primary-color);
         }
+
+        .lot-card__image {
+            transform: scale(1.04);
+        }
     }
 }
 
@@ -61,6 +65,7 @@
     width: 100%;
     height: 100%;
     @include objectFitCover();
+    transition: transform .4s;
 }
 
 .lot-card__indicators {

@@ -1,4 +1,4 @@
-import Swiper from "swiper";
+import Swiper from 'swiper';
 
 export default function() {
     const lotsSliders = Array.from(document.querySelectorAll('.js-lots-slider'));
@@ -13,6 +13,11 @@ export default function() {
             slidesPerColumn: 2,
             slidesPerColumnFill: 'row',
             slidesPerGroup: 2,
-        })
-    })
+            speed: 600,
+            navigation: {
+                nextEl: element.querySelector('.lots-alider__arrow--next'),
+                prevEl: element.querySelector('.lots-alider__arrow--prev')
+            }
+        });
+    });
 }
