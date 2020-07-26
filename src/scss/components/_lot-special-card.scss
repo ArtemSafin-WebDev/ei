@@ -13,6 +13,12 @@
     &:visited {
         color: var(--text-color);
     }
+
+
+    @include breakpoint(mobile) {
+       min-height: auto;
+       padding: 1.2rem;
+    }
 }
 
 .lot-special-card__image {
@@ -32,5 +38,10 @@
     margin-top: auto;
     strong {
         font-weight: 700;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 3.2rem;
+        line-height: 1.05;
     }
 }

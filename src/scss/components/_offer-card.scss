@@ -29,6 +29,11 @@
             transform: scale(1.03);
         }
     }
+
+    @include breakpoint(mobile) {
+        padding: 2.4rem;
+        min-height: 18.9rem;
+    }
 }
 
 .offer-card__image {
@@ -39,7 +44,7 @@
     height: 100%;
     z-index: -1;
     @include objectFitCover();
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .offer-card__title {
@@ -49,9 +54,12 @@
     margin-bottom: 2.5rem;
     max-width: 25rem;
 
-
-
-    
+    @include breakpoint(mobile) {
+       
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+        max-width: 20rem;
+    }
 }
 
 .offer-card__btn {
@@ -70,6 +78,17 @@
         margin-left: 1rem;
         flex-shrink: 0;
         position: relative;
-        bottom: -.12em;
+        bottom: -0.12em;
+        @include breakpoint(mobile) {
+            width: 0.6rem;
+            height: 1rem;
+            bottom: -0.08em;
+            margin-left: 0.8rem;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
     }
 }

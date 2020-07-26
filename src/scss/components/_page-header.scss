@@ -8,6 +8,9 @@
     align-items: baseline;
     padding: 1.8rem 0;
     margin-bottom: 0.5rem;
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .page-header__main-nav {
@@ -58,12 +61,23 @@
 .page-header__search-row {
     display: flex;
     align-items: center;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: initial;
+        padding: 2.2rem 0;
+    }
 }
 
 .page-header__logo-link {
+    flex-shrink: 0;
     &:link,
     &:visited {
         color: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+        align-self: flex-start;
     }
 }
 
@@ -71,6 +85,10 @@
     width: 19rem;
     height: auto;
     display: block;
+
+    @include breakpoint(mobile) {
+        width: 18rem;
+    }
 }
 
 .page-header__search-form {
@@ -83,6 +101,15 @@
     display: flex;
     align-items: center;
     padding: 0 2.2rem;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        width: 100%;
+        flex-grow: 0;
+        border-radius: 1.4rem;
+        min-height: 5rem;
+        padding: 0 1.7rem;
+    }
 }
 
 .page-header__catalog-link {
@@ -104,10 +131,24 @@
         top: 50%;
         transform: translateY(-50%);
         background-color: #edf0f5;
+        @include breakpoint(mobile) {
+            width: 0.1rem;
+        }
     }
     &:link,
     &:visited {
         color: var(--primary-color);
+    }
+
+
+    @include breakpoint(mobile) {
+        padding-right: 1.6rem;
+    }
+}
+
+.page-header__catalog-link-text {
+    @include breakpoint(mobile) {
+        display: none;
     }
 }
 
@@ -130,6 +171,11 @@
             margin-bottom: 0;
         }
     }
+
+
+    @include breakpoint(mobile) {
+        margin: 0;
+    }
 }
 
 .page-header__search-form-input {
@@ -142,6 +188,14 @@
     flex-grow: 1;
     @include placeholder {
         color: #d1dae6;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-weight: 400;
+        padding: 0 1.6rem;
+        font-size: 16px;
+        line-height: 1.2;
     }
 }
 
@@ -165,6 +219,10 @@
     align-items: baseline;
     align-self: flex-start;
     margin-top: 1.6rem;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .page-header__user-link {

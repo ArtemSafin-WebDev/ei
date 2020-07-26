@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function() {
 
-    if (window.matchMedia(`(max-width: ${MOBILE_WIDTH}px)`).matches) return;
+    // if (window.matchMedia(`(max-width: ${MOBILE_WIDTH}px)`).matches) return;
 
     const partners = Array.from(document.querySelectorAll('.js-partners'));
     const cloningIterations = 2;

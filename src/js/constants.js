@@ -1,1 +1,1 @@
-export const MOBILE_WIDTH = 568;
+export const MOBILE_WIDTH = 767;

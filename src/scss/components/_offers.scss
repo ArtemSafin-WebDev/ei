@@ -3,7 +3,7 @@
     padding-bottom: 0;
 
     @include breakpoint(mobile) {
-        display: none;
+        padding: 0;
     }
 }
 
@@ -18,6 +18,12 @@
     strong {
         font-weight: 700;
     }
+
+    @include breakpoint(mobile) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .offers__slider {
@@ -25,12 +31,21 @@
     .swiper-container {
         overflow: visible;
     }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .offers__slider-inner {
     max-width: 95.5rem;
     margin: 0 auto;
     width: 100%;
+
+    @include breakpoint(mobile) {
+        max-width: none;
+    }
 }
 
 .offers__arrow {
@@ -80,5 +95,10 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.2s, visibility 0s linear 0.2s;
+    }
+
+
+    @include breakpoint(mobile) {
+        display: none;
     }
 }

@@ -3,7 +3,8 @@
     padding-bottom: 1.5rem;
 
     @include breakpoint(mobile) {
-        display: none;
+        padding: 3.8rem 0;
+        padding-bottom: 2.4rem;
     }
 }
 
@@ -13,8 +14,13 @@
     line-height: 3.7rem;
     text-align: center;
     margin-bottom: 6.5rem;
+    @include breakpoint(mobile) {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        text-align: left;
+        margin-bottom: 4rem;
+    }
 }
-
 
 .partners__row {
     height: 11.2rem;
@@ -23,8 +29,17 @@
     &:last-child {
         margin-bottom: 0;
     }
-}
 
+    @include breakpoint(mobile) {
+        height: 5.7rem;
+        margin-bottom: 4rem;
+        &:last-child {
+            margin-bottom: 0;
+           
+        }
+       
+    }
+}
 
 .partners__items-wrapper {
     display: flex;
@@ -35,23 +50,29 @@
     transform: translate(-50%, -50%);
 }
 
-
 .partners__item {
     flex-shrink: 0;
     margin-right: 8rem;
     &:last-child {
         margin-right: 0;
     }
+
+    @include breakpoint(mobile) {
+        margin-right: 3rem;
+    }
 }
-
-
 
 .partners__link-logo {
     display: block;
-    
+
     max-height: 11rem;
     max-width: 27.5rem;
     height: auto;
     flex-shrink: 0;
     @include objectFitContain();
+
+    @include breakpoint(mobile) {
+        max-height: 5.7rem;
+        max-width: 14rem;
+    }
 }

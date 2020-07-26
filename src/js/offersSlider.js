@@ -10,8 +10,8 @@ export default function() {
 
         new Swiper(container, {
             watchOverflow: true,
-            slidesPerView: 2,
-            spaceBetween: 25,
+            slidesPerView: 1,
+            spaceBetween: 16,
             loopAdditionalSlides: 4,
             autoplay: {
                 delay: 5000
@@ -22,12 +22,18 @@ export default function() {
                 prevEl: element.querySelector('.offers__arrow--prev')
             },
             breakpoints: {
+                569: {
+                    slidesPerView: 2,
+                    spaceBetween: 25,
+                },
                 969: {
-                    spaceBetween: 40
+                    spaceBetween: 40,
+                    slidesPerView: 2,
                 },
 
                 1201: {
-                    spaceBetween: 65
+                    spaceBetween: 65,
+                    slidesPerView: 2,
                 }
             }
         });

@@ -9,9 +9,9 @@ export default function() {
         const container = element.querySelector('.swiper-container');
 
         new Swiper(container, {
-            slidesPerView: 4,
             watchOverflow: true,
-            spaceBetween: 25,
+            slidesPerView: 2,
+            spaceBetween: 16,
             slidesPerColumn: 2,
             slidesPerColumnFill: 'row',
             slidesPerGroup: 2,
@@ -21,16 +21,29 @@ export default function() {
                 prevEl: element.querySelector('.lots-alider__arrow--prev')
             },
             breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 25,
+                    slidesPerColumn: 2,
+                    slidesPerColumnFill: 'row',
+                    slidesPerGroup: 2
+                },
 
                 969: {
+                    slidesPerView: 4,
+                    slidesPerColumn: 2,
+                    slidesPerColumnFill: 'row',
+                    slidesPerGroup: 2,
                     spaceBetween: 40
                 },
-               
+
                 1201: {
-                 
-                    spaceBetween: 65,
-                },
-               
+                    slidesPerView: 4,
+                    slidesPerColumn: 2,
+                    slidesPerColumnFill: 'row',
+                    slidesPerGroup: 2,
+                    spaceBetween: 65
+                }
             }
         });
     });

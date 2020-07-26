@@ -8,7 +8,6 @@
         color: var(--text-color);
     }
 
-
     &:hover {
         .lot-card__title {
             color: var(--primary-color);
@@ -30,6 +29,9 @@
         display: block;
         width: 100%;
         padding-bottom: 72%;
+    }
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
     }
 }
 
@@ -56,6 +58,10 @@
         height: 4.5rem;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 92.22%);
     }
+
+    @include breakpoint(mobile) {
+        border-radius: 1.3rem;
+    }
 }
 
 .lot-card__image {
@@ -65,7 +71,7 @@
     width: 100%;
     height: 100%;
     @include objectFitCover();
-    transition: transform .4s;
+    transition: transform 0.4s;
 }
 
 .lot-card__indicators {
@@ -79,6 +85,10 @@
     padding: 1.4rem;
     z-index: 12;
     pointer-events: none;
+
+    @include breakpoint(mobile) {
+        padding: 1.2rem;
+    }
 }
 
 .lot-card__indicators-top-row {
@@ -91,6 +101,11 @@
     margin-left: auto;
     color: white;
     pointer-events: all;
+
+    svg {
+        width: 1.8rem;
+        height: 1.4rem;
+    }
     &:link,
     &:visited {
         color: white;
@@ -119,6 +134,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: auto;
+
+    @include breakpoint(mobile) {
+        width: 4.2rem;
+        height: 3rem;
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
 }
 
 .lot-card__indicators-best-price {
@@ -138,6 +160,13 @@
     background-image: url('../img/best-price-bg.svg');
     background-repeat: no-repeat;
     margin-right: auto;
+
+    @include breakpoint(mobile) {
+        width: 4.57rem;
+        height: 3rem;
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
 }
 
 .lot-card__remaining-time {
@@ -146,6 +175,11 @@
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.5rem;
+    @include breakpoint(mobile) {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
 }
 
 .lot-card__remaining-time-progress-circle {
@@ -163,12 +197,22 @@
             stroke-dashoffset: calc(500 - 500 * var(--lot-progress, 0));
         }
     }
+
+    @include breakpoint(mobile) {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.5rem;
+    }
 }
 
 .lot-card__price-block {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    @include breakpoint(mobile) {
+        flex-wrap: wrap;
+        margin-bottom: 0.5rem;
+    }
 }
 
 .lot-card__sold-out {
@@ -176,6 +220,11 @@
     font-size: 1.9rem;
     line-height: 2.3rem;
     color: #99a6b6;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
 }
 
 .lot-card__new-price {
@@ -184,6 +233,10 @@
     line-height: 2.3rem;
     white-space: nowrap;
     margin-right: 0.5rem;
+    @include breakpoint(mobile) {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
 }
 
 .lot-card__trend {
@@ -209,6 +262,12 @@
     color: #99a6b6;
     font-size: 1.4rem;
     line-height: 1.6rem;
+    @include breakpoint(mobile) {
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-top: 0.3rem;
+    }
 }
 
 .lot-card__title {
@@ -216,12 +275,22 @@
     font-size: 1.6rem;
     line-height: 1.2;
     margin-bottom: 1rem;
-    transition: color .2s;
+    transition: color 0.2s;
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.4rem;
+    }
 }
 
 .lot-card__type {
     color: #99a6b6;
     font-size: 1.4rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
 }
 
 .lot-card__content {

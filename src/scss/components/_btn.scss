@@ -8,15 +8,24 @@
     line-height: 2.3rem;
     border-radius: 1.5rem;
     align-self: flex-start;
-    transition: color .2s, background-color .2s;
+    transition: color 0.2s, background-color 0.2s;
     display: inline-flex;
     &:link,
     &:visited {
         color: white;
     }
 
-
     &:hover {
         background-color: var(--text-color);
+    }
+
+    @include breakpoint(mobile) {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: center;
+        padding: 2rem 3rem;
+        display: block;
+        align-self: initial;
     }
 }

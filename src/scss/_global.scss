@@ -11,10 +11,14 @@
     // --max-inner-container-width: 1290px;
     --max-container-width: 162rem;
     --max-inner-container-width: 129rem;
-    --content-padding: 30px;
+    --content-padding: 3rem;
     --primary-color: #13B17C;
     --background-blue: #EBF1F5;
     --text-color: #050C42;
+
+    @include breakpoint(mobile) {
+        --content-padding: 2.3rem;
+    }
 }
 
 html {
@@ -39,7 +43,7 @@ html {
 
 
     @include breakpoint(mobile) {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
@@ -50,7 +54,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Formular', sans-serif;
+    font-family: 'Formular', 'Roboto', sans-serif; 
     color: var(--text-color);
     background-color: var(--background-blue);
 }

@@ -5,6 +5,8 @@ import partners from './partners';
 import lotsSlider from './lotsSlider';
 import participate from './participate';
 import catalogPreview from './catalogPreview';
+import smallArticlesSlider from './smallArticlesSlider';
+import otherNewsSlider from './otherNewsSlider';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -14,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     lotsSlider();
     participate();
     catalogPreview();
+    smallArticlesSlider();
+    otherNewsSlider();
 });
 
 window.addEventListener('load', function() {

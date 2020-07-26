@@ -2,7 +2,8 @@
     padding: 6rem 0;
 
     @include breakpoint(mobile) {
-        display: none;
+        padding-top: 2rem;
+        padding-bottom: 4.5rem;
     }
 }
 
@@ -15,12 +16,40 @@
     @include breakpoint(small-tablet) {
         margin: -1.5rem;
     }
+
+
+    @include breakpoint(mobile) {
+        flex-wrap: nowrap;
+        margin: -2rem calc(-1 * var(--content-padding));
+        padding: 2rem var(--content-padding);
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        @include noScrollbar();
+        &::after {
+            content: '';
+            width: var(--content-padding);
+            flex-shrink: 0;
+            height: 1px;
+            pointer-events: none;
+        }
+
+    }
 }
 
 .categories__list-item {
     padding: 1.5rem 2.4rem;
+   
     @include breakpoint(small-tablet) {
         padding: 1.5rem;
+    }
+
+    @include breakpoint(mobile) {
+        flex-shrink: 0;
+        padding: 0;
+        margin-right: 3.2rem;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
