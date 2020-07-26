@@ -7,8 +7,10 @@
 }
 
 :root {
-    --max-container-width: 1620px;
-    --max-inner-container-width: 1290px;
+    // --max-container-width: 1620px;
+    // --max-inner-container-width: 1290px;
+    --max-container-width: 162rem;
+    --max-inner-container-width: 129rem;
     --content-padding: 30px;
     --primary-color: #13B17C;
     --background-blue: #EBF1F5;
@@ -21,6 +23,24 @@ html {
     -webkit-text-size-adjust: 100%;
     line-height: 1.15;
     @include noHighlight();
+
+    @include breakpoint(desktop) {
+        font-size: 9px;
+    }
+    @include breakpoint(laptop) {
+        font-size: 8px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 7px;
+    }
+    @include breakpoint(small-tablet) {
+        font-size: 6px;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-size: 10px;
+    }
 }
 
 body {

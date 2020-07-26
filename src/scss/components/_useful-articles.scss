@@ -1,5 +1,9 @@
 .useful-articles {
     padding: 8.4rem 0;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .useful-articles__heading {

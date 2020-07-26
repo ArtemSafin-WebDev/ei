@@ -3,6 +3,10 @@
     color: white;
     padding-top: 4.8rem;
     padding-bottom: 5.2rem;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .page-footer__grid {

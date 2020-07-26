@@ -11,7 +11,7 @@ export default function() {
         new Swiper(container, {
             slidesPerView: 4,
             watchOverflow: true,
-            spaceBetween: 65,
+            spaceBetween: 25,
             slidesPerColumn: 2,
             slidesPerColumnFill: 'row',
             slidesPerGroup: 2,
@@ -19,6 +19,18 @@ export default function() {
             navigation: {
                 nextEl: element.querySelector('.lots-alider__arrow--next'),
                 prevEl: element.querySelector('.lots-alider__arrow--prev')
+            },
+            breakpoints: {
+
+                969: {
+                    spaceBetween: 40
+                },
+               
+                1201: {
+                 
+                    spaceBetween: 65,
+                },
+               
             }
         });
     });

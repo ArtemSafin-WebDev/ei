@@ -1,6 +1,10 @@
 .participate {
     padding-top: 6.5rem;
     padding-bottom: 8.5rem;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .participate__row {

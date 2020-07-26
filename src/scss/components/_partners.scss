@@ -1,6 +1,10 @@
 .partners {
     padding-top: 6.5rem;
     padding-bottom: 1.5rem;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .partners__heading {

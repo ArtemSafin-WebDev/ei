@@ -35,12 +35,20 @@ export default function() {
             const container = catalogPreviewTopSlider.querySelector('.swiper-container');
             new Swiper(container, {
                 slidesPerView: 2,
-                spaceBetween: 65,
+                spaceBetween: 25,
                 cssMode: true,
                 watchOverflow: true,
                 navigation: {
                     nextEl: catalogPreviewTopSlider.querySelector('.catalog-preview__slider-arrow--next'),
                     prevEl: catalogPreviewTopSlider.querySelector('.catalog-preview__slider-arrow--prev')
+                },
+                breakpoints: {
+                    969: {
+                        spaceBetween: 40
+                    },
+                    1201: {
+                        spaceBetween: 65
+                    }
                 }
             });
         });
@@ -51,12 +59,20 @@ export default function() {
             const container = catalogPreviewBottomSlider.querySelector('.swiper-container');
             new Swiper(container, {
                 slidesPerView: 3,
-                spaceBetween: 65,
+                spaceBetween: 25,
                 cssMode: true,
                 watchOverflow: true,
                 navigation: {
                     nextEl: catalogPreviewBottomSlider.querySelector('.catalog-preview__slider-arrow--next'),
                     prevEl: catalogPreviewBottomSlider.querySelector('.catalog-preview__slider-arrow--prev')
+                },
+                breakpoints: {
+                    969: {
+                        spaceBetween: 40
+                    },
+                    1201: {
+                        spaceBetween: 65
+                    }
                 }
             });
         });

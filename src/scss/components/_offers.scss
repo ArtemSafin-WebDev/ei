@@ -1,6 +1,10 @@
 .offers {
     padding: 3.8rem;
     padding-bottom: 0;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .offers__heading {

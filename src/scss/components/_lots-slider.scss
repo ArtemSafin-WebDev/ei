@@ -6,11 +6,19 @@
     .swiper-slide {
         width: 25%;
     }
+
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .lots-slider__catalog-btn {
     margin: 0 auto;
     margin-top: 10rem;
+    @include breakpoint(small-tablet) {
+        margin-top: 5rem;
+    }
 }
 
 .lots-slider__wrapper {
