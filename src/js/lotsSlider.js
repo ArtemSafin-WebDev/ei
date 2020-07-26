@@ -1,4 +1,6 @@
-import Swiper from 'swiper';
+import { Swiper, Navigation } from 'swiper';
+
+Swiper.use([Navigation]);
 
 export default function() {
     const lotsSliders = Array.from(document.querySelectorAll('.js-lots-slider'));

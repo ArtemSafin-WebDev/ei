@@ -1,0 +1,127 @@
+.participate {
+    padding-top: 6.5rem;
+    padding-bottom: 8.5rem;
+}
+
+.participate__row {
+    display: flex;
+}
+
+
+.participate__left-col {
+    width: 31.2rem;
+    flex-shrink: 0;
+    margin-right: 2.8rem;
+}
+
+.participate__right-col {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.participate__heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 4.7rem;
+}
+
+.participate__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.participate__nav-link {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 2.2rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        margin-right: 0.8rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        opacity: 0;
+        transition: opacity .2s;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+
+    &.active {
+        font-weight: 700;
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &:not(.active) {
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+  
+}
+
+
+
+
+.participate__items {
+    position: relative;
+}
+
+
+.participate__item {
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, transform 0s linear 0.4s, visibility 0s linear 0.4s;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+
+    &.active {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        transform: translateX(0);
+        transition: all 0.4s, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+
+
+.participate__image {
+    border-radius: 1.9rem;
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1rem 6.4rem rgba(0, 0, 0, 0.05), 0 .4rem 1.2rem rgba(0, 0, 0, 0.03);
+    
+}
+
+
+.participate__item-btn {
+    display: none;
+}

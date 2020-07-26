@@ -31,7 +31,8 @@ export default function() {
                 x: offsetDirection * offsetDistance,
                 scrollTrigger: {
                     trigger: element,
-                    scrub: true
+                    scrub: true,
+                    markers: false
                 }
             })
         });

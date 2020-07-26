@@ -17,6 +17,13 @@
         color: var(--text-color);
     }
 
+    &--white-text {
+        &:link,
+        &:visited {
+            color: white;
+        }
+    }
+
     &:hover {
         .offer-card__image {
             transform: scale(1.03);
@@ -54,6 +61,9 @@
     font-size: 1.5rem;
     line-height: 1.8rem;
     margin-top: auto;
+    &--green {
+        color: var(--primary-color);
+    }
     svg {
         width: 0.8rem;
         height: 1.2rem;

@@ -1,4 +1,7 @@
-import Swiper from 'swiper';
+import { Swiper, Navigation, Autoplay } from 'swiper';
+
+
+Swiper.use([Navigation, Autoplay]);
 
 export default function() {
     const offersSliders = Array.from(document.querySelectorAll('.js-offers-slider'));
@@ -11,6 +14,9 @@ export default function() {
             slidesPerView: 2,
             spaceBetween: 65,
             loopAdditionalSlides: 4,
+            autoplay: {
+                delay: 5000
+            },
             loop: true,
             navigation: {
                 nextEl: element.querySelector('.offers__arrow--next'),
