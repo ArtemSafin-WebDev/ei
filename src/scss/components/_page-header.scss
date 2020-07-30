@@ -64,7 +64,16 @@
     @include breakpoint(mobile) {
         flex-direction: column;
         align-items: initial;
-        padding: 2.2rem 0;
+        margin-bottom: 2.2rem;
+    }
+}
+
+
+.page-header__burger-header {
+    @include breakpoint(mobile) {
+        height: 9.4rem;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -76,8 +85,8 @@
     }
 
     @include breakpoint(mobile) {
-        margin-bottom: 2rem;
-        align-self: flex-start;
+        
+        
     }
 }
 
@@ -107,7 +116,7 @@
         width: 100%;
         flex-grow: 0;
         border-radius: 1.4rem;
-        min-height: 5rem;
+        min-height: 5.4rem;
         padding: 0 1.7rem;
     }
 }
@@ -143,6 +152,8 @@
 
     @include breakpoint(mobile) {
         padding-right: 1.6rem;
+
+        display: none;
     }
 }
 
@@ -196,6 +207,7 @@
         padding: 0 1.6rem;
         font-size: 16px;
         line-height: 1.2;
+        padding-left: 0;
     }
 }
 
