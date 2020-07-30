@@ -1,13 +1,18 @@
 import { MOBILE_WIDTH } from './constants';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import accordionFactory from './accordionFactory';
 
 export default function() {
     const participateBlocks = Array.from(document.querySelectorAll('.js-participate'));
 
     participateBlocks.forEach(element => {
         if (window.matchMedia(`(max-width: ${MOBILE_WIDTH}px)`).matches) {
+            const accordionItems = Array.from(element.querySelectorAll('.participate__item'));
 
+            const accordions = accordionFactory(accordionItems);
+
+            accordions.init();
         } else {
             const tabsNav = Array.from(element.querySelectorAll('.participate__nav-link'));
             const tabItems = Array.from(element.querySelectorAll('.participate__item'));

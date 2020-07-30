@@ -3,24 +3,36 @@
     padding-bottom: 8.5rem;
 
     @include breakpoint(mobile) {
-        display: none;
+        padding-top: 4.4rem;
+        padding-bottom: 0;
     }
 }
 
 .participate__row {
     display: flex;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
 }
-
 
 .participate__left-col {
     width: 31.2rem;
     flex-shrink: 0;
     margin-right: 2.8rem;
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin: 0;
+        flex-shrink: 1;
+    }
 }
 
 .participate__right-col {
     width: 50%;
     flex-grow: 1;
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+    }
 }
 
 .participate__heading {
@@ -28,11 +40,20 @@
     font-size: 3rem;
     line-height: 3.7rem;
     margin-bottom: 4.7rem;
+    @include breakpoint(mobile) {
+        font-weight: bold;
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 3.6rem;
+    }
 }
 
 .participate__nav {
     display: flex;
     flex-direction: column;
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .participate__nav-link {
@@ -54,18 +75,15 @@
         border-radius: 50%;
         background-color: var(--primary-color);
         opacity: 0;
-        transition: opacity .2s;
+        transition: opacity 0.2s;
         top: 50%;
         transform: translateY(-50%);
     }
-
-
 
     &:link,
     &:visited {
         color: var(--text-color);
     }
-
 
     &.active {
         font-weight: 700;
@@ -79,53 +97,89 @@
             color: var(--primary-color);
         }
     }
-
-  
 }
-
-
-
 
 .participate__items {
     position: relative;
 }
 
-
 .participate__item {
-    min-height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    @include breakpointMF(small-tablet) {
+        min-height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.4s, transform 0s linear 0.4s, visibility 0s linear 0.4s;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+
+        &.active {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+            transform: translateX(0);
+            transition: all 0.4s, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+    }
+}
+
+.participate__image {
+    display: block;
     width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.4s, transform 0s linear 0.4s, visibility 0s linear 0.4s;
-    z-index: 1;
+    height: auto;
+    margin-bottom: 4rem;
+    @include breakpointMF(small-tablet) {
+        border-radius: 1.9rem;
+        box-shadow: 0 1rem 6.4rem rgba(0, 0, 0, 0.05), 0 0.4rem 1.2rem rgba(0, 0, 0, 0.03);
+        margin-bottom: 0;
+    }
+}
+
+.participate__item-btn {
+    display: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding: 2.2rem 0;
+    border-top: 1px solid #D1DAE6;
+    @include breakpoint(mobile) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.participate__item-btn-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
+    svg {
+        flex-shrink: 0;
+        width: 1.2rem;
+        height: 0.8rem;
+        margin-left: 2rem;
+        transition: transform .2s;
 
-    &.active {
-        position: relative;
-        opacity: 1;
-        visibility: visible;
-        z-index: 2;
-        transform: translateX(0);
-        transition: all 0.4s, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 }
 
 
-.participate__image {
-    border-radius: 1.9rem;
-    display: block;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 1rem 6.4rem rgba(0, 0, 0, 0.05), 0 .4rem 1.2rem rgba(0, 0, 0, 0.03);
+.participate__item.active .participate__item-btn-content svg {
+    @include breakpoint(mobile) {
+        transform: rotate(180deg);
+    }
     
 }
 
-
-.participate__item-btn {
-    display: none;
+.participate__content {
+    @include breakpoint(mobile) {
+        max-height: 0;
+        transition: max-height .4s;
+        overflow: hidden;
+    }
 }
