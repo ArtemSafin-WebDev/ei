@@ -1,0 +1,33 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs__link {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #99a6b6;
+    &:last-child {
+        svg {
+            display: none;
+        }
+    }
+
+    svg {
+        width: .46rem;
+        height: .8rem;
+        flex-shrink: 0;
+        margin: 0 .6rem;
+        fill: #99a6b6;
+    }
+    &:link,
+    &:visited {
+        color: #99a6b6;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}

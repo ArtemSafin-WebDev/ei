@@ -68,7 +68,6 @@
     }
 }
 
-
 .page-header__burger-header {
     @include breakpoint(mobile) {
         height: 9.4rem;
@@ -79,14 +78,15 @@
 
 .page-header__logo-link {
     flex-shrink: 0;
+
     &:link,
     &:visited {
         color: var(--primary-color);
     }
 
     @include breakpoint(mobile) {
-        
-        
+        position: relative;
+        z-index: 700;
     }
 }
 
@@ -111,6 +111,10 @@
     align-items: center;
     padding: 0 2.2rem;
 
+    .white-bg & {
+        background-color: #F3F7F9;
+    }
+
     @include breakpoint(mobile) {
         margin: 0;
         width: 100%;
@@ -133,15 +137,15 @@
     padding-right: 2rem;
     &::after {
         content: '';
-        height: 3.7rem;
-        width: 0.2rem;
+        height: 37px;
+        width: 2px;
         position: absolute;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
         background-color: #edf0f5;
         @include breakpoint(mobile) {
-            width: 0.1rem;
+            width: 1px;
         }
     }
     &:link,
@@ -149,11 +153,10 @@
         color: var(--primary-color);
     }
 
-
     @include breakpoint(mobile) {
         padding-right: 1.6rem;
 
-        display: none;
+        // display: none;
     }
 }
 
@@ -173,16 +176,15 @@
 
     & > span {
         width: 100%;
-        height: 0.2rem;
+        height: 2px;
         display: block;
         background-color: var(--primary-color);
-        border-radius: 0.1rem;
-        margin-bottom: 0.4rem;
+        border-radius: 1px;
+        margin-bottom: 4px;
         &:last-child {
             margin-bottom: 0;
         }
     }
-
 
     @include breakpoint(mobile) {
         margin: 0;
@@ -199,15 +201,16 @@
     flex-grow: 1;
     @include placeholder {
         color: #d1dae6;
+        @include breakpoint(mobile) {
+            color: #99a6b6;
+        }
     }
-
 
     @include breakpoint(mobile) {
         font-weight: 400;
-        padding: 0 1.6rem;
+        padding: 0 1.3rem;
         font-size: 16px;
         line-height: 1.2;
-        padding-left: 0;
     }
 }
 
@@ -273,6 +276,12 @@
             transform: translateZ(0) translateY(0);
         }
     }
+
+    @include breakpoint(mobile) {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
 }
 
 .page-header__user-link-icon-container {
@@ -285,6 +294,12 @@
         width: 100%;
         height: 100%;
         display: block;
+    }
+
+    @include breakpoint(mobile) {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -324,7 +339,7 @@
     padding: 3rem;
     text-align: left;
     font-weight: 400;
-    transition: transform .4s;
+    transition: transform 0.4s;
     transform: translateZ(0) translateY(2rem);
 }
 
@@ -394,8 +409,6 @@
             color: var(--primary-color);
         }
     }
-
- 
 }
 
 .page-header__user-account-nav {
@@ -430,13 +443,10 @@
         }
     }
 
-
     &:hover {
         color: var(--primary-color);
     }
 }
-
-
 
 .page-header__user-account-add-link {
     display: flex;
@@ -456,10 +466,8 @@
 
             color: white;
         }
-
     }
 }
-
 
 .page-header__user-account-add-link-plus {
     width: 5.1rem;
@@ -471,12 +479,161 @@
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
-    
-    background: #EBF1F5;
+
+    background: #ebf1f5;
     border-radius: 50%;
-    transition: background-color .2s, color .2s;
+    transition: background-color 0.2s, color 0.2s;
     svg {
         width: 1.5rem;
         height: 1.5rem;
+    }
+}
+
+.page-header__mobile-menu-burger {
+    color: var(--text-color);
+    margin-left: auto;
+    display: none;
+    position: relative;
+    z-index: 700;
+    svg {
+        width: 3rem;
+        height: 3rem;
+        display: block;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        display: block;
+    }
+}
+
+.page-header__mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 600;
+    padding-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    .mobile-menu-open & {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+}
+
+.page-header__mobile-menu-user {
+    background: #ebf1f5;
+    border-radius: 3.5rem;
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 3.6rem;
+    padding-top: 2rem;
+    min-height: 9.2rem;
+    justify-content: space-between;
+}
+
+.page-header__mobile-menu-content-width {
+    padding: 0 var(--content-padding);
+}
+
+.page-header__mobile-menu-scroll-container {
+    flex-grow: 1;
+    max-height: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.page-header__mobile-menu-navigation {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.page-header__mobile-menu-navigation-list-item {
+    margin-bottom: 4rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.page-header__mobile-menu-navigation-link {
+    display: flex;
+    align-items: center;
+
+    color: var(--text-color);
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+    svg {
+        width: 1.2rem;
+        height: 0.8rem;
+        flex-shrink: 0;
+        margin-right: 1.3rem;
+    }
+}
+
+.page-header__mobile-menu-navigation-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+.page-header__mobile-menu-navigation-dropdown-link {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-left: 2.5rem;
+    display: block;
+    width: 100%;
+    &:first-child {
+        margin-top: 2rem;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.page-header__mobile-regular-menu {
+    background: #050c42;
+    color: white;
+    padding: 4rem var(--content-padding);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1.8rem;
+    display: grid;
+}
+
+.page-header__mobile-regular-menu-link {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: var(--primary-color);
     }
 }

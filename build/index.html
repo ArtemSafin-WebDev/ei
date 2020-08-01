@@ -14,7 +14,7 @@
         </title>
     </head>
 
-    <body class="no-touch" ontouchstart="">
+    <body class="no-touch " ontouchstart="">
         <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
             <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <symbol viewBox="0 0 12 7.42" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -26,10 +26,19 @@
                 <symbol viewBox="0 0 7.41 12" id="arrow-right" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 10.58L4.58 6 0 1.41 1.41 0l6 6-6 6z" />
                 </symbol>
+                <symbol viewBox="0 0 4.56 8" id="arrow-right-rounded" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.4 4.4L1 7.84a.59.59 0 01-.8 0 .59.59 0 010-.8L3.21 4l-3-3a.59.59 0 010-.8.59.59 0 01.8 0L4.4 3.6a.58.58 0 010 .8z" />
+                </symbol>
                 <symbol viewBox="0 0 20 26" id="bell" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M10 0a2 2 0 00-2 2 1.9 1.9 0 000 .25A8 8 0 002 10v9a1 1 0 01-1 1H0v2h7.19A2.82 2.82 0 007 23a3 3 0 006 0 2.82 2.82 0 00-.19-1H20v-2h-1a1 1 0 01-1-1v-8.72a8.28 8.28 0 00-6-8A1.9 1.9 0 0012 2a2 2 0 00-2-2zm-.44 4h.63A6.19 6.19 0 0116 10.28V19a2.82 2.82 0 00.19 1H3.81A2.82 2.82 0 004 19v-9a6 6 0 015.56-6zM10 22a1 1 0 11-1 1 1 1 0 011-1z"
                     />
+                </symbol>
+                <symbol viewBox="0 0 14.58 11.17" id="checkmark" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.58 1.18l-10 10L0 6.59l1.18-1.17 3.4 3.4L13.41 0z" />
+                </symbol>
+                <symbol viewBox="0 0 12.77 12.77" id="cross" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.9 0L0 .9l5.49 5.49L0 11.88l.9.89 5.49-5.48 5.49 5.48.89-.89-5.48-5.49L12.77.9l-.89-.9-5.49 5.49z" />
                 </symbol>
                 <symbol viewBox="0 0 10.67 5.33" id="down-trend" xmlns="http://www.w3.org/2000/svg"><path d="M0 0l5.33 5.33L10.67 0z" /></symbol>
                 <symbol viewBox="0 0 10 20" id="facebook" xmlns="http://www.w3.org/2000/svg">
@@ -38,17 +47,17 @@
                 <symbol id="favourites" viewBox="0 0 27 25.72" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <style>
-                            .gcls-1 {
+                            .jcls-1 {
                                 fill-rule: evenodd;
                             }
                         </style>
                     </defs>
                     <path
-                        class="gcls-1"
+                        class="jcls-1"
                         d="M8.81 2.09a8 8 0 108 12.17l1.43 1.44c-.14.21-.3.41-.46.61l8 8-1.44 1.44-8-8A10 10 0 119.43 0a7.53 7.53 0 00-.62 2.09z"
                     />
                     <path
-                        class="gcls-1"
+                        class="jcls-1"
                         d="M13.37 7.11l5.4 5.42.71.71.71-.71 5.4-5.41h.05l.15-.17a4.9 4.9 0 00.48-.58A3.81 3.81 0 0027 4.25 4.27 4.27 0 0022.75 0a4.92 4.92 0 00-3.25 1.28A4.92 4.92 0 0016.25 0 4.27 4.27 0 0012 4.25a3.76 3.76 0 00.71 2.06 5.11 5.11 0 00.46.59l.16.17zm6.13-3l.74-.84a1.23 1.23 0 01.16-.15 5.87 5.87 0 01.6-.48A3.27 3.27 0 0122.75 2 2.26 2.26 0 0125 4.25a1 1 0 01-.11.41 2.84 2.84 0 01-.28.51c-.1.16-.21.3-.29.41l-.1.11-4.7 4.7-4.73-4.68a.46.46 0 01-.1-.1 2.84 2.84 0 01-.29-.38 2 2 0 01-.4-.98A2.26 2.26 0 0116.25 2a3.27 3.27 0 011.75.64 5.87 5.87 0 01.58.46 1.23 1.23 0 01.16.15z"
                     />
                 </symbol>
@@ -151,9 +160,272 @@
                     </div>
                     <div class="page-header__search-row">
                         <div class="page-header__burger-header">
+                            <div class="page-header__mobile-menu">
+                                <div class="page-header__mobile-menu-content-width">
+                                    <div class="page-header__mobile-menu-user">
+                                        <a href="#" class="page-header__user-link">
+                                            <span class="page-header__user-link-icon-container">
+                                                <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                                <span class="page-header__user-link-amount">
+                                                    12
+                                                </span>
+                                            </span>
+                                            Избранное
+                                        </a>
+                                        <a href="#" class="page-header__user-link">
+                                            <span class="page-header__user-link-icon-container">
+                                                <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                                                    <use xlink:href="#favourites"></use>
+                                                </svg>
+                                            </span>
+                                            Сохраненные<br />
+                                            поиски
+                                        </a>
+                                        <a href="#" class="page-header__user-link">
+                                            <span class="page-header__user-link-icon-container">
+                                                <svg width="28" height="28" aria-hidden="true" class="icon-bell">
+                                                    <use xlink:href="#bell"></use>
+                                                </svg>
+                                            </span>
+                                            Уведомления
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="page-header__mobile-menu-scroll-container">
+                                    <div class="page-header__mobile-menu-content-width">
+                                        <nav class="page-header__mobile-menu-navigation">
+                                            <ul class="page-header__mobile-menu-navigation-list">
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Транспорт и техника
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Недвижимость
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Оборудование
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Сельское хозяйство
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Имущественный комплекс
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Товарно-материальные ценности
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Дебиторская задолженность
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Ценные бумаги, нма, доли в уставных капиталах
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Сырье
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Прочее
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="page-header__mobile-regular-menu">
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Реестры
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Полезные статьи
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Услуги и тарифы
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Партнерам
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Вопросы и ответы
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Контакты
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            О сервисе
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Как пользоваться сервисом
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <a href="#" class="page-header__logo-link">
                                 <img src="img/logo.svg" width="190" alt="Логотип" class="page-header__logo-image" />
                             </a>
+                            <button class="page-header__mobile-menu-burger">
+                                <svg width="30" height="30" aria-hidden="true" class="icon-person">
+                                    <use xlink:href="#person"></use>
+                                </svg>
+                            </button>
                         </div>
 
                         <form action="/" method="GET" class="page-header__search-form">

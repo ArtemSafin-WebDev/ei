@@ -7,6 +7,12 @@ import participate from './participate';
 import catalogPreview from './catalogPreview';
 import smallArticlesSlider from './smallArticlesSlider';
 import otherNewsSlider from './otherNewsSlider';
+import mobileMenu from './mobileMenu';
+import onlyNumeric from './onlyNumeric';
+import clearInput from './clearInput';
+import showMore from './showMore';
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -18,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
     catalogPreview();
     smallArticlesSlider();
     otherNewsSlider();
+    mobileMenu();
+    onlyNumeric();
+    clearInput();
+    showMore();
 });
 
 window.addEventListener('load', function() {

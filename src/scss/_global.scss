@@ -16,6 +16,8 @@
     --background-blue: #EBF1F5;
     --text-color: #050C42;
 
+    --page-top-padding: 8rem;
+
     @include breakpoint(mobile) {
         --content-padding: 2.3rem;
     }
@@ -57,6 +59,10 @@ body {
     font-family: 'Formular', 'Roboto', sans-serif; 
     color: var(--text-color);
     background-color: var(--background-blue);
+
+    &.white-bg {
+        background: white;
+    }
 }
 
 main {
