@@ -63,19 +63,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="lot-card__content">
+                                    <div class="lot-card__content">
                                         <div class="lot-card__price-block">
                                             {{#unless this.sold}}
-                                            <div class="lot-card__new-price">
-                                                {{this.newPrice}} ₽
+                                            <div class="lot-card__price-wrapper">
+                                                <div class="lot-card__new-price">
+                                                    {{this.newPrice}} ₽
+                                                </div>
+                                                <div
+                                                    class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
+                                                    <svg width="10" height="6" aria-hidden="true"
+                                                        class="icon-down-trend">
+                                                        <use xlink:href="#down-trend"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
-                                            <div
-                                                class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
-                                                <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
-                                                    <use xlink:href="#down-trend"></use>
-                                                </svg>
-                                            </div>
-
 
                                             {{#if this.oldPrice}}
                                             <div class="lot-card__old-price">
@@ -91,17 +93,22 @@
                                             {{/if}}
 
                                         </div>
-                                        <h3 class="lot-card__title">
-                                            {{this.title}}
-                                        </h3>
+                                        <div class="lot-card__title-wrapper">
+                                            <h3 class="lot-card__title">
+                                                <a href="#">
+                                                    {{this.title}}
+                                                </a>
+                                                
+                                            </h3>
 
 
-                                        {{#if this.type}}
-                                        <div class="lot-card__type">
-                                            {{this.type}}
+                                            {{#if this.type}}
+                                            <div class="lot-card__type">
+                                                {{this.type}}
+                                            </div>
+                                            {{/if}}
                                         </div>
-                                        {{/if}}
-                                    </a>
+                                    </div>
 
                                 </div>
                                 {{/unless}}

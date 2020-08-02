@@ -11,6 +11,8 @@ import mobileMenu from './mobileMenu';
 import onlyNumeric from './onlyNumeric';
 import clearInput from './clearInput';
 import showMore from './showMore';
+import customSelects from './customSelects';
+import catalogViews from './catalogViews';
 
 
 
@@ -28,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
     onlyNumeric();
     clearInput();
     showMore();
+    customSelects();
+    catalogViews();
 });
 
 window.addEventListener('load', function() {

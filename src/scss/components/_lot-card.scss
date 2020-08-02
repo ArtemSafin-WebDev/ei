@@ -9,13 +9,17 @@
     }
 
     &:hover {
-        .lot-card__title {
-            color: var(--primary-color);
-        }
+        // .lot-card__title {
+        //     color: var(--primary-color);
 
-        .lot-card__image {
-            transform: scale(1.04);
-        }
+        //     a {
+        //         color: var(--primary-color);
+        //     }
+        // }
+
+        // .lot-card__image {
+        //     transform: scale(1.04);
+        // }
     }
 }
 
@@ -48,6 +52,12 @@
     &:link,
     &:visited {
         color: white;
+    }
+
+    &:hover {
+        .lot-card__image {
+            transform: scale(1.04);
+        }
     }
     &::after {
         content: '';
@@ -276,6 +286,20 @@
     line-height: 1.2;
     margin-bottom: 1rem;
     transition: color 0.2s;
+
+    a {
+        transition: color 0.2s;
+
+        &:link,
+        &:visited {
+            color: var(--text-color);
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
     @include breakpoint(mobile) {
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -300,5 +324,144 @@
     &:link,
     &:visited {
         color: var(--text-color);
+    }
+}
+
+.lot-card__price-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.lot-card__bottom-links {
+    display: none;
+}
+
+.lot-card__partner {
+    width: 14rem;
+    height: 5rem;
+    position: relative;
+    border: 1px solid #ebf1f5;
+
+    border-radius: 2rem;
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        height: auto;
+        max-width: 85%;
+        max-height: 85%;
+        transform: translate(-50%, -50%);
+        @include objectFitContain();
+    }
+}
+
+.lot-card__bottom-like-btn {
+    flex-shrink: 0;
+    margin-left: auto;
+    svg {
+        width: 1.7rem;
+        height: 1.4rem;
+        display: block;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.lot-card__old-price-text {
+    display: none;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #99a6b6;
+}
+
+.lot-card__trade-category {
+    display: none;
+    margin-bottom: auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+    color: #99A6B6;
+}
+
+.list-view {
+    .lot-card__trade-category {
+        display: block;
+    }
+    .lot-card__old-price-text {
+        display: block;
+    }
+    .lot-card {
+        flex-direction: row;
+    }
+
+    .lot-card__image-container {
+        width: 23.8rem;
+        margin-right: 4.2rem;
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+
+    .lot-card__content {
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 22.4rem);
+    }
+
+    .lot-card__price-block {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin: 0;
+        align-items: initial;
+        flex-direction: column;
+        padding-left: 3.2rem;
+        border-left: 1px solid #edf0f5;
+    }
+
+    .lot-card__title-wrapper {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding-right: 3.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lot-card__title {
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .lot-card__type {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .lot-card__new-price {
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+    }
+
+    .lot-card__old-price {
+        font-size: 1.9rem;
+        line-height: 2.3rem;
+        font-weight: 400;
+        margin-top: auto;
+    }
+
+    .lot-card__bottom-links {
+        display: flex;
+        align-items: flex-end;
+        margin-top: auto;
+    }
+
+    .lot-card__like-btn {
+        display: none;
     }
 }
