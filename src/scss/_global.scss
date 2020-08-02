@@ -20,6 +20,7 @@
 
     @include breakpoint(mobile) {
         --content-padding: 2.3rem;
+        --page-top-padding: 4rem;
     }
 }
 

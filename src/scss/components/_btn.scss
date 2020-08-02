@@ -10,6 +10,7 @@
     align-self: flex-start;
     transition: color 0.2s, background-color 0.2s;
     display: inline-flex;
+    
     &:link,
     &:visited {
         color: white;
@@ -24,7 +25,8 @@
         font-size: 1.5rem;
         line-height: 1.8rem;
         text-align: center;
-        padding: 2rem 3rem;
+        padding: 1.6rem 2rem;
+        border-radius: 1rem;
         display: block;
         align-self: initial;
     }

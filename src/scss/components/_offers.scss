@@ -35,6 +35,10 @@
     .swiper-slide {
         display: flex;
         flex-direction: column;
+        width: 25%;
+        @include breakpoint(mobile) {
+            width: 100%;
+        }
     }
 }
 
