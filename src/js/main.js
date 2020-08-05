@@ -13,6 +13,7 @@ import clearInput from './clearInput';
 import showMore from './showMore';
 import customSelects from './customSelects';
 import catalogViews from './catalogViews';
+import catalogFilters from './catalogFilters';
 
 
 
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showMore();
     customSelects();
     catalogViews();
+    catalogFilters();
 });
 
 window.addEventListener('load', function() {
