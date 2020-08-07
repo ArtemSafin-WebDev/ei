@@ -1,17 +1,20 @@
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+let animating = false;
+
 function openAccordeon(element) {
     element.style.maxHeight = 'none';
     const computedStyle = getComputedStyle(element);
     const computedHeight = computedStyle.height;
     element.style.maxHeight = '';
-
+    animating = true;
     element && element.scrollTop;
 
     const transitionEndHandler = () => {
         console.log('Tranisitionnd Initiated');
         element.style.maxHeight = 'none';
         element.removeEventListener('transitionend', transitionEndHandler);
+        animating = false;
         ScrollTrigger.refresh(true);
     };
     element.addEventListener('transitionend', transitionEndHandler);
@@ -41,6 +44,7 @@ export default function(accordionElements) {
 
             const handler = function(event) {
                 event.preventDefault();
+                if (animating) return;
                 if (event.relatedTarget) {
                     event.relatedTarget.focus();
                 } else {

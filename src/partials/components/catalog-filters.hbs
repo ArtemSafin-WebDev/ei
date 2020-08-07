@@ -1,11 +1,52 @@
 <div class="catalog-filters">
+    <h2 class="catalog-filters__heading">
+        Сортировка и фильтры
+        <button class="js-mobile-filters-close">
+            <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </button>
+       
+    </h2>
+    <div class="catalog-filters__applied">
+        <div class="catalog-filters__applied-links">
+            <a href="#" class="catalog-filters__applied-link">
+                Сначала дешевые
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </a>
+            <a href="#" class="catalog-filters__applied-link">
+                До 500 000
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </a>
+            <a href="#" class="catalog-filters__applied-link">
+                Москва
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </a>
+            <a href="#" class="catalog-filters__applied-link">
+                Только с фото
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </a>
+            <a href="#" class="catalog-filters__clear-link">
+                Очистить фильтр
+                <img src="img/clear-cross.svg" alt="" width="16" height="16" />
+            </a>
+        </div>
+    </div>
     <nav class="catalog-filters__nav">
         <ul class="catalog-filters__nav-list">
             <li class="catalog-filters__nav-list-item">
-                <a href="#" class="catalog-filters__nav-root-category-link">
+                <a href="#" class="catalog-filters__nav-root-category-link js-accordion-btn">
                     Транспорт и техника
                 </a>
-                <ul class="catalog-filters__nav-subcategories-list">
+                <ul class="catalog-filters__nav-subcategories-list js-accordion-content">
                     <li class="catalog-filters__nav-subcategories-list-item active">
                         <a href="#" class="catalog-filters__nav-subcategories-link">
                             Легковые автомобили
@@ -61,151 +102,108 @@
         </ul>
     </nav>
     <form action="/" method="GET" class="catalog-filters__form js-catalog-filters-form" data-total-found="240">
+        <div class="catalog-filters__form-group catalog-filters__form-group--mobile-sort">
+            <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                Сортировать по
+            </h4>
+            <div class="catalog-filters__accordion-content js-accordion-content">
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="sortby" class="radio__input" checked />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Сначала дешевые
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="sortby" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Сначала подороже
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="sortby" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Более новые
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="sortby" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Более старые
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="sortby" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Проверенный лот
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
         <div class="catalog-filters__form-group">
-            <h4 class="catalog-filters__form-group-heading">
+            <h4 class="catalog-filters__form-group-heading js-accordion-btn">
                 Цена, ₽
             </h4>
-            <div class="catalog-filters__results-btn-wrapper">
-                <div class="catalog-filters__form-price-range">
-                    <div class="catalog-filters__form-price-range-input-wrapper">
-                        <input type="text" name="from" class="catalog-filters__form-price-range-input js-numeric-input" placeholder="от 30 000" />
-                        <button type="button" class="catalog-filters__form-price-range-input-clear-btn js-clear-input">
-                            <svg width="12" height="12" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="catalog-filters__form-price-range-input-wrapper">
-                        <input type="text" name="to" class="catalog-filters__form-price-range-input js-numeric-input" placeholder="до 7 280 990" />
-                        <button type="button" class="catalog-filters__form-price-range-input-clear-btn js-clear-input">
-                            <svg width="12" height="12" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
-                        </button>
+            <div class="catalog-filters__accordion-content js-accordion-content">
+                <div class="catalog-filters__results-btn-wrapper">
+                    <div class="catalog-filters__form-price-range">
+                        <div class="catalog-filters__form-price-range-input-wrapper">
+                            <input type="text" name="from" class="catalog-filters__form-price-range-input js-numeric-input" placeholder="от 30 000" />
+                            <button type="button" class="catalog-filters__form-price-range-input-clear-btn js-clear-input">
+                                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="catalog-filters__form-price-range-input-wrapper">
+                            <input
+                                type="text"
+                                name="to"
+                                class="catalog-filters__form-price-range-input js-numeric-input"
+                                placeholder="до 7 280 990"
+                            />
+                            <button type="button" class="catalog-filters__form-price-range-input-clear-btn js-clear-input">
+                                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <!-- <button class="catalog-filters__results-btn">
-                    Показать результат
-                    <span class="catalog-filters__results-btn-count">
-                        124
-                    </span>
-                </button> -->
             </div>
         </div>
         <div class="catalog-filters__form-group">
-            <h4 class="catalog-filters__form-group-heading">
+            <h4 class="catalog-filters__form-group-heading js-accordion-btn">
                 Типы лотов
             </h4>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" checked />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Банкротное имущество
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Арестованное
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Имущество организаций
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" disabled />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Муниципальное имущество
-                    </span>
-                </label>
-            </div>
-        </div>
-        <div class="catalog-filters__form-group">
-            <h4 class="catalog-filters__form-group-heading">
-                Регион
-            </h4>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" checked />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Москва
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Московская область
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Санкт-Петербург
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__checkbox">
-                    <input type="checkbox" name="type" class="checkbox__input" />
-                    <span class="checkbox__checkmark">
-                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                            <use xlink:href="#checkmark"></use>
-                        </svg>
-                    </span>
-                    <span class="checkbox__text">
-                        Республика Татарстан
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__show-more-content js-show-more-content">
+            <div class="catalog-filters__accordion-content js-accordion-content">
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__checkbox">
+                        <input type="checkbox" name="type" class="checkbox__input" checked />
+                        <span class="checkbox__checkmark">
+                            <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                <use xlink:href="#checkmark"></use>
+                            </svg>
+                        </span>
+                        <span class="checkbox__text">
+                            Банкротное имущество
+                        </span>
+                    </label>
+                </div>
                 <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
                     <label class="checkbox catalog-filters__checkbox">
                         <input type="checkbox" name="type" class="checkbox__input" />
@@ -215,66 +213,179 @@
                             </svg>
                         </span>
                         <span class="checkbox__text">
-                            Республика Марий Эл
+                            Арестованное
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__checkbox">
+                        <input type="checkbox" name="type" class="checkbox__input" />
+                        <span class="checkbox__checkmark">
+                            <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                <use xlink:href="#checkmark"></use>
+                            </svg>
+                        </span>
+                        <span class="checkbox__text">
+                            Имущество организаций
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__checkbox">
+                        <input type="checkbox" name="type" class="checkbox__input" disabled />
+                        <span class="checkbox__checkmark">
+                            <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                <use xlink:href="#checkmark"></use>
+                            </svg>
+                        </span>
+                        <span class="checkbox__text">
+                            Муниципальное имущество
                         </span>
                     </label>
                 </div>
             </div>
-            <button class="catalog-filters__show-more js-show-more">
-                Показать все
-            </button>
         </div>
         <div class="catalog-filters__form-group">
-            <h4 class="catalog-filters__form-group-heading">
+            <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                Регион
+            </h4>
+            <div class="catalog-filters__accordion-content js-accordion-content">
+                <div class="catalog-filters__desktop-region">
+                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                        <label class="checkbox catalog-filters__checkbox">
+                            <input type="checkbox" name="type" class="checkbox__input" checked />
+                            <span class="checkbox__checkmark">
+                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            <span class="checkbox__text">
+                                Москва
+                            </span>
+                        </label>
+                    </div>
+                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                        <label class="checkbox catalog-filters__checkbox">
+                            <input type="checkbox" name="type" class="checkbox__input" />
+                            <span class="checkbox__checkmark">
+                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            <span class="checkbox__text">
+                                Московская область
+                            </span>
+                        </label>
+                    </div>
+                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                        <label class="checkbox catalog-filters__checkbox">
+                            <input type="checkbox" name="type" class="checkbox__input" />
+                            <span class="checkbox__checkmark">
+                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            <span class="checkbox__text">
+                                Санкт-Петербург
+                            </span>
+                        </label>
+                    </div>
+                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                        <label class="checkbox catalog-filters__checkbox">
+                            <input type="checkbox" name="type" class="checkbox__input" />
+                            <span class="checkbox__checkmark">
+                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                    <use xlink:href="#checkmark"></use>
+                                </svg>
+                            </span>
+                            <span class="checkbox__text">
+                                Республика Татарстан
+                            </span>
+                        </label>
+                    </div>
+                    <div class="catalog-filters__show-more-content js-show-more-content">
+                        <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                            <label class="checkbox catalog-filters__checkbox">
+                                <input type="checkbox" name="type" class="checkbox__input" />
+                                <span class="checkbox__checkmark">
+                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="checkbox__text">
+                                    Республика Марий Эл
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="catalog-filters__show-more js-show-more">
+                        Показать все
+                    </button>
+                </div>
+                <div class="catalog-filters__mobile-region">
+                    <select multiple name="mobileregion" class="js-mobile-region">
+                        <option value="">Найти регион</option>
+                        <option value="Moscow">Москва</option>
+                        <option value="Moscow Region">Московская область</option>
+                        <option value="Peter">Санкт-Петербург</option>
+                        <option value="Tatarstan">Татарстан</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-filters__form-group">
+            <h4 class="catalog-filters__form-group-heading js-accordion-btn">
                 Виды торгов
             </h4>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__radio">
-                    <input type="radio" name="selltype" class="radio__input" checked />
-                    <span class="radio__checkmark"></span>
-                    <span class="radio__text">
-                        Аукцион
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__radio">
-                    <input type="radio" name="selltype" class="radio__input" />
-                    <span class="radio__checkmark"></span>
-                    <span class="radio__text">
-                        Конкурс
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__radio">
-                    <input type="radio" name="selltype" class="radio__input" />
-                    <span class="radio__checkmark"></span>
-                    <span class="radio__text">
-                        Продажа без объявления цены
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__radio">
-                    <input type="radio" name="selltype" class="radio__input" />
-                    <span class="radio__checkmark"></span>
-                    <span class="radio__text">
-                        Публичное предложение
-                    </span>
-                </label>
-            </div>
-            <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                <label class="checkbox catalog-filters__radio">
-                    <input type="radio" name="selltype" class="radio__input" />
-                    <span class="radio__checkmark"></span>
-                    <span class="radio__text">
-                        Специализированный аукцион
-                    </span>
-                </label>
+            <div class="catalog-filters__accordion-content js-accordion-content">
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="selltype" class="radio__input" checked />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Аукцион
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="selltype" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Конкурс
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="selltype" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Продажа без объявления цены
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="selltype" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Публичное предложение
+                        </span>
+                    </label>
+                </div>
+                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                    <label class="checkbox catalog-filters__radio">
+                        <input type="radio" name="selltype" class="radio__input" />
+                        <span class="radio__checkmark"></span>
+                        <span class="radio__text">
+                            Специализированный аукцион
+                        </span>
+                    </label>
+                </div>
             </div>
         </div>
-        <div class="catalog-filters__form-group">
+        <div class="catalog-filters__form-group catalog-filters__form-group--photo">
             <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
                 <label class="checkbox catalog-filters__checkbox">
                     <input type="checkbox" name="type" class="checkbox__input" checked />
@@ -317,4 +428,22 @@
             Очистить фильтр
         </button>
     </form>
+    <div class="catalog-filters__mobile-btns">
+        <a class="catalog-filters__mobile-btn-save">
+            <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                <use xlink:href="#favourites"></use>
+            </svg>
+            Сохранить
+        </a>
+        <button class="catalog-filters__mobile-btn-submit js-mobile-filters-submit">
+            <span class="catalog-filters__mobile-btn-submit-content">
+                <span class="catalog-filters__mobile-btn-submit-text">
+                    Показать
+                </span>
+                <span class="catalog-filters__mobile-btn-submit-count">
+                    124 лота
+                </span>
+            </span>
+        </button>
+    </div>
 </div>

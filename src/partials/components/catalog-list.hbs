@@ -28,96 +28,103 @@
                 </div>
                 <div class="catalog__layout-main">
                     <div class="catalog__top-block">
-                    <div class="catalog__view-modes">
-                        <div class="catalog__view-sort">
+                        <div class="catalog__view-modes">
+                            <div class="catalog__view-sort">
+                                <div class="custom-select">
+                                    <select name="sort-order" class="js-custom-select">
+                                        <option value="asc" selected>Сначала дешевые</option>
+                                        <option value="dsc">Сначала дорогие</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="catalog__mobile-filters-btn js-mobile-filters-open">
+                                <span class="catalog__mobile-filters-btn-content">
+                                    <svg width="22" height="24" aria-hidden="true" class="icon-mobile-filters">
+                                        <use xlink:href="#mobile-filters"></use>
+                                    </svg>
+                                    Сортировка и фильтры
+                                </span>
+                            </button>
+                            <div class="catalog__view-links">
+                                <a href="#" class="catalog__view-check-on-the-map">
+                                    <span class="catalog__view-check-on-the-map-text">
+                                        Смотреть на карте
+                                    </span>
+                                  
+                                    <svg width="18" height="18" aria-hidden="true" class="icon-map">
+                                        <use xlink:href="#map"></use>
+                                    </svg>
+                                </a>
 
-                            <div class="custom-select">
-                                <select name="sort-order" class="js-custom-select">
-                                    <option value="asc" selected>Сначала дешевые</option>
-                                    <option value="dsc">Сначала дорогие</option>
-
-                                </select>
+                                <div class="catalog__view-mode-toggles">
+                                    <a href="#" class="catalog__view-mode-toggle-link js-grid-view-btn active">
+                                        <svg width="16" height="16" aria-hidden="true" class="icon-grid">
+                                            <use xlink:href="#grid"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="catalog__view-mode-toggle-link js-list-view-btn">
+                                        <svg width="16" height="16" aria-hidden="true" class="icon-list">
+                                            <use xlink:href="#list"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="catalog__view-links">
-                            <a href="#" class="catalog__view-check-on-the-map">
-                                Смотреть на карте
-                                <svg width="18" height="18" aria-hidden="true" class="icon-map">
-                                    <use xlink:href="#map"></use>
+                        <div class="catalog__applied-filters">
+                            <a href="#" class="catalog__applied-filters-link">
+                                Арестованное имущество
+                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
                                 </svg>
                             </a>
-
-                            <div class="catalog__view-mode-toggles">
-                                <a href="#" class="catalog__view-mode-toggle-link js-grid-view-btn active">
-                                    <svg width="16" height="16" aria-hidden="true" class="icon-grid">
-                                        <use xlink:href="#grid"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="catalog__view-mode-toggle-link js-list-view-btn">
-                                    <svg width="16" height="16" aria-hidden="true" class="icon-list">
-                                        <use xlink:href="#list"></use>
-                                    </svg>
-                                </a>
-                            </div>
+                            <a href="#" class="catalog__applied-filters-link">
+                                До 500 000
+                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="catalog__applied-filters-link">
+                                Только с фото
+                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="catalog__applied-filters-save-search">
+                                <svg width="12" height="12" aria-hidden="true" class="icon-favourites">
+                                    <use xlink:href="#favourites"></use>
+                                </svg>
+                                Сохранить поиск
+                            </a>
+                            <a href="#" class="catalog__applied-filters-save-clear">
+                                Очистить фильтр
+                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
-                    <div class="catalog__applied-filters">
-                        <a href="#" class="catalog__applied-filters-link">
-                            Арестованное имущество
-                            <svg width="8" height="8" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="catalog__applied-filters-link">
-                            До 500 000
-                            <svg width="8" height="8" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="catalog__applied-filters-link">
-                            Только с фото
-                            <svg width="8" height="8" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="catalog__applied-filters-save-search">
-                            <svg width="12" height="12" aria-hidden="true" class="icon-favourites">
-                                <use xlink:href="#favourites"></use>
-                            </svg>
-                            Сохранить поиск
-                        </a>
-                        <a href="#" class="catalog__applied-filters-save-clear">
-                            Очистить фильтр
-                            <svg width="8" height="8" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
-                        </a>
-                    </div>
                     </div>
                     <div class="catalog__lots">
                         <ul class="catalog__lots-list">
-
                             {{#each lots }}
                             <li class="catalog__lots-list-item">
                                 {{#unless this.specialCard}}
-                                <div class="lot-card" style="--lot-progress: {{this.progress}};"
-                                    ie-style="--lot-progress: {{this.progress}};">
+                                <div class="lot-card" style="--lot-progress: {{ this.progress }};" ie-style="--lot-progress: {{ this.progress }};">
                                     <div class="lot-card__image-container">
                                         <a href="#" class="lot-card__image-link">
-                                            <img src="{{this.image}}" alt="" class="lot-card__image">
+                                            <img src="{{ this.image }}" alt="" class="lot-card__image" />
                                         </a>
 
                                         <div class="lot-card__indicators">
                                             <div class="lot-card__indicators-top-row">
                                                 {{#if this.newLot}}
                                                 <div class="lot-card__indicators-new-lot">
-                                                    Новый<br>
+                                                    Новый<br />
                                                     лот
                                                 </div>
                                                 {{/if}}
                                                 {{#if this.bestPrice}}
                                                 <div class="lot-card__indicators-best-price">
-                                                    Лучшая<br>
+                                                    Лучшая<br />
                                                     цена
                                                 </div>
                                                 {{/if}}
@@ -131,17 +138,28 @@
                                             <div class="lot-card__indicators-bottom-row">
                                                 <div class="lot-card__remaining-time">
                                                     <div class="lot-card__remaining-time-progress-circle">
-                                                        <svg width="200" height="200" viewBox="0 0 200 200"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <circle cy="100" cx="100" r="80" fill="transparent"
-                                                                stroke="white" stroke-opacity="0.3" stroke-width="20">
-                                                            </circle>
-                                                            <circle cy="100" cx="100" r="80" fill="transparent"
-                                                                stroke="white" stroke-width="20" stroke-dasharray="500">
-                                                            </circle>
+                                                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle
+                                                                cy="100"
+                                                                cx="100"
+                                                                r="80"
+                                                                fill="transparent"
+                                                                stroke="white"
+                                                                stroke-opacity="0.3"
+                                                                stroke-width="20"
+                                                            ></circle>
+                                                            <circle
+                                                                cy="100"
+                                                                cx="100"
+                                                                r="80"
+                                                                fill="transparent"
+                                                                stroke="white"
+                                                                stroke-width="20"
+                                                                stroke-dasharray="500"
+                                                            ></circle>
                                                         </svg>
                                                     </div>
-                                                    {{this.progressText}}
+                                                    {{ this.progressText }}
                                                 </div>
                                             </div>
                                         </div>
@@ -150,13 +168,9 @@
                                         <div class="lot-card__price-block">
                                             {{#unless this.sold}}
                                             <div class="lot-card__price-wrapper">
-                                                <div class="lot-card__new-price">
-                                                    {{this.newPrice}} ₽
-                                                </div>
-                                                <div
-                                                    class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
-                                                    <svg width="10" height="6" aria-hidden="true"
-                                                        class="icon-down-trend">
+                                                <div class="lot-card__new-price">{{ this.newPrice }} ₽</div>
+                                                <div class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
+                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
                                                         <use xlink:href="#down-trend"></use>
                                                     </svg>
                                                 </div>
@@ -165,9 +179,7 @@
                                                 Банкротные торги
                                             </div>
                                             {{#if this.oldPrice}}
-                                            <div class="lot-card__old-price">
-                                                {{this.oldPrice}} ₽
-                                            </div>
+                                            <div class="lot-card__old-price">{{ this.oldPrice }} ₽</div>
                                             {{/if}}
                                             <div class="lot-card__old-price-text">
                                                 минимальная цена
@@ -179,27 +191,24 @@
                                                 Продано
                                             </div>
                                             {{/if}}
-
                                         </div>
                                         <div class="lot-card__title-wrapper">
                                             <h3 class="lot-card__title">
                                                 <a href="#">
-                                                    {{this.title}}
+                                                    {{ this.title }}
                                                 </a>
-
                                             </h3>
 
                                             {{#if this.type}}
                                             <div class="lot-card__type">
-                                                {{this.type}}
+                                                {{ this.type }}
                                             </div>
                                             {{/if}}
-
 
                                             <div class="lot-card__bottom-links">
                                                 {{#if this.partner}}
                                                 <a href="#" class="lot-card__partner">
-                                                    <img src="{{this.partner}}" alt="" class="lot-card__partner-image">
+                                                    <img src="{{ this.partner }}" alt="" class="lot-card__partner-image" />
                                                 </a>
                                                 {{/if}}
 
@@ -211,17 +220,16 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 {{/unless}}
                                 {{#if this.specialCard}}
                                 <a href="#" class="lot-special-card">
-                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image">
+                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image" />
                                     <h3 class="lot-special-card__title">
                                         <strong>
-                                            {{this.specialCardNumber}}
+                                            {{ this.specialCardNumber }}
                                         </strong>
-                                        {{this.specialCardText}}
+                                        {{ this.specialCardText }}
                                     </h3>
                                 </a>
                                 {{/if}}
@@ -239,12 +247,16 @@
                                     </div>
                                     <form action="/" method="POST" class="catalog__dont-miss-form">
                                         <div class="catalog__dont-miss-form-input-wrapper">
-                                            <input type="email" name="email" class="catalog__dont-miss-form-input"
-                                                required placeholder="Введите ваш email">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                class="catalog__dont-miss-form-input"
+                                                required
+                                                placeholder="Введите ваш email"
+                                            />
                                         </div>
                                         <button type="submit" class="catalog__dont-miss-form-submit">
-                                            <svg width="18" height="14" aria-hidden="true"
-                                                class="icon-arrow-right-long">
+                                            <svg width="18" height="14" aria-hidden="true" class="icon-arrow-right-long">
                                                 <use xlink:href="#arrow-right-long"></use>
                                             </svg>
                                         </button>
@@ -255,24 +267,23 @@
                             {{#each lots }}
                             <li class="catalog__lots-list-item">
                                 {{#unless this.specialCard}}
-                                <div class="lot-card" style="--lot-progress: {{this.progress}};"
-                                    ie-style="--lot-progress: {{this.progress}};">
+                                <div class="lot-card" style="--lot-progress: {{ this.progress }};" ie-style="--lot-progress: {{ this.progress }};">
                                     <div class="lot-card__image-container">
                                         <a href="#" class="lot-card__image-link">
-                                            <img src="{{this.image}}" alt="" class="lot-card__image">
+                                            <img src="{{ this.image }}" alt="" class="lot-card__image" />
                                         </a>
 
                                         <div class="lot-card__indicators">
                                             <div class="lot-card__indicators-top-row">
                                                 {{#if this.newLot}}
                                                 <div class="lot-card__indicators-new-lot">
-                                                    Новый<br>
+                                                    Новый<br />
                                                     лот
                                                 </div>
                                                 {{/if}}
                                                 {{#if this.bestPrice}}
                                                 <div class="lot-card__indicators-best-price">
-                                                    Лучшая<br>
+                                                    Лучшая<br />
                                                     цена
                                                 </div>
                                                 {{/if}}
@@ -286,17 +297,28 @@
                                             <div class="lot-card__indicators-bottom-row">
                                                 <div class="lot-card__remaining-time">
                                                     <div class="lot-card__remaining-time-progress-circle">
-                                                        <svg width="200" height="200" viewBox="0 0 200 200"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <circle cy="100" cx="100" r="80" fill="transparent"
-                                                                stroke="white" stroke-opacity="0.3" stroke-width="20">
-                                                            </circle>
-                                                            <circle cy="100" cx="100" r="80" fill="transparent"
-                                                                stroke="white" stroke-width="20" stroke-dasharray="500">
-                                                            </circle>
+                                                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle
+                                                                cy="100"
+                                                                cx="100"
+                                                                r="80"
+                                                                fill="transparent"
+                                                                stroke="white"
+                                                                stroke-opacity="0.3"
+                                                                stroke-width="20"
+                                                            ></circle>
+                                                            <circle
+                                                                cy="100"
+                                                                cx="100"
+                                                                r="80"
+                                                                fill="transparent"
+                                                                stroke="white"
+                                                                stroke-width="20"
+                                                                stroke-dasharray="500"
+                                                            ></circle>
                                                         </svg>
                                                     </div>
-                                                    {{this.progressText}}
+                                                    {{ this.progressText }}
                                                 </div>
                                             </div>
                                         </div>
@@ -305,13 +327,9 @@
                                         <div class="lot-card__price-block">
                                             {{#unless this.sold}}
                                             <div class="lot-card__price-wrapper">
-                                                <div class="lot-card__new-price">
-                                                    {{this.newPrice}} ₽
-                                                </div>
-                                                <div
-                                                    class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
-                                                    <svg width="10" height="6" aria-hidden="true"
-                                                        class="icon-down-trend">
+                                                <div class="lot-card__new-price">{{ this.newPrice }} ₽</div>
+                                                <div class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
+                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
                                                         <use xlink:href="#down-trend"></use>
                                                     </svg>
                                                 </div>
@@ -320,9 +338,7 @@
                                                 Банкротные торги
                                             </div>
                                             {{#if this.oldPrice}}
-                                            <div class="lot-card__old-price">
-                                                {{this.oldPrice}} ₽
-                                            </div>
+                                            <div class="lot-card__old-price">{{ this.oldPrice }} ₽</div>
                                             {{/if}}
                                             <div class="lot-card__old-price-text">
                                                 минимальная цена
@@ -334,27 +350,24 @@
                                                 Продано
                                             </div>
                                             {{/if}}
-
                                         </div>
                                         <div class="lot-card__title-wrapper">
                                             <h3 class="lot-card__title">
                                                 <a href="#">
-                                                    {{this.title}}
+                                                    {{ this.title }}
                                                 </a>
-
                                             </h3>
 
                                             {{#if this.type}}
                                             <div class="lot-card__type">
-                                                {{this.type}}
+                                                {{ this.type }}
                                             </div>
                                             {{/if}}
-
 
                                             <div class="lot-card__bottom-links">
                                                 {{#if this.partner}}
                                                 <a href="#" class="lot-card__partner">
-                                                    <img src="{{this.partner}}" alt="" class="lot-card__partner-image">
+                                                    <img src="{{ this.partner }}" alt="" class="lot-card__partner-image" />
                                                 </a>
                                                 {{/if}}
 
@@ -366,23 +379,21 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 {{/unless}}
                                 {{#if this.specialCard}}
                                 <a href="#" class="lot-special-card">
-                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image">
+                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image" />
                                     <h3 class="lot-special-card__title">
                                         <strong>
-                                            {{this.specialCardNumber}}
+                                            {{ this.specialCardNumber }}
                                         </strong>
-                                        {{this.specialCardText}}
+                                        {{ this.specialCardText }}
                                     </h3>
                                 </a>
                                 {{/if}}
                             </li>
                             {{/each}}
-
                         </ul>
 
                         <div class="catalog__lots-bottom-nav">
@@ -414,9 +425,7 @@
                                 Показать еще
                             </a>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

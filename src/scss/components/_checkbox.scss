@@ -19,7 +19,7 @@
     position: relative;
     cursor: pointer;
     svg {
-        width: 1.4rem;
+        width: 1.45rem;
         height: 1.1rem;
         fill: white;
         transition: opacity .2s;
@@ -28,6 +28,17 @@
         top: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
+        @include breakpoint(mobile) {
+            width: 14.5px;
+            height: 11px;
+        }
+    }
+
+
+    @include breakpoint(mobile) {
+        width: 24px;
+        height: 24px;
+        border: 2px solid #d1dae6;
     }
 }
 
