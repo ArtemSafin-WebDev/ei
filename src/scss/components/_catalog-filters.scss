@@ -148,9 +148,13 @@
 }
 
 .catalog-filters__nav-subcategories-list {
-    max-height: 0;
-    transition: max-height 0.4s;
-    overflow: hidden;
+   
+
+    @include breakpoint(mobile) {
+        max-height: 0;
+        transition: max-height 0.4s;
+        overflow: hidden;
+    }
 }
 
 .catalog-filters__nav-subcategories-list-item {
@@ -522,6 +526,10 @@
 .catalog-filters__mobile-region {
     padding-top: 1.8rem;
     padding-bottom: 2px;
+    display: none;
+    @include breakpoint(mobile) {
+        display: block;
+    }
     .choices__list--dropdown.is-active {
         position: static;
     }

@@ -4118,11 +4118,12 @@ select:-webkit-autofill:focus {
         margin-left: 1rem;
         border-radius: 50%; } }
 
-.catalog-filters__nav-subcategories-list {
-  max-height: 0;
-  -webkit-transition: max-height 0.4s;
-  transition: max-height 0.4s;
-  overflow: hidden; }
+@media only screen and (max-width: 767px) {
+  .catalog-filters__nav-subcategories-list {
+    max-height: 0;
+    -webkit-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+    overflow: hidden; } }
 
 .catalog-filters__nav-subcategories-list-item {
   margin-bottom: 1.6rem; }
@@ -4469,7 +4470,11 @@ select:-webkit-autofill:focus {
 
 .catalog-filters__mobile-region {
   padding-top: 1.8rem;
-  padding-bottom: 2px; }
+  padding-bottom: 2px;
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .catalog-filters__mobile-region {
+      display: block; } }
   .catalog-filters__mobile-region .choices__list--dropdown.is-active {
     position: static; }
   .catalog-filters__mobile-region .choices {
