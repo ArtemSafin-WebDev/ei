@@ -1,7 +1,6 @@
 export default function clearInput() {
     const clearInputBtns = Array.from(document.querySelectorAll('.js-clear-input'));
 
-
     clearInputBtns.forEach(btn => {
         const input = btn.parentElement.querySelector('input');
 
@@ -11,7 +10,11 @@ export default function clearInput() {
         } else {
             btn.addEventListener('click', () => {
                 input.value = '';
-            })
+                const inputEvent = new Event('input');
+                input.dispatchEvent(inputEvent);
+                const changeEvent = new Event('change');
+                input.dispatchEvent(changeEvent);
+            });
         }
-    })
+    });
 }

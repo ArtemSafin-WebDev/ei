@@ -148,7 +148,7 @@
 }
 
 .catalog-filters__nav-subcategories-list {
-   
+
 
     @include breakpoint(mobile) {
         max-height: 0;
@@ -245,6 +245,8 @@
         font-weight: 400;
         padding-left: 2.5rem;
         position: relative;
+        display: flex;
+        align-items: center;
         &::before {
             content: '';
             left: 0;
@@ -259,7 +261,25 @@
             background-repeat: no-repeat;
             transition: transform 0.3s;
         }
+
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background-color: var(--primary-color);
+            flex-shrink: 0;
+            margin-left: 1rem;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity .2s;
+            pointer-events: none;
+        }
     }
+}
+
+
+.catalog-filters__form-group.changed .catalog-filters__form-group-heading::after {
+    opacity: 1;
 }
 
 .catalog-filters__form-price-range {
@@ -269,6 +289,7 @@
 
     @include breakpoint(mobile) {
         margin-top: 1.5rem;
+        padding-bottom: 2px;
     }
 }
 
@@ -447,6 +468,31 @@
 
 .catalog-filters__results-btn-wrapper {
     position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0.45rem;
+        transition: opacity 0.2s;
+        pointer-events: none;
+        opacity: 0;
+        position: absolute;
+        @include breakpoint(mobile) {
+            left: 1.1rem;
+            left: 0.8rem;
+        }
+    }
+    &.changed {
+
+        &::after {
+            opacity: 1;
+        }
+    }
 }
 
 
@@ -572,7 +618,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 1.2;
-            color: var(--primary-color);
+            color: #d1dae6;
         }
     }
 
@@ -630,7 +676,7 @@
     .choices__list--dropdown .choices__item--selectable.is-highlighted {
 
         background-color: white;
-        color: var(--primary-color);
+        color: var(--text-color);
 
     }
 }
@@ -660,11 +706,19 @@
     border: 2px solid #D1DAE6;
     border-radius: 0.9rem;
     background-color: #fff;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    user-select: none;
     svg {
         width: 1.6rem;
         height: 1.6rem;
         flex-shrink: 0;
         margin-right: 0.6rem;
+    }
+
+    &:hover {
+        border-color: var(--text-color);
+        background-color: var(--text-color);
+        color: white;
     }
 }
 
@@ -678,6 +732,7 @@
     border-radius: 1rem;
     padding: 0 1.5rem;
     display: block;
+    user-select: none;
 }
 
 .catalog-filters__mobile-btn-submit-content {
