@@ -14,6 +14,8 @@ import showMore from './showMore';
 import customSelects from './customSelects';
 import catalogViews from './catalogViews';
 import catalogFilters from './catalogFilters';
+import catalogGallery from './catalogGallery';
+import catalogAccordions from './catalogAccordions';
 
 
 
@@ -34,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
     customSelects();
     catalogViews();
     catalogFilters();
+    catalogGallery();
+    catalogAccordions();
 });
 
 window.addEventListener('load', function() {

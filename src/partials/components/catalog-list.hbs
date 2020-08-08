@@ -50,7 +50,7 @@
                                     <span class="catalog__view-check-on-the-map-text">
                                         Смотреть на карте
                                     </span>
-                                  
+
                                     <svg width="18" height="18" aria-hidden="true" class="icon-map">
                                         <use xlink:href="#map"></use>
                                     </svg>
@@ -108,7 +108,8 @@
                             {{#each lots }}
                             <li class="catalog__lots-list-item">
                                 {{#unless this.specialCard}}
-                                <div class="lot-card" style="--lot-progress: {{ this.progress }};" ie-style="--lot-progress: {{ this.progress }};">
+                                <div class="lot-card" style="--lot-progress: {{ this.progress }};"
+                                    ie-style="--lot-progress: {{ this.progress }};">
                                     <div class="lot-card__image-container">
                                         <a href="#" class="lot-card__image-link">
                                             <img src="{{ this.image }}" alt="" class="lot-card__image" />
@@ -138,25 +139,14 @@
                                             <div class="lot-card__indicators-bottom-row">
                                                 <div class="lot-card__remaining-time">
                                                     <div class="lot-card__remaining-time-progress-circle">
-                                                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                                            <circle
-                                                                cy="100"
-                                                                cx="100"
-                                                                r="80"
-                                                                fill="transparent"
-                                                                stroke="white"
-                                                                stroke-opacity="0.3"
-                                                                stroke-width="20"
-                                                            ></circle>
-                                                            <circle
-                                                                cy="100"
-                                                                cx="100"
-                                                                r="80"
-                                                                fill="transparent"
-                                                                stroke="white"
-                                                                stroke-width="20"
-                                                                stroke-dasharray="500"
-                                                            ></circle>
+                                                        <svg width="200" height="200" viewBox="0 0 200 200"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cy="100" cx="100" r="80" fill="transparent"
+                                                                stroke="white" stroke-opacity="0.3" stroke-width="20">
+                                                            </circle>
+                                                            <circle cy="100" cx="100" r="80" fill="transparent"
+                                                                stroke="white" stroke-width="20" stroke-dasharray="500">
+                                                            </circle>
                                                         </svg>
                                                     </div>
                                                     {{ this.progressText }}
@@ -169,8 +159,10 @@
                                             {{#unless this.sold}}
                                             <div class="lot-card__price-wrapper">
                                                 <div class="lot-card__new-price">{{ this.newPrice }} ₽</div>
-                                                <div class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
-                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                <div
+                                                    class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
+                                                    <svg width="10" height="6" aria-hidden="true"
+                                                        class="icon-down-trend">
                                                         <use xlink:href="#down-trend"></use>
                                                     </svg>
                                                 </div>
@@ -208,7 +200,8 @@
                                             <div class="lot-card__bottom-links">
                                                 {{#if this.partner}}
                                                 <a href="#" class="lot-card__partner">
-                                                    <img src="{{ this.partner }}" alt="" class="lot-card__partner-image" />
+                                                    <img src="{{ this.partner }}" alt=""
+                                                        class="lot-card__partner-image" />
                                                 </a>
                                                 {{/if}}
 
@@ -247,16 +240,12 @@
                                     </div>
                                     <form action="/" method="POST" class="catalog__dont-miss-form">
                                         <div class="catalog__dont-miss-form-input-wrapper">
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                class="catalog__dont-miss-form-input"
-                                                required
-                                                placeholder="Введите ваш email"
-                                            />
+                                            <input type="email" name="email" class="catalog__dont-miss-form-input"
+                                                required placeholder="Введите ваш email" />
                                         </div>
                                         <button type="submit" class="catalog__dont-miss-form-submit">
-                                            <svg width="18" height="14" aria-hidden="true" class="icon-arrow-right-long">
+                                            <svg width="18" height="14" aria-hidden="true"
+                                                class="icon-arrow-right-long">
                                                 <use xlink:href="#arrow-right-long"></use>
                                             </svg>
                                         </button>
@@ -267,7 +256,8 @@
                             {{#each lots }}
                             <li class="catalog__lots-list-item">
                                 {{#unless this.specialCard}}
-                                <div class="lot-card" style="--lot-progress: {{ this.progress }};" ie-style="--lot-progress: {{ this.progress }};">
+                                <div class="lot-card" style="--lot-progress: {{ this.progress }};"
+                                    ie-style="--lot-progress: {{ this.progress }};">
                                     <div class="lot-card__image-container">
                                         <a href="#" class="lot-card__image-link">
                                             <img src="{{ this.image }}" alt="" class="lot-card__image" />
@@ -297,25 +287,14 @@
                                             <div class="lot-card__indicators-bottom-row">
                                                 <div class="lot-card__remaining-time">
                                                     <div class="lot-card__remaining-time-progress-circle">
-                                                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                                            <circle
-                                                                cy="100"
-                                                                cx="100"
-                                                                r="80"
-                                                                fill="transparent"
-                                                                stroke="white"
-                                                                stroke-opacity="0.3"
-                                                                stroke-width="20"
-                                                            ></circle>
-                                                            <circle
-                                                                cy="100"
-                                                                cx="100"
-                                                                r="80"
-                                                                fill="transparent"
-                                                                stroke="white"
-                                                                stroke-width="20"
-                                                                stroke-dasharray="500"
-                                                            ></circle>
+                                                        <svg width="200" height="200" viewBox="0 0 200 200"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cy="100" cx="100" r="80" fill="transparent"
+                                                                stroke="white" stroke-opacity="0.3" stroke-width="20">
+                                                            </circle>
+                                                            <circle cy="100" cx="100" r="80" fill="transparent"
+                                                                stroke="white" stroke-width="20" stroke-dasharray="500">
+                                                            </circle>
                                                         </svg>
                                                     </div>
                                                     {{ this.progressText }}
@@ -328,8 +307,10 @@
                                             {{#unless this.sold}}
                                             <div class="lot-card__price-wrapper">
                                                 <div class="lot-card__new-price">{{ this.newPrice }} ₽</div>
-                                                <div class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
-                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                <div
+                                                    class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
+                                                    <svg width="10" height="6" aria-hidden="true"
+                                                        class="icon-down-trend">
                                                         <use xlink:href="#down-trend"></use>
                                                     </svg>
                                                 </div>
@@ -367,7 +348,8 @@
                                             <div class="lot-card__bottom-links">
                                                 {{#if this.partner}}
                                                 <a href="#" class="lot-card__partner">
-                                                    <img src="{{ this.partner }}" alt="" class="lot-card__partner-image" />
+                                                    <img src="{{ this.partner }}" alt=""
+                                                        class="lot-card__partner-image" />
                                                 </a>
                                                 {{/if}}
 

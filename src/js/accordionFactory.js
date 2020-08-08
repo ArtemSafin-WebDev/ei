@@ -33,7 +33,7 @@ function closeAccordeon(element) {
     ScrollTrigger.refresh(true);
 }
 
-export default function(accordionElements) {
+export default function(accordionElements, openFirst = false) {
     const accordionInstances = [];
     let initialized = false;
 
@@ -76,6 +76,10 @@ export default function(accordionElements) {
                 element
             });
         });
+
+        if (openFirst && accordionInstances.length) {
+            accordionInstances[0].btn.click();
+        }
 
         initialized = true;
     }

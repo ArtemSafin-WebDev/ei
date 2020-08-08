@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script>
+            window.MSInputMethodContext && document.documentMode && document.write('<script src="assets/js/ie11CustomProperties.js"><\x2fscript>');
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/styles.min.css" />
+        <title>
+            Каталог - Детальная страница
+        </title>
+    </head>
+
+    <body class="no-touch  white-bg " ontouchstart="">
+        <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <symbol viewBox="0 0 12 7.42" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41 0L6 4.59 10.59 0 12 1.42l-6 6-6-6z" />
+                </symbol>
+                <symbol viewBox="0 0 9.88 16" id="arrow-left" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.88 1.89L3.77 8l6.11 6.12L8 16 0 8l8-8z" />
+                </symbol>
+                <symbol viewBox="0 0 7.41 12" id="arrow-right" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10.58L4.58 6 0 1.41 1.41 0l6 6-6 6z" />
+                </symbol>
+                <symbol viewBox="0 0 24 16.88" id="arrow-right-long" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.16.25a.86.86 0 00-1.16 0 .85.85 0 000 1.2l6.13 6.13H.85a.86.86 0 000 1.71h20.23L15 15.41a.86.86 0 000 1.21.85.85 0 001.21 0L23.75 9a.85.85 0 000-1.2z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 4.56 8" id="arrow-right-rounded" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.4 4.4L1 7.84a.59.59 0 01-.8 0 .59.59 0 010-.8L3.21 4l-3-3a.59.59 0 010-.8.59.59 0 01.8 0L4.4 3.6a.58.58 0 010 .8z" />
+                </symbol>
+                <symbol viewBox="0 0 20 26" id="bell" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 0a2 2 0 00-2 2 1.9 1.9 0 000 .25A8 8 0 002 10v9a1 1 0 01-1 1H0v2h7.19A2.82 2.82 0 007 23a3 3 0 006 0 2.82 2.82 0 00-.19-1H20v-2h-1a1 1 0 01-1-1v-8.72a8.28 8.28 0 00-6-8A1.9 1.9 0 0012 2a2 2 0 00-2-2zm-.44 4h.63A6.19 6.19 0 0116 10.28V19a2.82 2.82 0 00.19 1H3.81A2.82 2.82 0 004 19v-9a6 6 0 015.56-6zM10 22a1 1 0 11-1 1 1 1 0 011-1z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 14.58 11.17" id="checkmark" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.58 1.18l-10 10L0 6.59l1.18-1.17 3.4 3.4L13.41 0z" />
+                </symbol>
+                <symbol viewBox="0 0 12.77 12.77" id="cross" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.9 0L0 .9l5.49 5.49L0 11.88l.9.89 5.49-5.48 5.49 5.48.89-.89-5.48-5.49L12.77.9l-.89-.9-5.49 5.49z" />
+                </symbol>
+                <symbol viewBox="0 0 11.25 14.63" id="doc" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0v14.63h11.25V3.71l-.16-.18L7.72.16 7.54 0zm1.13 1.13h5.62V4.5h3.38v9h-9zm6.75.8l1.44 1.45H7.88zm-5.07 3.7v1.12h5.63V5.63zm0 2.25V9h5.63V7.88zm0 2.25v1.12h5.63v-1.12z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 10.67 5.33" id="down-trend" xmlns="http://www.w3.org/2000/svg"><path d="M0 0l5.33 5.33L10.67 0z" /></symbol>
+                <symbol viewBox="0 0 10 20" id="facebook" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0v4H8c-.69 0-1 .81-1 1.5V8h3v4H7v8H3v-8H0V8h3V4a4 4 0 014-4z" />
+                </symbol>
+                <symbol id="favourites" viewBox="0 0 27 25.72" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .alcls-1 {
+                                fill-rule: evenodd;
+                            }
+                        </style>
+                    </defs>
+                    <path
+                        class="alcls-1"
+                        d="M8.81 2.09a8 8 0 108 12.17l1.43 1.44c-.14.21-.3.41-.46.61l8 8-1.44 1.44-8-8A10 10 0 119.43 0a7.53 7.53 0 00-.62 2.09z"
+                    />
+                    <path
+                        class="alcls-1"
+                        d="M13.37 7.11l5.4 5.42.71.71.71-.71 5.4-5.41h.05l.15-.17a4.9 4.9 0 00.48-.58A3.81 3.81 0 0027 4.25 4.27 4.27 0 0022.75 0a4.92 4.92 0 00-3.25 1.28A4.92 4.92 0 0016.25 0 4.27 4.27 0 0012 4.25a3.76 3.76 0 00.71 2.06 5.11 5.11 0 00.46.59l.16.17zm6.13-3l.74-.84a1.23 1.23 0 01.16-.15 5.87 5.87 0 01.6-.48A3.27 3.27 0 0122.75 2 2.26 2.26 0 0125 4.25a1 1 0 01-.11.41 2.84 2.84 0 01-.28.51c-.1.16-.21.3-.29.41l-.1.11-4.7 4.7-4.73-4.68a.46.46 0 01-.1-.1 2.84 2.84 0 01-.29-.38 2 2 0 01-.4-.98A2.26 2.26 0 0116.25 2a3.27 3.27 0 011.75.64 5.87 5.87 0 01.58.46 1.23 1.23 0 01.16.15z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 16 16" id="grid" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h7v7H0zM0 9h7v7H0zM9 0h7v7H9zM9 9h7v7H9z" />
+                </symbol>
+                <symbol viewBox="0 0 28 24.09" id="heart" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.5 0A7.53 7.53 0 000 7.5a6.49 6.49 0 001.25 3.56 8.87 8.87 0 001.22 1.47l10.81 10.85.72.71.72-.71 10.81-10.85S28 10.36 28 7.5A7.53 7.53 0 0020.5 0 9.14 9.14 0 0014 2.94 9.14 9.14 0 007.5 0zm0 2c3 0 5.75 2.91 5.75 2.91l.75.84.75-.84S17.51 2 20.5 2A5.52 5.52 0 0126 7.5c0 1.54-1.87 3.63-1.87 3.63L14 21.25 3.88 11.13a7.83 7.83 0 01-1-1.19A4.86 4.86 0 012 7.5 5.52 5.52 0 017.5 2z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 20 20" id="instagram" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.8 0h8.4A5.8 5.8 0 0120 5.8v8.4a5.8 5.8 0 01-5.8 5.8H5.8A5.8 5.8 0 010 14.2V5.8A5.8 5.8 0 015.8 0zm-.2 2A3.6 3.6 0 002 5.6v8.8A3.6 3.6 0 005.6 18h8.8a3.6 3.6 0 003.6-3.6V5.6A3.6 3.6 0 0014.4 2zm9.65 1.5A1.25 1.25 0 1114 4.75a1.25 1.25 0 011.25-1.25zM10 5a5 5 0 11-5 5 5 5 0 015-5zm0 2a3 3 0 103 3 3 3 0 00-3-3z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 17 16" id="list" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h4v4H0zM0 6h4v4H0zM0 12h4v4H0zM6 0h11v4H6zM6 6h11v4H6zM6 12h11v4H6z" />
+                </symbol>
+                <symbol viewBox="0 0 13.1 15.44" id="lock" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.55 0A4.41 4.41 0 002 4.16v1.78H0v9.5h13.1v-9.5h-2V4.16A4.4 4.4 0 006.55 0zm0 1.19a3.13 3.13 0 013.27 3v1.75H3.27V4.16a3.14 3.14 0 013.28-2.97zM1.31 7.13h10.48v7.12H1.31z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 18 18.4" id="map" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.5 0A4.51 4.51 0 009 4.5a6 6 0 00.66 2.34A25.77 25.77 0 0011 9.4c.95 1.64 1.92 3 1.92 3l.61.89.61-.89s1-1.38 1.92-3a25.77 25.77 0 001.31-2.56A6 6 0 0018 4.5 4.51 4.51 0 0013.5 0zM6 1.45L0 4v14.4l6-2.6 6 2.25 6-2.56V9c-.48.92-1 1.8-1.5 2.58v3l-3.75 1.52v-1.22l-1.1-1.59c-.12-.17-.26-.37-.4-.59v3.47l-4.5-1.69V3.33l.82.3A6 6 0 018 2.18zm7.52.05a3 3 0 013 3A5.39 5.39 0 0116 6.23a25.63 25.63 0 01-1.26 2.42c-.61 1-.88 1.43-1.22 1.94-.34-.51-.61-.89-1.22-1.94A25.63 25.63 0 0111 6.23a5.39 5.39 0 01-.5-1.73 3 3 0 013-3zM5.25 3.38v11.13L1.5 16.1V5zm8.25 0a1.13 1.13 0 000 2.25 1.13 1.13 0 100-2.25z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 22 24" id="mobile-filters" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 0v2.34l.22.28L8 12.34V24l1.59-1.19 4-3 .41-.31v-7.16l7.78-9.72.22-.28V0zm2.28 2h17.44l-7.19 9H9.47zM10 13h2v5.5L10 20z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"
+                    />
+                    <path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z" />
+                </symbol>
+                <symbol viewBox="0 0 22.79 22.79" id="pencil" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.93 0a3.84 3.84 0 00-2.73 1.14L1.38 16l-.06.29-1 5.16L0 22.79l1.38-.29 5.15-1h.3L21.65 6.59A3.87 3.87 0 0018.93 0zm0 1.79a2 2 0 011.4.67 1.79 1.79 0 010 2.81l-.67.65-2.79-2.79.65-.67a2 2 0 011.41-.67zm-3.37 2.66l2.78 2.79L7 18.57a6.38 6.38 0 00-2.78-2.78zM3 17.31a4.48 4.48 0 012.46 2.47l-3.08.61z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 26 26" id="person" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 0a13 13 0 1013 13A13 13 0 0013 0zm0 2A11 11 0 112 13 11 11 0 0113 2zm0 3a5 5 0 00-3.22 8.78A7 7 0 006 20h2a5 5 0 0110 0h2a7 7 0 00-3.78-6.22A5 5 0 0013 5zm0 2a3 3 0 11-3 3 3 3 0 013-3z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 15.13 15.13" id="plus" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.88 0v6.88H0v1.37h6.88v6.88h1.37V8.25h6.88V6.88H8.25V0z" />
+                </symbol>
+                <symbol viewBox="0 0 10.29 12" id="rub" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.7 7.06v1.25H0v1h1.7V12h1.54V9.29h4.12v-1H3.24V7.06h3c2.61 0 4.08-1.3 4.08-3.55S8.82 0 6.21 0H1.7v5.74H0v1.32zm1.54-1.32V1.32H6c1.82 0 2.73.74 2.73 2.19S7.84 5.74 6 5.74z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 20 20" id="search" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.86 0a7.85 7.85 0 016.26 12.6l5.57 5.57a1.07 1.07 0 01-1.52 1.52l-5.56-5.57A7.86 7.86 0 117.86 0zm0 2.14a5.72 5.72 0 105.71 5.72 5.72 5.72 0 00-5.71-5.72z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"
+                    />
+                </symbol>
+                <symbol viewBox="0 0 10.67 5.33" id="up-trend" xmlns="http://www.w3.org/2000/svg"><path d="M10.67 5.33L5.33 0 0 5.33z" /></symbol>
+                <symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z"
+                        fill-rule="evenodd"
+                    />
+                </symbol>
+            </svg>
+        </div>
+
+        <div class="page-content">
+            <header class="page-header">
+                <div class="container">
+                    <div class="page-header__nav-row">
+                        <nav class="page-header__main-nav">
+                            <ul class="page-header__main-nav-list">
+                                <li class="page-header__main-nav-list-item">
+                                    <a href="registers.html" class="page-header__main-nav-link">
+                                        Реестры
+                                    </a>
+                                </li>
+                                <li class="page-header__main-nav-list-item">
+                                    <a href="services.html" class="page-header__main-nav-link">
+                                        Услуги и тарифы
+                                    </a>
+                                </li>
+                                <li class="page-header__main-nav-list-item">
+                                    <a href="faq.html" class="page-header__main-nav-link">
+                                        Вопросы и ответы
+                                    </a>
+                                </li>
+                                <li class="page-header__main-nav-list-item">
+                                    <a href="about.html" class="page-header__main-nav-link">
+                                        О сервисе
+                                    </a>
+                                </li>
+                                <li class="page-header__main-nav-list-item">
+                                    <a href="articles.html" class="page-header__main-nav-link">
+                                        Полезные статьи
+                                    </a>
+                                </li>
+                                <li class="page-header__main-nav-list-item">
+                                    <a href="partners.html" class="page-header__main-nav-link">
+                                        Партнерам
+                                    </a>
+                                </li>
+                                <li class="page-header__main-nav-list-item">
+                                    <a href="contacts.html" class="page-header__main-nav-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <a href="#" class="page-header__how-to-use-link">
+                            Как пользоваться сервисом
+                        </a>
+                    </div>
+                    <div class="page-header__search-row">
+                        <div class="page-header__burger-header">
+                            <div class="page-header__mobile-menu">
+                                <div class="page-header__mobile-menu-scroll-container">
+                                    <div class="page-header__mobile-menu-content-width">
+                                        <div class="page-header__mobile-menu-user">
+                                            <a href="#" class="page-header__user-link">
+                                                <span class="page-header__user-link-icon-container">
+                                                    <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                        <use xlink:href="#heart"></use>
+                                                    </svg>
+                                                    <span class="page-header__user-link-amount">
+                                                        12
+                                                    </span>
+                                                </span>
+                                                Избранное
+                                            </a>
+                                            <a href="#" class="page-header__user-link">
+                                                <span class="page-header__user-link-icon-container">
+                                                    <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                                                        <use xlink:href="#favourites"></use>
+                                                    </svg>
+                                                </span>
+                                                Сохраненные<br />
+                                                поиски
+                                            </a>
+                                            <a href="#" class="page-header__user-link">
+                                                <span class="page-header__user-link-icon-container">
+                                                    <svg width="28" height="28" aria-hidden="true" class="icon-bell">
+                                                        <use xlink:href="#bell"></use>
+                                                    </svg>
+                                                </span>
+                                                Уведомления
+                                            </a>
+                                        </div>
+                                        <nav class="page-header__mobile-menu-navigation">
+                                            <ul class="page-header__mobile-menu-navigation-list">
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Транспорт и техника
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Недвижимость
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Оборудование
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Сельское хозяйство
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Имущественный комплекс
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Товарно-материальные ценности
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Дебиторская задолженность
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Ценные бумаги, нма, доли в уставных капиталах
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Сырье
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="page-header__mobile-menu-navigation-list-item">
+                                                    <div class="page-header__mobile-menu-navigation-link js-accordion-btn">
+                                                        <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                            <use xlink:href="#arrow-down"></use>
+                                                        </svg>
+                                                        Прочее
+                                                    </div>
+                                                    <div class="page-header__mobile-menu-navigation-dropdown js-accordion-content">
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 1
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 2
+                                                        </a>
+                                                        <a href="#" class="page-header__mobile-menu-navigation-dropdown-link">
+                                                            Пункт 3
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="page-header__mobile-regular-menu">
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Реестры
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Полезные статьи
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Услуги и тарифы
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Партнерам
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Вопросы и ответы
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Контакты
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            О сервисе
+                                        </a>
+                                        <a href="#" class="page-header__mobile-regular-menu-link">
+                                            Как пользоваться сервисом
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="page-header__logo-link">
+                                <img src="img/logo.svg" width="190" alt="Логотип" class="page-header__logo-image" />
+                            </a>
+                            <button class="page-header__mobile-menu-burger">
+                                <span class="page-header__mobile-menu-burger-content">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </button>
+                        </div>
+
+                        <form action="/" method="GET" class="page-header__search-form">
+                            <a href="#" class="page-header__catalog-link">
+                                <span class="page-header__catalog-link-text">
+                                    Каталог
+                                </span>
+
+                                <span class="page-header__catalog-burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                            <input type="search" name="q" class="page-header__search-form-input" placeholder="Поиск по лотам" />
+                            <button type="submit" class="page-header__search-form-submit">
+                                <svg width="20" height="20" aria-hidden="true" class="icon-search">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="page-header__user-links">
+                            <div class="page-header__user-link">
+                                <span class="page-header__user-link-icon-container">
+                                    <svg width="28" height="28" aria-hidden="true" class="icon-person">
+                                        <use xlink:href="#person"></use>
+                                    </svg>
+                                </span>
+                                Профиль
+
+                                <div class="page-header__user-dropdown">
+                                    <div class="page-header__user-account">
+                                        <a href="#" class="page-header__user-account-username">
+                                            <div class="page-header__user-account-username-avatar">
+                                                КК
+                                            </div>
+                                            <div class="page-header__user-account-username-content">
+                                                <div class="page-header__user-account-username-name">
+                                                    Константин<br />
+                                                    Константинопольский
+                                                </div>
+                                                <div class="page-header__user-account-username-email">konstantin@ei.ru</div>
+                                            </div>
+                                        </a>
+                                        <nav class="page-header__user-account-nav">
+                                            <ul class="page-header__user-account-nav-list">
+                                                <li class="page-header__user-account-nav-list-item">
+                                                    <a href="#" class="page-header__user-account-nav-link">
+                                                        Изменить данные
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__user-account-nav-list-item">
+                                                    <a href="#" class="page-header__user-account-nav-link">
+                                                        Мои заказы
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__user-account-nav-list-item">
+                                                    <a href="#" class="page-header__user-account-nav-link">
+                                                        Избранное
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__user-account-nav-list-item">
+                                                    <a href="#" class="page-header__user-account-nav-link">
+                                                        Сохраненные поиски
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__user-account-nav-list-item">
+                                                    <a href="#" class="page-header__user-account-nav-link">
+                                                        Уведомления
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__user-account-nav-list-item">
+                                                    <a href="#" class="page-header__user-account-nav-link page-header__user-account-nav-link--red">
+                                                        Выйти
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <a href="#" class="page-header__user-account-username">
+                                            <div class="page-header__user-account-username-avatar page-header__user-account-username-avatar--violet">
+                                                ВК
+                                            </div>
+                                            <div class="page-header__user-account-username-content">
+                                                <div class="page-header__user-account-username-name">
+                                                    Владимир<br />
+                                                    Константинопольский
+                                                </div>
+                                                <div class="page-header__user-account-username-email">konstantin@ei.ru</div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="page-header__user-account-add-link">
+                                            <span class="page-header__user-account-add-link-plus">
+                                                <svg width="15" height="15" aria-hidden="true" class="icon-plus">
+                                                    <use xlink:href="#plus"></use>
+                                                </svg>
+                                            </span>
+                                            Добавить аккаунт
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="page-header__user-link">
+                                <span class="page-header__user-link-icon-container">
+                                    <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                        <use xlink:href="#heart"></use>
+                                    </svg>
+                                    <span class="page-header__user-link-amount">
+                                        12
+                                    </span>
+                                </span>
+                                Избранное
+                            </a>
+                            <a href="#" class="page-header__user-link">
+                                <span class="page-header__user-link-icon-container">
+                                    <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                                        <use xlink:href="#favourites"></use>
+                                    </svg>
+                                </span>
+                                Сохраненные<br />
+                                поиски
+                            </a>
+                            <a href="#" class="page-header__user-link">
+                                <span class="page-header__user-link-icon-container">
+                                    <svg width="28" height="28" aria-hidden="true" class="icon-bell">
+                                        <use xlink:href="#bell"></use>
+                                    </svg>
+                                </span>
+                                Уведомления
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page-main">
+                <section class="catalog-detail">
+                    <div class="container">
+                        <div class="inner-container">
+                            <div class="breadcrumbs">
+                                <a href="#" class="breadcrumbs__link">
+                                    Главная
+                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
+                                        <use xlink:href="#arrow-right-rounded"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="breadcrumbs__link">
+                                    Недвижимость
+                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
+                                        <use xlink:href="#arrow-right-rounded"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="breadcrumbs__link">
+                                    Земельные участки
+                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
+                                        <use xlink:href="#arrow-right-rounded"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h1 class="catalog-detail__main-heading">
+                                Лот №10 (Залог повт.) – Хозяйственное строение, пл. 247 кв.м., з/у, пл. 226 кв.м., кн 23:49:0122005:1289, адрес: г.
+                                Сочи, Лазаревский р-н, п. Нижняя Хобза, ул. Магнитогорская, на земельном участке расположено хозяйственное строение
+                                №152. С-к Аведян А.К.
+                            </h1>
+                            <div class="catalog-detail__layout">
+                                <div class="catalog-detail__layout-main">
+                                    <div class="catalog-detail__gallery js-catalog-gallery">
+                                        <div class="catalog-detail__gallery-thumbs">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="catalog-detail__gallery-thumbs-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-thumbs-card-image" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="catalog-detail__gallery-thumbs-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-thumbs-card-image" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="catalog-detail__gallery-thumbs-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-thumbs-card-image" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="catalog-detail__gallery-thumbs-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-thumbs-card-image" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-detail__gallery-main">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="#" class="catalog-detail__gallery-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-card-image" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#" class="catalog-detail__gallery-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-card-image" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#" class="catalog-detail__gallery-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-card-image" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#" class="catalog-detail__gallery-card">
+                                                            <img src="img/gallery/1.jpg" alt="" class="catalog-detail__gallery-card-image" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-detail__accordions">
+                                        <div class="catalog-detail__accordion js-catalog-accordion">
+                                            <div class="catalog-detail__accordion-btn js-accordion-btn" role="button">
+                                                Информация о лоте
+                                                <div class="catalog-detail__accordion-btn-cross">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-detail__accordion-content js-accordion-content">
+                                                <div class="catalog-detail__accordion-content-inner">
+                                                    <div class="catalog-detail__description">
+                                                        <p>
+                                                            Лот №10 (Залог повт.) – Хозяйственное строение, пл. 247 кв.м., з/у, пл. 226 кв.м., кн
+                                                            23:49:0122005:1289, адрес: г. Сочи, Лазаревский р-н, п. Нижняя Хобза, ул. Магнитогорская,
+                                                            на земельном участке расположено хозяйственное строение №152. С-к Аведян А.К.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="catalog-detail__btn catalog-detail__accordion-link">
+                                                        Открыть торги на ЕФРСБ
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-detail__accordion js-catalog-accordion">
+                                            <div class="catalog-detail__accordion-btn js-accordion-btn" role="button">
+                                                Информация из реестра
+                                                <div class="catalog-detail__accordion-btn-cross">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-detail__accordion-content js-accordion-content">
+                                                <div class="catalog-detail__accordion-content-inner">
+                                                    <div class="catalog-detail__register-info">
+                                                        <h2 class="catalog-detail__register-info-heading">
+                                                            ЗЕМЕЛЬНЫЙ УЧАСТОК 56:21:0000000:18469
+                                                        </h2>
+                                                        <div
+                                                            class="catalog-detail__general-info-table catalog-detail__general-info-table--medium-first-col catalog-detail__accordion-table"
+                                                        >
+                                                            <table>
+                                                                <tr>
+                                                                    <th>
+                                                                        Кадастровый номер
+                                                                    </th>
+                                                                    <td>
+                                                                        Константинопольский Александр Сергеевич
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        Адрес
+                                                                    </th>
+                                                                    <td>
+                                                                        <a href="mailto:namehere@mailservice.com">namehere@mailservice.com</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        Телефон
+                                                                    </th>
+                                                                    <td>
+                                                                        <a href="tel:+79995555555">+7 999 555-55-55</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        Площадь
+                                                                    </th>
+                                                                    <td>
+                                                                        <span class="locked">
+                                                                            Информация скрыта
+
+                                                                            <svg width="14" height="14" aria-hidden="true" class="icon-lock">
+                                                                                <use xlink:href="#lock"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        Тип объекта
+                                                                    </th>
+                                                                    <td>
+                                                                        <span class="locked">
+                                                                            Информация скрыта
+
+                                                                            <svg width="14" height="14" aria-hidden="true" class="icon-lock">
+                                                                                <use xlink:href="#lock"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        Кадастровый номер
+                                                                    </th>
+                                                                    <td>
+                                                                        <span class="locked">
+                                                                            Информация скрыта
+
+                                                                            <svg width="14" height="14" aria-hidden="true" class="icon-lock">
+                                                                                <use xlink:href="#lock"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        Статус объекта
+                                                                    </th>
+                                                                    <td>
+                                                                        <span class="locked">
+                                                                            Информация скрыта
+
+                                                                            <svg width="14" height="14" aria-hidden="true" class="icon-lock">
+                                                                                <use xlink:href="#lock"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="catalog-detail__btn catalog-detail__accordion-link">
+                                                        Открыть торги на ЕФРСБ
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-detail__accordion js-catalog-accordion">
+                                            <div class="catalog-detail__accordion-btn js-accordion-btn" role="button">
+                                                Информация о должнике
+                                                <div class="catalog-detail__accordion-btn-cross">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-detail__accordion-content js-accordion-content">
+                                                <div class="catalog-detail__accordion-content-inner">
+                                                    <div
+                                                        class="catalog-detail__general-info-table catalog-detail__general-info-table--short-first-col catalog-detail__accordion-table"
+                                                    >
+                                                        <table>
+                                                            <tr>
+                                                                <th>
+                                                                    ФИО
+                                                                </th>
+                                                                <td>
+                                                                    Константинопольский Александр Сергеевич
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    ИНН
+                                                                </th>
+                                                                <td>
+                                                                    7 708 543 210
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    ОГРН
+                                                                </th>
+                                                                <td>
+                                                                    1 026 400 005 577
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-detail__accordion js-catalog-accordion">
+                                            <div class="catalog-detail__accordion-btn js-accordion-btn" role="button">
+                                                Организатор торгов
+                                                <div class="catalog-detail__accordion-btn-cross">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-detail__accordion-content js-accordion-content">
+                                                <div class="catalog-detail__accordion-content-inner">
+                                                    <div
+                                                        class="catalog-detail__general-info-table catalog-detail__general-info-table--short-first-col catalog-detail__accordion-table"
+                                                    >
+                                                        <table>
+                                                            <tr>
+                                                                <th>
+                                                                    ФИО
+                                                                </th>
+                                                                <td>
+                                                                    Константинопольский Александр Сергеевич
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    ИНН
+                                                                </th>
+                                                                <td>
+                                                                    7 708 543 210
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    ОГРН
+                                                                </th>
+                                                                <td>
+                                                                    1 026 400 005 577
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <a href="#" class="catalog-detail__btn catalog-detail__accordion-link">
+                                                        <svg width="12" height="12" aria-hidden="true" class="icon-pencil">
+                                                            <use xlink:href="#pencil"></use>
+                                                        </svg>
+                                                        Написать организатору
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-detail__layout-sidebar">
+                                    <div class="catalog-detail__price">
+                                        <div class="catalog-detail__current-price">
+                                            295 500 000 ₽
+                                        </div>
+                                        <div class="catalog-detail__minimal-price">
+                                            Минимальная цена — 187 386 743 ₽
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog-detail__actions">
+                                        <a href="#" class="catalog-detail__timer" style="--lot-progress: 0.5;" ie-style="--lot-progress: 0.5;">
+                                            <div class="catalog-detail__timer-countdown">
+                                                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle
+                                                        cy="100"
+                                                        cx="100"
+                                                        r="80"
+                                                        fill="transparent"
+                                                        stroke="white"
+                                                        stroke-opacity="0.3"
+                                                        stroke-width="20"
+                                                    ></circle>
+                                                    <circle
+                                                        cy="100"
+                                                        cx="100"
+                                                        r="80"
+                                                        fill="transparent"
+                                                        stroke="white"
+                                                        stroke-width="20"
+                                                        stroke-dasharray="500"
+                                                    ></circle>
+                                                </svg>
+                                            </div>
+                                            <div class="catalog-detail__timer-content">
+                                                <div class="catalog-detail__timer-buy-text">
+                                                    Купить лот
+                                                </div>
+                                                <div class="catalog-detail__remaining-time">
+                                                    59 дней до подачи заявки
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="catalog-detail__like-btn">
+                                            <svg width="28" height="28" aria-hidden="true" class="icon-heart">
+                                                <use xlink:href="#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="catalog-detail__additional-actions">
+                                        <ul class="catalog-detail__additional-actions-list">
+                                            <li class="catalog-detail__additional-actions-list-item">
+                                                <a href="#" class="catalog-detail__btn">
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-rub">
+                                                        <use xlink:href="#rub"></use>
+                                                    </svg>
+                                                    Предложить цену
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__additional-actions-list-item">
+                                                <a href="#" class="catalog-detail__btn">
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-doc">
+                                                        <use xlink:href="#doc"></use>
+                                                    </svg>
+                                                    Получить отчет
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__additional-actions-list-item">
+                                                <a href="#" class="catalog-detail__btn">
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-pencil">
+                                                        <use xlink:href="#pencil"></use>
+                                                    </svg>
+                                                    Написать организатору
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-detail__general-info">
+                                        <div class="catalog-detail__general-info-table">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        № лота
+                                                    </th>
+                                                    <td>
+                                                        717 434
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Начальная цена
+                                                    </th>
+                                                    <td>
+                                                        187 386,00 ₽
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Размер задатка
+                                                    </th>
+                                                    <td>
+                                                        20% от начальной цены
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Шаг
+                                                    </th>
+                                                    <td>
+                                                        5% — 14 419,31 ₽
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Шаг
+                                                    </th>
+                                                    <td>
+                                                        5% — 14 419,31 ₽
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="catalog-detail__general-info-table">
+                                            <table>
+                                                <tr>
+                                                    <th>Секция торгов</th>
+                                                    <td>
+                                                        Банкротное имущество
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Тип торгов
+                                                    </th>
+                                                    <td>
+                                                        Публичные торги
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Текущий статус
+                                                    </th>
+                                                    <td>
+                                                        Идет прием заявок
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Начало приема заявок
+                                                    </th>
+                                                    <td>
+                                                        16.07.2020, 12:00
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Конец приема заявок
+                                                    </th>
+                                                    <td>
+                                                        30.07.2020, 12:00
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Организатор торгов
+                                                    </th>
+                                                    <td>
+                                                        ООО «Рога и копыта»
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Площадка
+                                                    </th>
+                                                    <td>
+                                                        <span class="locked">
+                                                            Информация скрыта
+
+                                                            <svg width="14" height="14" aria-hidden="true" class="icon-lock">
+                                                                <use xlink:href="#lock"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="page-footer__grid">
+                        <div class="page-footer__logo-wrapper">
+                            <a href="index.html" class="page-footer__logo-link">
+                                <img src="img/logo-white.svg" alt="Логотип" class="page-footer__logo-image" width="160" />
+                            </a>
+                        </div>
+
+                        <div class="page-footer__main-content">
+                            <div class="page-footer__contacts">
+                                <h3 class="page-footer__contacts-heading">
+                                    Мы собираем<br />
+                                    и обрабатываем информацию<br />
+                                    с десятков торговых<br />
+                                    площадок страны для вас.
+                                </h3>
+                                <div class="page-footer__contacts-links">
+                                    <a href="tel:+78006003305" class="page-footer__contacts-link">
+                                        8 800 600 33 05
+                                    </a>
+                                    <a href="mailto:help@ei.ru" class="page-footer__contacts-link">
+                                        help@ei.ru
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="page-footer__nav">
+                                <ul class="page-footer__nav-list">
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Все категории
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Банкротное имущество
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Арестованное имущество
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Имущество организаций
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Муниципальное имущество
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="page-footer__nav-list">
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Арбитражные управляющие
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            СРО
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Должники
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Услуги и тарифы
+                                        </a>
+                                    </li>
+                                    <li class="page-footer__nav-list-item">
+                                        <a href="#" class="page-footer__nav-link">
+                                            Партнерам
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page-footer__social">
+                            <a href="#" class="page-footer__social-link">
+                                <svg width="20" height="20" aria-hidden="true" class="icon-instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="page-footer__social-link">
+                                <svg width="20" height="20" aria-hidden="true" class="icon-facebook">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="page-footer__info">
+                            <div class="page-footer__copyright">
+                                © EI.RU, 2020
+                            </div>
+                            <a href="#" class="page-footer__info-link">
+                                Политика конфиденциальности
+                            </a>
+                            <a href="#" class="page-footer__info-link">
+                                Лицензионное соглашение
+                            </a>
+                            <a href="#" class="page-footer__made-by">
+                                Создание сайта
+                                <img src="img/markweber-logo.svg" alt="" class="page-footer__made-by-logo" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="change-browser">
+                <div class="change-browser__message">
+                    К сожалению, ваш браузер не поддерживается
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/app.js"></script>
+        </div>
+    </body>
+</html>
