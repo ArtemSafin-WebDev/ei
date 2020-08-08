@@ -1379,7 +1379,8 @@ select:-webkit-autofill:focus {
     color: var(--primary-color); }
   @media only screen and (max-width: 767px) {
     .page-header__catalog-link {
-      padding-right: 1.6rem; } }
+      padding-right: 1.6rem;
+      display: none; } }
 
 @media only screen and (max-width: 767px) {
   .page-header__catalog-link-text {
@@ -1446,7 +1447,8 @@ select:-webkit-autofill:focus {
       font-weight: 400;
       padding: 0 1.3rem;
       font-size: 16px;
-      line-height: 1.2; } }
+      line-height: 1.2;
+      padding-left: 0; } }
 
 .page-header__search-form-submit svg {
   display: block;
