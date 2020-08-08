@@ -1718,35 +1718,42 @@ select:-webkit-autofill:focus {
     height: 1.5rem; }
 
 .page-header__mobile-menu-burger {
-  color: var(--text-color);
-  margin-left: auto;
   display: none;
   position: relative;
-  z-index: 700; }
-  .page-header__mobile-menu-burger svg {
-    width: 3rem;
-    height: 3rem;
-    display: block;
-    -webkit-transition: opacity .2s;
-    transition: opacity .2s; }
-    .page-header__mobile-menu-burger svg:nth-child(2) {
-      width: 2.5rem;
-      height: 2.5rem;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      opacity: 0; }
-  .page-header__mobile-menu-burger:hover {
-    color: var(--primary-color); }
-  .mobile-menu-open .page-header__mobile-menu-burger svg {
-    opacity: 0; }
-    .mobile-menu-open .page-header__mobile-menu-burger svg:nth-child(2) {
-      opacity: 1; }
+  z-index: 700;
+  margin-left: auto; }
   @media only screen and (max-width: 767px) {
     .page-header__mobile-menu-burger {
       display: block; } }
+
+.page-header__mobile-menu-burger-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .page-header__mobile-menu-burger-content > span {
+    width: 22px;
+    height: 2px;
+    background-color: var(--text-color);
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s, -webkit-transform .3s;
+    margin-bottom: 4px;
+    border-radius: 2px; }
+    .page-header__mobile-menu-burger-content > span:last-child {
+      margin-bottom: 0; }
+  .mobile-menu-open .page-header__mobile-menu-burger-content > span:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+            transform: translateY(6px) rotate(45deg); }
+  .mobile-menu-open .page-header__mobile-menu-burger-content > span:nth-child(2) {
+    opacity: 0; }
+  .mobile-menu-open .page-header__mobile-menu-burger-content > span:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+            transform: translateY(-6px) rotate(-45deg); }
 
 .page-header__mobile-menu {
   position: fixed;
@@ -1756,7 +1763,7 @@ select:-webkit-autofill:focus {
   height: 100%;
   background-color: #fff;
   z-index: 600;
-  padding-top: 11rem;
+  padding-top: 9.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1837,7 +1844,7 @@ select:-webkit-autofill:focus {
 
 .page-header__mobile-menu-navigation-dropdown-link {
   margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.2;
   padding-left: 2.5rem;
   display: block;
