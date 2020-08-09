@@ -6036,8 +6036,8 @@ select:-webkit-autofill:focus {
       height: 12px; } }
 
 .catalog-detail__accordion.active .catalog-detail__accordion-btn-cross > span:nth-child(2) {
-  -webkit-transform: translate(-50%, -50%) rotate(90deg) scaleX(0);
-          transform: translate(-50%, -50%) rotate(90deg) scaleX(0); }
+  -webkit-transform: translateZ(0) translate(-50%, -50%) rotate(90deg) scaleX(0);
+          transform: translateZ(0) translate(-50%, -50%) rotate(90deg) scaleX(0); }
 
 .catalog-detail__accordion-content {
   max-height: 0;
