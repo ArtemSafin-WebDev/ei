@@ -10,11 +10,17 @@ export default function catalogGallery() {
         const thumbsContainer = element.querySelector('.catalog-detail__gallery-thumbs .swiper-container');
         const mainSliderOptions = {
             watchOverflow: true,
-            spaceBetween: 18,
-            thumbs: {
-
-            }
-        }
+            spaceBetween: 14,
+            breakpoints: {
+               
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 18
+                },
+               
+            },
+            thumbs: {}
+        };
 
         mainSliderOptions.thumbs.swiper = new Swiper(thumbsContainer, {
             watchOverflow: true,
@@ -24,9 +30,8 @@ export default function catalogGallery() {
             threshold: 10,
             spaceBetween: 16,
             direction: 'vertical'
-        })
+        });
 
-        const mainSlider = new Swiper(mainContainer, mainSliderOptions)
-
-    })
+        new Swiper(mainContainer, mainSliderOptions);
+    });
 }

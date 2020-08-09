@@ -16,6 +16,8 @@ import catalogViews from './catalogViews';
 import catalogFilters from './catalogFilters';
 import catalogGallery from './catalogGallery';
 import catalogAccordions from './catalogAccordions';
+import hideOldStages from './hideOldSteps';
+import otherLots from './otherLots';
 
 
 
@@ -38,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
     catalogFilters();
     catalogGallery();
     catalogAccordions();
+    hideOldStages();
+    otherLots();
 });
 
 window.addEventListener('load', function() {
