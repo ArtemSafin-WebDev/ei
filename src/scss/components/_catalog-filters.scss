@@ -6,6 +6,7 @@
         border-top-right-radius: 1.5rem;
         margin-top: 1.5rem;
         padding: 3.2rem var(--content-padding) 10rem;
+        flex-grow: 1;
     }
 }
 
@@ -402,6 +403,7 @@
     text-align: left;
     color: var(--primary-color);
     margin-top: 1.8rem;
+    display: block;
 }
 
 .catalog-filters__form-submit {

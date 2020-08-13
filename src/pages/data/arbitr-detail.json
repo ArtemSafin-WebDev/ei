@@ -1,0 +1,90 @@
+{
+    "title": "Арбитражные управляющие - Единый информатор",
+    "whiteBackground": true,
+    "lots": [
+        {
+            "image": "img/lots/8.jpg",
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.75,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "297 283",
+            "oldPrice": "35 000",
+            "title": "Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 кв. м./ земельный участок, доля в праве",
+            "type": "Аукцион",
+            "upTrend": false,
+            "sold": false,
+            "partner": "img/partners/spb.png"
+        },
+        {
+            "image": "img/lots/9.jpg",
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.75,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "297 283",
+            "oldPrice": "35 000",
+            "title": "Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 кв. м./ земельный участок, доля в праве",
+            "type": "Аукцион",
+            "upTrend": false,
+            "sold": false,
+            "partner": "img/partners/kontur.png"
+        },
+        {
+            "image": "img/lots/8.jpg",
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.75,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "297 283",
+            "oldPrice": "35 000",
+            "title": "Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 кв. м./ земельный участок, доля в праве",
+            "type": "Аукцион",
+            "upTrend": false,
+            "sold": false,
+            "partner": "img/partners/interprom.png"
+        },
+        {
+            "image": "img/lots/9.jpg",
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.75,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "297 283",
+            "oldPrice": "35 000",
+            "title": "Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 ",
+            "type": "Аукцион",
+            "upTrend": true,
+            "sold": false,
+            "partner": "img/partners/expobank.png"
+        },
+        {
+            "image": "img/lots/8.jpg",
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.75,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "297 283",
+            "oldPrice": "35 000",
+            "title": "Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 кв. м./ земельный участок, доля в праве",
+            "type": "Аукцион",
+            "upTrend": false,
+            "sold": false,
+            "partner": "img/partners/spb.png"
+        },
+        {
+            "image": "img/lots/9.jpg",
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.75,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "297 283",
+            "oldPrice": "35 000",
+            "title": "Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 кв. м./ земельный участок, доля в праве",
+            "type": "Аукцион",
+            "upTrend": false,
+            "sold": false,
+            "partner": "img/partners/kontur.png"
+        }
+    ]
+}

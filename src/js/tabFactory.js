@@ -5,6 +5,8 @@ export default function(elements, initialActiveTab = 0) {
 
     let initialized = false;
 
+    let tabChangeCallbacks = [];
+
     function init() {
         elements.forEach(element => {
             const tabsNav = Array.from(element.querySelectorAll('.js-tabs-nav'));
@@ -37,6 +39,9 @@ export default function(elements, initialActiveTab = 0) {
                         clearProps: 'all'
                     }
                 );
+
+
+                tabChangeCallbacks.forEach(cb => cb(index));
             }
 
             tabsNav.forEach((btn, btnIndex) => {
@@ -63,10 +68,16 @@ export default function(elements, initialActiveTab = 0) {
 
 
     function destroy() {
-        instances.forEach(instance => instance.btn.removeEventListener('click', instance.handler))
+        instances.forEach(instance => instance.btn.removeEventListener('click', instance.handler));
+        tabChangeCallbacks = [];
+    }
+
+    function onTabChange(func) {
+        tabChangeCallbacks.push(func);
     }
 
     return {
+        onTabChange,
         isInitialized,
         init,
         destroy

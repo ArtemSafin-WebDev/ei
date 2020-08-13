@@ -1,0 +1,96 @@
+.arbitrs {
+    padding-top: 2.4rem;
+}
+
+.arbitrs__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 6.5rem;
+
+
+    @include breakpoint(mobile) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 2rem;
+    }
+}
+
+.arbitrs__card {
+    display: flex;
+    flex-direction: column;
+    background: #ebf1f5;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.6rem;
+    padding-left: 2.4rem;
+    color: var(--text-color);
+    min-height: 34rem;
+
+    &--white {
+        background-color: #fff;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+
+    @include breakpoint(mobile) {
+        padding: 1.6rem;
+        min-height: auto;
+        border-radius: 1rem;
+    }
+}
+
+.arbitrs__card-cases-count {
+    margin-bottom: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        flex-shrink: 0;
+        margin-left: 2rem;
+        fill: var(--primary-color);
+    }
+
+
+    @include breakpoint(mobile) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.arbitrs__card-title {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 0.8rem;
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+}
+
+.arbitrs__card-rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    svg {
+        flex-shrink: 0;
+        margin-right: 0.8rem;
+        width: 1.9rem;
+        height: 1.9rem;
+        fill: var(--primary-color);
+    }
+}
+
+.arbitrs__card-info {
+    margin-top: auto;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}

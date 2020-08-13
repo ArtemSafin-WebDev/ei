@@ -16,6 +16,7 @@ export default function otherLots() {
             spaceBetween: 16,
             watchOverflow: true,
             slidesPerView: 2,
+           
             breakpoints: {
                
                 768: {
