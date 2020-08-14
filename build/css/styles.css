@@ -6461,6 +6461,15 @@ select:-webkit-autofill:focus {
       grid-template-columns: repeat(1, minmax(0, 1fr));
       grid-gap: 2rem; } }
 
+.arbitrs__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .arbitrs__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6983,3 +6992,219 @@ select:-webkit-autofill:focus {
     transition: all 0.4s, -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.4s, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.4s, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+.company-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ebf1f5;
+  border-radius: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 2.4rem;
+  color: var(--text-color);
+  min-height: 34rem; }
+  .company-card:link, .company-card:visited {
+    color: var(--text-color); }
+  @media only screen and (max-width: 767px) {
+    .company-card {
+      padding: 1.6rem;
+      min-height: auto;
+      border-radius: 1rem; } }
+
+.company-card__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 1.6rem; }
+
+.company-card__image-container {
+  background: #ffffff;
+  border-radius: 1.3rem;
+  overflow: hidden;
+  margin-right: 1.6rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  width: 12rem; }
+  .company-card__image-container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 100%; }
+  @media only screen and (max-width: 767px) {
+    .company-card__image-container {
+      width: 8rem;
+      border-radius: 1rem; } }
+
+.company-card__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  font-family: 'object-fit: contain; object-position: center;'; }
+
+.company-card__heading {
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem; }
+  @media only screen and (max-width: 767px) {
+    .company-card__heading {
+      width: 2.2rem;
+      line-height: 1.2; } }
+
+.company-card__description {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  margin-bottom: 2rem; }
+
+.company-card__active-lots {
+  margin-top: auto;
+  font-size: 1.2rem;
+  line-height: 1.7rem; }
+
+.company-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 4.8rem; }
+  @media only screen and (max-width: 767px) {
+    .company-detail {
+      -webkit-box-align: initial;
+          -ms-flex-align: initial;
+              align-items: initial;
+      margin-bottom: 4rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.company-detail__logo-container {
+  width: 15rem;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #d1dae6;
+  border-radius: 1.3rem;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 4.7rem;
+  margin-top: 1.5rem; }
+  .company-detail__logo-container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 100%; }
+  @media only screen and (max-width: 767px) {
+    .company-detail__logo-container {
+      width: 100%;
+      margin: 0;
+      margin-top: 0.5rem;
+      border-radius: 1rem;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      justify-self: center;
+      width: 10rem;
+      margin-bottom: 1.2rem; } }
+
+.company-detail__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  font-family: 'object-fit: contain; object-position: center;'; }
+
+.company-detail__content {
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  @media only screen and (max-width: 767px) {
+    .company-detail__content {
+      width: 100%; } }
+
+.company-detail__main-heading {
+  margin-bottom: 1.6rem; }
+
+.company-detail__description {
+  font-size: 1.9rem;
+  line-height: 2.7rem; }
+  @media only screen and (max-width: 767px) {
+    .company-detail__description {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin-bottom: 2rem; } }
+
+.company-detail__contacts {
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  @media only screen and (max-width: 767px) {
+    .company-detail__contacts {
+      margin: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.company-detail__phone,
+.company-detail__mail {
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  color: var(--text-color);
+  margin-bottom: 1.6rem;
+  white-space: nowrap; }
+  .company-detail__phone:link, .company-detail__phone:visited,
+  .company-detail__mail:link,
+  .company-detail__mail:visited {
+    color: var(--text-color); }
+  @media only screen and (max-width: 767px) {
+    .company-detail__phone,
+    .company-detail__mail {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin: 0;
+      margin-right: 2rem; } }
+
+.company-detail__mail {
+  color: var(--primary-color); }
+  .company-detail__mail:link, .company-detail__mail:visited {
+    color: var(--primary-color); }

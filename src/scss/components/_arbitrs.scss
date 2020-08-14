@@ -14,6 +14,11 @@
     }
 }
 
+.arbitrs__list-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .arbitrs__card {
     display: flex;
     flex-direction: column;
