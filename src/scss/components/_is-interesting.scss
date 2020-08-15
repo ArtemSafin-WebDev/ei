@@ -1,0 +1,176 @@
+.is-interesting {
+    padding: 7.5rem 0;
+    background-color: var(--primary-color);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, #13b17c, #13b17c), linear-gradient(0deg, rgba(19, 177, 124, 0.7), rgba(19, 177, 124, 0.7)),
+        url('../img/is-interesting-bg.jpg');
+
+    background-blend-mode: multiply, normal, normal;
+
+    @include breakpoint(mobile) {
+        padding: 4rem 0;
+      
+    }
+}
+
+.is-interesting__heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 3.6rem;
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.is-interesting__slider {
+    .swiper-container {
+        overflow: visible;
+    }
+
+
+    .swiper-slide {
+        @include breakpoint(mobile) {
+            width: 24rem;
+        }
+    }
+}
+
+.is-interesting__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+
+    &:link,
+    &:visited {
+        color: inherit;
+    }
+
+    &:hover {
+        .is-interesting__card-image {
+            transform: scale(1.04);
+        }
+    }
+}
+
+.is-interesting__card-image-container {
+    border-radius: 2.5rem;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    @include breakpoint(mobile) {
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.is-interesting__card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    @include objectFitCover();
+
+    @include breakpoint(mobile) {
+        transform: scale(1.01);
+    }
+}
+
+.is-interesting__card-heading {
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    margin-bottom: 1.5rem;
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}
+
+.is-interesting__info {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: rgba(white, 0.4);
+}
+
+.is-interesting__card-tag,
+.is-interesting__special-card-tag {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.6rem 0.8rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+
+    @include breakpoint(mobile) {
+        top: 1.6rem;
+        left: 1.6rem;
+    }
+}
+
+.is-interesting__special-card-tag {
+    position: static;
+    margin-bottom: 3rem;
+    align-self: flex-start;
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+    }
+}
+
+.is-interesting__special-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+}
+
+.is-interesting__special-card-heading {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin-bottom: 1.2rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}
+
+.is-interesting__special-card-description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}

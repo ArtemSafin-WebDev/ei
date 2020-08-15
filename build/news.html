@@ -10,11 +10,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Организации - Единый информатор
+            Новости - Единый информатор
         </title>
     </head>
 
-    <body class="no-touch  white-bg " ontouchstart="">
+    <body class="no-touch " ontouchstart="">
         <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
             <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <symbol viewBox="0 0 12 7.42" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -627,7 +627,7 @@
                 </div>
             </header>
             <main class="page-main">
-                <section class="catalog">
+                <section class="news-slider js-news-slider">
                     <div class="container">
                         <div class="inner-container">
                             <div class="breadcrumbs">
@@ -638,458 +638,514 @@
                                     </svg>
                                 </a>
                                 <a href="#" class="breadcrumbs__link">
-                                    Реестры
+                                    Полезные статьи
                                     <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
                                         <use xlink:href="#arrow-right-rounded"></use>
                                     </svg>
                                 </a>
                             </div>
-                            <h1 class="main-heading catalog__main-heading">
-                                Организации
-                                <span class="main-heading__count">
-                                    124
-                                </span>
-                            </h1>
-
-                            <div class="catalog__layout">
-                                <div class="catalog__layout-sidebar">
-                                    <div class="catalog-filters">
-                                        <h2 class="catalog-filters__heading">
-                                            Сортировка и фильтры
-                                            <button class="js-mobile-filters-close">
-                                                <svg width="22" height="22" aria-hidden="true" class="icon-cross">
-                                                    <use xlink:href="#cross"></use>
-                                                </svg>
-                                            </button>
-                                        </h2>
-                                        <nav class="catalog-filters__nav">
-                                            <ul class="catalog-filters__nav-list">
-                                                <li class="catalog-filters__nav-list-item">
-                                                    <a href="#" class="catalog-filters__nav-root-category-link js-accordion-btn">
-                                                        Реестры
-                                                    </a>
-                                                    <ul class="catalog-filters__nav-subcategories-list js-accordion-content">
-                                                        <li class="catalog-filters__nav-subcategories-list-item">
-                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
-                                                                Арбитражные управляющие
-                                                            </a>
-                                                        </li>
-                                                        <li class="catalog-filters__nav-subcategories-list-item">
-                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
-                                                                Должники
-                                                            </a>
-                                                        </li>
-                                                        <li class="catalog-filters__nav-subcategories-list-item">
-                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
-                                                                СРО
-                                                            </a>
-                                                        </li>
-                                                        <li class="catalog-filters__nav-subcategories-list-item active">
-                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
-                                                                Организации
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                        <form action="/" method="GET" class="catalog-filters__form js-catalog-filters-form" data-total-found="240">
-                                            <div class="catalog-filters__form-group catalog-filters__form-group--mobile-sort">
-                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
-                                                    Сортировать
-                                                </h4>
-                                                <div class="catalog-filters__accordion-content js-accordion-content">
-                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                                                        <label class="checkbox catalog-filters__radio">
-                                                            <input type="radio" name="sortby" class="radio__input" checked />
-                                                            <span class="radio__checkmark"></span>
-                                                            <span class="radio__text">
-                                                                От А до Я
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                                                        <label class="checkbox catalog-filters__radio">
-                                                            <input type="radio" name="sortby" class="radio__input" />
-                                                            <span class="radio__checkmark"></span>
-                                                            <span class="radio__text">
-                                                                От Я до А
-                                                            </span>
-                                                        </label>
-                                                    </div>
+                            <h2 class="secondary-heading news-slider__heading">
+                                Свежие статьи
+                            </h2>
+                        </div>
+                        <div class="news-slider__content">
+                            <button class="news-slider__arrow news-slider__arrow--prev">
+                                <svg width="16" height="16" aria-hidden="true" class="icon-arrow-left">
+                                    <use xlink:href="#arrow-left"></use>
+                                </svg>
+                            </button>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news-slider__card">
+                                            <img src="img/news-slider/1.jpg" alt="" class="news-slider__card-image" />
+                                            <div
+                                                class="news-slider__card-overlay"
+                                                style="background: linear-gradient(90deg, rgba(5, 12, 66, 0.7) 29.75%, rgba(5, 12, 66, 0.308) 79.5%); "
+                                            ></div>
+                                            <div class="news-slider__card-content">
+                                                <div class="news-slider__card-tag">
+                                                    Долги
+                                                </div>
+                                                <h3 class="news-slider__card-heading">
+                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
+                                                </h3>
+                                                <div class="news-slider__card-date">
+                                                    01.06.2020 • 10 мин
                                                 </div>
                                             </div>
-
-                                            <div class="catalog-filters__form-group">
-                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
-                                                    Категория
-                                                </h4>
-                                                <div class="catalog-filters__accordion-content js-accordion-content">
-                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                                                        <label class="checkbox catalog-filters__checkbox">
-                                                            <input type="checkbox" name="type" class="checkbox__input" checked />
-                                                            <span class="checkbox__checkmark">
-                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                    <use xlink:href="#checkmark"></use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="checkbox__text">
-                                                                Банкротное имущество
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                                                        <label class="checkbox catalog-filters__checkbox">
-                                                            <input type="checkbox" name="type" class="checkbox__input" />
-                                                            <span class="checkbox__checkmark">
-                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                    <use xlink:href="#checkmark"></use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="checkbox__text">
-                                                                Арестованное
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                                                        <label class="checkbox catalog-filters__checkbox">
-                                                            <input type="checkbox" name="type" class="checkbox__input" />
-                                                            <span class="checkbox__checkmark">
-                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                    <use xlink:href="#checkmark"></use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="checkbox__text">
-                                                                Имущество организаций
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
-                                                        <label class="checkbox catalog-filters__checkbox">
-                                                            <input type="checkbox" name="type" class="checkbox__input" disabled />
-                                                            <span class="checkbox__checkmark">
-                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                    <use xlink:href="#checkmark"></use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="checkbox__text">
-                                                                Муниципальное имущество
-                                                            </span>
-                                                        </label>
-                                                    </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news-slider__card">
+                                            <img src="img/news-slider/2.jpg" alt="" class="news-slider__card-image" />
+                                            <div
+                                                class="news-slider__card-overlay"
+                                                style="background: linear-gradient(90deg, rgba(2, 4, 17, 0.85) 41.19%, rgba(0, 0, 0, 0.085) 110.1%);"
+                                            ></div>
+                                            <div class="news-slider__card-content">
+                                                <div class="news-slider__card-tag">
+                                                    Долги
+                                                </div>
+                                                <h3 class="news-slider__card-heading">
+                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
+                                                </h3>
+                                                <div class="news-slider__card-date">
+                                                    01.06.2020 • 10 мин
                                                 </div>
                                             </div>
-                                            <div class="catalog-filters__form-group">
-                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
-                                                    Регион
-                                                </h4>
-                                                <div class="catalog-filters__accordion-content js-accordion-content">
-                                                    <div class="catalog-filters__desktop-region">
-                                                        <div
-                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
-                                                        >
-                                                            <label class="checkbox catalog-filters__checkbox">
-                                                                <input type="checkbox" name="type" class="checkbox__input" checked />
-                                                                <span class="checkbox__checkmark">
-                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                        <use xlink:href="#checkmark"></use>
-                                                                    </svg>
-                                                                </span>
-                                                                <span class="checkbox__text">
-                                                                    Москва
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div
-                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
-                                                        >
-                                                            <label class="checkbox catalog-filters__checkbox">
-                                                                <input type="checkbox" name="type" class="checkbox__input" />
-                                                                <span class="checkbox__checkmark">
-                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                        <use xlink:href="#checkmark"></use>
-                                                                    </svg>
-                                                                </span>
-                                                                <span class="checkbox__text">
-                                                                    Московская область
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div
-                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
-                                                        >
-                                                            <label class="checkbox catalog-filters__checkbox">
-                                                                <input type="checkbox" name="type" class="checkbox__input" />
-                                                                <span class="checkbox__checkmark">
-                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                        <use xlink:href="#checkmark"></use>
-                                                                    </svg>
-                                                                </span>
-                                                                <span class="checkbox__text">
-                                                                    Санкт-Петербург
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div
-                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
-                                                        >
-                                                            <label class="checkbox catalog-filters__checkbox">
-                                                                <input type="checkbox" name="type" class="checkbox__input" />
-                                                                <span class="checkbox__checkmark">
-                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                        <use xlink:href="#checkmark"></use>
-                                                                    </svg>
-                                                                </span>
-                                                                <span class="checkbox__text">
-                                                                    Республика Татарстан
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="catalog-filters__show-more-content js-show-more-content">
-                                                            <div
-                                                                class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
-                                                            >
-                                                                <label class="checkbox catalog-filters__checkbox">
-                                                                    <input type="checkbox" name="type" class="checkbox__input" />
-                                                                    <span class="checkbox__checkmark">
-                                                                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                            <use xlink:href="#checkmark"></use>
-                                                                        </svg>
-                                                                    </span>
-                                                                    <span class="checkbox__text">
-                                                                        Республика Марий Эл
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <button class="catalog-filters__show-more js-show-more">
-                                                            Показать все
-                                                        </button>
-                                                    </div>
-                                                    <div class="catalog-filters__mobile-region">
-                                                        <select multiple name="mobileregion" class="js-mobile-region">
-                                                            <option value="">Найти регион</option>
-                                                            <option value="Moscow">Москва</option>
-                                                            <option value="Moscow Region">Московская область</option>
-                                                            <option value="Peter">Санкт-Петербург</option>
-                                                            <option value="Tatarstan">Татарстан</option>
-                                                        </select>
-                                                    </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news-slider__card">
+                                            <img src="img/news-slider/1.jpg" alt="" class="news-slider__card-image" />
+                                            <div
+                                                class="news-slider__card-overlay"
+                                                style="background: linear-gradient(90deg, rgba(5, 12, 66, 0.7) 29.75%, rgba(5, 12, 66, 0.308) 79.5%); "
+                                            ></div>
+                                            <div class="news-slider__card-content">
+                                                <div class="news-slider__card-tag">
+                                                    Долги
+                                                </div>
+                                                <h3 class="news-slider__card-heading">
+                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
+                                                </h3>
+                                                <div class="news-slider__card-date">
+                                                    01.06.2020 • 10 мин
                                                 </div>
                                             </div>
-
-                                            <button type="submit" class="btn catalog-filters__form-submit">
-                                                Найти
-                                            </button>
-                                            <button type="button" class="catalog-filters__save-search">
-                                                <span class="catalog-filters__save-search-content">
-                                                    <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
-                                                        <use xlink:href="#favourites"></use>
-                                                    </svg>
-                                                    Сохранить поиск
-                                                </span>
-                                            </button>
-                                            <button class="catalog-filters__form-reset" type="reset">
-                                                Очистить фильтр
-                                            </button>
-                                        </form>
-                                        <div class="catalog-filters__mobile-btns">
-                                            <a class="catalog-filters__mobile-btn-save">
-                                                <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
-                                                    <use xlink:href="#favourites"></use>
-                                                </svg>
-                                                Сохранить
-                                            </a>
-                                            <button class="catalog-filters__mobile-btn-submit js-mobile-filters-submit">
-                                                <span class="catalog-filters__mobile-btn-submit-content">
-                                                    <span class="catalog-filters__mobile-btn-submit-text">
-                                                        Показать
-                                                    </span>
-                                                    <span class="catalog-filters__mobile-btn-submit-count">
-                                                        124 управляющих
-                                                    </span>
-                                                </span>
-                                            </button>
-                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="news-slider__card">
+                                            <img src="img/news-slider/2.jpg" alt="" class="news-slider__card-image" />
+                                            <div
+                                                class="news-slider__card-overlay"
+                                                style="background: linear-gradient(90deg, rgba(2, 4, 17, 0.85) 41.19%, rgba(0, 0, 0, 0.085) 110.1%);"
+                                            ></div>
+                                            <div class="news-slider__card-content">
+                                                <div class="news-slider__card-tag">
+                                                    Долги
+                                                </div>
+                                                <h3 class="news-slider__card-heading">
+                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
+                                                </h3>
+                                                <div class="news-slider__card-date">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="catalog__layout-main">
-                                    <div class="catalog__top-block">
-                                        <div class="catalog__view-modes">
-                                            <div class="catalog__view-sort">
-                                                <div class="custom-select">
-                                                    <select name="sort-order" class="js-custom-select">
-                                                        <option value="asc" selected>От А до Я</option>
-                                                        <option value="dsc">От Я до А</option>
-                                                    </select>
+                            </div>
+                            <button class="news-slider__arrow news-slider__arrow--next">
+                                <svg width="16" height="16" aria-hidden="true" class="icon-arrow-left">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="all-articles">
+                    <div class="container">
+                        <div class="inner-container">
+                            <h2 class="secondary-heading all-articles__heading">
+                                Все статьи
+                            </h2>
+                            <div class="all-articles__layout">
+                                <div class="all-articles__main">
+                                    <ul class="all-articles__catalog">
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/1.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Статистика и аналитика
+                                                    </span>
                                                 </div>
-                                            </div>
-                                            <button class="catalog__mobile-filters-btn js-mobile-filters-open">
-                                                <span class="catalog__mobile-filters-btn-content">
-                                                    <svg width="22" height="24" aria-hidden="true" class="icon-mobile-filters">
-                                                        <use xlink:href="#mobile-filters"></use>
-                                                    </svg>
-                                                    Сортировка и фильтры
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="catalog__lots">
-                                        <div class="arbitrs">
-                                            <ul class="arbitrs__list">
-                                                <li class="arbitrs__list-item">
-                                                    <a href="#" class="company-card">
-                                                        <div class="company-card__top-row">
-                                                            <div class="company-card__image-container">
-                                                                <img src="img/companies/open.jpg" alt="" class="company-card__image" />
-                                                            </div>
-                                                            <h3 class="company-card__heading">
-                                                                ПАО «Банк Открытие»
-                                                            </h3>
-                                                        </div>
-                                                        <div class="company-card__description">
-                                                            Банк «Открытие» — универсальный банк с  диверсифицированной структурой бизнеса, входит в
-                                                            список системно значимых кредитных организаций, утвержденный Центральным Банком Российской
-                                                            Федерации.
-                                                        </div>
-                                                        <div class="company-card__active-lots">
-                                                            54 активных лота
-                                                        </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/2.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Анонсы
+                                                    </span>
+                                                </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    Банк непрофильных активов «Траст» объявил новый аукцион
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/3.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Статистика и аналитика
+                                                    </span>
+                                                </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/4.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Статистика и аналитика
+                                                    </span>
+                                                </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    Банк непрофильных активов «Траст» объявил новый аукцион
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/5.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Статистика и аналитика
+                                                    </span>
+                                                </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/2.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Анонсы
+                                                    </span>
+                                                </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    Банк непрофильных активов «Траст» объявил новый аукцион
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/6.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Статистика и аналитика
+                                                    </span>
+                                                </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="all-articles__catalog-item">
+                                            <a href="#" class="all-articles__card">
+                                                <div class="all-articles__card-image-container">
+                                                    <img src="img/articles/7.jpg" alt="" class="all-articles__card-image" />
+                                                    <span class="all-articles__tag">
+                                                        Статистика и аналитика
+                                                    </span>
+                                                </div>
+                                                <h4 class="all-articles__card-heading">
+                                                    Банк непрофильных активов «Траст» объявил новый аукцион
+                                                </h4>
+                                                <div class="all-articles__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="all-articles__bottom-nav">
+                                        <div class="pagination">
+                                            <ul class="pagination__list">
+                                                <li class="pagination__list-item active">
+                                                    <a href="#" class="pagination__link">
+                                                        1
                                                     </a>
                                                 </li>
-                                                <li class="arbitrs__list-item">
-                                                    <a href="#" class="company-card">
-                                                        <div class="company-card__top-row">
-                                                            <div class="company-card__image-container">
-                                                                <img src="img/companies/raif.jpg" alt="" class="company-card__image" />
-                                                            </div>
-                                                            <h3 class="company-card__heading">
-                                                                ПАО «Райффайзен Банк»
-                                                            </h3>
-                                                        </div>
-                                                        <div class="company-card__description">
-                                                            Высокое кредитное качество и надежность банка подтверждены международными и российскими
-                                                            рейтинговыми агентствами на самом высоком уровне. Банк имеет одну из самых высоких
-                                                            композиций кредитных рейтингов в российской банковской системе. Высокое кредитное
-                                                            качество...
-                                                        </div>
-                                                        <div class="company-card__active-lots">
-                                                            54 активных лота
-                                                        </div>
+                                                <li class="pagination__list-item">
+                                                    <a href="#" class="pagination__link">
+                                                        2
                                                     </a>
                                                 </li>
-                                                <li class="arbitrs__list-item">
-                                                    <a href="#" class="company-card">
-                                                        <div class="company-card__top-row">
-                                                            <div class="company-card__image-container">
-                                                                <img src="img/companies/open.jpg" alt="" class="company-card__image" />
-                                                            </div>
-                                                            <h3 class="company-card__heading">
-                                                                ПАО «Банк Открытие»
-                                                            </h3>
-                                                        </div>
-                                                        <div class="company-card__description">
-                                                            Банк «Открытие» — универсальный банк с  диверсифицированной структурой бизнеса, входит в
-                                                            список системно значимых кредитных организаций, утвержденный Центральным Банком Российской
-                                                            Федерации.
-                                                        </div>
-                                                        <div class="company-card__active-lots">
-                                                            54 активных лота
-                                                        </div>
+                                                <li class="pagination__list-item">
+                                                    <a href="#" class="pagination__link">
+                                                        3
                                                     </a>
                                                 </li>
-                                                <li class="arbitrs__list-item">
-                                                    <a href="#" class="company-card">
-                                                        <div class="company-card__top-row">
-                                                            <div class="company-card__image-container">
-                                                                <img src="img/companies/raif.jpg" alt="" class="company-card__image" />
-                                                            </div>
-                                                            <h3 class="company-card__heading">
-                                                                ПАО «Райффайзен Банк»
-                                                            </h3>
-                                                        </div>
-                                                        <div class="company-card__description">
-                                                            Высокое кредитное качество и надежность банка подтверждены международными и российскими
-                                                            рейтинговыми агентствами на самом высоком уровне. Банк имеет одну из самых высоких
-                                                            композиций кредитных рейтингов в российской банковской системе. Высокое кредитное
-                                                            качество...
-                                                        </div>
-                                                        <div class="company-card__active-lots">
-                                                            54 активных лота
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li class="arbitrs__list-item">
-                                                    <a href="#" class="company-card">
-                                                        <div class="company-card__top-row">
-                                                            <div class="company-card__image-container">
-                                                                <img src="img/companies/open.jpg" alt="" class="company-card__image" />
-                                                            </div>
-                                                            <h3 class="company-card__heading">
-                                                                ПАО «Банк Открытие»
-                                                            </h3>
-                                                        </div>
-                                                        <div class="company-card__description">
-                                                            Банк «Открытие» — универсальный банк с  диверсифицированной структурой бизнеса, входит в
-                                                            список системно значимых кредитных организаций, утвержденный Центральным Банком Российской
-                                                            Федерации.
-                                                        </div>
-                                                        <div class="company-card__active-lots">
-                                                            54 активных лота
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li class="arbitrs__list-item">
-                                                    <a href="#" class="company-card">
-                                                        <div class="company-card__top-row">
-                                                            <div class="company-card__image-container">
-                                                                <img src="img/companies/raif.jpg" alt="" class="company-card__image" />
-                                                            </div>
-                                                            <h3 class="company-card__heading">
-                                                                ПАО «Райффайзен Банк»
-                                                            </h3>
-                                                        </div>
-                                                        <div class="company-card__description">
-                                                            Высокое кредитное качество и надежность банка подтверждены международными и российскими
-                                                            рейтинговыми агентствами на самом высоком уровне. Банк имеет одну из самых высоких
-                                                            композиций кредитных рейтингов в российской банковской системе. Высокое кредитное
-                                                            качество...
-                                                        </div>
-                                                        <div class="company-card__active-lots">
-                                                            54 активных лота
-                                                        </div>
+                                                <li class="pagination__list-item">
+                                                    <a href="#" class="pagination__link">
+                                                        4
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
-
-                                        <div class="catalog__lots-bottom-nav">
-                                            <div class="pagination">
-                                                <ul class="pagination__list">
-                                                    <li class="pagination__list-item active">
-                                                        <a href="#" class="pagination__link">
-                                                            1
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__list-item">
-                                                        <a href="#" class="pagination__link">
-                                                            2
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__list-item">
-                                                        <a href="#" class="pagination__link">
-                                                            3
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__list-item">
-                                                        <a href="#" class="pagination__link">
-                                                            4
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="btn catalog__lots-show-more-items">
-                                                Показать еще
+                                        <a href="#" class="btn catalog__lots-show-more-items">
+                                            Показать еще
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="all-articles__sidebar">
+                                    <div class="all-articles__categories">
+                                        <h3 class="all-articles__categories-heading">
+                                            Категории
+                                        </h3>
+                                        <ul class="all-articles__categories-list">
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Статистика и аналитика
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Биржа
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link active">
+                                                    Материалы СМИ
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#cross"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Банкротство
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Мнение эксперта
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Недвижимость
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Разъяснения законодательства
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Анонсы и итоги конференций
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__categories-list-item">
+                                                <a href="#" class="all-articles__categories-link">
+                                                    Долги
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="all-articles__show-more">
+                                            Показать еще
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-vertical-dots">
+                                                <use xlink:href="#vertical-dots"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="all-articles__popular">
+                                        <h3 class="all-articles__popular-heading">
+                                            Популярные статьи
+                                        </h3>
+                                        <ul class="all-articles__popular-list">
+                                            <li class="all-articles__popular-list-item">
+                                                <a href="#" class="all-articles__popular-card">
+                                                    <div class="all-articles__popular-card-number">
+                                                        01
+                                                    </div>
+                                                    <div class="all-articles__popular-card-content">
+                                                        <h4 class="all-articles__popular-card-heading">
+                                                            ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
+                                                        </h4>
+                                                        <div class="all-articles__popular-card-info">
+                                                            01.06.2020 • 10 мин
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__popular-list-item">
+                                                <a href="#" class="all-articles__popular-card">
+                                                    <div class="all-articles__popular-card-number">
+                                                        02
+                                                    </div>
+                                                    <div class="all-articles__popular-card-content">
+                                                        <h4 class="all-articles__popular-card-heading">
+                                                            Банк непрофильных активов «Траст» объявил новый аукцион
+                                                        </h4>
+                                                        <div class="all-articles__popular-card-info">
+                                                            01.06.2020 • 10 мин
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__popular-list-item">
+                                                <a href="#" class="all-articles__popular-card">
+                                                    <div class="all-articles__popular-card-number">
+                                                        03
+                                                    </div>
+                                                    <div class="all-articles__popular-card-content">
+                                                        <h4 class="all-articles__popular-card-heading">
+                                                            Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета
+                                                        </h4>
+                                                        <div class="all-articles__popular-card-info">
+                                                            01.06.2020 • 10 мин
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__popular-list-item">
+                                                <a href="#" class="all-articles__popular-card">
+                                                    <div class="all-articles__popular-card-number">
+                                                        04
+                                                    </div>
+                                                    <div class="all-articles__popular-card-content">
+                                                        <h4 class="all-articles__popular-card-heading">
+                                                            Закупки в сфере строительства
+                                                        </h4>
+                                                        <div class="all-articles__popular-card-info">
+                                                            01.06.2020 • 10 мин
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__popular-list-item">
+                                                <a href="#" class="all-articles__popular-card">
+                                                    <div class="all-articles__popular-card-number">
+                                                        05
+                                                    </div>
+                                                    <div class="all-articles__popular-card-content">
+                                                        <h4 class="all-articles__popular-card-heading">
+                                                            Закупки - как инструмент реализации национальных проектов
+                                                        </h4>
+                                                        <div class="all-articles__popular-card-info">
+                                                            01.06.2020 • 10 мин
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="all-articles__popular-list-item">
+                                                <a href="#" class="all-articles__popular-card">
+                                                    <div class="all-articles__popular-card-number">
+                                                        06
+                                                    </div>
+                                                    <div class="all-articles__popular-card-content">
+                                                        <h4 class="all-articles__popular-card-heading">
+                                                            ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
+                                                        </h4>
+                                                        <div class="all-articles__popular-card-info">
+                                                            01.06.2020 • 10 мин
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="is-interesting">
+                    <div class="container">
+                        <div class="inner-container">
+                            <h2 class="is-interesting__heading">
+                                Будет интересно
+                            </h2>
+                            <div class="is-interesting__slider js-is-interesting-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="is-interesting__card">
+                                                <div class="is-interesting__card-image-container">
+                                                    <img src="img/interesting/1.jpg" alt="" class="is-interesting__card-image" />
+                                                    <span class="is-interesting__card-tag">
+                                                        Акции
+                                                    </span>
+                                                </div>
+                                                <h4 class="is-interesting__card-heading">
+                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
+                                                </h4>
+                                                <div class="is-interesting__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="is-interesting__card">
+                                                <div class="is-interesting__card-image-container">
+                                                    <img src="img/interesting/2.jpg" alt="" class="is-interesting__card-image" />
+                                                    <span class="is-interesting__card-tag">
+                                                        Торги
+                                                    </span>
+                                                </div>
+                                                <h4 class="is-interesting__card-heading">
+                                                    Банк непрофильных активов «Траст» объявил новый аукцион
+                                                </h4>
+                                                <div class="is-interesting__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="is-interesting__special-card">
+                                                <div class="is-interesting__special-card-tag">
+                                                    Акции
+                                                </div>
+                                                <h4 class="is-interesting__special-card-heading">
+                                                    ФАС объяснила идею ограничить круг площадок для закупок госкомпаний
+                                                </h4>
+                                                <div class="is-interesting__special-card-description">
+                                                    Заместитель руководителя Росимущества Алексей Павлов выступил на заседании Комитета
+                                                </div>
+                                                <div class="is-interesting__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="is-interesting__card">
+                                                <div class="is-interesting__card-image-container">
+                                                    <img src="img/interesting/3.jpg" alt="" class="is-interesting__card-image" />
+                                                </div>
+                                                <h4 class="is-interesting__card-heading">
+                                                    Обзор изменений по 44-ФЗ
+                                                </h4>
+                                                <div class="is-interesting__info">
+                                                    01.06.2020 • 10 мин
+                                                </div>
                                             </a>
                                         </div>
                                     </div>

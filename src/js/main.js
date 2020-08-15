@@ -20,6 +20,8 @@ import hideOldStages from './hideOldSteps';
 import otherLots from './otherLots';
 import shortInfo from './shortInfo';
 import otherItems from './otherItems';
+import newsSlider from './newsSlider';
+import isInteresting from './isInterestingSlider';
 
 
 
@@ -46,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
     otherLots();
     shortInfo();
     otherItems();
+    newsSlider();
+    isInteresting();
 });
 
 window.addEventListener('load', function() {
