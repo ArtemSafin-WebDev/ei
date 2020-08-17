@@ -10,11 +10,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Новости - Единый информатор
+            Новость - Единый информатор
         </title>
     </head>
 
-    <body class="no-touch " ontouchstart="">
+    <body class="no-touch  white-bg " ontouchstart="">
         <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
             <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <symbol viewBox="0 0 12 7.42" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -637,462 +637,321 @@
                 </div>
             </header>
             <main class="page-main">
-                <section class="news-slider js-news-slider">
+                <section class="article-header-photo">
+                    <img src="img/article/header-image.jpg" alt="" class="article-header-photo__image" />
                     <div class="container">
                         <div class="inner-container">
-                            <div class="breadcrumbs">
-                                <a href="#" class="breadcrumbs__link">
-                                    Главная
-                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
-                                        <use xlink:href="#arrow-right-rounded"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="breadcrumbs__link">
-                                    Полезные статьи
-                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
-                                        <use xlink:href="#arrow-right-rounded"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <h2 class="secondary-heading news-slider__heading">
-                                Свежие статьи
-                            </h2>
-                        </div>
-                        <div class="news-slider__content">
-                            <button class="news-slider__arrow news-slider__arrow--prev">
-                                <svg width="16" height="16" aria-hidden="true" class="icon-arrow-left">
-                                    <use xlink:href="#arrow-left"></use>
-                                </svg>
-                            </button>
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#" class="news-slider__card">
-                                            <img src="img/news-slider/1.jpg" alt="" class="news-slider__card-image" />
-                                            <div
-                                                class="news-slider__card-overlay"
-                                                style="background: linear-gradient(90deg, rgba(5, 12, 66, 0.7) 29.75%, rgba(5, 12, 66, 0.308) 79.5%); "
-                                            ></div>
-                                            <div class="news-slider__card-content">
-                                                <div class="news-slider__card-tag">
-                                                    Долги
-                                                </div>
-                                                <h3 class="news-slider__card-heading">
-                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
-                                                </h3>
-                                                <div class="news-slider__card-date">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="news-slider__card">
-                                            <img src="img/news-slider/2.jpg" alt="" class="news-slider__card-image" />
-                                            <div
-                                                class="news-slider__card-overlay"
-                                                style="background: linear-gradient(90deg, rgba(2, 4, 17, 0.85) 41.19%, rgba(0, 0, 0, 0.085) 110.1%);"
-                                            ></div>
-                                            <div class="news-slider__card-content">
-                                                <div class="news-slider__card-tag">
-                                                    Долги
-                                                </div>
-                                                <h3 class="news-slider__card-heading">
-                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
-                                                </h3>
-                                                <div class="news-slider__card-date">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="news-slider__card">
-                                            <img src="img/news-slider/1.jpg" alt="" class="news-slider__card-image" />
-                                            <div
-                                                class="news-slider__card-overlay"
-                                                style="background: linear-gradient(90deg, rgba(5, 12, 66, 0.7) 29.75%, rgba(5, 12, 66, 0.308) 79.5%); "
-                                            ></div>
-                                            <div class="news-slider__card-content">
-                                                <div class="news-slider__card-tag">
-                                                    Долги
-                                                </div>
-                                                <h3 class="news-slider__card-heading">
-                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
-                                                </h3>
-                                                <div class="news-slider__card-date">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="news-slider__card">
-                                            <img src="img/news-slider/2.jpg" alt="" class="news-slider__card-image" />
-                                            <div
-                                                class="news-slider__card-overlay"
-                                                style="background: linear-gradient(90deg, rgba(2, 4, 17, 0.85) 41.19%, rgba(0, 0, 0, 0.085) 110.1%);"
-                                            ></div>
-                                            <div class="news-slider__card-content">
-                                                <div class="news-slider__card-tag">
-                                                    Долги
-                                                </div>
-                                                <h3 class="news-slider__card-heading">
-                                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
-                                                </h3>
-                                                <div class="news-slider__card-date">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                            <div class="article-header-photo__content">
+                                <div class="breadcrumbs article-header-photo__breadcrumbs">
+                                    <a href="#" class="breadcrumbs__link">
+                                        Главная
+                                        <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
+                                            <use xlink:href="#arrow-right-rounded"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="breadcrumbs__link">
+                                        Полезные статьи
+                                        <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
+                                            <use xlink:href="#arrow-right-rounded"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <h1 class="main-heading article-header-photo__heading">
+                                    Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета Федерации
+                                </h1>
+                                <div class="article-header-photo__description">
+                                    <p>
+                                        Заместитель руководителя Росимущества Алексей Павлов выступил на заседании Комитета Совета Федерации по
+                                        экономической политике. Заседание, посвященное результатам реорганизации АО «Почта России»
+                                    </p>
                                 </div>
                             </div>
-                            <button class="news-slider__arrow news-slider__arrow--next">
-                                <svg width="16" height="16" aria-hidden="true" class="icon-arrow-left">
-                                    <use xlink:href="#arrow-right"></use>
-                                </svg>
-                            </button>
                         </div>
                     </div>
                 </section>
-                <section class="all-articles">
+                <section class="news-detail">
                     <div class="container">
                         <div class="inner-container">
-                            <h2 class="secondary-heading all-articles__heading">
-                                Все статьи
-                            </h2>
-                            <div class="all-articles__layout">
-                                <div class="all-articles__main">
-                                    <ul class="all-articles__catalog">
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/1.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Статистика и аналитика
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/2.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Анонсы
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    Банк непрофильных активов «Траст» объявил новый аукцион
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/3.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Статистика и аналитика
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/4.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Статистика и аналитика
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    Банк непрофильных активов «Траст» объявил новый аукцион
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/5.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Статистика и аналитика
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/2.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Анонсы
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    Банк непрофильных активов «Траст» объявил новый аукцион
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/6.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Статистика и аналитика
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="all-articles__catalog-item">
-                                            <a href="#" class="all-articles__card">
-                                                <div class="all-articles__card-image-container">
-                                                    <img src="img/articles/7.jpg" alt="" class="all-articles__card-image" />
-                                                    <span class="all-articles__tag">
-                                                        Статистика и аналитика
-                                                    </span>
-                                                </div>
-                                                <h4 class="all-articles__card-heading">
-                                                    Банк непрофильных активов «Траст» объявил новый аукцион
-                                                </h4>
-                                                <div class="all-articles__info">
-                                                    01.06.2020 • 10 мин
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="all-articles__bottom-nav">
-                                        <div class="pagination">
-                                            <ul class="pagination__list">
-                                                <li class="pagination__list-item active">
-                                                    <a href="#" class="pagination__link">
-                                                        1
-                                                    </a>
-                                                </li>
-                                                <li class="pagination__list-item">
-                                                    <a href="#" class="pagination__link">
-                                                        2
-                                                    </a>
-                                                </li>
-                                                <li class="pagination__list-item">
-                                                    <a href="#" class="pagination__link">
-                                                        3
-                                                    </a>
-                                                </li>
-                                                <li class="pagination__list-item">
-                                                    <a href="#" class="pagination__link">
-                                                        4
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="#" class="btn catalog__lots-show-more-items">
-                                            Показать еще
+                            <div class="news-detail__layout">
+                                <div class="news-detail__sidebar">
+                                    <div class="news-detail__tags">
+                                        <a href="#" class="news-detail__tag">
+                                            Статистика и аналитика
                                         </a>
                                     </div>
+                                    <div class="news-detail__date">
+                                        01.06.2020 • 10 мин
+                                    </div>
+
+                                    <div class="news-detail__social">
+                                        <h4 class="news-detail__social-heading">
+                                            Поделиться
+                                        </h4>
+                                        <div class="news-detail__social-links">
+                                            <a href="#" class="news-detail__social-link">
+                                                <svg width="18" height="18" aria-hidden="true" class="icon-facebook">
+                                                    <use xlink:href="#facebook"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="news-detail__social-link">
+                                                <svg width="18" height="18" aria-hidden="true" class="icon-vk">
+                                                    <use xlink:href="#vk"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="news-detail__social-link">
+                                                <svg width="18" height="18" aria-hidden="true" class="icon-telegram">
+                                                    <use xlink:href="#telegram"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="news-detail__social-link">
+                                                <svg width="18" height="18" aria-hidden="true" class="icon-twitter">
+                                                    <use xlink:href="#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="all-articles__sidebar">
-                                    <div class="all-articles__categories">
-                                        <h3 class="all-articles__categories-heading">
-                                            Категории
+                                <div class="news-detail__main">
+                                    <div class="news-detail__content">
+                                        <p>
+                                            Росимущество в рамках компетенции обеспечило формирование корпоративной структуры управления Почты России
+                                            в соответствии с законодательством Российской Федерации, с учетом передовых практик в области
+                                            корпоративного управления.
+                                        </p>
+                                        <div class="news-detail__gallery js-news-gallery">
+                                            <div class="news-detail__gallery-main">
+                                                <button class="news-detail__gallery-arrow news-detail__gallery-arrow--prev">
+                                                    <svg width="18" height="18" aria-hidden="true" class="icon-arrow-left">
+                                                        <use xlink:href="#arrow-left"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="#" class="news-detail__gallery-card">
+                                                                <img
+                                                                    src="img/article/gallery-image.jpg"
+                                                                    alt=""
+                                                                    class="news-detail__gallery-card-image"
+                                                                />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#" class="news-detail__gallery-card">
+                                                                <img
+                                                                    src="img/article/gallery-image.jpg"
+                                                                    alt=""
+                                                                    class="news-detail__gallery-card-image"
+                                                                />
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="#" class="news-detail__gallery-card">
+                                                                <img
+                                                                    src="img/article/gallery-image.jpg"
+                                                                    alt=""
+                                                                    class="news-detail__gallery-card-image"
+                                                                />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="news-detail__gallery-arrow news-detail__gallery-arrow--next">
+                                                    <svg width="18" height="18" aria-hidden="true" class="icon-arrow-right">
+                                                        <use xlink:href="#arrow-right"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="news-detail__gallery-thumbs">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="news-detail__gallery-thumbs-card">
+                                                                <img
+                                                                    src="img/article/gallery-image.jpg"
+                                                                    alt=""
+                                                                    class="news-detail__gallery-thumbs-card-image"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="news-detail__gallery-thumbs-card">
+                                                                <img
+                                                                    src="img/article/gallery-image.jpg"
+                                                                    alt=""
+                                                                    class="news-detail__gallery-thumbs-card-image"
+                                                                />
+                                                                <svg width="18" height="18" aria-hidden="true" class="icon-play">
+                                                                    <use xlink:href="#play"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="news-detail__gallery-thumbs-card">
+                                                                <img
+                                                                    src="img/article/gallery-image.jpg"
+                                                                    alt=""
+                                                                    class="news-detail__gallery-thumbs-card-image"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Росимущество в рамках компетенции обеспечило формирование корпоративной структуры управления Почты России
+                                            в соответствии с законодательством Российской Федерации, с учетом передовых практик в области
+                                            корпоративного управления. На текущий момент в соответствии с уставом Общества приняты решения о
+                                            назначении состава совета директоров, назначены члены правления и генеральный директор Общества, избрана
+                                            ревизионная комиссия. Для регламентации ключевых принципов и процедур корпоративного управления с учетом
+                                            новой корпоративной структуры были разработаны первоочередные внутренние корпоративные документы
+                                            акционерного общества.
+                                        </p>
+                                        <blockquote>
+                                            <p>
+                                                Продолжается работа по подготовке 10000 объектов недвижимого имущества и 3300 земельных участков к
+                                                внесению в качестве второго дополнительного вклада в уставный капитал АО «Почта России»
+                                            </p>
+                                            <footer>отметил Алексей Павлов</footer>
+                                        </blockquote>
+                                        <h3>
+                                            Заседание прошло онлайн
                                         </h3>
-                                        <ul class="all-articles__categories-list">
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Статистика и аналитика
-                                                </a>
+                                        <p>
+                                            Заместитель руководителя Росимущества Алексей Павлов выступил на заседании Комитета Совета Федерации по
+                                            экономической политике. Заседание, посвященное результатам реорганизации АО «Почта России» и перспективам
+                                            развития компании, состоялось 9 июня в режиме видеоконференции.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Маркированный текст
                                             </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Биржа
-                                                </a>
+                                            <li>
+                                                Маркированный текст
                                             </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link active">
-                                                    Материалы СМИ
-                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
-                                                        <use xlink:href="#cross"></use>
+                                            <li>
+                                                Маркированный текст
+                                            </li>
+                                        </ul>
+                                        <h3>
+                                            Формирование структуры
+                                        </h3>
+                                        <p>
+                                            Росимущество в рамках компетенции обеспечило формирование корпоративной структуры управления Почты России
+                                            в соответствии с законодательством Российской Федерации, с учетом передовых практик в области
+                                            корпоративного управления.
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                Прономерованный текст
+                                            </li>
+                                            <li>
+                                                Прономерованный текст
+                                            </li>
+                                            <li>
+                                                Прономерованный текст
+                                            </li>
+                                        </ol>
+                                        <h3>
+                                            Заседание прошло онлайн
+                                        </h3>
+                                        <p>
+                                            Росимущество в рамках компетенции обеспечило формирование корпоративной структуры управления Почты России
+                                            в соответствии с законодательством Российской Федерации, с учетом передовых практик в области
+                                            корпоративного управления.
+                                        </p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Название первой колонки таблицы
+                                                    </th>
+                                                    <th>
+                                                        Данные таблицы
+                                                    </th>
+                                                    <th>
+                                                        Данные таблицы
+                                                    </th>
+                                                    <th>
+                                                        Данные таблицы
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-th="Название первой колонки таблицы">
+                                                        Информация первой колонки таблицы
+                                                    </td>
+                                                    <td data-th="Данные таблицы">
+                                                        Информация второй колонки
+                                                    </td>
+                                                    <td data-th="Данные таблицы">
+                                                        Информация
+                                                    </td>
+                                                    <td data-th="Данные таблицы">
+                                                        Информация
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-th="Название первой колонки таблицы">
+                                                        Информация первой колонки таблицы
+                                                    </td>
+                                                    <td data-th="Данные таблицы">
+                                                        Информация второй колонки
+                                                    </td>
+                                                    <td data-th="Данные таблицы">
+                                                        Информация
+                                                    </td>
+                                                    <td data-th="Данные таблицы">
+                                                        Информация
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="news-detail__info">
+                                        <div class="news-detail__info-author">
+                                            Автор: Наталия Густова
+                                        </div>
+                                        <div class="news-detail__social">
+                                            <h4 class="news-detail__social-heading">
+                                                Поделиться
+                                            </h4>
+                                            <div class="news-detail__social-links">
+                                                <a href="#" class="news-detail__social-link">
+                                                    <svg width="18" height="18" aria-hidden="true" class="icon-facebook">
+                                                        <use xlink:href="#facebook"></use>
                                                     </svg>
                                                 </a>
-                                            </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Банкротство
+                                                <a href="#" class="news-detail__social-link">
+                                                    <svg width="18" height="18" aria-hidden="true" class="icon-vk">
+                                                        <use xlink:href="#vk"></use>
+                                                    </svg>
                                                 </a>
-                                            </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Мнение эксперта
+                                                <a href="#" class="news-detail__social-link">
+                                                    <svg width="18" height="18" aria-hidden="true" class="icon-telegram">
+                                                        <use xlink:href="#telegram"></use>
+                                                    </svg>
                                                 </a>
-                                            </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Недвижимость
+                                                <a href="#" class="news-detail__social-link">
+                                                    <svg width="18" height="18" aria-hidden="true" class="icon-twitter">
+                                                        <use xlink:href="#twitter"></use>
+                                                    </svg>
                                                 </a>
-                                            </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Разъяснения законодательства
-                                                </a>
-                                            </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Анонсы и итоги конференций
-                                                </a>
-                                            </li>
-                                            <li class="all-articles__categories-list-item">
-                                                <a href="#" class="all-articles__categories-link">
-                                                    Долги
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="all-articles__show-more">
-                                            Показать еще
-                                            <svg width="12" height="12" aria-hidden="true" class="icon-vertical-dots">
-                                                <use xlink:href="#vertical-dots"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="all-articles__popular">
-                                        <h3 class="all-articles__popular-heading">
-                                            Популярные статьи
-                                        </h3>
-                                        <ul class="all-articles__popular-list">
-                                            <li class="all-articles__popular-list-item">
-                                                <a href="#" class="all-articles__popular-card">
-                                                    <div class="all-articles__popular-card-number">
-                                                        01
-                                                    </div>
-                                                    <div class="all-articles__popular-card-content">
-                                                        <h4 class="all-articles__popular-card-heading">
-                                                            ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
-                                                        </h4>
-                                                        <div class="all-articles__popular-card-info">
-                                                            01.06.2020 • 10 мин
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="all-articles__popular-list-item">
-                                                <a href="#" class="all-articles__popular-card">
-                                                    <div class="all-articles__popular-card-number">
-                                                        02
-                                                    </div>
-                                                    <div class="all-articles__popular-card-content">
-                                                        <h4 class="all-articles__popular-card-heading">
-                                                            Банк непрофильных активов «Траст» объявил новый аукцион
-                                                        </h4>
-                                                        <div class="all-articles__popular-card-info">
-                                                            01.06.2020 • 10 мин
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="all-articles__popular-list-item">
-                                                <a href="#" class="all-articles__popular-card">
-                                                    <div class="all-articles__popular-card-number">
-                                                        03
-                                                    </div>
-                                                    <div class="all-articles__popular-card-content">
-                                                        <h4 class="all-articles__popular-card-heading">
-                                                            Процесс реорганизации АО «Почта России» обсудили на заседании Комитета Совета
-                                                        </h4>
-                                                        <div class="all-articles__popular-card-info">
-                                                            01.06.2020 • 10 мин
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="all-articles__popular-list-item">
-                                                <a href="#" class="all-articles__popular-card">
-                                                    <div class="all-articles__popular-card-number">
-                                                        04
-                                                    </div>
-                                                    <div class="all-articles__popular-card-content">
-                                                        <h4 class="all-articles__popular-card-heading">
-                                                            Закупки в сфере строительства
-                                                        </h4>
-                                                        <div class="all-articles__popular-card-info">
-                                                            01.06.2020 • 10 мин
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="all-articles__popular-list-item">
-                                                <a href="#" class="all-articles__popular-card">
-                                                    <div class="all-articles__popular-card-number">
-                                                        05
-                                                    </div>
-                                                    <div class="all-articles__popular-card-content">
-                                                        <h4 class="all-articles__popular-card-heading">
-                                                            Закупки - как инструмент реализации национальных проектов
-                                                        </h4>
-                                                        <div class="all-articles__popular-card-info">
-                                                            01.06.2020 • 10 мин
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="all-articles__popular-list-item">
-                                                <a href="#" class="all-articles__popular-card">
-                                                    <div class="all-articles__popular-card-number">
-                                                        06
-                                                    </div>
-                                                    <div class="all-articles__popular-card-content">
-                                                        <h4 class="all-articles__popular-card-heading">
-                                                            ПАО «МИнБанк» объявил продажу прав требований на НЭП-Фабрикант
-                                                        </h4>
-                                                        <div class="all-articles__popular-card-info">
-                                                            01.06.2020 • 10 мин
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="is-interesting">
+                <section class="is-interesting is-interesting--read-also">
                     <div class="container">
                         <div class="inner-container">
                             <h2 class="is-interesting__heading">
-                                Будет интересно
+                                Читайте также
                             </h2>
                             <div class="is-interesting__slider js-is-interesting-slider">
                                 <div class="swiper-container">

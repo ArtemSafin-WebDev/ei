@@ -22,6 +22,7 @@ import shortInfo from './shortInfo';
 import otherItems from './otherItems';
 import newsSlider from './newsSlider';
 import isInteresting from './isInterestingSlider';
+import newsGallery from './newsGallery';
 
 
 
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     otherItems();
     newsSlider();
     isInteresting();
+    newsGallery();
 });
 
 window.addEventListener('load', function() {

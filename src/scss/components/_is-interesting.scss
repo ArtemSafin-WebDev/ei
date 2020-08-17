@@ -10,6 +10,12 @@
 
     background-blend-mode: multiply, normal, normal;
 
+
+    &--read-also {
+        background: none;
+        color: var(--text-color);
+    }
+
     @include breakpoint(mobile) {
         padding: 4rem 0;
       
@@ -21,6 +27,11 @@
     font-size: 3rem;
     line-height: 3.7rem;
     margin-bottom: 3.6rem;
+
+
+    .is-interesting--read-also & {
+        text-align: center;
+    }
     @include breakpoint(mobile) {
         font-size: 2.4rem;
         line-height: 2.9rem;
@@ -108,6 +119,10 @@
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: rgba(white, 0.4);
+
+    .is-interesting--read-also & {
+        color: #99A6B6;
+    }
 }
 
 .is-interesting__card-tag,
@@ -146,7 +161,7 @@
 
     &:link,
     &:visited {
-        color: white;
+        color: inherit;
     }
 }
 
