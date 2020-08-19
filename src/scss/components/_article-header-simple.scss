@@ -1,0 +1,11 @@
+.article-header-simple {
+    background: #EBF1F5;
+    color: var(--text-color);
+    padding-top: 5.6rem;
+    padding-bottom: 10rem;
+
+    @include breakpoint(mobile) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}

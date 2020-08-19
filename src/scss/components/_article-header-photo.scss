@@ -29,6 +29,11 @@
 .article-header-photo__content {
     max-width: 100rem;
 
+
+    .article-header-simple & {
+        max-width: 112.5rem;
+    }
+
     @include breakpoint(mobile) {
         max-width: none;
     }
@@ -46,6 +51,11 @@
 
 .article-header-photo__breadcrumbs {
     margin-bottom: 16rem;
+
+
+    .article-header-simple & {
+        margin-bottom: 6.4rem;
+    }
 
     @include breakpoint(mobile) {
         margin-bottom: 6rem;
@@ -66,6 +76,11 @@
     font-size: 2.4rem;
     line-height: 3.4rem;
     color: rgba(white, 0.7);
+
+
+    .article-header-simple & {
+        color: var(--text-color);
+    }
 
 
     @include breakpoint(mobile) {
