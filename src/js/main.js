@@ -23,6 +23,7 @@ import otherItems from './otherItems';
 import newsSlider from './newsSlider';
 import isInteresting from './isInterestingSlider';
 import newsGallery from './newsGallery';
+import catalogMenu from './catalogMenu';
 
 
 
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     newsSlider();
     isInteresting();
     newsGallery();
+    catalogMenu();
 });
 
 window.addEventListener('load', function() {

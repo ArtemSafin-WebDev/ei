@@ -1,6 +1,14 @@
 .page-header {
     position: relative;
     z-index: 500;
+
+    
+}
+
+
+.page-header__container {
+    position: relative;
+    z-index: 300;
 }
 
 .page-header__nav-row {
@@ -153,6 +161,11 @@
         color: var(--primary-color);
     }
 
+
+    .catalog-menu-open & {
+        color: var(--text-color);
+    }
+
     @include breakpoint(mobile) {
         padding-right: 1.6rem;
 
@@ -161,6 +174,7 @@
 }
 
 .page-header__catalog-link-text {
+   
     @include breakpoint(mobile) {
         display: none;
     }
@@ -181,8 +195,25 @@
         background-color: var(--primary-color);
         border-radius: 1px;
         margin-bottom: 4px;
+        transition: transform .3s, opacity .3s, background-color .3s;
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+
+    .catalog-menu-open & {
+        & > span {
+            background-color: var(--text-color);
+            &:nth-child(1) {
+                transform: translateY(6px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(-6px) rotate(45deg);
+            }
         }
     }
 
