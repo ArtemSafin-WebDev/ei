@@ -9248,8 +9248,8 @@ select:-webkit-autofill:focus {
   border: 1px solid #ffffff;
   border-radius: 2.4rem;
   margin-bottom: 2.4rem;
-  -webkit-transition: color .2s, background-color .2s;
-  transition: color .2s, background-color .2s; }
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s; }
   .assistant__action-link:link, .assistant__action-link:visited {
     color: white; }
   .assistant__action-link:hover {
@@ -9263,6 +9263,32 @@ select:-webkit-autofill:focus {
       border-radius: 2rem;
       margin: 0;
       margin-bottom: 1.8rem; } }
+
+.assistant__mute-sound {
+  color: white;
+  position: fixed;
+  bottom: 16rem;
+  right: 9.5rem;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0s linear 3s, color 0.3s;
+  transition: opacity 0.3s, visibility 0s linear 3s, color 0.3s; }
+  .assistant__mute-sound svg {
+    width: 2.8rem;
+    height: 2.8rem;
+    display: block; }
+  .assistant-shown .assistant__mute-sound {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s, visibility 0.3s, color 0.3s;
+    transition: opacity 0.3s, visibility 0.3s, color 0.3s; }
+  .assistant__mute-sound:hover {
+    color: var(--primary-color); }
+  @media only screen and (max-width: 767px) {
+    .assistant__mute-sound {
+      right: 3rem;
+      bottom: 9rem; } }
 
 .contacts {
   padding-top: var(--page-top-padding); }
