@@ -60,6 +60,52 @@
     }
 }
 
+
+@mixin waves {
+    &::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-image: url('../img/wave.png');
+        background-position: center top;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        z-index: 2;
+
+
+        @include breakpoint(mobile) {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 21rem;
+        background-image: url('../img/moving-wave.svg');
+        background-position: center top;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        z-index: 1;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-name: wave;
+        animation-duration: 30s;
+
+        @include breakpoint(mobile) {
+            display: none;
+        }
+    }
+}
+
 @mixin objectFitCover() {
     object-fit: cover;
     object-position: center;

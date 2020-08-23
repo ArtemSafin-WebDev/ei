@@ -35,6 +35,9 @@ export default function assistant() {
     }
 
     toggleBtn.addEventListener('click', event => {
+        if (document.body.classList.contains('assistant-page')) {
+            return true;
+        }
         event.preventDefault();
         if (menuOpen) {
             closeMenu();

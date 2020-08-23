@@ -14,48 +14,7 @@
     visibility: hidden;
     transition: opacity 0.3s, visibility 0s linear 0.3s;
 
-    &::before {
-        content: '';
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        background-image: url('../img/wave.png');
-        background-position: center top;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-
-        z-index: 2;
-
-
-        @include breakpoint(mobile) {
-            display: none;
-        }
-    }
-
-    &::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 21rem;
-        background-image: url('../img/moving-wave.svg');
-        background-position: center top;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        z-index: 1;
-        animation-timing-function: linear;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        animation-name: wave;
-        animation-duration: 30s;
-
-        @include breakpoint(mobile) {
-            display: none;
-        }
-    }
+    @include waves();
 
     .assistant-shown & {
         opacity: 1;
@@ -102,6 +61,12 @@
 
     z-index: 200;
 
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+
     .icon-pencil {
         position: absolute;
         width: 2.2rem;
@@ -144,6 +109,17 @@
 }
 
 .assistant-shown {
+    .icon-pencil {
+        opacity: 0;
+    }
+
+    .icon-cross {
+        opacity: 1;
+    }
+}
+
+
+.assistant-page {
     .icon-pencil {
         opacity: 0;
     }

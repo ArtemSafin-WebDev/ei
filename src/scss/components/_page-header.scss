@@ -9,7 +9,8 @@
     transition: background-color 0.3s;
 
     @include breakpoint(mobile) {
-        .assistant-shown & {
+        .assistant-shown &,
+        .assistant-page:not(.mobile-menu-open) & {
             background-color: #050c42;
         }
     }
@@ -43,7 +44,8 @@
         color: var(--text-color);
     }
 
-    .assistant-shown & {
+    .assistant-shown &,
+    .assistant-page:not(.mobile-menu-open) & {
         &:link,
         &:visited {
             color: white;
@@ -80,7 +82,8 @@
         color: var(--primary-color);
     }
 
-    .assistant-shown & {
+    .assistant-shown &,
+    .assistant-page:not(.mobile-menu-open) & {
         &:link,
         &:visited {
             color: white;
@@ -128,7 +131,8 @@
     fill: var(--primary-color);
     transition: fill 0.2s;
 
-    .assistant-shown & {
+    .assistant-shown &,
+    .assistant-page:not(.mobile-menu-open) & {
         fill: white;
     }
 
@@ -335,7 +339,8 @@
         }
     }
 
-    .assistant-shown & {
+    .assistant-shown &,
+    .assistant-page:not(.mobile-menu-open) & {
         color: white;
         &:link,
         &:visited {
@@ -581,7 +586,8 @@
         }
     }
 
-    .assistant-shown & {
+    .assistant-shown &,
+    .assistant-page:not(.mobile-menu-open) & {
         & > span {
             background-color: white;
         }
