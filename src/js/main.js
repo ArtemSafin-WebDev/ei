@@ -25,6 +25,7 @@ import isInteresting from './isInterestingSlider';
 import newsGallery from './newsGallery';
 import catalogMenu from './catalogMenu';
 import assistant from './assistant';
+import validation from './validation';
 
 
 
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     newsGallery();
     catalogMenu();
     assistant();
+    validation();
 });
 
 window.addEventListener('load', function() {
