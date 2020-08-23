@@ -15,9 +15,19 @@ export default function mobileMenu() {
         let menuOpen = false;
 
         function openMenu() {
+
+            if (window.closeAssistant) {
+                window.closeAssistant();
+            }
+
+            if (window.closeCatalogMenu) {
+                window.closeCatalogMenu();
+            }
             gsap.to(window, { duration: 0.3, scrollTo: 0, clearProps: 'all', onComplete: () => lockScroll(mobileMenuScrollContainer) });
             menuOpen = true;
             document.body.classList.add('mobile-menu-open');
+
+            
         }
 
         function closeMenu() {
@@ -34,6 +44,9 @@ export default function mobileMenu() {
                 openMenu();
             }
         });
+
+
+        window.closeMobileMenu = closeMenu;
 
 
         if (window.matchMedia(`(max-width: ${MOBILE_WIDTH}px)`).matches) {

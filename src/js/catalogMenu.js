@@ -23,9 +23,17 @@ export default function catalogMenu() {
     let menuOpen = false;
 
     function openMenu() {
+        if (window.closeAssistant) {
+            window.closeAssistant();
+        }
+        if (window.closeMobileMenu) {
+            window.closeMobileMenu();
+        }
         gsap.to(window, { duration: 0.3, scrollTo: 0, clearProps: 'all', onComplete: () => lockScroll(catalogMenu) });
         menuOpen = true;
         document.body.classList.add('catalog-menu-open');
+
+      
     }
 
     function closeMenu() {
@@ -42,6 +50,9 @@ export default function catalogMenu() {
             openMenu();
         }
     });
+
+
+    window.closeCatalogMenu = closeMenu;
 
    
 }

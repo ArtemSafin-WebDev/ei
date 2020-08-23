@@ -1,4 +1,40 @@
 <header class="page-header">
+    <div class="assistant js-assistant-popup">
+        <div class="container">
+            <div class="inner-container">
+                <div class="assistant__content">
+                    <h2 class="assistant__heading">
+                        Добрый день, я Дмитрий!<br>
+                        Умный помощник сервиса Единый Информатор!<br>
+                        Что я могу для вас сделать?
+                    </h2>
+
+                    <button class="assistant__main-btn speaking">
+                        
+
+                    </button>
+                    <div class="assistant__actions">
+                        <a href="#" class="assistant__action-link">
+                            Как пользоваться сервисом?
+                        </a>
+                        <a href="#" class="assistant__action-link">
+                            Посмотреть каталог
+                        </a>
+                        <a href="#" class="assistant__action-link">
+                            Подробнее о сервисе
+                        </a>
+                        <a href="#" class="assistant__action-link">
+                            Как пользоваться сервисом?
+                        </a>
+                        <a href="#" class="assistant__action-link">
+                            Посмотреть каталог
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="container page-header__container">
         <div class="page-header__nav-row">
             <nav class="page-header__main-nav">
@@ -290,7 +326,12 @@
                     </div>
                 </div>
                 <a href="#" class="page-header__logo-link">
-                    <img src="img/logo.svg" width="190" alt="Логотип" class="page-header__logo-image">
+
+
+
+                    <svg width="190" aria-hidden="true" class="icon-logo page-header__logo-image">
+                        <use xlink:href="#logo"></use>
+                    </svg>
                 </a>
                 <button class="page-header__mobile-menu-burger">
                     <span class="page-header__mobile-menu-burger-content">
@@ -590,7 +631,8 @@
                                         <div class="catalog-menu__results-marketing-block">
                                             <div class="catalog-menu__results-marketing-card">
                                                 <div class="catalog-menu__results-marketing-card-image-container">
-                                                    <img src="img/marketing-image.jpg" alt="" class="catalog-menu__results-marketing-card-image">
+                                                    <img src="img/marketing-image.jpg" alt=""
+                                                        class="catalog-menu__results-marketing-card-image">
                                                 </div>
                                                 <h4 class="catalog-menu__results-marketing-heading">
                                                     Вся информация о лотах прямо у вас в руках
@@ -707,7 +749,8 @@
                                         <div class="catalog-menu__results-marketing-block">
                                             <div class="catalog-menu__results-marketing-card">
                                                 <div class="catalog-menu__results-marketing-card-image-container">
-                                                    <img src="img/marketing-image.jpg" alt="" class="catalog-menu__results-marketing-card-image">
+                                                    <img src="img/marketing-image.jpg" alt=""
+                                                        class="catalog-menu__results-marketing-card-image">
                                                 </div>
                                                 <h4 class="catalog-menu__results-marketing-heading">
                                                     Вся информация о лотах прямо у вас в руках
@@ -727,4 +770,12 @@
             </div>
         </div>
     </div>
+    <button class="assistant__toggle js-assistant-toggle">
+        <svg width="30" height="30" aria-hidden="true" class="icon-pencil">
+            <use xlink:href="#pencil"></use>
+        </svg>
+        <svg width="30" height="30" aria-hidden="true" class="icon-cross">
+            <use xlink:href="#cross"></use>
+        </svg>
+    </button>
 </header>

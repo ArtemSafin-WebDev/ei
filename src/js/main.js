@@ -24,6 +24,7 @@ import newsSlider from './newsSlider';
 import isInteresting from './isInterestingSlider';
 import newsGallery from './newsGallery';
 import catalogMenu from './catalogMenu';
+import assistant from './assistant';
 
 
 
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     isInteresting();
     newsGallery();
     catalogMenu();
+    assistant();
 });
 
 window.addEventListener('load', function() {

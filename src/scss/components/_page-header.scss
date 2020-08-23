@@ -1,14 +1,18 @@
 .page-header {
     position: relative;
     z-index: 500;
-
-    
 }
-
 
 .page-header__container {
     position: relative;
     z-index: 300;
+    transition: background-color 0.3s;
+
+    @include breakpoint(mobile) {
+        .assistant-shown & {
+            background-color: #050c42;
+        }
+    }
 }
 
 .page-header__nav-row {
@@ -38,6 +42,17 @@
     &:hover {
         color: var(--text-color);
     }
+
+    .assistant-shown & {
+        &:link,
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
 }
 
 .page-header__main-nav-list {
@@ -63,6 +78,13 @@
 
     &:hover {
         color: var(--primary-color);
+    }
+
+    .assistant-shown & {
+        &:link,
+        &:visited {
+            color: white;
+        }
     }
 }
 
@@ -100,8 +122,15 @@
 
 .page-header__logo-image {
     width: 19rem;
-    height: auto;
+    height: 5.2rem;
     display: block;
+
+    fill: var(--primary-color);
+    transition: fill 0.2s;
+
+    .assistant-shown & {
+        fill: white;
+    }
 
     @include breakpoint(mobile) {
         width: 18rem;
@@ -120,7 +149,7 @@
     padding: 0 2.2rem;
 
     .white-bg & {
-        background-color: #F3F7F9;
+        background-color: #f3f7f9;
     }
 
     @include breakpoint(mobile) {
@@ -161,7 +190,6 @@
         color: var(--primary-color);
     }
 
-
     .catalog-menu-open & {
         color: var(--text-color);
     }
@@ -174,7 +202,6 @@
 }
 
 .page-header__catalog-link-text {
-   
     @include breakpoint(mobile) {
         display: none;
     }
@@ -195,12 +222,11 @@
         background-color: var(--primary-color);
         border-radius: 1px;
         margin-bottom: 4px;
-        transition: transform .3s, opacity .3s, background-color .3s;
+        transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
         &:last-child {
             margin-bottom: 0;
         }
     }
-
 
     .catalog-menu-open & {
         & > span {
@@ -283,7 +309,7 @@
     margin-right: 3rem;
     flex-shrink: 0;
     position: relative;
-
+    transition: color 0.2s;
     &:not([href]) {
         cursor: default;
     }
@@ -306,6 +332,14 @@
 
         .page-header__user-account {
             transform: translateZ(0) translateY(0);
+        }
+    }
+
+    .assistant-shown & {
+        color: white;
+        &:link,
+        &:visited {
+            color: white;
         }
     }
 
@@ -531,7 +565,6 @@
     }
 }
 
-
 .page-header__mobile-menu-burger-content {
     display: flex;
     flex-direction: column;
@@ -540,13 +573,21 @@
         width: 22px;
         height: 2px;
         background-color: var(--text-color);
-        transition: transform .3s, opacity .3s;
+        transition: transform 0.3s, opacity 0.3s, background-color .3s;
         margin-bottom: 4px;
         border-radius: 2px;
         &:last-child {
             margin-bottom: 0;
         }
     }
+
+    .assistant-shown & {
+        & > span {
+            background-color: white;
+        }
+       
+    }
+
     .mobile-menu-open & {
         & > span {
             &:nth-child(1) {
@@ -560,7 +601,6 @@
             }
         }
     }
-
 }
 
 .page-header__mobile-menu {
