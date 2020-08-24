@@ -1,6 +1,7 @@
 
 import { lockScroll, unlockScroll } from './scrollBlocker';
 import { gsap } from 'gsap';
+import accordionFactory from './accordionFactory';
 
 export default function assistant() {
     const toggleBtn = document.querySelector('.js-assistant-toggle');
@@ -48,6 +49,11 @@ export default function assistant() {
 
 
     window.closeAssistant = closeMenu;
+
+
+    const assistantAccordions = Array.from(document.querySelectorAll('.js-assistant-accordion'));
+
+    accordionFactory(assistantAccordions).init();
 
     
 }

@@ -9,6 +9,9 @@
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #99a6b6;
+
+
+   
     &:last-child {
         svg {
             display: none;
@@ -21,15 +24,37 @@
         flex-shrink: 0;
         margin: 0 .6rem;
         fill: #99a6b6;
+
+       
     }
     &:link,
     &:visited {
         color: #99a6b6;
+
+
+      
     }
 
     &:hover {
         color: var(--primary-color);
     }
 
+
+
+    .assistant-page & {
+        color: rgba(white, .7);
+        &:link,
+        &:visited {
+            color: rgba(white, .7);
+        }
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        svg {
+            fill: rgba(white, .7);
+        }
+    }
    
 }

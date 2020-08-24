@@ -1,0 +1,234 @@
+.assistant-text-page {
+    padding-top: var(--page-top-padding);
+    position: relative;
+    z-index: 10;
+    padding-bottom: 6rem;
+
+    @include breakpoint(mobile) {
+        padding-bottom: 3rem;
+    }
+}
+
+.assistant-text-page__layout {
+    display: flex;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
+}
+
+.assistant-text-page__sidebar {
+    width: 35.8rem;
+    flex-shrink: 0;
+    margin-right: 4rem;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-shrink: 1;
+        margin: 0;
+        order: 2;
+        margin-top: 5rem;
+    }
+}
+
+.assistant-text-page__main-heading {
+    margin-bottom: 6.4rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.assistant-text-page__main {
+    width: 100%;
+    max-width: 70rem;
+    margin-left: auto;
+
+    @include breakpoint(mobile) {
+        max-width: none;
+        margin: 0;
+    }
+}
+
+.assistant-text-page__accordion {
+    margin-bottom: 4.8rem;
+    background: linear-gradient(91.34deg, #13b17c 2.06%, #0099cc 100%);
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.assistant-text-page__accordion-btn {
+    padding: 1.7rem 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    svg {
+        width: 1.2rem;
+        height: 0.8rem;
+        flex-shrink: 0;
+        margin-left: 1.5rem;
+        transition: transform 0.3s;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+    }
+}
+
+.assistant-text-page__accordion.active .assistant-text-page__accordion-btn svg {
+    transform: rotate(180deg);
+}
+
+.assistant-text-page__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+.assistant-text-page__accordion-content-inner {
+    padding: 0 2.6rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+    }
+}
+
+.assistant-text-page__nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.assistant-text-page__nav-link {
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+    color: rgba(white, 0.6);
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:link,
+    &:visited {
+        color: rgba(white, 0.6);
+    }
+
+    &:hover {
+        color: white;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+}
+
+.assistant-text-page__accordion-inner-link {
+    padding: 1rem 2.2rem;
+    font-size: 1.9rem;
+    line-height: 1.2;
+    transition: color 0.2s, background-color 0.2s;
+    border-radius: 1.2rem;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        background: rgba(#d9f3eb, 0.35);
+    }
+
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+    }
+}
+
+.assistant-text-page__info-block {
+    margin-bottom: 8rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 4rem;
+    }
+}
+
+.assistant-text-page__info-block-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 2.4rem;
+    color: white;
+
+
+    @include breakpoint(mobile) {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+}
+
+.assistant-text-page__info-block-text {
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    color: rgba(white, 0.5);
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    & > * {
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+    }
+}
