@@ -1,0 +1,196 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="change-data">
+    <div class="container">
+        <div class="inner-container">
+            <div class="user">
+                <div class="user__layout">
+                    <div class="user__sidebar">
+                        <div class="user__panel">
+                            <div class="user__avatar">
+                                KK
+                            </div>
+                            <div class="user__name">
+                                Константин Константинопольский
+                            </div>
+                            <a href="#" class="user__change-data">
+                                Изменить данные
+                            </a>
+
+                            <nav class="user__nav">
+                                <a href="#" class="user__nav-link">
+                                    Отчеты и выписки
+                                </a>
+                                <a href="#" class="user__nav-link">
+                                    Избранное
+                                </a>
+                                <a href="#" class="user__nav-link">
+                                    Сохраненные поиски
+                                </a>
+                                <a href="#" class="user__nav-link">
+                                    Уведомления
+                                </a>
+                                <a href="#" class="user__nav-link">
+                                    Подписка
+                                </a>
+                            </nav>
+                            <a href="#" class="user__logout-link">
+                                Выйти
+                            </a>
+
+                            <a href="#" class="user__try-premium">
+                                <div class="user__try-premium-type">
+                                    Профессиональный аккаунт
+                                </div>
+                                <div class="user__try-premium-slogan">
+                                    Попробуйте 30 дней бесплатно
+                                </div>
+                            </a>
+
+                            <div class="user__other-accounts">
+                                <h3 class="user__other-accounts-heading">
+                                    Другие аккаунты
+                                </h3>
+                                <ul class="user__other-accounts-list">
+                                    <li class="user__other-accounts-list-item">
+                                        <a href="#" class="user__other-accounts-card">
+                                            <div class="user__other-accounts-card-avatar">
+                                                ВК
+                                            </div>
+                                            <div class="user__other-accounts-card-content">
+                                                <div class="user__other-accounts-card-name">
+                                                    Владимир Константинопольсикй
+                                                </div>
+                                                <div class="user__other-accounts-card-email">
+                                                    konstantin@ei.ru
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="user__other-accounts-create">
+                                    <div class="user__other-accounts-create-icon">
+                                        <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                            <use xlink:href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                    Добавить аккаунт
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user__main">
+                        <h1 class="main-heading user__heading">
+                            Изменить данные
+                        </h1>
+                        <form action="/" method="POST" class="user__change-form" data-need-validation>
+                            <div class="user__change-form-row">
+                                <label for="firstname" class="user__change-form-label">
+                                    Имя
+                                </label>
+                                <div class="user__change-form-input-wrapper">
+                                    <input type="text" name="firstname" id="firstname" class="user__change-form-input"
+                                        required placeholder="Имя">
+                                </div>
+                            </div>
+                            <div class="user__change-form-row">
+                                <label for="lastname" class="user__change-form-label">
+                                    Фамилия
+                                </label>
+                                <div class="user__change-form-input-wrapper">
+                                    <input type="text" name="lastname" id="lastname" class="user__change-form-input"
+                                        required placeholder="Фамилия">
+                                </div>
+                            </div>
+                            <div class="user__change-form-row">
+                                <label for="city" class="user__change-form-label">
+                                    Город
+                                </label>
+                                <div class="user__change-form-input-wrapper" id="city-error">
+                                    <select name="city" id="city"
+                                        class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#city-error" data-parsley-errors-container="#city-error" data-trigger="change">
+                                        <option value="">Выберите город</option>
+                                        <option value="kazan">Казань</option>
+                                        <option value="moscow">Москва</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="user__change-form-row">
+                                <label for="phone" class="user__change-form-label">
+                                    Телефон
+                                    <span class="user__change-form-label-remark">
+                                        Не указывается на сайте
+                                    </span>
+                                </label>
+                                <div class="user__change-form-input-wrapper">
+                                    <input type="tel" name="phone" id="phone"
+                                        class="user__change-form-input js-phone-input" data-parsley-phone required
+                                        placeholder="+7 (XXX) XXXX-XX-XX">
+                                </div>
+                            </div>
+
+                            <div class="user__change-form-row">
+                                <label for="email" class="user__change-form-label">
+                                    Фамилия
+                                </label>
+                                <div class="user__change-form-input-wrapper">
+                                    <input type="email" name="email" id="email" class="user__change-form-input" required
+                                        placeholder="Электронная почта">
+                                    <label class="user__change-form-checkbox">
+                                        <input type="checkbox" name="type" value="Y"
+                                            class="user__change-form-checkbox-input">
+                                        <span class="user__change-form-checkbox-mark">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-checkmark">
+                                                <use xlink:href="#checkmark"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="user__change-form-checkbox-text">
+                                            Я — арбитражный управляющий
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="user__change-form-row">
+                                <label for="oldpassword" class="user__change-form-label">
+                                    Старый пароль
+                                </label>
+                                <div class="user__change-form-input-wrapper">
+                                    <input type="password" name="oldpassword" id="oldpassword" class="user__change-form-input"
+                                        required placeholder="Старый пароль">
+                                </div>
+                            </div>
+                            <div class="user__change-form-row">
+                                <label for="password" class="user__change-form-label">
+                                    Новый пароль
+                                </label>
+                                <div class="user__change-form-input-wrapper">
+                                    <input type="password" name="password" id="password" class="user__change-form-input"
+                                        required placeholder="Новый пароль">
+                                </div>
+                            </div>
+                            <div class="user__change-form-row">
+                                <label for="passwordconfirmation" class="user__change-form-label">
+                                    Повторите новый пароль
+                                </label>
+                                <div class="user__change-form-input-wrapper">
+                                    <input type="password" name="passwordconfirmation" id="passwordconfirmation" class="user__change-form-input"
+                                        required data-parsley-equalto="#password" placeholder="Повторите пароль">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn user__change-form-submit">
+                                Сохранить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}

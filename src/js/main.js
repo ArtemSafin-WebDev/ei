@@ -26,6 +26,8 @@ import newsGallery from './newsGallery';
 import catalogMenu from './catalogMenu';
 import assistant from './assistant';
 import validation from './validation';
+import phoneMask from './phoneMask';
+import changeDetails from './changeDetails';
 
 
 
@@ -57,7 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
     newsGallery();
     catalogMenu();
     assistant();
+    phoneMask();
     validation();
+    changeDetails();
 });
 
 window.addEventListener('load', function() {

@@ -6,7 +6,10 @@
 .page-header__container {
     position: relative;
     z-index: 300;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, opacity .3s, visibility .3s;
+
+
+   
 
     @include breakpoint(mobile) {
         .assistant-shown &,
@@ -21,6 +24,12 @@
     align-items: baseline;
     padding: 1.8rem 0;
     margin-bottom: 0.5rem;
+    transition: background-color 0.3s, opacity .3s, visibility .3s;
+    .assistant-shown & {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility 0s linear .3s;
+    }
     @include breakpoint(mobile) {
         display: none;
     }
@@ -151,6 +160,13 @@
     display: flex;
     align-items: center;
     padding: 0 2.2rem;
+
+    transition: background-color 0.3s, opacity .3s, visibility .3s;
+    .assistant-shown & {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility 0s linear .3s;
+    }
 
     .white-bg & {
         background-color: #f3f7f9;
@@ -296,6 +312,13 @@
     align-items: baseline;
     align-self: flex-start;
     margin-top: 1.6rem;
+
+    transition: background-color 0.3s, opacity .3s, visibility .3s;
+    .assistant-shown & {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility 0s linear .3s;
+    }
 
     @include breakpoint(mobile) {
         display: none;
