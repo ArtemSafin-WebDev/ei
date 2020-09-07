@@ -1,0 +1,219 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="change-data">
+    <div class="container">
+        <div class="inner-container">
+            <div class="user">
+                <div class="user__layout">
+                    <div class="user__sidebar">
+                        {{> user-panel }}
+                    </div>
+                    <div class="user__main">
+                        <h1 class="main-heading user__heading">
+                            Отчеты и выписки
+                        </h1>
+                        <div class="user__inner-nav user__inner-nav--reports">
+                            <div class="user__inner-nav-links-wrapper">
+                                <div class="user__inner-nav-links">
+                                    <a href="#" class="user__inner-nav-link active">
+                                        Все отчеты
+                                    </a>
+                                    <a href="#" class="user__inner-nav-link">
+                                        Отчеты
+                                    </a>
+                                    <a href="#" class="user__inner-nav-link">
+                                        Автотека
+                                    </a>
+                                    <a href="#" class="user__inner-nav-link">
+                                        Росреестр
+                                    </a>
+                                </div>
+                            </div>
+                            <label class="user__inner-nav-only-ready">
+                                <input type="checkbox" name="onlyready" class="user__inner-nav-only-ready-input">
+                                <span class="user__inner-nav-only-ready-text">
+                                    Только готовые
+                                </span>
+                                <span class="user__inner-nav-only-ready-mark">
+                                    <svg width="12" height="12" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+
+                            </label>
+                        </div>
+                        <div class="user__reports">
+                            <ul class="user__reports-list">
+                                <li class="user__reports-list-item">
+                                    <div class="user__reports-card">
+                                        <div class="user__reports-card-image-container">
+                                            <img src="img/lots/1.jpg" alt="" class="user__reports-card-image">
+                                        </div>
+                                        <div class="user__reports-card-content">
+                                            <div class="user__reports-card-top-row">
+                                                <h4 class="user__reports-card-title">
+                                                    Торги по реализации имущества Шелевестера Максима Валерьевича:
+                                                    Транспортное средство, модель- INFINIT...
+                                                </h4>
+                                                <span class="user__reports-card-date">
+                                                    12.09.2020 15:00
+                                                </span>
+                                            </div>
+                                            <div class="user__reports-card-price">
+                                                499 ₽
+                                            </div>
+                                            <div class="user__reports-card-btns">
+                                                <a href="#" class="user__reports-card-download">
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-doc">
+                                                        <use xlink:href="#doc"></use>
+                                                    </svg>
+                                                    Скачать ZIP · 325 КБ
+                                                </a>
+                                                <a href="#" class="user__reports-card-details">
+                                                    Перейти к лоту
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user__reports-list-item">
+                                    <div class="user__reports-card">
+                                        <div class="user__reports-card-image-container">
+                                            <img src="img/lots/10.jpg" alt="" class="user__reports-card-image">
+                                        </div>
+                                        <div class="user__reports-card-content">
+                                            <div class="user__reports-card-top-row">
+                                                <h4 class="user__reports-card-title">
+                                                    Торги по реализации имущества Шелевестера Максима Валерьевича:
+                                                    Транспортное средство, модель- INFINIT...
+                                                </h4>
+                                                <span class="user__reports-card-date">
+                                                    12.09.2020 15:00
+                                                </span>
+                                            </div>
+                                            <div class="user__reports-card-price">
+                                                499 ₽
+                                            </div>
+                                            <div class="user__reports-card-btns">
+                                                <a class="user__reports-card-in-progress">
+                                                    <svg width="12" height="12" aria-hidden="true"
+                                                        class="icon-progress">
+                                                        <use xlink:href="#progress"></use>
+                                                    </svg>
+                                                    Отчет в работе
+                                                </a>
+                                                <a href="#" class="user__reports-card-details">
+                                                    Перейти к лоту
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user__reports-list-item">
+                                    <div class="user__reports-card">
+                                        <div class="user__reports-card-image-container">
+                                            <img src="img/lots/1.jpg" alt="" class="user__reports-card-image">
+                                        </div>
+                                        <div class="user__reports-card-content">
+                                            <div class="user__reports-card-top-row">
+                                                <h4 class="user__reports-card-title">
+                                                    Торги по реализации имущества Шелевестера Максима Валерьевича:
+                                                    Транспортное средство, модель- INFINIT...
+                                                </h4>
+                                                <span class="user__reports-card-date">
+                                                    12.09.2020 15:00
+                                                </span>
+                                            </div>
+                                            <div class="user__reports-card-price">
+                                                499 ₽
+                                            </div>
+                                            <div class="user__reports-card-btns">
+                                                <a href="#" class="user__reports-card-download">
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-doc">
+                                                        <use xlink:href="#doc"></use>
+                                                    </svg>
+                                                    Скачать ZIP · 325 КБ
+                                                </a>
+                                                <a href="#" class="user__reports-card-details">
+                                                    Перейти к лоту
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user__reports-list-item">
+                                    <div class="user__reports-card">
+                                        <div class="user__reports-card-image-container">
+                                            <img src="img/lots/10.jpg" alt="" class="user__reports-card-image">
+                                        </div>
+                                        <div class="user__reports-card-content">
+                                            <div class="user__reports-card-top-row">
+                                                <h4 class="user__reports-card-title">
+                                                    Торги по реализации имущества Шелевестера Максима Валерьевича:
+                                                    Транспортное средство, модель- INFINIT...
+                                                </h4>
+                                                <span class="user__reports-card-date">
+                                                    12.09.2020 15:00
+                                                </span>
+                                            </div>
+                                            <div class="user__reports-card-price">
+                                                499 ₽
+                                            </div>
+                                            <div class="user__reports-card-btns">
+                                                <a class="user__reports-card-in-progress">
+                                                    <svg width="12" height="12" aria-hidden="true"
+                                                        class="icon-progress">
+                                                        <use xlink:href="#progress"></use>
+                                                    </svg>
+                                                    Отчет в работе
+                                                </a>
+                                                <a href="#" class="user__reports-card-details">
+                                                    Перейти к лоту
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="user__reports-pagination">
+                                <div class="pagination">
+                                    <ul class="pagination__list">
+                                        <li class="pagination__list-item active">
+                                            <a href="#" class="pagination__link">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a href="#" class="pagination__link">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a href="#" class="pagination__link">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a href="#" class="pagination__link">
+                                                4
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn catalog__lots-show-more-items">
+                                    Показать еще
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}

@@ -97,7 +97,7 @@
     flex-grow: 1;
     .swiper-container {
         overflow: visible;
-
+        width: 100%;
         @include breakpointMF(small-tablet) {
             flex-direction: column;
         }

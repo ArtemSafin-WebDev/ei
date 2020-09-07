@@ -6,10 +6,7 @@
 .page-header__container {
     position: relative;
     z-index: 300;
-    transition: background-color 0.3s, opacity .3s, visibility .3s;
-
-
-   
+    transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
 
     @include breakpoint(mobile) {
         .assistant-shown &,
@@ -24,11 +21,11 @@
     align-items: baseline;
     padding: 1.8rem 0;
     margin-bottom: 0.5rem;
-    transition: background-color 0.3s, opacity .3s, visibility .3s;
+    transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
     .assistant-shown & {
         opacity: 0;
         visibility: hidden;
-        transition: opacity .3s, visibility 0s linear .3s;
+        transition: opacity 0.3s, visibility 0s linear 0.3s;
     }
     @include breakpoint(mobile) {
         display: none;
@@ -161,11 +158,11 @@
     align-items: center;
     padding: 0 2.2rem;
 
-    transition: background-color 0.3s, opacity .3s, visibility .3s;
+    transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
     .assistant-shown & {
         opacity: 0;
         visibility: hidden;
-        transition: opacity .3s, visibility 0s linear .3s;
+        transition: opacity 0.3s, visibility 0s linear 0.3s;
     }
 
     .white-bg & {
@@ -313,11 +310,11 @@
     align-self: flex-start;
     margin-top: 1.6rem;
 
-    transition: background-color 0.3s, opacity .3s, visibility .3s;
+    transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
     .assistant-shown & {
         opacity: 0;
         visibility: hidden;
-        transition: opacity .3s, visibility 0s linear .3s;
+        transition: opacity 0.3s, visibility 0s linear 0.3s;
     }
 
     @include breakpoint(mobile) {
@@ -601,7 +598,7 @@
         width: 22px;
         height: 2px;
         background-color: var(--text-color);
-        transition: transform 0.3s, opacity 0.3s, background-color .3s;
+        transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
         margin-bottom: 4px;
         border-radius: 2px;
         &:last-child {
@@ -614,7 +611,6 @@
         & > span {
             background-color: white;
         }
-       
     }
 
     .mobile-menu-open & {
@@ -758,4 +754,16 @@
     &:hover {
         color: var(--primary-color);
     }
+}
+
+.page-header__user-account-counter {
+    background: #fc5555;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0.3rem;
+    margin-left: 0.7rem;
+    flex-shrink: 0;
 }

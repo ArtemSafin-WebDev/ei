@@ -1,0 +1,119 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="subscriptions">
+    <div class="container">
+        <div class="inner-container">
+            <div class="user">
+                <div class="user__layout">
+                    <div class="user__sidebar">
+                        {{> user-panel }}
+                    </div>
+                    <div class="user__main">
+                        <h1 class="main-heading user__heading">
+                            Отчеты и выписки
+                        </h1>
+                        <div class="user__inner-nav user__inner-nav--reports">
+                            <div class="user__inner-nav-links-wrapper">
+                                <div class="user__inner-nav-links">
+                                    <a href="#" class="user__inner-nav-link active">
+                                        Подписки
+                                    </a>
+                                    <a href="#" class="user__inner-nav-link">
+                                        Карты
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user__subscriptions">
+                            <ul class="user__subscriptions-list">
+                                <li class="user__subscriptions-list-item">
+                                    <div class="user__subscriptions-card">
+                                        <div class="user__subscriptions-card-image-container">
+                                            <img src="img/diamond.svg" alt="" class="user__subscriptions-card-image">
+                                        </div>
+                                        <div class="user__subscriptions-card-content">
+                                            <div class="user__subscriptions-card-top-row">
+                                                <div class="user__subscriptions-card-top-row-left-col">
+                                                    <h4 class="user__subscriptions-card-title">
+                                                        Тариф «Турбо»
+                                                    </h4>
+
+                                                </div>
+                                                <div class="user__subscriptions-card-top-row-right-col">
+                                                    <div class="user__subscriptions-card-price">
+                                                        999 ₽ / мес
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user__subscriptions-card-info-block">
+                                                <div class="user__subscriptions-card-info">
+                                                    Ежемесечная • Обновление подписки 23.08.2020
+                                                </div>
+                                                <div class="user__subscriptions-card-payment-card">
+                                                    Tinkoff Black **** 3883
+                                                </div>
+                                            </div>
+
+                                            <div class="user__subscriptions-card-bottom-links">
+                                                <a href="#" class="user__subscriptions-card-change-link">
+                                                    Изменить условия
+                                                </a>
+                                                <a href="#" class="user__subscriptions-card-unsubscribe-link">
+                                                    Отписаться
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user__subscriptions-list-item">
+                                    <div class="user__subscriptions-card">
+                                        <div
+                                            class="user__subscriptions-card-image-container user__subscriptions-card-image-container--premium">
+                                            <img src="img/premium.svg" alt="" class="user__subscriptions-card-image">
+                                        </div>
+                                        <div class="user__subscriptions-card-content">
+                                            <div class="user__subscriptions-card-top-row">
+                                                <div class="user__subscriptions-card-top-row-left-col">
+                                                    <h4 class="user__subscriptions-card-title">
+                                                        Тариф «Премиум»
+                                                    </h4>
+
+                                                </div>
+                                                <div class="user__subscriptions-card-top-row-right-col">
+                                                    <div class="user__subscriptions-card-price">
+                                                        9999 ₽ / год
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user__subscriptions-card-info-block">
+                                                <div class="user__subscriptions-card-info">
+                                                    Ежемесечная • Обновление подписки 23.08.2020
+                                                </div>
+                                                <div class="user__subscriptions-card-payment-card">
+                                                    Tinkoff Black **** 3883
+                                                </div>
+                                            </div>
+                                            <div class="user__subscriptions-card-bottom-links">
+                                                <a href="#" class="user__subscriptions-card-change-link">
+                                                    Изменить условия
+                                                </a>
+                                                <a href="#" class="user__subscriptions-card-unsubscribe-link">
+                                                    Отписаться
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}
