@@ -1,0 +1,106 @@
+.bonuses {
+    background-color: var(--primary-color);
+    background-image: url('../img/bonuses/bonuses.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8rem 0;
+
+
+    @include breakpoint(mobile) {
+        padding: 3rem 0;
+    }
+}
+
+.bonuses__row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 4rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 2rem;
+    }
+}
+
+.bonuses__left-col,
+.bonuses__right-col {
+    align-self: center;
+    justify-self: flex-start;
+
+    @include breakpoint(mobile) {
+        align-self: initial;
+        justify-self: initial;
+    }
+}
+
+.bonuses__heading {
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 3.2rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.6rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+}
+
+.bonuses__text {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin-bottom: 6.4rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+    }
+}
+
+.bonuses__link {
+    padding: 1.7rem 5rem;
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    text-align: center;
+    border: 2px solid #050C42;
+    border-radius: 1.5rem;
+    transition: background-color .2s, color .2s;
+    display: inline-flex;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        background-color: var(--text-color);
+        color: white;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: center;
+        padding: 1.6rem 2rem;
+        border-radius: 1rem;
+        display: block;
+        align-self: initial;
+    }
+}
+
+
+.bonuses__amount {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 22rem;
+    line-height: 1;
+    font-weight: 700;
+
+    @include breakpoint(mobile) {
+        font-size: 13rem;
+    }
+}

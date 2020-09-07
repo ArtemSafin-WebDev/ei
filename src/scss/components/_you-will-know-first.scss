@@ -1,0 +1,204 @@
+.you-will-know-first {
+    padding-top: 10rem;
+  
+    @include breakpoint(mobile) {
+        padding-top: 4rem;
+    }
+}
+
+.you-will-know-first__row {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 37rem;
+        height: 37rem;
+        flex-shrink: 0;
+        top: -2rem;
+        right: 0;
+        background-color: #F3FBF8;
+        border-radius: 50%;
+
+        @include breakpoint(mobile) {
+            display: none;
+        }
+    }
+
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: initial;
+    }
+}
+
+.you-will-know-first__left-col {
+    width: 62rem;
+    flex-shrink: 0;
+    margin-right: 6rem;
+
+    @include breakpoint(mobile) {
+        flex-shrink: 1;
+        width: 100%;
+        margin: 0;
+        
+    }
+}
+
+.you-will-know-first__right-col {
+    width: 50%;
+    flex-grow: 1;
+    align-self: center;
+    position: relative;
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        align-self: initial;
+        order: -1;
+        margin-bottom: 3rem;
+    }
+}
+
+.you-will-know-first__phone-block {
+    align-self: flex-end;
+    position: relative;
+    width: 100%;
+}
+
+.you-will-know-first__phone-image {
+    display: block;
+    width: 38rem;
+
+
+    @include breakpoint(mobile) {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.you-will-know-first__heading {
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 3.2rem;
+
+
+    @include breakpoint(mobile) {
+        font-size: 2.6rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+}
+
+.you-will-know-first__text {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin-bottom: 6.4rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+    }
+}
+
+.you-will-know-first__link {
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    text-align: center;
+    padding: 1.7rem 5rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--text-color);
+    transition: color 0.2s, background-color 0.2s;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        background-color: var(--text-color);
+        color: white;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: center;
+        padding: 1.6rem 2rem;
+        border-radius: 1rem;
+        display: block;
+        align-self: initial;
+    }
+}
+
+.you-will-know-first__phone-message {
+    position: absolute;
+    right: 0;
+    top: 7.6rem;
+    width: 37.4rem;
+    background-color: #fff;
+    box-shadow: 0 0.4rem 4rem rgba(0, 0, 0, 0.07);
+    border-radius: 1.8rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    svg {
+        width: 2.9rem;
+        height: 3.9rem;
+        flex-shrink: 0;
+        margin-right: 2.6rem;
+        margin-left: 1rem;
+        fill: var(--primary-color);
+    }
+
+    &:nth-child(2) {
+        top: 12rem;
+        right: 3.5rem;
+        background: #f5f7f9;
+        box-shadow: 0px 0.4rem 4rem rgba(0, 0, 0, 0.11);
+
+        @include breakpoint(mobile) {
+            width: 100%;
+            right: 0;
+            transform: scale(.8);
+        }
+    }
+
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        right: 0;
+        transform: scale(.9);
+    }
+}
+
+.you-will-know-first__phone-message-content {
+    width: 50%;
+    flex-grow: 1;
+    padding-left: 2.6rem;
+    border-left: 1px solid #ebf1f5;
+}
+
+.you-will-know-first__phone-message-text {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.you-will-know-first__phone-message-type {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.you-will-know-first__phone-message-category {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #99a6b6;
+}

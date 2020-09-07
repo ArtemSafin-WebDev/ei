@@ -51,12 +51,20 @@
     }
 
     .assistant-shown &,
+   
     .assistant-page:not(.mobile-menu-open) & {
         &:link,
         &:visited {
             color: white;
         }
 
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+
+    .services-page & {
         &:hover {
             color: var(--primary-color);
         }
@@ -89,6 +97,7 @@
     }
 
     .assistant-shown &,
+    .services-page &,
     .assistant-page:not(.mobile-menu-open) & {
         &:link,
         &:visited {
@@ -360,6 +369,7 @@
     }
 
     .assistant-shown &,
+    .services-page &,
     .assistant-page:not(.mobile-menu-open) & {
         color: white;
         &:link,
