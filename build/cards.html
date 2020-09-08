@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Изменить данные - Единый информатор
+            Карты - Единый информатор
         </title>
         <script
             src="https://api-maps.yandex.ru/2.1/?apikey=1c9ab29b-1afd-4a21-b1ea-478c36667e22
@@ -1150,7 +1150,7 @@
                 </button>
             </header>
             <main class="page-main">
-                <section class="change-data">
+                <section class="subscriptions">
                     <div class="container">
                         <div class="inner-container">
                             <div class="user">
@@ -1231,157 +1231,72 @@
                                     </div>
                                     <div class="user__main">
                                         <h1 class="main-heading user__heading">
-                                            Изменить данные
+                                            Отчеты и выписки
                                         </h1>
-                                        <form action="/" method="POST" class="user__change-form" data-need-validation>
-                                            <div class="user__change-form-row">
-                                                <label for="firstname" class="user__change-form-label">
-                                                    Имя
-                                                </label>
-                                                <div class="user__change-form-input-wrapper">
-                                                    <input
-                                                        type="text"
-                                                        name="firstname"
-                                                        id="firstname"
-                                                        class="user__change-form-input"
-                                                        required
-                                                        placeholder="Имя"
-                                                    />
+                                        <div class="user__inner-nav user__inner-nav--reports">
+                                            <div class="user__inner-nav-links-wrapper">
+                                                <div class="user__inner-nav-links">
+                                                    <a href="#" class="user__inner-nav-link">
+                                                        Подписки
+                                                    </a>
+                                                    <a href="#" class="user__inner-nav-link active">
+                                                        Карты
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="user__change-form-row">
-                                                <label for="lastname" class="user__change-form-label">
-                                                    Фамилия
-                                                </label>
-                                                <div class="user__change-form-input-wrapper">
-                                                    <input
-                                                        type="text"
-                                                        name="lastname"
-                                                        id="lastname"
-                                                        class="user__change-form-input"
-                                                        required
-                                                        placeholder="Фамилия"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div class="user__change-form-row">
-                                                <label for="city" class="user__change-form-label">
-                                                    Город
-                                                </label>
-                                                <div class="user__change-form-input-wrapper" id="city-error">
-                                                    <select
-                                                        name="city"
-                                                        id="city"
-                                                        class="user__change-form-select js-change-detail-select"
-                                                        required
-                                                        data-parsley-class-handler="#city-error"
-                                                        data-parsley-errors-container="#city-error"
-                                                        data-trigger="change"
-                                                    >
-                                                        <option value="">Выберите город</option>
-                                                        <option value="kazan">Казань</option>
-                                                        <option value="moscow">Москва</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="user__change-form-row">
-                                                <label for="phone" class="user__change-form-label">
-                                                    Телефон
-                                                    <span class="user__change-form-label-remark">
-                                                        Не указывается на сайте
-                                                    </span>
-                                                </label>
-                                                <div class="user__change-form-input-wrapper">
-                                                    <input
-                                                        type="tel"
-                                                        name="phone"
-                                                        id="phone"
-                                                        class="user__change-form-input js-phone-input"
-                                                        data-parsley-phone
-                                                        required
-                                                        placeholder="+7 (XXX) XXXX-XX-XX"
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            <div class="user__change-form-row">
-                                                <label for="email" class="user__change-form-label">
-                                                    Фамилия
-                                                </label>
-                                                <div class="user__change-form-input-wrapper">
-                                                    <input
-                                                        type="email"
-                                                        name="email"
-                                                        id="email"
-                                                        class="user__change-form-input"
-                                                        required
-                                                        placeholder="Электронная почта"
-                                                    />
-                                                    <label class="user__change-form-checkbox">
-                                                        <input type="checkbox" name="type" value="Y" class="user__change-form-checkbox-input" />
-                                                        <span class="user__change-form-checkbox-mark">
-                                                            <svg width="12" height="12" aria-hidden="true" class="icon-checkmark">
-                                                                <use xlink:href="#checkmark"></use>
+                                        </div>
+                                        <div class="user__cards">
+                                            <ul class="user__cards-list">
+                                                <li class="user__cards-list-item">
+                                                    <div class="user__cards-card">
+                                                        <img src="img/cards/1.png" alt="" class="user__cards-card-image" />
+                                                        <div class="user__cards-card-content">
+                                                            <div class="user__cards-card-info">
+                                                                <h4 class="user__cards-card-title">
+                                                                    Tinkoff Black
+                                                                </h4>
+                                                                <div class="user__cards-card-number">
+                                                                    5321 **** **** 3883
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="user__cards-card-remove">
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="user__cards-list-item">
+                                                    <div class="user__cards-card">
+                                                        <img src="img/cards/2.png" alt="" class="user__cards-card-image" />
+                                                        <div class="user__cards-card-content">
+                                                            <div class="user__cards-card-info">
+                                                                <h4 class="user__cards-card-title">
+                                                                    Tinkoff Black
+                                                                </h4>
+                                                                <div class="user__cards-card-number">
+                                                                    5321 **** **** 3883
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="user__cards-card-remove">
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="user__cards-list-item">
+                                                    <a href="#" class="user__cards-add-card">
+                                                        <div class="user__cards-add-card-icon">
+                                                            <svg width="26" height="26" aria-hidden="true" class="icon-plus-in-circle">
+                                                                <use xlink:href="#plus-in-circle"></use>
                                                             </svg>
-                                                        </span>
-                                                        <span class="user__change-form-checkbox-text">
-                                                            Я — арбитражный управляющий
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                            <div class="user__change-form-row">
-                                                <label for="oldpassword" class="user__change-form-label">
-                                                    Старый пароль
-                                                </label>
-                                                <div class="user__change-form-input-wrapper">
-                                                    <input
-                                                        type="password"
-                                                        name="oldpassword"
-                                                        id="oldpassword"
-                                                        class="user__change-form-input"
-                                                        required
-                                                        placeholder="Старый пароль"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div class="user__change-form-row">
-                                                <label for="password" class="user__change-form-label">
-                                                    Новый пароль
-                                                </label>
-                                                <div class="user__change-form-input-wrapper">
-                                                    <input
-                                                        type="password"
-                                                        name="password"
-                                                        id="password"
-                                                        class="user__change-form-input"
-                                                        required
-                                                        placeholder="Новый пароль"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div class="user__change-form-row">
-                                                <label for="passwordconfirmation" class="user__change-form-label">
-                                                    Повторите новый пароль
-                                                </label>
-                                                <div class="user__change-form-input-wrapper">
-                                                    <input
-                                                        type="password"
-                                                        name="passwordconfirmation"
-                                                        id="passwordconfirmation"
-                                                        class="user__change-form-input"
-                                                        required
-                                                        data-parsley-equalto="#password"
-                                                        placeholder="Повторите пароль"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="btn user__change-form-submit">
-                                                Сохранить
-                                            </button>
-                                        </form>
+                                                        </div>
+                                                        <div class="user__cards-add-card-content">
+                                                            Добавить карту
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

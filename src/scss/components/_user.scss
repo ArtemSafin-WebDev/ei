@@ -1803,7 +1803,6 @@
 }
 
 .user__my-lots-table {
-
     @include breakpoint(mobile) {
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
@@ -1844,14 +1843,12 @@
 
             position: relative;
 
-
             @include breakpoint(mobile) {
                 white-space: nowrap;
             }
 
-
             & > a {
-                transition: color .2s;
+                transition: color 0.2s;
                 &:link,
                 &:visited {
                     color: inherit;
@@ -1902,7 +1899,6 @@
 
         tr {
             &:hover {
-             
                 td {
                     &::before {
                         opacity: 1;
@@ -1917,7 +1913,6 @@
         }
     }
 }
-
 
 .user__my-lots-table-wrapper {
     @include breakpoint(mobile) {
@@ -1998,7 +1993,7 @@
     transition: color 0.2s, background-color 0.2s;
     border-radius: 1.3rem;
     padding: 1rem 1.1rem;
-   
+
     font-family: 'Formular', 'Roboto', sans-serif;
     &:last-child {
         margin-bottom: 0;
@@ -2018,4 +2013,189 @@
     &:hover {
         background: #ebf1f5;
     }
+}
+
+.user__cards-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 6.5rem;
+    grid-row-gap: 4.8rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 4rem;
+    }
+}
+
+.user__cards-card {
+    padding: 2.4rem 2.8rem;
+    background: #ebf1f5;
+    border-radius: 3rem;
+    display: flex;
+
+    @include breakpoint(mobile) {
+        padding: 2rem;
+        border-radius: 2rem;
+        display: grid;
+
+        grid-template-columns: 11.6rem minmax(0, 1fr);
+        grid-gap: 2rem;
+        grid-row-gap: 1.6rem;
+        grid-template-areas: 'image info' 'remove remove';
+    }
+}
+
+.user__cards-card-info {
+    @include breakpoint(mobile) {
+        grid-area: info;
+        align-self: center;
+    }
+}
+
+.user__cards-card-image {
+    width: 13.7rem;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 3.2rem;
+    align-self: center;
+    @include breakpoint(mobile) {
+        width: 100%;
+        grid-area: image;
+        margin: 0;
+    }
+}
+
+.user__cards-card-content {
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.user__cards-card-title {
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.user__cards-card-number {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+.user__cards-card-remove {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #fc5555;
+    transition: color 0.2s;
+    margin-top: auto;
+    &:link,
+    &:visited {
+        color: #fc5555;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        grid-area: remove;
+
+        font-weight: 500;
+        border: 2px solid #d1dae6;
+        border-radius: 0.9rem;
+        padding: 1.6rem 4rem;
+        text-align: center;
+    }
+}
+
+.user__cards-add-card {
+    display: flex;
+    align-items: center;
+    padding: 2.4rem 2.8rem;
+    position: relative;
+    transition: color 0.2s;
+    border: 1px dashed #d1dae6;
+    border-radius: 3rem;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+}
+
+.user__cards-add-card-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.user__cards-add-card-content {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.user__cards-add-card-icon {
+    width: 13.7rem;
+    flex-shrink: 0;
+    margin-right: 3.2rem;
+    position: relative;
+    background: #ebf1f5;
+    border-radius: 1.7rem;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
+
+        @include breakpoint(mobile) {
+            padding-bottom: 70%;
+        }
+    }
+
+    svg {
+        width: 2.6rem;
+        height: 2.6rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        fill: var(--text-color);
+    }
+
+    @include breakpoint(mobile) {
+        width: 11.6rem;
+        margin-right: 2rem;
+    }
+}
+
+.user__cards-add-card-content {
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
 }

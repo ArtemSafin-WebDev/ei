@@ -1,0 +1,93 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="subscriptions">
+    <div class="container">
+        <div class="inner-container">
+            <div class="user">
+                <div class="user__layout">
+                    <div class="user__sidebar">
+                        {{> user-panel }}
+                    </div>
+                    <div class="user__main">
+                        <h1 class="main-heading user__heading">
+                            Отчеты и выписки
+                        </h1>
+                        <div class="user__inner-nav user__inner-nav--reports">
+                            <div class="user__inner-nav-links-wrapper">
+                                <div class="user__inner-nav-links">
+                                    <a href="#" class="user__inner-nav-link">
+                                        Подписки
+                                    </a>
+                                    <a href="#" class="user__inner-nav-link active">
+                                        Карты
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user__cards">
+                            <ul class="user__cards-list">
+                                <li class="user__cards-list-item">
+                                    <div class="user__cards-card">
+                                        <img src="img/cards/1.png" alt="" class="user__cards-card-image">
+                                        <div class="user__cards-card-content">
+                                            <div class="user__cards-card-info">
+
+
+                                                <h4 class="user__cards-card-title">
+                                                    Tinkoff Black
+                                                </h4>
+                                                <div class="user__cards-card-number">
+                                                    5321 **** **** 3883
+                                                </div>
+                                            </div>
+                                            <a href="#" class="user__cards-card-remove">
+                                                Удалить
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user__cards-list-item">
+                                    <div class="user__cards-card">
+                                        <img src="img/cards/2.png" alt="" class="user__cards-card-image">
+                                        <div class="user__cards-card-content">
+                                            <div class="user__cards-card-info">
+                                                <h4 class="user__cards-card-title">
+                                                    Tinkoff Black
+                                                </h4>
+                                                <div class="user__cards-card-number">
+                                                    5321 **** **** 3883
+                                                </div>
+                                            </div>
+                                            <a href="#" class="user__cards-card-remove">
+                                                Удалить
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="user__cards-list-item">
+                                    <a href="#" class="user__cards-add-card">
+
+                                        <div class="user__cards-add-card-icon">
+                                            <svg width="26" height="26" aria-hidden="true" class="icon-plus-in-circle">
+                                                <use xlink:href="#plus-in-circle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="user__cards-add-card-content">
+                                            Добавить карту
+                                        </div>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}
