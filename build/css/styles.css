@@ -967,6 +967,7 @@ button.swiper-pagination-bullet {
   --primary-color: #13B17C;
   --background-blue: #EBF1F5;
   --text-color: #050C42;
+  --fira: 'Fira Sans Condensed', sans-serif;
   --page-top-padding: 8rem; }
   @media only screen and (max-width: 767px) {
     :root {
@@ -2735,6 +2736,9 @@ select:-webkit-autofill:focus {
   min-height: 30rem; }
   .useful-articles__large-card:link, .useful-articles__large-card:visited {
     color: white; }
+  .useful-articles__large-card:hover .useful-articles__large-card-image {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); }
   @media only screen and (max-width: 767px) {
     .useful-articles__large-card {
       padding: 2.4rem;
@@ -2751,7 +2755,11 @@ select:-webkit-autofill:focus {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  font-family: 'object-fit: cover; object-position: center;'; }
+  font-family: 'object-fit: cover; object-position: center;';
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s; }
 
 .useful-articles__large-card-heading {
   font-weight: bold;
@@ -2885,6 +2893,9 @@ select:-webkit-autofill:focus {
     opacity: var(--image-overlay-opacity, 0); }
   .useful-articles__small-card:link, .useful-articles__small-card:visited {
     color: var(--text-color); }
+  .useful-articles__small-card:hover .useful-articles__small-card-image {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); }
   .useful-articles__small-card--white-text {
     background-color: var(--text-color); }
     .useful-articles__small-card--white-text:link, .useful-articles__small-card--white-text:visited {
@@ -2909,7 +2920,11 @@ select:-webkit-autofill:focus {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  font-family: 'object-fit: cover; object-position: center;'; }
+  font-family: 'object-fit: cover; object-position: center;';
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s; }
 
 .useful-articles__small-card-title {
   font-weight: 500;
@@ -2929,7 +2944,7 @@ select:-webkit-autofill:focus {
   font-size: 3rem;
   line-height: 3.7rem;
   text-align: center;
-  margin-bottom: 6.5rem; }
+  margin-bottom: 4rem; }
   @media only screen and (max-width: 767px) {
     .partners__heading {
       font-size: 2.6rem;
@@ -3085,7 +3100,9 @@ select:-webkit-autofill:focus {
   display: block;
   position: relative;
   color: white;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  border-radius: 2.3rem;
+  overflow: hidden; }
   .lot-card__image-container::after {
     content: '';
     display: block;
@@ -3093,7 +3110,8 @@ select:-webkit-autofill:focus {
     padding-bottom: 72%; }
   @media only screen and (max-width: 767px) {
     .lot-card__image-container {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      border-radius: 1.3rem; } }
 
 .lot-card__image-link {
   position: absolute;
@@ -3101,8 +3119,6 @@ select:-webkit-autofill:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  border-radius: 2.3rem;
-  overflow: hidden;
   background-color: var(--primary-color);
   color: white; }
   .lot-card__image-link:link, .lot-card__image-link:visited {
@@ -3119,9 +3135,6 @@ select:-webkit-autofill:focus {
     height: 4.5rem;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), color-stop(92.22%, rgba(0, 0, 0, 0)));
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 92.22%); }
-  @media only screen and (max-width: 767px) {
-    .lot-card__image-link {
-      border-radius: 1.3rem; } }
 
 .lot-card__image {
   position: absolute;
@@ -4622,7 +4635,8 @@ select:-webkit-autofill:focus {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 200;
-  color: white; }
+  color: white;
+  white-space: nowrap; }
 
 .catalog-filters__results-btn-count {
   font-size: 1.2rem;
@@ -6646,6 +6660,8 @@ select:-webkit-autofill:focus {
     background-color: #fff; }
   .arbitrs__card:link, .arbitrs__card:visited {
     color: var(--text-color); }
+  .arbitrs__card:hover .arbitrs__card-title {
+    color: var(--primary-color); }
   @media only screen and (max-width: 767px) {
     .arbitrs__card {
       padding: 1.6rem;
@@ -6680,7 +6696,9 @@ select:-webkit-autofill:focus {
   font-weight: 500;
   font-size: 3rem;
   line-height: 3.7rem;
-  margin-bottom: 0.8rem; }
+  margin-bottom: 0.8rem;
+  -webkit-transition: color .2s;
+  transition: color .2s; }
   @media only screen and (max-width: 767px) {
     .arbitrs__card-title {
       font-size: 2.4rem;
@@ -7164,6 +7182,8 @@ select:-webkit-autofill:focus {
   min-height: 34rem; }
   .company-card:link, .company-card:visited {
     color: var(--text-color); }
+  .company-card:hover .company-card__heading {
+    color: var(--primary-color); }
   @media only screen and (max-width: 767px) {
     .company-card {
       padding: 1.6rem;
@@ -7217,7 +7237,9 @@ select:-webkit-autofill:focus {
           flex-grow: 1;
   font-weight: 500;
   font-size: 2.4rem;
-  line-height: 2.9rem; }
+  line-height: 2.9rem;
+  -webkit-transition: color .2s;
+  transition: color .2s; }
   @media only screen and (max-width: 767px) {
     .company-card__heading {
       width: 2.2rem;
@@ -8203,6 +8225,9 @@ select:-webkit-autofill:focus {
 .news-detail__gallery-main {
   position: relative;
   margin-bottom: 2.4rem; }
+  @media only screen and (min-width: 768px) {
+    .news-detail__gallery-main:hover .news-detail__gallery-arrow {
+      opacity: 1; } }
   @media only screen and (max-width: 767px) {
     .news-detail__gallery-main {
       margin-bottom: 2rem; } }
@@ -8217,6 +8242,9 @@ select:-webkit-autofill:focus {
   z-index: 100;
   -webkit-transition: color 0.2s, background-color 0.2s, opacity 0.2s, visibility 0.2s;
   transition: color 0.2s, background-color 0.2s, opacity 0.2s, visibility 0.2s; }
+  @media only screen and (min-width: 768px) {
+    .news-detail__gallery-arrow {
+      opacity: 0; } }
   .news-detail__gallery-arrow svg {
     width: 1rem;
     height: 1.6rem;
@@ -8233,8 +8261,8 @@ select:-webkit-autofill:focus {
     background: var(--primary-color);
     color: white; }
   .news-detail__gallery-arrow.swiper-button-disabled {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0 !important;
+    visibility: hidden !important;
     -webkit-transition: color 0.2s, background-color 0.2s, opacity 0.2s, visibility 0s linear 0.2s;
     transition: color 0.2s, background-color 0.2s, opacity 0.2s, visibility 0s linear 0.2s; }
   @media only screen and (max-width: 767px) {
@@ -8514,6 +8542,7 @@ select:-webkit-autofill:focus {
 .article-header-photo {
   position: relative;
   z-index: 1;
+  margin-top: 2rem;
   background-color: var(--text-color);
   color: white;
   padding-top: 6rem;
@@ -8532,7 +8561,8 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 767px) {
     .article-header-photo {
       padding-top: 3rem;
-      padding-bottom: 3rem; } }
+      padding-bottom: 3rem;
+      margin: 0; } }
 
 .article-header-photo__content {
   max-width: 100rem; }
@@ -9063,7 +9093,7 @@ select:-webkit-autofill:focus {
 
 .assistant__toggle {
   position: fixed;
-  bottom: 5rem;
+  bottom: 7rem;
   right: 7rem;
   background: linear-gradient(91.34deg, #13b17c 2.06%, #0099cc 100%);
   width: 7.4rem;
@@ -9320,7 +9350,7 @@ select:-webkit-autofill:focus {
 .assistant__mute-sound {
   color: white;
   position: fixed;
-  bottom: 16rem;
+  bottom: 18rem;
   right: 9.5rem;
   z-index: 200;
   opacity: 0;
@@ -11722,8 +11752,8 @@ select:-webkit-autofill:focus {
   .user__inner-nav-notification-filters:hover .user__inner-nav-notification-filters-dropdown {
     opacity: 1;
     visibility: visible;
-    -webkit-transition: opacity .3s, visibility .3s;
-    transition: opacity .3s, visibility .3s; }
+    -webkit-transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s; }
 
 .user__inner-nav-notification-filters-btn {
   width: 4.4rem;
@@ -11788,7 +11818,7 @@ select:-webkit-autofill:focus {
   .user__inner-nav-notification-filters-checkbox:last-child {
     margin-bottom: 0; }
   .user__inner-nav-notification-filters-checkbox:hover .user__inner-nav-notification-filters-checkbox-input:not(:checked) ~ .user__inner-nav-notification-filters-checkbox-mark {
-    background: #EBF1F5; }
+    background: #ebf1f5; }
 
 .user__inner-nav-notification-filters-checkbox-input {
   border: 0;
@@ -11844,6 +11874,262 @@ select:-webkit-autofill:focus {
 .user__inner-nav-notification-filters-checkbox-text {
   font-size: 1.5rem;
   line-height: 1.8rem; }
+
+.user__my-lots-top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem; }
+  @media only screen and (max-width: 767px) {
+    .user__my-lots-top-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: initial;
+          -ms-flex-align: initial;
+              align-items: initial;
+      -webkit-box-pack: initial;
+          -ms-flex-pack: initial;
+              justify-content: initial;
+      margin-bottom: 2rem; } }
+
+.user__my-lots-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2rem; }
+  @media only screen and (max-width: 767px) {
+    .user__my-lots-btns {
+      margin: 0;
+      margin-top: 2rem; } }
+
+.user__my-lots-btn {
+  color: var(--text-color);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border: 1px solid #99a6b6;
+  border-radius: 0.9rem;
+  padding: 1.1rem 1.3rem;
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  white-space: nowrap;
+  -webkit-transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s; }
+  .user__my-lots-btn:last-child {
+    margin-right: 0; }
+  .user__my-lots-btn svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 0.6rem; }
+  .user__my-lots-btn:link, .user__my-lots-btn:visited {
+    color: var(--text-color); }
+  .user__my-lots-btn:hover {
+    background-color: var(--text-color);
+    color: white;
+    border-color: var(--text-color); }
+
+.user__my-lots-heading {
+  line-height: 1; }
+
+@media only screen and (max-width: 767px) {
+  .user__my-lots-table {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 calc(-1 * var(--content-padding)); } }
+
+.user__my-lots-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--fira); }
+  @media only screen and (max-width: 767px) {
+    .user__my-lots-table table {
+      width: auto; } }
+
+.user__my-lots-table thead th {
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 132%;
+  color: #050c42;
+  padding: 1.5rem 0;
+  padding-right: 1.8rem;
+  border-bottom: 1px solid #ebf1f5; }
+
+.user__my-lots-table tbody td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 1.2rem 0;
+  padding-right: 2rem;
+  border-bottom: 1px solid #ebf1f5;
+  font-size: 1.5rem;
+  line-height: 132%;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .user__my-lots-table tbody td {
+      white-space: nowrap; } }
+  .user__my-lots-table tbody td > a {
+    -webkit-transition: color .2s;
+    transition: color .2s; }
+    .user__my-lots-table tbody td > a:link, .user__my-lots-table tbody td > a:visited {
+      color: inherit; }
+    .user__my-lots-table tbody td > a:hover {
+      color: var(--primary-color); }
+  .user__my-lots-table tbody td::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    background-color: #ebf1f5;
+    z-index: -10;
+    opacity: 0; }
+  .user__my-lots-table tbody td:nth-child(1) {
+    white-space: nowrap; }
+  .user__my-lots-table tbody td:first-child::before {
+    right: 0;
+    left: -1.5rem;
+    width: auto;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem; }
+  .user__my-lots-table tbody td:last-child {
+    padding-right: 0; }
+    .user__my-lots-table tbody td:last-child::before {
+      left: 0;
+      width: auto;
+      right: -1.5rem;
+      border-top-right-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem; }
+
+.user__my-lots-table tbody tr:hover td::before {
+  opacity: 1; }
+
+.user__my-lots-table tbody .price {
+  white-space: nowrap;
+  font-weight: bold; }
+
+@media only screen and (max-width: 767px) {
+  .user__my-lots-table-wrapper {
+    padding: 0 var(--content-padding);
+    -ms-flex-negative: 0;
+        flex-shrink: 0; } }
+
+.user__my-lots-actions {
+  position: relative; }
+  .user__my-lots-actions:hover .user__my-lots-actions-btn {
+    background-color: #fff; }
+    .user__my-lots-actions:hover .user__my-lots-actions-btn svg {
+      fill: var(--primary-color); }
+  .user__my-lots-actions:hover .user__my-lots-actions-dropdown {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s, visibility 0s linear 0.3s;
+    transition: opacity 0.3s, visibility 0s linear 0.3s; }
+
+.user__my-lots-actions-btn {
+  border-radius: 1.5rem;
+  width: 4.4rem;
+  height: 4.1rem;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  .user__my-lots-actions-btn svg {
+    width: 1.8rem;
+    height: 0.3rem;
+    -webkit-transition: fill 0.2s;
+    transition: fill 0.2s;
+    fill: #99a6b6; }
+  .user__my-lots-actions-btn:hover .user__my-lots-actions-dropdown {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s, visibility 0s linear 0.3s;
+    transition: opacity 0.3s, visibility 0s linear 0.3s; }
+
+.user__my-lots-actions-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  padding-top: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0s linear 0.3s;
+  transition: opacity 0.3s, visibility 0s linear 0.3s; }
+
+.user__my-lots-actions-dropdown-inner {
+  padding: 0.8rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 3.4rem rgba(10, 17, 70, 0.1);
+          box-shadow: 0px 0px 3.4rem rgba(10, 17, 70, 0.1);
+  border-radius: 2rem; }
+
+.user__my-lots-actions-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 132%;
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
+  border-radius: 1.3rem;
+  padding: 1rem 1.1rem;
+  font-family: 'Formular', 'Roboto', sans-serif; }
+  .user__my-lots-actions-link:last-child {
+    margin-bottom: 0; }
+  .user__my-lots-actions-link:link, .user__my-lots-actions-link:visited {
+    color: var(--text-color); }
+  .user__my-lots-actions-link svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 1rem;
+    fill: var(--primary-color); }
+  .user__my-lots-actions-link:hover {
+    background: #ebf1f5; }
 
 .services-intro {
   padding-top: 8rem;

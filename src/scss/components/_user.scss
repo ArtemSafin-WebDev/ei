@@ -1634,7 +1634,7 @@
         .user__inner-nav-notification-filters-dropdown {
             opacity: 1;
             visibility: visible;
-            transition: opacity .3s, visibility .3s;
+            transition: opacity 0.3s, visibility 0.3s;
         }
     }
 }
@@ -1648,7 +1648,7 @@
     justify-content: center;
     transition: background-color 0.2s;
     border-radius: 0.9rem;
-    
+
     svg {
         width: 2.4rem;
         height: 1.4rem;
@@ -1692,7 +1692,7 @@
 
     &:hover {
         .user__inner-nav-notification-filters-checkbox-input:not(:checked) ~ .user__inner-nav-notification-filters-checkbox-mark {
-            background: #EBF1F5;
+            background: #ebf1f5;
         }
     }
 }
@@ -1721,8 +1721,6 @@
         fill: white;
         opacity: 0;
         transition: opacity 0.2s;
-
-
     }
 }
 
@@ -1738,4 +1736,286 @@
 .user__inner-nav-notification-filters-checkbox-text {
     font-size: 1.5rem;
     line-height: 1.8rem;
+}
+
+.user__my-lots-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: initial;
+        justify-content: initial;
+        margin-bottom: 2rem;
+    }
+}
+
+.user__my-lots-btns {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        margin-top: 2rem;
+    }
+}
+
+.user__my-lots-btn {
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border: 1px solid #99a6b6;
+    border-radius: 0.9rem;
+    padding: 1.1rem 1.3rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+    &:last-child {
+        margin-right: 0;
+    }
+    svg {
+        width: 1.8rem;
+        height: 1.8rem;
+        flex-shrink: 0;
+        margin-right: 0.6rem;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        background-color: var(--text-color);
+        color: white;
+        border-color: var(--text-color);
+    }
+}
+
+.user__my-lots-heading {
+    line-height: 1;
+}
+
+.user__my-lots-table {
+
+    @include breakpoint(mobile) {
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        margin: 0 calc(-1 * var(--content-padding));
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: var(--fira);
+
+        @include breakpoint(mobile) {
+            width: auto;
+        }
+    }
+
+    thead th {
+        text-align: left;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 132%;
+        color: #050c42;
+        padding: 1.5rem 0;
+        padding-right: 1.8rem;
+        border-bottom: 1px solid #ebf1f5;
+    }
+
+    tbody {
+        td {
+            text-align: left;
+            vertical-align: middle;
+            padding: 1.2rem 0;
+            padding-right: 2rem;
+            border-bottom: 1px solid #ebf1f5;
+            font-size: 1.5rem;
+            line-height: 132%;
+            transition: background-color 0.2s;
+
+            position: relative;
+
+
+            @include breakpoint(mobile) {
+                white-space: nowrap;
+            }
+
+
+            & > a {
+                transition: color .2s;
+                &:link,
+                &:visited {
+                    color: inherit;
+                }
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.2s;
+                background-color: #ebf1f5;
+                z-index: -10;
+                opacity: 0;
+            }
+
+            &:nth-child(1) {
+                white-space: nowrap;
+            }
+
+            &:first-child {
+                &::before {
+                    right: 0;
+                    left: -1.5rem;
+                    width: auto;
+                    border-top-left-radius: 1.5rem;
+                    border-bottom-left-radius: 1.5rem;
+                }
+            }
+
+            &:last-child {
+                padding-right: 0;
+                &::before {
+                    left: 0;
+                    width: auto;
+                    right: -1.5rem;
+                    border-top-right-radius: 1.5rem;
+                    border-bottom-right-radius: 1.5rem;
+                }
+            }
+        }
+
+        tr {
+            &:hover {
+             
+                td {
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .price {
+            white-space: nowrap;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.user__my-lots-table-wrapper {
+    @include breakpoint(mobile) {
+        padding: 0 var(--content-padding);
+        flex-shrink: 0;
+    }
+}
+
+.user__my-lots-actions {
+    position: relative;
+    &:hover {
+        .user__my-lots-actions-btn {
+            background-color: #fff;
+
+            svg {
+                fill: var(--primary-color);
+            }
+        }
+
+        .user__my-lots-actions-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s, visibility 0s linear 0.3s;
+        }
+    }
+}
+
+.user__my-lots-actions-btn {
+    border-radius: 1.5rem;
+    width: 4.4rem;
+    height: 4.1rem;
+    transition: background-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    svg {
+        width: 1.8rem;
+        height: 0.3rem;
+        transition: fill 0.2s;
+        fill: #99a6b6;
+    }
+
+    &:hover {
+        .user__my-lots-actions-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s, visibility 0s linear 0.3s;
+        }
+    }
+}
+
+.user__my-lots-actions-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    padding-top: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.user__my-lots-actions-dropdown-inner {
+    padding: 0.8rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 3.4rem rgba(10, 17, 70, 0.1);
+    border-radius: 2rem;
+}
+
+.user__my-lots-actions-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 132%;
+    transition: color 0.2s, background-color 0.2s;
+    border-radius: 1.3rem;
+    padding: 1rem 1.1rem;
+   
+    font-family: 'Formular', 'Roboto', sans-serif;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+        margin-right: 1rem;
+        fill: var(--primary-color);
+    }
+
+    &:hover {
+        background: #ebf1f5;
+    }
 }

@@ -1,0 +1,676 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="my-lots">
+    <div class="container">
+        <div class="inner-container">
+            <div class="user">
+                <div class="user__layout">
+                    <div class="user__sidebar">
+                        {{> user-panel }}
+                    </div>
+                    <div class="user__main">
+                        <div class="user__my-lots-top-row">
+                            <h1 class="main-heading user__my-lots-heading">
+                                Мои лоты
+                            </h1>
+                            <div class="user__my-lots-btns">
+                                <a href="#" class="user__my-lots-btn">
+                                    <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                    Добавить лот
+                                </a>
+                                <a href="#" class="user__my-lots-btn">
+                                    <svg width="12" height="12" aria-hidden="true" class="icon-download">
+                                        <use xlink:href="#download"></use>
+                                    </svg>
+                                    Импортировать лот
+                                </a>
+                            </div>
+                        </div>
+                        <div class="user__my-lots-table">
+                            <div class="user__my-lots-table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                ID
+                                            </th>
+                                            <th>
+                                                Наименование
+                                            </th>
+                                            <th>
+                                                Добавлено
+                                            </th>
+                                            <th>
+                                                Начало
+                                            </th>
+                                            <th>
+                                                Окончание
+                                            </th>
+                                            <th>
+                                                Цена
+                                            </th>
+                                            <th>
+                                                <span class="visually-hidden">
+                                                    Действие
+                                                </span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    Земельный участок для индивидуального жилищного строительства...
+                                                </a>
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                21 452 351
+                                            </td>
+                                            <td>
+                                                Земельный участок для индивидуального жилищного строительства...
+                                            </td>
+                                            <td>
+                                                26.03.2020
+                                            </td>
+                                            <td>
+                                                30.03.2020
+                                            </td>
+                                            <td>
+                                                05.04.2020
+                                            </td>
+                                            <td>
+                                                <span class="price">
+                                                    22 424 215 ₽
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="user__my-lots-actions">
+                                                    <div class="user__my-lots-actions-btn">
+                                                        <svg width="15" height="12" aria-hidden="true"
+                                                            class="icon-dots">
+                                                            <use xlink:href="#dots"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="user__my-lots-actions-dropdown">
+                                                        <div class="user__my-lots-actions-dropdown-inner">
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-pencil">
+                                                                    <use xlink:href="#pencil"></use>
+                                                                </svg>
+                                                                Изменить
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-eye">
+                                                                    <use xlink:href="#eye"></use>
+                                                                </svg>
+                                                                Предпросмотр
+                                                            </a>
+                                                            <a href="#" class="user__my-lots-actions-link">
+                                                                <svg width="15" height="12" aria-hidden="true"
+                                                                    class="icon-trash">
+                                                                    <use xlink:href="#trash"></use>
+                                                                </svg>
+                                                                Удалить
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="user__reports-pagination">
+                            <div class="pagination">
+                                <ul class="pagination__list">
+                                    <li class="pagination__list-item active">
+                                        <a href="#" class="pagination__link">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a href="#" class="pagination__link">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a href="#" class="pagination__link">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a href="#" class="pagination__link">
+                                            4
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn catalog__lots-show-more-items">
+                                Показать еще
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}

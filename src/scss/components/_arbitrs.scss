@@ -41,6 +41,13 @@
     }
 
 
+    &:hover {
+        .arbitrs__card-title {
+            color: var(--primary-color);
+        }
+    }
+
+
     @include breakpoint(mobile) {
         padding: 1.6rem;
         min-height: auto;
@@ -74,6 +81,7 @@
     font-size: 3rem;
     line-height: 3.7rem;
     margin-bottom: 0.8rem;
+    transition: color .2s;
     @include breakpoint(mobile) {
         font-size: 2.4rem;
         line-height: 1.2;

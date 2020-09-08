@@ -151,6 +151,14 @@
 .news-detail__gallery-main {
     position: relative;
     margin-bottom: 2.4rem;
+    @include breakpointMF(small-tablet) {
+        &:hover {
+            .news-detail__gallery-arrow {
+                opacity: 1;
+                
+            }
+        }
+    }
     @include breakpoint(mobile) {
         margin-bottom: 2rem;
     }
@@ -165,6 +173,10 @@
     color: var(--text-color);
     z-index: 100;
     transition: color 0.2s, background-color 0.2s, opacity 0.2s, visibility 0.2s;
+
+    @include breakpointMF(small-tablet) {
+        opacity: 0;
+    }
     svg {
         width: 1rem;
         height: 1.6rem;
@@ -187,8 +199,8 @@
     }
 
     &.swiper-button-disabled {
-        opacity: 0;
-        visibility: hidden;
+        opacity: 0 !important;
+        visibility: hidden !important;
         transition: color 0.2s, background-color 0.2s, opacity 0.2s, visibility 0s linear 0.2s;
     }
 
@@ -198,6 +210,9 @@
         height: 4.5rem;
     }
 }
+
+
+
 
 .news-detail__gallery-thumbs-card {
     position: relative;
