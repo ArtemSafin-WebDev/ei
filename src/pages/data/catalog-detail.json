@@ -1,6 +1,7 @@
 {
     "title": "Каталог - Детальная страница",
     "whiteBackground": true,
+    "unauthorized": true,
     "sliderLots": [
         {
             "image": "img/lots/1.jpg",

@@ -35,10 +35,31 @@
 
         </main>
         {{> footer }}
+        {{> modals }}
         {{> change-browser }}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/app.js"></script>
         <script src="assets/js/contactsMap.js"></script>
+        <script>
+            // Тестовые скрипты для демонстрации верстки
+
+            const passwordResetForm = document.querySelector('.js-reset-password-test-form');
+
+            if (passwordResetForm) {
+                passwordResetForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    if ($(passwordResetForm).parsley().isValid()) {
+                        setTimeout(() => {
+                            if (window.openModal) {
+                                window.closeAllModals()
+                                window.openModal('#reset-password-success')
+                            }
+                        }, 200)
+                    }
+                })
+            }
+        </script>
     </div>
 </body>
 

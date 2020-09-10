@@ -343,6 +343,10 @@
     flex-shrink: 0;
     position: relative;
     transition: color 0.2s;
+
+    &.js-modal-open {
+        cursor: pointer !important;
+    }
     &:not([href]) {
         cursor: default;
     }

@@ -28,6 +28,8 @@ import assistant from './assistant';
 import validation from './validation';
 import phoneMask from './phoneMask';
 import changeDetails from './changeDetails';
+import modals from './modals';
+import showPassword from './showPassword';
 
 
 
@@ -62,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
     phoneMask();
     validation();
     changeDetails();
+    modals();
+    showPassword();
 });
 
 window.addEventListener('load', function() {

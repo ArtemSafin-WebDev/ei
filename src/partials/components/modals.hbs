@@ -1,0 +1,394 @@
+<div class="modals">
+    <div class="modals__modal" id="cancel-subscription">
+        <div class="modals__modal-content">
+            <h3 class="modals__heading">
+                Отмена подписки
+            </h3>
+            <div class="modals__message">
+                Вы действительно хотите отменить<br> подписку на нашем сервисе?
+            </div>
+            <div class="modals__buttons">
+                <a href="#" class="modal__btn">
+                    Отписаться
+                </a>
+                <a href="#cancel-subscription" class="modal__btn modal__btn--hollow js-modal-close">
+                    Отмена
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modals__modal" id="remove-card">
+        <div class="modals__modal-content">
+            <h3 class="modals__heading">
+                Удаленние данных карты
+            </h3>
+            <div class="modals__message">
+                Вы действительно хотите удалить данные вашей карты?
+            </div>
+            <div class="modals__card-number">
+                Tinkoff Black 5321 **** **** 3883
+            </div>
+            <div class="modals__buttons">
+                <a href="#" class="modal__btn">
+                    Удалить
+                </a>
+                <a href="#cancel-subscription" class="modal__btn modal__btn--hollow js-modal-close">
+                    Отмена
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modals__modal" id="write-org">
+        <div class="modals__modal-content">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <h3 class="modals__heading">
+                Напишите организатору
+            </h3>
+            <div class="modals__message">
+                Вы можете связаться с организатором торгов<br> и предложить свою цену
+            </div>
+            <form action="/" method="POST" class="modals__form" data-need-validation>
+                <div class="modals__form-row">
+                    <label for="price" class="modals__form-label">
+                        Ваша цена
+                    </label>
+                    <input type="tel" name="price" class="modals__form-input js-numeric-input" id="price" required>
+                </div>
+                <div class="modals__form-row">
+                    <label for="org-message" class="modals__form-label">
+                        Текст сообщения
+                    </label>
+                    <textarea name="message" id="org-message" class="modals__form-input"></textarea>
+                </div>
+                <div class="modals__form-row">
+                    <button type="submit" class="modal__btn modal__btn--fullwidth">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="modals__modal" id="tell-your-price">
+        <div class="modals__modal-content">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <h3 class="modals__heading">
+                Предложить свою цену
+            </h3>
+            <div class="modals__message">
+                Вы можете связаться с организатором торгов<br> и предложить свою цену
+            </div>
+            <form action="/" method="POST" class="modals__form" data-need-validation>
+                <div class="modals__form-row">
+                    <label for="your-price" class="modals__form-label">
+                        Ваша цена
+                    </label>
+                    <input type="tel" name="price" class="modals__form-input js-numeric-input" id="your-price" required>
+                </div>
+                <div class="modals__form-row">
+                    <label for="your-price-message" class="modals__form-label">
+                        Текст сообщения
+                    </label>
+                    <textarea name="message" id="your-price-message" class="modals__form-input"></textarea>
+                </div>
+                <div class="modals__form-row">
+                    <button type="submit" class="modal__btn modal__btn--fullwidth">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="modals__modal" id="buy-lot">
+        <div class="modals__modal-content">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <h3 class="modals__heading">
+                Мы выкупим интересующее<br> вас имущество!
+            </h3>
+            <div class="modals__lot-info">
+                <div class="modals__lot-info-image-container">
+                    <img src="img/lots/1.jpg" alt="" class="modals__lot-info-image">
+                </div>
+                <div class="modals__lot-info-content">
+                    <h4 class="modals__lot-info-title">
+                        Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 кв. м./
+                        земельный участок, доля в праве
+                    </h4>
+                    <div class="modals__lot-info-number">
+                        № лота: 5462819210
+                    </div>
+                </div>
+            </div>
+            <div class="modals__lot-price">
+                <p>
+                    Выкупите этот лот через агента!
+                </p>
+                <p>
+                    Стоимость участия в торгах
+                </p>
+                <span class="modals__lot-price-amount">
+                    8 000 ₽
+                </span>
+            </div>
+
+            <form action="/" method="POST" class="modals__form" data-need-validation>
+                <div class="modals__form-row">
+                    <button type="submit" class="modal__btn modal__btn--fullwidth"> Участвовать через агента</button>
+                </div>
+                <div class="modals__form-row">
+                    <label class="modal__checkbox">
+                        <input name="privacy" value="Y" type="checkbox" class="modal__checkbox-input" required>
+                        <span class="modal__checkbox-mark">
+                            <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#checkmark"></use>
+                            </svg>
+                        </span>
+                        <span class="modal__checkbox-text">
+                            Я принимаю условия <a href="#">Пользовательского соглашения</a>
+                        </span>
+
+                    </label>
+                </div>
+
+            </form>
+
+
+
+
+        </div>
+    </div>
+    <div class="modals__modal" id="signin">
+        <div class="modals__modal-content">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <img src="img/logo-green.svg" alt="" class="modals__logo">
+            <h3 class="modals__heading">
+                Вход
+            </h3>
+            <form action="/" method="POST" class="modals__form" data-need-validation>
+                <div class="modals__form-row">
+                    <label for="login" class="modals__form-label">
+                        Телефон или email
+                    </label>
+                    <input type="text" name="login" class="modals__form-input" id="login" required>
+                </div>
+                <div class="modals__form-row" id="password-wrapper">
+                    <label for="password" class="modals__form-label">
+                        Пароль
+                    </label>
+                    <div class="modals__form-input-password-wrapper js-show-password">
+                        <input type="password" name="login" class="modals__form-input" id="password"
+                            data-parsley-errors-container="#password-wrapper" required>
+                        <button class="modals__form-input-show-password-btn" type="button">
+                            <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
+                                <use xlink:href="#show-password"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="modals__form-row">
+                    <button type="submit" class="modal__btn modal__btn--fullwidth">
+                        Войти
+                    </button>
+                </div>
+            </form>
+            <div class="modals__sign-in-with">
+                <h5 class="modals__sign-in-with-title">
+                    Войти с помощью
+                </h5>
+                <div class="modals__sign-in-with-links">
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/google.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/facebook.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/vk.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/twitter.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                </div>
+            </div>
+            <div class="modals__not-registered">
+                <div class="modals__not-registered-text">
+                    Еще не зарегистрированы? <a href="#signup" class="js-modal-open">
+                        Регистрация
+                    </a>
+                </div>
+                <a href="#reset-password" class="modals__remember-password js-modal-open">
+                    Забыли пароль?
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modals__modal" id="signup">
+        <div class="modals__modal-content">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <img src="img/logo-green.svg" alt="" class="modals__logo">
+            <h3 class="modals__heading">
+                Регистрация
+            </h3>
+            <form action="/" method="POST" class="modals__form" data-need-validation>
+                <div class="modals__form-row">
+                    <label for="login" class="modals__form-label">
+                        Телефон или email
+                    </label>
+                    <input type="text" name="login" class="modals__form-input" id="login" required>
+                    <span class="modals__form-remark">
+                        Данные будут использоваться в качестве логина
+                    </span>
+                </div>
+                <div class="modals__form-row" id="signup-password-wrapper">
+                    <label for="signup-password" class="modals__form-label">
+                        Пароль
+                    </label>
+                    <div class="modals__form-input-password-wrapper js-show-password">
+                        <input type="password" name="password" class="modals__form-input" id="signup-password"
+                            data-parsley-errors-container="#signup-password-wrapper" required>
+                        <button class="modals__form-input-show-password-btn" type="button">
+                            <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
+                                <use xlink:href="#show-password"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="modals__form-row" id="signup-password-confirmation-wrapper">
+                    <label for="signup-password-confirmation" class="modals__form-label">
+                        Повторите пароль
+                    </label>
+                    <div class="modals__form-input-password-wrapper js-show-password">
+                        <input type="password" name="password-confirmation" class="modals__form-input"
+                            id="signup-password-confirmation" data-parsley-equalto="#signup-password" required
+                            data-parsley-errors-container="#signup-password-confirmation-wrapper">
+                        <button class="modals__form-input-show-password-btn" type="button">
+                            <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
+                                <use xlink:href="#show-password"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="modals__form-row">
+                    <button type="submit" class="modal__btn modal__btn--fullwidth">
+                        Зарегистрироваться
+                    </button>
+                </div>
+                <div class="modals__form-row">
+                    <label class="modal__checkbox">
+                        <input name="privacy" value="Y" type="checkbox" class="modal__checkbox-input" required>
+                        <span class="modal__checkbox-mark">
+                            <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#checkmark"></use>
+                            </svg>
+                        </span>
+                        <span class="modal__checkbox-text">
+                            Я принимаю условия <a href="#">Пользовательского соглашения</a>
+                        </span>
+
+                    </label>
+                </div>
+            </form>
+            <div class="modals__sign-in-with">
+                <h5 class="modals__sign-in-with-title">
+                    Зарегистрироваться с помощью
+                </h5>
+                <div class="modals__sign-in-with-links">
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/google.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/facebook.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/vk.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                    <a href="#" class="modals__sign-in-with-link">
+                        <img src="img/oauth/twitter.svg" alt="" class="modals__sign-in-with-link-image">
+                    </a>
+                </div>
+            </div>
+            <div class="modals__not-registered">
+                <div class="modals__not-registered-text">
+                    У вас есть учетная запись? <a href="#signin" class="js-modal-open">
+                        Войти
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modals__modal" id="reset-password">
+        <div class="modals__modal-content">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <img src="img/logo-green.svg" alt="" class="modals__logo">
+            <h3 class="modals__heading">
+                Восстановление пароля
+            </h3>
+            <div class="modals__message">
+                Для восстановления пароля введите ваш e-mail. На почту придёт сообщение c ссылкой для восстановления.
+            </div>
+            <form action="/" method="POST" class="modals__form js-reset-password-test-form" data-need-validation>
+                <div class="modals__form-row">
+                    <label for="reset-email" class="modals__form-label">
+                        Email
+                    </label>
+                    <input type="email" name="email" class="modals__form-input" id="reset-email" required>
+                </div>
+                <div class="modals__form-row">
+                    <button type="submit" class="modal__btn modal__btn--fullwidth">
+                        Сбросить пароль
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="modals__modal" id="reset-password-success">
+        <div class="modals__modal-content">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+          
+            <div class="modals__message">
+                Мы отправили письмо на почту, чтобы вы смогли восстановить пароль от аккаунта
+            </div>
+            <a href="#" class="modal__btn modal__btn--fullwidth">
+                Перейти на главную
+            </a>
+
+        </div>
+    </div>
+</div>

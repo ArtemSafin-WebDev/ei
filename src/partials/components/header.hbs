@@ -363,14 +363,18 @@
                 </button>
             </form>
             <div class="page-header__user-links">
-                <div class="page-header__user-link">
+                <div class="page-header__user-link {{#if unauthorized }} js-modal-open {{/if}}" {{#if unauthorized }} data-hash="#signin" {{/if}}>
                     <span class="page-header__user-link-icon-container">
                         <svg width="28" height="28" aria-hidden="true" class="icon-person">
                             <use xlink:href="#person"></use>
                         </svg>
                     </span>
-                    Профиль
 
+                    {{#if unauthorized }}
+                    Войти
+                    {{else}}
+
+                    Профиль
                     <div class="page-header__user-dropdown">
                         <div class="page-header__user-account">
                             <a href="#" class="page-header__user-account-username">
@@ -456,6 +460,9 @@
                             </a>
                         </div>
                     </div>
+                    {{/if}}
+
+
                 </div>
                 <a href="#" class="page-header__user-link">
                     <span class="page-header__user-link-icon-container">
