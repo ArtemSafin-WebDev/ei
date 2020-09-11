@@ -30,6 +30,7 @@ import phoneMask from './phoneMask';
 import changeDetails from './changeDetails';
 import modals from './modals';
 import showPassword from './showPassword';
+import stickySidebar from './stickySidebar';
 
 
 
@@ -66,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     changeDetails();
     modals();
     showPassword();
+    stickySidebar();
 });
 
 window.addEventListener('load', function() {

@@ -5751,7 +5751,8 @@ select:-webkit-autofill:focus {
   width: 44rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-left: 7.8rem; }
+  margin-left: 7.8rem;
+  will-change: min-height; }
   @media only screen and (max-width: 767px) {
     .catalog-detail__layout-sidebar {
       width: 100%;
@@ -5761,6 +5762,13 @@ select:-webkit-autofill:focus {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1; } }
+
+.catalog-detail__layout-sidebar-content {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  will-change: position, transform; }
 
 .catalog-detail__price {
   margin-bottom: 3rem; }
