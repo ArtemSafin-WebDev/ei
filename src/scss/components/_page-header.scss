@@ -5,7 +5,7 @@
 
 .page-header__container {
     position: relative;
-    z-index: 300;
+    z-index: 100;
     transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
 
     @include breakpoint(mobile) {
@@ -126,7 +126,7 @@
 
 .page-header__logo-link {
     flex-shrink: 0;
-
+    display: block;
     &:link,
     &:visited {
         color: var(--primary-color);

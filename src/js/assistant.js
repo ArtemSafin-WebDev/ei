@@ -24,7 +24,9 @@ export default function assistant() {
         if (window.closeMobileMenu) {
             window.closeMobileMenu();
         }
-        gsap.to(window, { duration: 0.3, scrollTo: 0, clearProps: 'all', onComplete: () => lockScroll(popup) });
+
+        lockScroll(popup)
+      
         menuOpen = true;
         document.body.classList.add('assistant-shown');
     }

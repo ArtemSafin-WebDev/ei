@@ -1,6 +1,13 @@
 <header class="page-header">
     <div class="assistant js-assistant-popup">
         <div class="container">
+            <div class="assistant__header">
+                <a href="#" class="page-header__logo-link">
+                    <svg width="190" aria-hidden="true" class="icon-logo page-header__logo-image">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                </a>
+            </div>
             <div class="inner-container">
                 <div class="assistant__content">
                     <h2 class="assistant__heading">
@@ -363,7 +370,8 @@
                 </button>
             </form>
             <div class="page-header__user-links">
-                <div class="page-header__user-link {{#if unauthorized }} js-modal-open {{/if}}" {{#if unauthorized }} data-hash="#signin" {{/if}}>
+                <div class="page-header__user-link {{#if unauthorized }} js-modal-open {{/if}}" {{#if unauthorized }}
+                    data-hash="#signin" {{/if}}>
                     <span class="page-header__user-link-icon-container">
                         <svg width="28" height="28" aria-hidden="true" class="icon-person">
                             <use xlink:href="#person"></use>

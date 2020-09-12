@@ -11,7 +11,7 @@ export default function stickySidebar() {
         new StickySidebar(element, {
             topSpacing: 20,
             bottomSpacing: 20,
-            containerSelector: '.catalog-detail__layout',
+            containerSelector: '.catalog-detail__layout-sidebar',
             innerWrapperSelector: '.catalog-detail__layout-sidebar-content',
             resizeSensor: true,
             minWidth: 768

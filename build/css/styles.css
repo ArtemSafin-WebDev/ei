@@ -1372,7 +1372,7 @@ select:-webkit-autofill:focus {
 
 .page-header__container {
   position: relative;
-  z-index: 300;
+  z-index: 100;
   -webkit-transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
   transition: background-color 0.3s, opacity 0.3s, visibility 0.3s; }
   @media only screen and (max-width: 767px) {
@@ -1481,7 +1481,8 @@ select:-webkit-autofill:focus {
 
 .page-header__logo-link {
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+  display: block; }
   .page-header__logo-link:link, .page-header__logo-link:visited {
     color: var(--primary-color); }
   @media only screen and (max-width: 767px) {
@@ -9348,14 +9349,20 @@ select:-webkit-autofill:focus {
     @media only screen and (max-width: 767px) {
       .assistant::after {
         display: none; } }
+  .assistant::-webkit-scrollbar * {
+    background: transparent; }
+  .assistant::-webkit-scrollbar-track {
+    background-color: transparent; }
+  .assistant::-webkit-scrollbar {
+    display: none;
+    background-color: transparent; }
+  .assistant::-webkit-scrollbar-thumb {
+    background-color: transparent; }
   .assistant-shown .assistant {
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.3s, visibility 0.3s;
     transition: opacity 0.3s, visibility 0.3s; }
-  @media only screen and (max-width: 767px) {
-    .assistant {
-      padding-top: 18rem; } }
 
 @-webkit-keyframes wave {
   0% {
@@ -9438,7 +9445,7 @@ select:-webkit-autofill:focus {
   opacity: 1; }
 
 .assistant__content {
-  padding-top: 18rem;
+  padding-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9455,7 +9462,7 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 767px) {
     .assistant__content {
       padding-bottom: 2rem;
-      padding-top: 0; } }
+      padding-top: 3rem; } }
 
 .assistant__heading {
   font-weight: 500;
@@ -9658,6 +9665,17 @@ select:-webkit-autofill:focus {
     .assistant__mute-sound {
       right: 3rem;
       bottom: 9rem; } }
+
+.assistant__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7rem;
+  position: relative;
+  z-index: 100; }
+  @media only screen and (max-width: 767px) {
+    .assistant__header {
+      margin-top: 2rem; } }
 
 .contacts {
   padding-top: var(--page-top-padding); }

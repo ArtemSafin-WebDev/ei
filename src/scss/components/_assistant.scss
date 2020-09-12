@@ -16,15 +16,18 @@
 
     @include waves();
 
+
+    @include noScrollbar();
+
     .assistant-shown & {
         opacity: 1;
         visibility: visible;
         transition: opacity 0.3s, visibility 0.3s;
     }
 
-    @include breakpoint(mobile) {
-        padding-top: 18rem;
-    }
+    // @include breakpoint(mobile) {
+    //     padding-top: 18rem;
+    // }
 }
 
 @keyframes wave {
@@ -126,7 +129,7 @@
 }
 
 .assistant__content {
-    padding-top: 18rem;
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +139,7 @@
 
     @include breakpoint(mobile) {
         padding-bottom: 2rem;
-        padding-top: 0;
+        padding-top: 3rem;
     }
 }
 
@@ -310,5 +313,17 @@
     @include breakpoint(mobile) {
         right: 3rem;
         bottom: 9rem;
+    }
+}
+
+
+
+.assistant__header {
+    display: flex;
+    margin-top: 7rem;
+    position: relative;
+    z-index: 100;
+    @include breakpoint(mobile) {
+        margin-top: 2rem;
     }
 }
