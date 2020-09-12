@@ -211,7 +211,7 @@
         transform: rotate(-90deg);
         circle:nth-child(2) {
             transition: stroke-dashoffset 0.2s;
-            stroke-dashoffset: calc(500 - 500 * var(--lot-progress, 0));
+            stroke-dashoffset: calc(500px - 500px * var(--lot-progress, 0));
         }
     }
 

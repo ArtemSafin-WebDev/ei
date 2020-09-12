@@ -135,7 +135,7 @@
         transform: rotate(-90deg);
         circle:nth-child(2) {
             transition: stroke-dashoffset 0.2s;
-            stroke-dashoffset: calc(500 - 500 * var(--lot-progress, 0));
+            stroke-dashoffset: calc(500px - 500px * var(--lot-progress, 0));
         }
     }
 
@@ -197,14 +197,14 @@
         fill: transparent;
         transition: fill 0.2s;
         @include breakpoint(mobile) {
-            width: 3.2rem;
-            height: 3.2rem;
+            width: 32px;
+            height: 32px;
         }
     }
 
     @include breakpoint(mobile) {
-        margin-left: 1.7rem;
-        margin-right: 1.7rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
     }
 }
 
@@ -341,7 +341,7 @@
                 display: flex;
                 align-items: center;
                 color: #99a6b6;
-               
+                white-space: nowrap;
                
             }
 
@@ -355,6 +355,12 @@
                     flex-shrink: 0;
                     width: 1.4rem;
                     height: 1.4rem;
+
+
+                    @include breakpoint(mobile) {
+                        height: 14px;
+                        width: 14px;
+                    }
                     
                 }
 
@@ -382,8 +388,10 @@
 
                 @include breakpoint(mobile) {
                     left: auto;
-                    right: -.45rem;
+                    right: 0;
                     transform: none;
+                    width: auto;
+                    width: calc(100vw - 2 * var(--content-padding));
                 }
             }
 
@@ -397,6 +405,10 @@
                 position: relative;
                 display: block;
                 color: var(--text-color);
+
+                @include breakpoint(mobile) {
+                    text-align: center;
+                }
                 &::before {
                     content: '';
                     position: absolute;
@@ -415,6 +427,9 @@
                         left: auto;
                         right: 0;
                         transform: none;
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        top: -.8rem;
                     }
                 }
 
@@ -431,6 +446,7 @@
         }
 
         a {
+
             &:link,
             &:visited {
                 color: var(--primary-color);
@@ -444,17 +460,34 @@
 
     &--medium-first-col {
         table {
+            // tr {
+            //     @include breakpoint(mobile) {
+            //         display: grid;
+            //         grid-template-columns: minmax(min-content, 1fr) min-content;
+            //     }
+            // }
+           
             th {
                 width: 35%;
                 @include breakpoint(mobile) {
-                    width: 50%;
+                    width: auto;
+                   
+                    flex-grow: 1;
                 }
             }
 
             td {
                 width: 65%;
                 @include breakpoint(mobile) {
-                    width: 50%;
+                    width: auto;
+                    width: min-content;
+                    &:nth-child(2) {
+                        text-align: right;
+                    }
+
+                    a {
+                        white-space: nowrap;
+                    }
                 }
             }
         }

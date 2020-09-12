@@ -32,6 +32,7 @@ import modals from './modals';
 import showPassword from './showPassword';
 import stickySidebar from './stickySidebar';
 import myLotsTooltips from './myLotsTooltips';
+import scrollableTable from './scrollableTable';
 
 
 
@@ -70,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showPassword();
     stickySidebar();
     myLotsTooltips();
+    scrollableTable();
 });
 
 window.addEventListener('load', function() {

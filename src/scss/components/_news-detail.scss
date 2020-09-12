@@ -32,7 +32,6 @@
     @include breakpoint(mobile) {
         width: 100%;
         flex-grow: 0;
-        
     }
 }
 
@@ -43,7 +42,6 @@
     @include breakpoint(mobile) {
         margin-bottom: 1rem;
     }
-    
 }
 
 .news-detail__tag {
@@ -60,8 +58,8 @@
 
     @include breakpoint(mobile) {
         font-size: 1.4rem;
-        padding: .4rem .8rem;
-        border-radius: .6rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 0.6rem;
     }
 }
 
@@ -128,7 +126,6 @@
         color: white;
     }
 
-
     @include breakpoint(mobile) {
         width: 4.2rem;
         height: 4.2rem;
@@ -155,7 +152,6 @@
         &:hover {
             .news-detail__gallery-arrow {
                 opacity: 1;
-                
             }
         }
     }
@@ -204,15 +200,11 @@
         transition: color 0.2s, background-color 0.2s, opacity 0.2s, visibility 0s linear 0.2s;
     }
 
-
     @include breakpoint(mobile) {
         width: 4.5rem;
         height: 4.5rem;
     }
 }
-
-
-
 
 .news-detail__gallery-thumbs-card {
     position: relative;
@@ -259,7 +251,6 @@
         }
     }
 
-
     @include breakpoint(mobile) {
         border-radius: 1rem;
     }
@@ -303,7 +294,6 @@
         padding-bottom: 56.25%;
     }
 
-
     @include breakpoint(mobile) {
         border-radius: 2rem;
     }
@@ -324,7 +314,6 @@
     margin-bottom: 4.5rem;
 
     @include breakpoint(mobile) {
-      
         margin-bottom: 3rem;
     }
     & > * {
@@ -439,7 +428,7 @@
             font-weight: 400;
             margin-top: 1.5rem;
             @include breakpoint(mobile) {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 margin-top: 1rem;
             }
         }
@@ -478,8 +467,8 @@
         }
 
         td {
-            font-size: 1.9rem;
-            line-height: 2.4rem;
+            font-size: 1.6rem;
+            line-height: 1.2;
             border-bottom: 2px solid #ebf1f5;
 
             @include breakpoint(mobile) {
@@ -488,48 +477,9 @@
             }
         }
 
+     
 
-        thead, tbody, th, td {
-            @include breakpoint(mobile) {
-                display: block;
-            }
-        }
-
-        tr {
-            @include breakpoint(mobile) {
-                padding: 1.6rem 0;
-                border-bottom: 2px solid #ebf1f5;
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                grid-gap: 2rem;
-
-                &:first-child {
-                    border-top: 2px solid #ebf1f5;
-                }
-            }
-        }
-
-        thead {
-            @include breakpoint(mobile) {
-                display: none;
-            }
-        }
-
-        th, td {
-            @include breakpoint(mobile) {
-                
-                border: none;
-                padding: 0;
-                &::before {
-                    content: attr(data-th);
-                    font-size: 1.4rem;
-                    line-height: 1.2;
-                    color: #99a6b6;
-                    margin-bottom: .8rem;
-                    display: block;
-                }
-            }
-        }
+       
     }
 }
 
@@ -547,4 +497,46 @@
     font-size: 1.9rem;
     line-height: 2.3rem;
     margin-bottom: 2.4rem;
+}
+
+.news-detail__scrollable-table {
+    width: 100%;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    table {
+        min-width: 100%;
+        width: auto;
+        margin: 0;
+        margin-bottom: 2rem;
+        th {
+            white-space: nowrap;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        background-color: white;
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--primary-color);
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #eff1f6;
+    }
+
+    @include breakpoint(mobile) {
+        width: auto;
+        margin: 0 calc(-1 * var(--content-padding));
+    }
+}
+
+.news-detail__scrollable-table-wrapper {
+    @include breakpoint(mobile) {
+        padding: 0 var(--content-padding);
+    }
 }
