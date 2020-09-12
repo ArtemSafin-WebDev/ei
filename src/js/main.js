@@ -31,6 +31,7 @@ import changeDetails from './changeDetails';
 import modals from './modals';
 import showPassword from './showPassword';
 import stickySidebar from './stickySidebar';
+import myLotsTooltips from './myLotsTooltips';
 
 
 
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modals();
     showPassword();
     stickySidebar();
+    myLotsTooltips();
 });
 
 window.addEventListener('load', function() {

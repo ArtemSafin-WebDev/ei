@@ -1,2 +1,13 @@
 @import '../../node_modules/swiper/swiper-bundle';
 @import '../../node_modules/choices.js/public/assets/styles/choices';
+@import '../../node_modules/tippy.js/dist/tippy';
+
+.tippy-box[data-theme~='blue'] {
+    background-color: rgba(#050c42, 0.9);
+    color: white;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: 'Formular', sans-serif;
+}

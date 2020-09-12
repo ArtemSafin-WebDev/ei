@@ -158,10 +158,19 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-
+    transition: opacity .3s;
     &:link,
     &:visited {
         color: inherit;
+    }
+
+
+    &:hover {
+        .is-interesting__special-card-heading,
+        .is-interesting__special-card-description {
+            opacity: .8;
+        }
+       
     }
 }
 
@@ -170,7 +179,7 @@
     font-size: 2.4rem;
     line-height: 3.4rem;
     margin-bottom: 1.2rem;
-
+    transition: opacity .3s;
     @include breakpoint(mobile) {
         font-size: 2.2rem;
         line-height: 1.2;
@@ -182,7 +191,7 @@
     font-size: 1.5rem;
     line-height: 2.4rem;
     margin-bottom: 1.5rem;
-
+    transition: opacity .3s;
     @include breakpoint(mobile) {
         font-size: 1.5rem;
         line-height: 1.2;

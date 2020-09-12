@@ -157,7 +157,7 @@
                                     <div class="lot-card__content">
                                         <div class="lot-card__price-block">
                                             {{#unless this.sold}}
-                                            <div class="lot-card__price-wrapper">
+                                            <a href="#" class="lot-card__price-wrapper">
                                                 <div class="lot-card__new-price">{{ this.newPrice }} ₽</div>
                                                 <div
                                                     class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
@@ -166,7 +166,7 @@
                                                         <use xlink:href="#down-trend"></use>
                                                     </svg>
                                                 </div>
-                                            </div>
+                                            </a>
                                             <div class="lot-card__trade-category">
                                                 Банкротные торги
                                             </div>

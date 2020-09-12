@@ -30,7 +30,8 @@
     "picturefill": "^3.0.3",
     "resize-sensor": "0.0.6",
     "sticky-sidebar": "^3.3.1",
-    "swiper": "^6.1.1"
+    "swiper": "^6.1.1",
+    "tippy.js": "^6.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
