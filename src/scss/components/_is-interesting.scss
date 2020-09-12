@@ -76,6 +76,8 @@
     overflow: hidden;
     margin-bottom: 1.5rem;
     position: relative;
+    backface-visibility: hidden;
+    transform: translateZ(0);
     &::after {
         content: '';
         display: block;

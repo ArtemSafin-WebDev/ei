@@ -3006,12 +3006,16 @@ select:-webkit-autofill:focus {
     opacity: var(--image-overlay-opacity, 0); }
   .useful-articles__small-card:link, .useful-articles__small-card:visited {
     color: var(--text-color); }
-  .useful-articles__small-card:hover .useful-articles__small-card-image {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
+  .useful-articles__small-card:hover {
+    color: var(--primary-color); }
+    .useful-articles__small-card:hover .useful-articles__small-card-image {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
   .useful-articles__small-card--white-text {
     background-color: var(--text-color); }
     .useful-articles__small-card--white-text:link, .useful-articles__small-card--white-text:visited {
+      color: white; }
+    .useful-articles__small-card--white-text:hover {
       color: white; }
   @media only screen and (max-width: 767px) {
     .useful-articles__small-card {
@@ -3042,7 +3046,9 @@ select:-webkit-autofill:focus {
 .useful-articles__small-card-title {
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 1.8rem; }
+  line-height: 1.8rem;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s; }
 
 .partners {
   padding-top: 6.5rem;
@@ -8038,7 +8044,11 @@ select:-webkit-autofill:focus {
   position: relative;
   border-radius: 2.5rem;
   overflow: hidden;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
   .all-articles__card-image-container::after {
     content: '';
     display: block;
@@ -8171,7 +8181,11 @@ select:-webkit-autofill:focus {
   display: block;
   overflow: hidden;
   margin-bottom: 1.5rem;
-  position: relative; }
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
   .is-interesting__card-image-container::after {
     content: '';
     display: block;

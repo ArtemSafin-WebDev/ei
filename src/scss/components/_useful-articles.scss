@@ -213,15 +213,26 @@
     }
 
     &:hover {
+        color: var(--primary-color);
         .useful-articles__small-card-image {
             transform: scale(1.05);
         }
+
+
+        
+
+     
     }
 
     &--white-text {
         background-color: var(--text-color);
         &:link,
         &:visited {
+            color: white;
+        }
+
+
+        &:hover {
             color: white;
         }
     }
@@ -251,4 +262,5 @@
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.8rem;
+    transition: opacity .2s;
 }

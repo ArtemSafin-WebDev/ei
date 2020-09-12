@@ -256,6 +256,8 @@
     border-radius: 2.5rem;
     overflow: hidden;
     margin-bottom: 1.5rem;
+    backface-visibility: hidden;
+    transform: translateZ(0);
     &::after {
         content: '';
         display: block;
