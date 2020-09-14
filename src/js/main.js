@@ -37,6 +37,7 @@ import scrollableTable from './scrollableTable';
 import 'air-datepicker'
 import fileUpload from './fileUpload';
 import datepickers from './datepickers';
+import messages from './messages';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollableTable();
     fileUpload();
     datepickers();
+    messages();
 });
 
 window.addEventListener('load', function() {

@@ -1,0 +1,75 @@
+.message {
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    background: #ffffff;
+    box-shadow: 0px 1rem 4.5rem rgba(5, 12, 66, 0.25);
+    border-radius: 2.5rem;
+    padding: 3.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+    z-index: 4000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: flex-start;
+    max-width: calc(100% - 4rem - var(--content-padding));
+    &--error {
+        background: #fc5555;
+        color: white;
+    }
+
+    .icon-warning {
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+        margin-right: 0.8rem;
+    }
+    &.shown {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 1.8rem;
+        right: 2rem;
+        bottom: 2rem;
+        border-radius: 1.8rem;
+    }
+}
+
+.message__lot-saved {
+    max-width: 32rem;
+    display: flex;
+    align-items: flex-start;
+    max-width: calc(100% - 2rem - var(--content-padding));
+}
+
+.message__lot-saved-image {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 2.1rem;
+    flex-shrink: 0;
+    margin-right: 0.8rem;
+}
+
+.message__lot-saved-content {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.message__lot-saved-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.message__lot-saved-text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}

@@ -36,6 +36,7 @@
         </main>
         {{> footer }}
         {{> modals }}
+        {{> messages }}
         {{> change-browser }}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/app.js"></script>
@@ -57,6 +58,31 @@
                             }
                         }, 200)
                     }
+                })
+            }
+
+
+
+            const removeCardBtn = document.querySelector('#remove-card-btn');
+
+            if (removeCardBtn) {
+                removeCardBtn.addEventListener('click', event => {
+                    event.preventDefault();
+
+                    window.closeAllModals();
+
+                    window.showMessage('#card-removed-message');
+                })
+            }
+
+
+            const changeRulesFail = document.querySelector('#change-rules-fail-btn');
+
+            if (changeRulesFail) {
+                changeRulesFail.addEventListener('click', event => {
+                    event.preventDefault();
+
+                    window.showMessage('#change-rules-fail-message');
                 })
             }
         </script>

@@ -360,6 +360,11 @@
                         fill-rule="evenodd"
                     />
                 </symbol>
+                <symbol viewBox="0 0 20.81 19" id="warning" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.29 14.54a1.17 1.17 0 00.33.82 1.08 1.08 0 001.57 0 1.17 1.17 0 00.33-.82 1.18 1.18 0 00-.33-.82 1.08 1.08 0 00-1.57 0 1.18 1.18 0 00-.33.82zm.37-7.37v4.46a.2.2 0 00.19.2H11a.2.2 0 00.19-.2V7.17A.2.2 0 0011 7H9.85a.2.2 0 00-.19.17zm11.05 10.67L11.05.39a.73.73 0 00-.64-.39.73.73 0 00-.65.39L.1 17.84A.77.77 0 00.74 19h19.33a.77.77 0 00.64-1.16zm-18.2-.68l7.9-14.25 7.89 14.25z"
+                    />
+                </symbol>
             </svg>
         </div>
 
@@ -1489,7 +1494,7 @@
                             Tinkoff Black 5321 **** **** 3883
                         </div>
                         <div class="modals__buttons">
-                            <a href="#" class="modal__btn">
+                            <a href="#" class="modal__btn" id="remove-card-btn">
                                 Удалить
                             </a>
                             <a href="#cancel-subscription" class="modal__btn modal__btn--hollow js-modal-close">
@@ -2136,6 +2141,36 @@
                     </div>
                 </div>
             </div>
+            <div class="messages">
+                <div class="message" id="subscription-cancelled-message">
+                    Подписка отменена
+                </div>
+                <div class="message" id="card-removed-message">
+                    Карта успешно удалена
+                </div>
+                <div class="message message--error" id="change-rules-fail-message">
+                    <svg width="20" height="20" aria-hidden="true" class="icon-warning">
+                        <use xlink:href="#warning"></use>
+                    </svg>
+                    Во время настроек условий<br />
+                    возникли проблемы, повторите<br />
+                    попытку позже
+                </div>
+
+                <div class="message" id="lot-saved-message">
+                    <div class="message__lot-saved">
+                        <img src="img/lots/1.jpg" alt="" class="message__lot-saved-image" />
+                        <div class="message__lot-saved-content">
+                            <h5 class="message__lot-saved-title">
+                                Лот добавлен в избранное
+                            </h5>
+                            <div class="message__lot-saved-text">
+                                Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="change-browser">
                 <div class="change-browser__message">
                     К сожалению, ваш браузер не поддерживается
@@ -2165,6 +2200,28 @@
                                 }
                             }, 200);
                         }
+                    });
+                }
+
+                const removeCardBtn = document.querySelector('#remove-card-btn');
+
+                if (removeCardBtn) {
+                    removeCardBtn.addEventListener('click', event => {
+                        event.preventDefault();
+
+                        window.closeAllModals();
+
+                        window.showMessage('#card-removed-message');
+                    });
+                }
+
+                const changeRulesFail = document.querySelector('#change-rules-fail-btn');
+
+                if (changeRulesFail) {
+                    changeRulesFail.addEventListener('click', event => {
+                        event.preventDefault();
+
+                        window.showMessage('#change-rules-fail-message');
                     });
                 }
             </script>
