@@ -246,6 +246,44 @@ td, th {
 }
 
 
+.datepicker {
+    color: var(--text-color);
+}
+
+.datepickers-container {
+    z-index: 2000;
+}
+
+
+.datepicker--day-name {
+    color: var(--primary-color);
+}
+
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current- {
+    background-color: var(--primary-color);
+}
+
+
+.datepicker--cell.-current-, .datepicker--cell.-current-.-in-range- {
+    color: var(--primary-color);
+}
+
+
+.datepicker--cell.-selected-.-focus- {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+.datepicker--cell.-in-range- {
+    background: rgba(#13B17C, .1);
+    color: var(--text-color);
+}
+
+
+.datepicker--cell.-in-range-.-focus- {
+    background: rgba(#13B17C, .3);
+}
 
 .no-scroll {
     overflow-y: scroll;

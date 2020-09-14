@@ -1816,10 +1816,10 @@
                         </h3>
                         <form action="/" method="POST" class="modals__form" data-need-validation>
                             <div class="modals__form-row">
-                                <label for="login" class="modals__form-label">
+                                <label for="login-register" class="modals__form-label">
                                     Телефон или email
                                 </label>
-                                <input type="text" name="login" class="modals__form-input" id="login" required />
+                                <input type="text" name="login-registration" class="modals__form-input" id="login-register" required />
                                 <span class="modals__form-remark">
                                     Данные будут использоваться в качестве логина
                                 </span>
@@ -1956,6 +1956,286 @@
                         <a href="#" class="modal__btn modal__btn--fullwidth">
                             Перейти на главную
                         </a>
+                    </div>
+                </div>
+                <div class="modals__modal" id="create-lot">
+                    <div class="modals__modal-content modals__modal-content--wide">
+                        <button class="modals__modal-close-btn js-modal-close">
+                            <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#cross"></use>
+                            </svg>
+                        </button>
+
+                        <h3 class="modals__heading modals__heading--text-align">
+                            Добавление нового лота
+                        </h3>
+                        <form action="/" method="POST" class="user__change-form user__change-form--small-padding" data-need-validation>
+                            <div class="user__change-form-group">
+                                <h4 class="user__change-form-heading">
+                                    Параметры торгов
+                                </h4>
+                                <div class="user__change-form-row">
+                                    <label for="trade-type" class="user__change-form-label">
+                                        Тип торга
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="trade-type-error">
+                                        <select
+                                            name="trade-type"
+                                            id="trade-type"
+                                            class="user__change-form-select js-change-detail-select"
+                                            required
+                                            data-parsley-class-handler="#trade-type-error"
+                                            data-parsley-errors-container="#trade-type-error"
+                                            data-trigger="change"
+                                        >
+                                            <option value="">Тип торга</option>
+                                            <option value="1">Тип 1</option>
+                                            <option value="2">Тип 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="application-time" class="user__change-form-label">
+                                        Начало и конец приема заявок
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="application-time-errors">
+                                        <div class="user__change-form-date">
+                                            <input
+                                                type="text"
+                                                name="application-time"
+                                                id="application-time"
+                                                class="user__change-form-input js-datepicker"
+                                                data-range="true"
+                                                data-multiple-dates-separator=" - "
+                                                data-parsley-errors-container="#application-time-errors"
+                                                readonly
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="trade-end" class="user__change-form-label">
+                                        Конец торгов
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="trade-end-errors">
+                                        <div class="user__change-form-date">
+                                            <input
+                                                type="text"
+                                                name="trade-end"
+                                                id="trade-end"
+                                                class="user__change-form-input js-datepicker"
+                                                data-parsley-errors-container="#trade-end-errors"
+                                                readonly
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="trade-pub" class="user__change-form-label">
+                                        Публикация лота
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="trade-pub-errors">
+                                        <div class="user__change-form-date">
+                                            <input
+                                                type="text"
+                                                name="trade-pub"
+                                                id="trade-pub"
+                                                class="user__change-form-input js-datepicker"
+                                                data-parsley-errors-container="#trade-pub-errors"
+                                                readonly
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user__change-form-group">
+                                <h4 class="user__change-form-heading">
+                                    Описание лота
+                                </h4>
+                                <div class="user__change-form-row">
+                                    <label for="lot-type" class="user__change-form-label">
+                                        Тип лота
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="lot-type-error">
+                                        <select
+                                            name="lot-type"
+                                            id="lot-type"
+                                            class="user__change-form-select js-change-detail-select"
+                                            required
+                                            data-parsley-class-handler="#lot-type-error"
+                                            data-parsley-errors-container="#lot-type-error"
+                                            data-trigger="change"
+                                        >
+                                            <option value="">Тип лота</option>
+                                            <option value="1">Тип 1</option>
+                                            <option value="2">Тип 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="lot-heading" class="user__change-form-label">
+                                        Заголовок лота
+                                    </label>
+                                    <div class="user__change-form-input-wrapper">
+                                        <input
+                                            type="text"
+                                            name="lot-heading"
+                                            id="lot-heading"
+                                            class="user__change-form-input"
+                                            required
+                                            placeholder="Заголовок лота"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="lot-desc" class="user__change-form-label">
+                                        Описание лота
+                                    </label>
+                                    <div class="user__change-form-input-wrapper">
+                                        <textarea
+                                            name="lot-desc"
+                                            id="lot-desc"
+                                            class="user__change-form-input"
+                                            required
+                                            placeholder="Описание лота"
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label class="user__change-form-label">
+                                        Фотографии лота
+                                    </label>
+                                    <div class="user__change-form-input-wrapper">
+                                        <div class="user__change-form-file-upload js-file-upload">
+                                            <div class="user__change-form-file-upload-dropzone" data-upload-text="Загрузить изображение">
+                                                <label class="user__change-form-file-upload-label">
+                                                    <input type="file" name="file1" accept=".jpg, .jpeg, .png" />
+                                                </label>
+                                                <label class="user__change-form-file-upload-label">
+                                                    <input type="file" name="file2" accept=".jpg, .jpeg, .png" />
+                                                </label>
+                                                <label class="user__change-form-file-upload-label">
+                                                    <input type="file" name="file3" accept=".jpg, .jpeg, .png" />
+                                                </label>
+                                                <label class="user__change-form-file-upload-label">
+                                                    <input type="file" name="file4" accept=".jpg, .jpeg, .png" />
+                                                </label>
+                                                <label class="user__change-form-file-upload-label">
+                                                    <input type="file" name="file5" accept=".jpg, .jpeg, .png" />
+                                                </label>
+                                                <label class="user__change-form-file-upload-label">
+                                                    <input type="file" name="file6" accept=".jpg, .jpeg, .png" />
+                                                </label>
+                                            </div>
+                                            <div class="user__change-form-file-upload-files"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="lot-category" class="user__change-form-label">
+                                        Категория лота
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="lot-category-error">
+                                        <select
+                                            name="lot-category"
+                                            id="lot-category"
+                                            class="user__change-form-select js-change-detail-select"
+                                            required
+                                            data-parsley-class-handler="#lot-category-error"
+                                            data-parsley-errors-container="#lot-category-error"
+                                            data-trigger="change"
+                                        >
+                                            <option value="">Категория лота</option>
+                                            <option value="1">Категория 1</option>
+                                            <option value="2">Категория 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="lot-subcategory" class="user__change-form-label">
+                                        Подкатегория лота
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="lot-subcategory-error">
+                                        <select
+                                            name="lot-subcategory"
+                                            id="lot-subcategory"
+                                            class="user__change-form-select js-change-detail-select"
+                                            required
+                                            data-parsley-class-handler="#lot-subcategory-error"
+                                            data-parsley-errors-container="#lot-subcategory-error"
+                                            data-trigger="change"
+                                        >
+                                            <option value="">Подкатегория лота</option>
+                                            <option value="1">Подкатегория 1</option>
+                                            <option value="2">Подкатегория 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user__change-form-group">
+                                <h4 class="user__change-form-heading">
+                                    Цена
+                                </h4>
+                                <div class="user__change-form-row">
+                                    <label for="lot-price" class="user__change-form-label">
+                                        Начальная цена
+                                    </label>
+                                    <div class="user__change-form-input-wrapper">
+                                        <input
+                                            type="tel"
+                                            name="lot-price"
+                                            id="lot-price"
+                                            class="user__change-form-input js-numeric-input"
+                                            required
+                                            placeholder="Начальная цена"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="user__change-form-row">
+                                    <label for="lot-step" class="user__change-form-label">
+                                        Тип шага торга
+                                    </label>
+                                    <div class="user__change-form-input-wrapper" id="lot-step-error">
+                                        <select
+                                            name="lot-step"
+                                            id="lot-step"
+                                            class="user__change-form-select js-change-detail-select"
+                                            required
+                                            data-parsley-class-handler="#lot-step-error"
+                                            data-parsley-errors-container="#lot-step-error"
+                                            data-trigger="change"
+                                        >
+                                            <option value="">Тип шага торга</option>
+                                            <option value="1">Тип 1</option>
+                                            <option value="2">Тип 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="user__change-form-row">
+                                    <label for="lot-garantee" class="user__change-form-label">
+                                        Задаток для участия
+                                    </label>
+                                    <div class="user__change-form-input-wrapper">
+                                        <input
+                                            type="tel"
+                                            name="lot-price"
+                                            id="lot-garantee"
+                                            class="user__change-form-input js-numeric-input"
+                                            required
+                                            placeholder="Задаток для участия"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn user__change-form-submit">
+                                Добавить
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

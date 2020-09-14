@@ -34,7 +34,9 @@ import stickySidebar from './stickySidebar';
 import myLotsTooltips from './myLotsTooltips';
 import scrollableTable from './scrollableTable';
 
-
+import 'air-datepicker'
+import fileUpload from './fileUpload';
+import datepickers from './datepickers';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -72,6 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
     stickySidebar();
     myLotsTooltips();
     scrollableTable();
+    fileUpload();
+    datepickers();
 });
 
 window.addEventListener('load', function() {

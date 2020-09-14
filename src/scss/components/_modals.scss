@@ -34,6 +34,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
+    &--wide {
+        max-width: 78rem;
+    }
     @include breakpoint(mobile) {
         padding: 2rem;
         border-radius: 2rem;
@@ -94,6 +98,11 @@
     line-height: 1.2;
     text-align: center;
     margin-bottom: 2rem;
+
+
+    &--text-align {
+        text-align: left;
+    }
 
     @include breakpoint(mobile) {
         font-size: 2.4rem;
