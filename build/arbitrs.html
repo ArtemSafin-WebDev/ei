@@ -1207,6 +1207,7 @@
                                                 </svg>
                                             </button>
                                         </h2>
+
                                         <nav class="catalog-filters__nav">
                                             <ul class="catalog-filters__nav-list">
                                                 <li class="catalog-filters__nav-list-item">
@@ -1419,6 +1420,26 @@
                                                             <option value="Peter">Санкт-Петербург</option>
                                                             <option value="Tatarstan">Татарстан</option>
                                                         </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Тип торгов
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" checked />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Активные торги
+                                                            </span>
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1885,6 +1906,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="modals__modal" id="register-confirmation">
+                    <div class="modals__modal-content">
+                        <img src="img/logo-green.svg" alt="" class="modals__logo" />
+                        <div class="modals__message">
+                            По адресу <a href="mailto:info@markweber.ru">info@markweber.ru</a> отправлена ссылка для подтверждения электронной почты
+                        </div>
+                        <a href="#" class="modal__btn modal__btn--fullwidth">
+                            Вернуться на главную
+                        </a>
+                    </div>
+                </div>
                 <div class="modals__modal" id="write-org">
                     <div class="modals__modal-content">
                         <button class="modals__modal-close-btn js-modal-close">
@@ -1994,7 +2026,9 @@
 
                         <form action="/" method="POST" class="modals__form" data-need-validation>
                             <div class="modals__form-row">
-                                <button type="submit" class="modal__btn modal__btn--fullwidth">Участвовать через агента</button>
+                                <button type="submit" class="modal__btn modal__btn--fullwidth">
+                                    Участвовать через агента
+                                </button>
                             </div>
                             <div class="modals__form-row">
                                 <label class="modal__checkbox">
@@ -2004,7 +2038,10 @@
                                             <use xlink:href="#checkmark"></use>
                                         </svg>
                                     </span>
-                                    <span class="modal__checkbox-text"> Я принимаю условия <a href="#">Пользовательского соглашения</a> </span>
+                                    <span class="modal__checkbox-text">
+                                        Я принимаю условия
+                                        <a href="#">Пользовательского соглашения</a>
+                                    </span>
                                 </label>
                             </div>
                         </form>
@@ -2098,7 +2135,7 @@
                         <h3 class="modals__heading">
                             Регистрация
                         </h3>
-                        <form action="/" method="POST" class="modals__form" data-need-validation>
+                        <form action="/" method="POST" class="modals__form" data-need-validation id="signup-modal-form">
                             <div class="modals__form-row">
                                 <label for="login-register" class="modals__form-label">
                                     Телефон или email
@@ -2163,7 +2200,10 @@
                                             <use xlink:href="#checkmark"></use>
                                         </svg>
                                     </span>
-                                    <span class="modal__checkbox-text"> Я принимаю условия <a href="#">Пользовательского соглашения</a> </span>
+                                    <span class="modal__checkbox-text">
+                                        Я принимаю условия
+                                        <a href="#">Пользовательского соглашения</a>
+                                    </span>
                                 </label>
                             </div>
                         </form>
@@ -2604,6 +2644,23 @@
                         event.preventDefault();
 
                         window.showMessage('#change-rules-fail-message');
+                    });
+                }
+
+                const signUpModalForm = document.querySelector('#signup-modal-form');
+
+                if (signUpModalForm) {
+                    signUpModalForm.addEventListener('submit', event => {
+                        event.preventDefault();
+                        console.log('Submitting');
+                        if (
+                            $(signUpModalForm)
+                                .parsley()
+                                .isValid()
+                        ) {
+                            window.closeAllModals();
+                            window.openModal('#register-confirmation');
+                        }
                     });
                 }
             </script>

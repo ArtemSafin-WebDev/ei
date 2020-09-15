@@ -5,7 +5,8 @@
                 Отмена подписки
             </h3>
             <div class="modals__message">
-                Вы действительно хотите отменить<br> подписку на нашем сервисе?
+                Вы действительно хотите отменить<br>
+                подписку на нашем сервисе?
             </div>
             <div class="modals__buttons">
                 <a href="#" class="modal__btn">
@@ -38,6 +39,17 @@
             </div>
         </div>
     </div>
+    <div class="modals__modal" id="register-confirmation">
+        <div class="modals__modal-content">
+            <img src="img/logo-green.svg" alt="" class="modals__logo">
+            <div class="modals__message">
+                По адресу <a href="mailto:info@markweber.ru">info@markweber.ru</a> отправлена ссылка для подтверждения электронной почты
+            </div>
+             <a href="#" class="modal__btn modal__btn--fullwidth">
+                Вернуться на главную
+            </a>
+        </div>
+    </div>
     <div class="modals__modal" id="write-org">
         <div class="modals__modal-content">
             <button class="modals__modal-close-btn js-modal-close">
@@ -49,7 +61,8 @@
                 Напишите организатору
             </h3>
             <div class="modals__message">
-                Вы можете связаться с организатором торгов<br> и предложить свою цену
+                Вы можете связаться с организатором торгов<br>
+                и предложить свою цену
             </div>
             <form action="/" method="POST" class="modals__form" data-need-validation>
                 <div class="modals__form-row">
@@ -84,7 +97,8 @@
                 Предложить свою цену
             </h3>
             <div class="modals__message">
-                Вы можете связаться с организатором торгов<br> и предложить свою цену
+                Вы можете связаться с организатором торгов<br>
+                и предложить свою цену
             </div>
             <form action="/" method="POST" class="modals__form" data-need-validation>
                 <div class="modals__form-row">
@@ -116,7 +130,8 @@
                 </svg>
             </button>
             <h3 class="modals__heading">
-                Мы выкупим интересующее<br> вас имущество!
+                Мы выкупим интересующее<br>
+                вас имущество!
             </h3>
             <div class="modals__lot-info">
                 <div class="modals__lot-info-image-container">
@@ -125,7 +140,7 @@
                 <div class="modals__lot-info-content">
                     <h4 class="modals__lot-info-title">
                         Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 кв. м./
-                        земельный участок, доля в праве
+                                                земельный участок, доля в праве
                     </h4>
                     <div class="modals__lot-info-number">
                         № лота: 5462819210
@@ -146,7 +161,8 @@
 
             <form action="/" method="POST" class="modals__form" data-need-validation>
                 <div class="modals__form-row">
-                    <button type="submit" class="modal__btn modal__btn--fullwidth"> Участвовать через агента</button>
+                    <button type="submit" class="modal__btn modal__btn--fullwidth">
+                        Участвовать через агента</button>
                 </div>
                 <div class="modals__form-row">
                     <label class="modal__checkbox">
@@ -157,15 +173,14 @@
                             </svg>
                         </span>
                         <span class="modal__checkbox-text">
-                            Я принимаю условия <a href="#">Пользовательского соглашения</a>
+                            Я принимаю условия
+                            <a href="#">Пользовательского соглашения</a>
                         </span>
 
                     </label>
                 </div>
 
             </form>
-
-
 
 
         </div>
@@ -193,8 +208,7 @@
                         Пароль
                     </label>
                     <div class="modals__form-input-password-wrapper js-show-password">
-                        <input type="password" name="login" class="modals__form-input" id="password"
-                            data-parsley-errors-container="#password-wrapper" required>
+                        <input type="password" name="login" class="modals__form-input" id="password" data-parsley-errors-container="#password-wrapper" required>
                         <button class="modals__form-input-show-password-btn" type="button">
                             <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
                                 <use xlink:href="#show-password"></use>
@@ -231,7 +245,8 @@
             </div>
             <div class="modals__not-registered">
                 <div class="modals__not-registered-text">
-                    Еще не зарегистрированы? <a href="#signup" class="js-modal-open">
+                    Еще не зарегистрированы?
+                    <a href="#signup" class="js-modal-open">
                         Регистрация
                     </a>
                 </div>
@@ -252,13 +267,12 @@
             <h3 class="modals__heading">
                 Регистрация
             </h3>
-            <form action="/" method="POST" class="modals__form" data-need-validation>
+            <form action="/" method="POST" class="modals__form" data-need-validation id="signup-modal-form">
                 <div class="modals__form-row">
                     <label for="login-register" class="modals__form-label">
                         Телефон или email
                     </label>
-                    <input type="text" name="login-registration" class="modals__form-input" id="login-register"
-                        required>
+                    <input type="text" name="login-registration" class="modals__form-input" id="login-register" required>
                     <span class="modals__form-remark">
                         Данные будут использоваться в качестве логина
                     </span>
@@ -268,8 +282,7 @@
                         Пароль
                     </label>
                     <div class="modals__form-input-password-wrapper js-show-password">
-                        <input type="password" name="password" class="modals__form-input" id="signup-password"
-                            data-parsley-errors-container="#signup-password-wrapper" required>
+                        <input type="password" name="password" class="modals__form-input" id="signup-password" data-parsley-errors-container="#signup-password-wrapper" required>
                         <button class="modals__form-input-show-password-btn" type="button">
                             <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
                                 <use xlink:href="#show-password"></use>
@@ -283,9 +296,7 @@
                         Повторите пароль
                     </label>
                     <div class="modals__form-input-password-wrapper js-show-password">
-                        <input type="password" name="password-confirmation" class="modals__form-input"
-                            id="signup-password-confirmation" data-parsley-equalto="#signup-password" required
-                            data-parsley-errors-container="#signup-password-confirmation-wrapper">
+                        <input type="password" name="password-confirmation" class="modals__form-input" id="signup-password-confirmation" data-parsley-equalto="#signup-password" required data-parsley-errors-container="#signup-password-confirmation-wrapper">
                         <button class="modals__form-input-show-password-btn" type="button">
                             <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
                                 <use xlink:href="#show-password"></use>
@@ -309,7 +320,8 @@
                             </svg>
                         </span>
                         <span class="modal__checkbox-text">
-                            Я принимаю условия <a href="#">Пользовательского соглашения</a>
+                            Я принимаю условия
+                            <a href="#">Пользовательского соглашения</a>
                         </span>
 
                     </label>
@@ -336,7 +348,8 @@
             </div>
             <div class="modals__not-registered">
                 <div class="modals__not-registered-text">
-                    У вас есть учетная запись? <a href="#signin" class="js-modal-open">
+                    У вас есть учетная запись?
+                    <a href="#signin" class="js-modal-open">
                         Войти
                     </a>
                 </div>
@@ -403,8 +416,7 @@
             <h3 class="modals__heading modals__heading--text-align">
                 Добавление нового лота
             </h3>
-            <form action="/" method="POST" class="user__change-form user__change-form--small-padding"
-                data-need-validation>
+            <form action="/" method="POST" class="user__change-form user__change-form--small-padding" data-need-validation>
                 <div class="user__change-form-group">
                     <h4 class="user__change-form-heading">
                         Параметры торгов
@@ -414,10 +426,7 @@
                             Тип торга
                         </label>
                         <div class="user__change-form-input-wrapper" id="trade-type-error">
-                            <select name="trade-type" id="trade-type"
-                                class="user__change-form-select js-change-detail-select" required
-                                data-parsley-class-handler="#trade-type-error"
-                                data-parsley-errors-container="#trade-type-error" data-trigger="change">
+                            <select name="trade-type" id="trade-type" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#trade-type-error" data-parsley-errors-container="#trade-type-error" data-trigger="change">
                                 <option value="">Тип торга</option>
                                 <option value="1">Тип 1</option>
                                 <option value="2">Тип 2</option>
@@ -430,10 +439,7 @@
                         </label>
                         <div class="user__change-form-input-wrapper" id="application-time-errors">
                             <div class="user__change-form-date">
-                                <input type="text" name="application-time" id="application-time"
-                                    class="user__change-form-input js-datepicker" data-range="true"
-                                    data-multiple-dates-separator=" - "
-                                    data-parsley-errors-container="#application-time-errors" readonly required>
+                                <input type="text" name="application-time" id="application-time" class="user__change-form-input js-datepicker" data-range="true" data-multiple-dates-separator=" - " data-parsley-errors-container="#application-time-errors" readonly required>
                             </div>
                         </div>
                     </div>
@@ -443,9 +449,7 @@
                         </label>
                         <div class="user__change-form-input-wrapper" id="trade-end-errors">
                             <div class="user__change-form-date">
-                                <input type="text" name="trade-end" id="trade-end"
-                                    class="user__change-form-input js-datepicker"
-                                    data-parsley-errors-container="#trade-end-errors" readonly required>
+                                <input type="text" name="trade-end" id="trade-end" class="user__change-form-input js-datepicker" data-parsley-errors-container="#trade-end-errors" readonly required>
                             </div>
                         </div>
                     </div>
@@ -455,9 +459,7 @@
                         </label>
                         <div class="user__change-form-input-wrapper" id="trade-pub-errors">
                             <div class="user__change-form-date">
-                                <input type="text" name="trade-pub" id="trade-pub"
-                                    class="user__change-form-input js-datepicker"
-                                    data-parsley-errors-container="#trade-pub-errors" readonly required>
+                                <input type="text" name="trade-pub" id="trade-pub" class="user__change-form-input js-datepicker" data-parsley-errors-container="#trade-pub-errors" readonly required>
                             </div>
                         </div>
                     </div>
@@ -471,10 +473,7 @@
                             Тип лота
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-type-error">
-                            <select name="lot-type" id="lot-type"
-                                class="user__change-form-select js-change-detail-select" required
-                                data-parsley-class-handler="#lot-type-error"
-                                data-parsley-errors-container="#lot-type-error" data-trigger="change">
+                            <select name="lot-type" id="lot-type" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-type-error" data-parsley-errors-container="#lot-type-error" data-trigger="change">
                                 <option value="">Тип лота</option>
                                 <option value="1">Тип 1</option>
                                 <option value="2">Тип 2</option>
@@ -486,8 +485,7 @@
                             Заголовок лота
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <input type="text" name="lot-heading" id="lot-heading" class="user__change-form-input"
-                                required placeholder="Заголовок лота">
+                            <input type="text" name="lot-heading" id="lot-heading" class="user__change-form-input" required placeholder="Заголовок лота">
                         </div>
                     </div>
                     <div class="user__change-form-row">
@@ -495,8 +493,7 @@
                             Описание лота
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <textarea name="lot-desc" id="lot-desc" class="user__change-form-input" required
-                                placeholder="Описание лота"></textarea>
+                            <textarea name="lot-desc" id="lot-desc" class="user__change-form-input" required placeholder="Описание лота"></textarea>
 
                         </div>
                     </div>
@@ -506,30 +503,27 @@
                         </label>
                         <div class="user__change-form-input-wrapper">
                             <div class="user__change-form-file-upload js-file-upload">
-                                <div class="user__change-form-file-upload-dropzone"
-                                    data-upload-text="Загрузить изображение">
+                                <div class="user__change-form-file-upload-dropzone" data-upload-text="Загрузить изображение">
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file1" accept=".jpg, .jpeg, .png" />
+                                        <input type="file" name="file1" accept=".jpg, .jpeg, .png"/>
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file2" accept=".jpg, .jpeg, .png" />
+                                        <input type="file" name="file2" accept=".jpg, .jpeg, .png"/>
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file3" accept=".jpg, .jpeg, .png" />
+                                        <input type="file" name="file3" accept=".jpg, .jpeg, .png"/>
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file4" accept=".jpg, .jpeg, .png" />
+                                        <input type="file" name="file4" accept=".jpg, .jpeg, .png"/>
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file5" accept=".jpg, .jpeg, .png" />
+                                        <input type="file" name="file5" accept=".jpg, .jpeg, .png"/>
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file6" accept=".jpg, .jpeg, .png" />
+                                        <input type="file" name="file6" accept=".jpg, .jpeg, .png"/>
                                     </label>
                                 </div>
-                                <div class="user__change-form-file-upload-files">
-
-                                </div>
+                                <div class="user__change-form-file-upload-files"></div>
                             </div>
 
                         </div>
@@ -540,10 +534,7 @@
                             Категория лота
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-category-error">
-                            <select name="lot-category" id="lot-category"
-                                class="user__change-form-select js-change-detail-select" required
-                                data-parsley-class-handler="#lot-category-error"
-                                data-parsley-errors-container="#lot-category-error" data-trigger="change">
+                            <select name="lot-category" id="lot-category" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-category-error" data-parsley-errors-container="#lot-category-error" data-trigger="change">
                                 <option value="">Категория лота</option>
                                 <option value="1">Категория 1</option>
                                 <option value="2">Категория 2</option>
@@ -555,10 +546,7 @@
                             Подкатегория лота
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-subcategory-error">
-                            <select name="lot-subcategory" id="lot-subcategory"
-                                class="user__change-form-select js-change-detail-select" required
-                                data-parsley-class-handler="#lot-subcategory-error"
-                                data-parsley-errors-container="#lot-subcategory-error" data-trigger="change">
+                            <select name="lot-subcategory" id="lot-subcategory" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-subcategory-error" data-parsley-errors-container="#lot-subcategory-error" data-trigger="change">
                                 <option value="">Подкатегория лота</option>
                                 <option value="1">Подкатегория 1</option>
                                 <option value="2">Подкатегория 2</option>
@@ -575,8 +563,7 @@
                             Начальная цена
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <input type="tel" name="lot-price" id="lot-price" class="user__change-form-input js-numeric-input"
-                                required placeholder="Начальная цена">
+                            <input type="tel" name="lot-price" id="lot-price" class="user__change-form-input js-numeric-input" required placeholder="Начальная цена">
                         </div>
                     </div>
 
@@ -585,10 +572,7 @@
                             Тип шага торга
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-step-error">
-                            <select name="lot-step" id="lot-step"
-                                class="user__change-form-select js-change-detail-select" required
-                                data-parsley-class-handler="#lot-step-error"
-                                data-parsley-errors-container="#lot-step-error" data-trigger="change">
+                            <select name="lot-step" id="lot-step" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-step-error" data-parsley-errors-container="#lot-step-error" data-trigger="change">
                                 <option value="">Тип шага торга</option>
                                 <option value="1">Тип 1</option>
                                 <option value="2">Тип 2</option>
@@ -600,8 +584,7 @@
                             Задаток для участия
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <input type="tel" name="lot-price" id="lot-garantee" class="user__change-form-input js-numeric-input"
-                                required placeholder="Задаток для участия">
+                            <input type="tel" name="lot-price" id="lot-garantee" class="user__change-form-input js-numeric-input" required placeholder="Задаток для участия">
                         </div>
                     </div>
                 </div>

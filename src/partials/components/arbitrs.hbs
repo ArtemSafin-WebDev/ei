@@ -34,38 +34,7 @@
                             </button>
 
                         </h2>
-                        {{!-- <div class="catalog-filters__applied">
-                            <div class="catalog-filters__applied-links">
-                                <a href="#" class="catalog-filters__applied-link">
-                                    Сначала дешевые
-                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
-                                        <use xlink:href="#cross"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="catalog-filters__applied-link">
-                                    До 500 000
-                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
-                                        <use xlink:href="#cross"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="catalog-filters__applied-link">
-                                    Москва
-                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
-                                        <use xlink:href="#cross"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="catalog-filters__applied-link">
-                                    Только с фото
-                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
-                                        <use xlink:href="#cross"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="catalog-filters__clear-link">
-                                    Очистить фильтр
-                                    <img src="img/clear-cross.svg" alt="" width="16" height="16" />
-                                </a>
-                            </div>
-                        </div> --}}
+                        
                         <nav class="catalog-filters__nav">
                             <ul class="catalog-filters__nav-list">
                                 <li class="catalog-filters__nav-list-item">
@@ -290,7 +259,28 @@
                                     </div>
                                 </div>
                             </div>
-
+                             <div class="catalog-filters__form-group">
+                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                    Тип торгов
+                                </h4>
+                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                    <div
+                                        class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                        <label class="checkbox catalog-filters__checkbox">
+                                            <input type="checkbox" name="type" class="checkbox__input" checked />
+                                            <span class="checkbox__checkmark">
+                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                    <use xlink:href="#checkmark"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="checkbox__text">
+                                                Активные торги
+                                            </span>
+                                        </label>
+                                    </div>
+                                   
+                                </div>
+                            </div>
 
                             <button type="submit" class="btn catalog-filters__form-submit">
                                 Найти

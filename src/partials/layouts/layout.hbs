@@ -85,6 +85,21 @@
                     window.showMessage('#change-rules-fail-message');
                 })
             }
+
+
+            const signUpModalForm = document.querySelector('#signup-modal-form');
+
+            if (signUpModalForm) {
+                signUpModalForm.addEventListener('submit', event => {
+                    event.preventDefault();
+                    console.log('Submitting')
+                    if ($(signUpModalForm).parsley().isValid()) {
+                        window.closeAllModals();
+                        window.openModal('#register-confirmation')
+                        
+                    }
+                })
+            }
         </script>
     </div>
 </body>

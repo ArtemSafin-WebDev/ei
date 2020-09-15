@@ -2,7 +2,6 @@
     padding-top: var(--page-top-padding);
 }
 
-
 .arbitr-detail__top-row {
     display: flex;
     justify-content: space-between;
@@ -17,7 +16,6 @@
     }
 }
 
-
 .arbitr-detail__go-to-website {
     display: inline-flex;
     align-items: center;
@@ -30,7 +28,7 @@
         flex-shrink: 0;
         margin-left: 1rem;
         fill: var(--primary-color);
-        transition: fill .2s;
+        transition: fill 0.2s;
     }
 
     &:hover {
@@ -39,14 +37,12 @@
         }
     }
 
-
     @include breakpoint(mobile) {
         margin: 0;
         align-self: flex-start;
         margin-top: 2rem;
     }
 }
-
 
 .arbitr-detail__main-heading {
     max-width: 102rem;
