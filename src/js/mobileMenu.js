@@ -15,7 +15,6 @@ export default function mobileMenu() {
         let menuOpen = false;
 
         function openMenu() {
-
             if (window.closeAssistant) {
                 window.closeAssistant();
             }
@@ -26,8 +25,6 @@ export default function mobileMenu() {
             gsap.to(window, { duration: 0.3, scrollTo: 0, clearProps: 'all', onComplete: () => lockScroll(mobileMenuScrollContainer) });
             menuOpen = true;
             document.body.classList.add('mobile-menu-open');
-
-            
         }
 
         function closeMenu() {
@@ -38,16 +35,19 @@ export default function mobileMenu() {
 
         mobileMenuBurger.addEventListener('click', event => {
             event.preventDefault();
-            if (menuOpen) {
-                closeMenu();
+
+            if (window.mobileUserMenuOpen && window.closeMobileUserMenu) {
+                window.closeMobileUserMenu();
             } else {
-                openMenu();
+                if (menuOpen) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
             }
         });
 
-
         window.closeMobileMenu = closeMenu;
-
 
         if (window.matchMedia(`(max-width: ${MOBILE_WIDTH}px)`).matches) {
             const accordions = Array.from(document.querySelectorAll('.page-header__mobile-menu-navigation-list-item'));

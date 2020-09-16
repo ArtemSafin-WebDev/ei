@@ -25,6 +25,10 @@ export default function assistant() {
             window.closeMobileMenu();
         }
 
+        if (window.mobileUserMenuOpen && window.closeMobileUserMenu) {
+            window.closeMobileUserMenu();
+        }
+
         lockScroll(popup)
       
         menuOpen = true;

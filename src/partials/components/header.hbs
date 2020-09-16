@@ -332,6 +332,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                 <a href="#" class="page-header__logo-link">
 
 
@@ -340,11 +343,25 @@
                         <use xlink:href="#logo"></use>
                     </svg>
                 </a>
-                <div class="page-header__mobile-account">
+
+
+
+                {{#if unauthorized }}
+                <a href="#signin" class="page-header__mobile-account js-modal-open">
+                    <svg width="20" height="20" aria-hidden="true" class="icon-user">
+                        <use xlink:href="#user"></use>
+                    </svg>
+                </a>
+
+                {{else}}
+
+                <div class="page-header__mobile-account js-mobile-user-account-open">
                     <svg width="20" height="20" aria-hidden="true" class="icon-user">
                         <use xlink:href="#user"></use>
                     </svg>
                 </div>
+
+                {{/if}}
                 <button class="page-header__mobile-menu-burger">
                     <span class="page-header__mobile-menu-burger-content">
                         <span></span>
@@ -375,8 +392,8 @@
                 </button>
             </form>
             <div class="page-header__user-links">
-                <div class="page-header__user-link {{#if unauthorized }} js-modal-open {{/if}}" {{#if unauthorized }}
-                    data-hash="#signin" {{/if}}>
+                <div class="page-header__user-link page-header__user-link--profile {{#if unauthorized }} js-modal-open {{/if}}"
+                    {{#if unauthorized }} data-hash="#signin" {{/if}}>
                     <span class="page-header__user-link-icon-container">
                         <svg width="28" height="28" aria-hidden="true" class="icon-person">
                             <use xlink:href="#person"></use>
@@ -384,13 +401,19 @@
                     </span>
 
                     {{#if unauthorized }}
-                    Войти
+                    <span class="page-header__user-link-text">
+                        Войти
+                    </span>
+
                     {{else}}
 
-                    Профиль
+                    <span class="page-header__user-link-text">
+                        Профиль
+                    </span>
                     <div class="page-header__user-dropdown">
                         <div class="page-header__user-account">
-                            <a href="#" class="page-header__user-account-username">
+                            <a href="#"
+                                class="page-header__user-account-username page-header__user-account-username--main">
                                 <div class="page-header__user-account-username-avatar">
                                     КК
                                 </div>
@@ -450,6 +473,9 @@
                                     </li>
                                 </ul>
                             </nav>
+                            <h4 class="page-header__user-account-other-accounts-heading">
+                                Другие аккаунты
+                            </h4>
                             <a href="#" class="page-header__user-account-username">
                                 <div
                                     class="page-header__user-account-username-avatar page-header__user-account-username-avatar--violet">
@@ -475,7 +501,6 @@
                     </div>
                     {{/if}}
 
-
                 </div>
                 <a href="#" class="page-header__user-link">
                     <span class="page-header__user-link-icon-container">
@@ -486,7 +511,9 @@
                             12
                         </span>
                     </span>
-                    Избранное
+                    <span class="page-header__user-link-text">
+                        Избранное
+                    </span>
                 </a>
                 <a href="#" class="page-header__user-link">
                     <span class="page-header__user-link-icon-container">
@@ -495,8 +522,10 @@
                         </svg>
 
                     </span>
-                    Сохраненные<br>
-                    поиски
+                    <span class="page-header__user-link-text">
+                        Сохраненные<br>
+                        поиски
+                    </span>
                 </a>
                 <a href="#" class="page-header__user-link">
                     <span class="page-header__user-link-icon-container">
@@ -505,7 +534,9 @@
                         </svg>
 
                     </span>
-                    Уведомления
+                    <span class="page-header__user-link-text">
+                        Уведомления
+                    </span>
                 </a>
             </div>
         </div>

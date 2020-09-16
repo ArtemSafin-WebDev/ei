@@ -8,15 +8,30 @@ export default function modals() {
     };
 
     window.openModal = id => {
-        console.log('id', id)
+        console.log('id', id);
         const modal = document.querySelector(id);
+
+        if (window.closeCatalogMenu) {
+            window.closeCatalogMenu();
+        }
+        if (window.closeMobileMenu) {
+            window.closeMobileMenu();
+        }
+
+        if (window.mobileUserMenuOpen && window.closeMobileUserMenu) {
+            window.closeMobileUserMenu();
+        }
+
+        if (window.closeAssistant) {
+            window.closeAssistant();
+        }
 
         if (modal) {
             modal.classList.add('shown');
 
             lockScroll(modal);
         } else {
-            console.warn('Modal not found')
+            console.warn('Modal not found');
         }
     };
     document.addEventListener('click', event => {
@@ -41,7 +56,7 @@ export default function modals() {
                 return;
             }
             closeAllModals();
-            openModal(hash)
+            openModal(hash);
         }
     });
 }

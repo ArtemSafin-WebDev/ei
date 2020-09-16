@@ -720,16 +720,19 @@
                                     </div>
                                 </div>
                             </div>
+
                             <a href="#" class="page-header__logo-link">
                                 <svg width="190" aria-hidden="true" class="icon-logo page-header__logo-image">
                                     <use xlink:href="#logo"></use>
                                 </svg>
                             </a>
-                            <div class="page-header__mobile-account">
+
+                            <a href="#signin" class="page-header__mobile-account js-modal-open">
                                 <svg width="20" height="20" aria-hidden="true" class="icon-user">
                                     <use xlink:href="#user"></use>
                                 </svg>
-                            </div>
+                            </a>
+
                             <button class="page-header__mobile-menu-burger">
                                 <span class="page-header__mobile-menu-burger-content">
                                     <span></span>
@@ -759,14 +762,16 @@
                             </button>
                         </form>
                         <div class="page-header__user-links">
-                            <div class="page-header__user-link  js-modal-open " data-hash="#signin">
+                            <div class="page-header__user-link page-header__user-link--profile  js-modal-open " data-hash="#signin">
                                 <span class="page-header__user-link-icon-container">
                                     <svg width="28" height="28" aria-hidden="true" class="icon-person">
                                         <use xlink:href="#person"></use>
                                     </svg>
                                 </span>
 
-                                Войти
+                                <span class="page-header__user-link-text">
+                                    Войти
+                                </span>
                             </div>
                             <a href="#" class="page-header__user-link">
                                 <span class="page-header__user-link-icon-container">
@@ -777,7 +782,9 @@
                                         12
                                     </span>
                                 </span>
-                                Избранное
+                                <span class="page-header__user-link-text">
+                                    Избранное
+                                </span>
                             </a>
                             <a href="#" class="page-header__user-link">
                                 <span class="page-header__user-link-icon-container">
@@ -785,8 +792,10 @@
                                         <use xlink:href="#favourites"></use>
                                     </svg>
                                 </span>
-                                Сохраненные<br />
-                                поиски
+                                <span class="page-header__user-link-text">
+                                    Сохраненные<br />
+                                    поиски
+                                </span>
                             </a>
                             <a href="#" class="page-header__user-link">
                                 <span class="page-header__user-link-icon-container">
@@ -794,7 +803,9 @@
                                         <use xlink:href="#bell"></use>
                                     </svg>
                                 </span>
-                                Уведомления
+                                <span class="page-header__user-link-text">
+                                    Уведомления
+                                </span>
                             </a>
                         </div>
                     </div>

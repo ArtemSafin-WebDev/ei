@@ -337,7 +337,8 @@
     }
 
     @include breakpoint(mobile) {
-        display: none;
+        margin: 0;
+        display: contents;
     }
 }
 
@@ -368,17 +369,19 @@
         color: var(--text-color);
     }
 
-    &:hover {
-        color: var(--primary-color);
-        .page-header__user-dropdown {
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 0.4s, visibility 0.4s;
-            transform: translateX(-50%);
-        }
+    @include breakpointMF(small-tablet) {
+        &:hover {
+            color: var(--primary-color);
+            .page-header__user-dropdown {
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.4s, visibility 0.4s;
+                transform: translateX(-50%);
+            }
 
-        .page-header__user-account {
-            transform: translateZ(0) translateY(0);
+            .page-header__user-account {
+                transform: translateZ(0) translateY(0);
+            }
         }
     }
 
@@ -399,6 +402,18 @@
     }
 }
 
+.page-header__user-links .page-header__user-link:not(.page-header__user-link--profile) {
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
+.page-header__user-links .page-header__user-link-text {
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
 .page-header__user-link-icon-container {
     width: 2.8rem;
     height: 2.8rem;
@@ -411,6 +426,12 @@
         display: block;
         &.icon-heart {
             fill: transparent;
+        }
+    }
+
+    .page-header__user-links & {
+        @include breakpoint(mobile) {
+            display: none;
         }
     }
 
@@ -446,19 +467,57 @@
     transition: opacity 0.4s, visibility 0s linear 0.4s;
     padding-top: 2rem;
     z-index: 50;
+
+    @include breakpoint(mobile) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0s linear 0.3s;
+        padding: 0;
+        background-color: #fff;
+        padding-top: 9.6rem;
+        display: flex;
+        flex-direction: column;
+        z-index: 600;
+    }
+}
+
+
+.mobile-user-menu-open .page-header__user-dropdown {
+    @include breakpoint(mobile) {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .3s, visibility .3s;
+    }
 }
 
 .page-header__user-account {
-    width: 32rem;
-    background-color: #fff;
-    color: var(--text-color);
-    box-shadow: 0 0 3.4rem rgba(10, 17, 70, 0.1);
-    border-radius: 2rem;
-    padding: 3rem;
-    text-align: left;
-    font-weight: 400;
-    transition: transform 0.4s;
-    transform: translateZ(0) translateY(2rem);
+    @include breakpointMF(small-tablet) {
+        width: 32rem;
+        background-color: #fff;
+        color: var(--text-color);
+        box-shadow: 0 0 3.4rem rgba(10, 17, 70, 0.1);
+        border-radius: 2rem;
+        padding: 3rem;
+        text-align: left;
+        font-weight: 400;
+        transition: transform 0.4s;
+        transform: translateZ(0) translateY(2rem);
+    }
+
+    @include breakpoint(mobile) {
+        flex-grow: 1;
+        max-height: 100%;
+        overflow-x: hidden;
+        padding: 0 var(--content-padding);
+        -webkit-overflow-scrolling: touch;
+        text-align: left;
+    }
 }
 
 .page-header__user-account-username {
@@ -467,6 +526,14 @@
     &:link,
     &:visited {
         color: inherit;
+    }
+
+    &--main {
+        @include breakpoint(mobile) {
+            flex-direction: column;
+            align-items: initial;
+            margin-bottom: 5.5rem;
+        }
     }
 }
 
@@ -499,11 +566,30 @@
         height: 100%;
         @include objectFitCover();
     }
+
+    .page-header__user-account-username--main & {
+        @include breakpoint(mobile) {
+            width: 9.5rem;
+            height: 9.5rem;
+            border-radius: 4rem;
+            margin: 0;
+            margin-bottom: 1.6rem;
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+    }
 }
 
 .page-header__user-account-username-content {
     width: 50%;
     flex-grow: 1;
+
+    .page-header__user-account-username--main & {
+        @include breakpoint(mobile) {
+            width: 100%;
+            flex-grow: 0;
+        }
+    }
 }
 
 .page-header__user-account-username-name {
@@ -511,12 +597,22 @@
     font-size: 1.5rem;
     line-height: 1.9rem;
     margin-bottom: 0.3rem;
+
+    .page-header__user-account-username--main & {
+        @include breakpoint(mobile) {
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 3.3rem;
+            margin-bottom: 0.8rem;
+        }
+    }
 }
 
 .page-header__user-account-username-email {
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: #99a6b6;
+    font-weight: 400;
     &:link,
     &:visited {
         color: #99a6b6;
@@ -527,20 +623,37 @@
             color: var(--primary-color);
         }
     }
+
+    .page-header__user-account-username--main & {
+        @include breakpoint(mobile) {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+    }
 }
 
 .page-header__user-account-nav {
-    padding: 2.8rem 0;
-    border-top: 1px solid #ebf1f5;
-    border-bottom: 1px solid #ebf1f5;
-    text-align: left;
-    margin: 2.2rem 0;
+    @include breakpointMF(small-tablet) {
+        padding: 2.8rem 0;
+        border-top: 1px solid #ebf1f5;
+        border-bottom: 1px solid #ebf1f5;
+        text-align: left;
+        margin: 2.2rem 0;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 4.8rem;
+    }
 }
 
 .page-header__user-account-nav-list-item {
     margin-bottom: 2.2rem;
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
     }
 }
 
@@ -564,6 +677,12 @@
     &:hover {
         color: var(--primary-color);
     }
+
+    @include breakpoint(mobile) {
+        font-weight: 500;
+        font-size: 1.9rem;
+        line-height: 2.7rem;
+    }
 }
 
 .page-header__user-account-add-link {
@@ -584,6 +703,11 @@
 
             color: white;
         }
+    }
+
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
     }
 }
 
@@ -611,7 +735,7 @@
     display: none;
     position: relative;
     z-index: 700;
-    
+
     @include breakpoint(mobile) {
         display: block;
     }
@@ -640,7 +764,8 @@
         }
     }
 
-    .mobile-menu-open & {
+    .mobile-menu-open &,
+    .mobile-user-menu-open & {
         & > span {
             &:nth-child(1) {
                 transform: translateY(6px) rotate(45deg);
@@ -669,11 +794,12 @@
     transition: opacity 0.3s, visibility 0s linear 0.3s;
     opacity: 0;
     visibility: hidden;
-    .mobile-menu-open & {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.3s, visibility 0.3s;
-    }
+}
+
+.mobile-menu-open .page-header__mobile-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .page-header__mobile-menu-user {
@@ -793,10 +919,17 @@
     padding: 0.3rem;
     margin-left: 0.7rem;
     flex-shrink: 0;
+
+    @include breakpoint(mobile) {
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
 }
 
 .page-header__mobile-account {
-    transition: color .2s;
+    transition: color 0.2s;
     color: var(--primary-color);
     display: none;
     margin-right: 2.6rem;
@@ -813,6 +946,22 @@
         display: block;
     }
 
+    @include breakpoint(mobile) {
+        display: block;
+    }
+}
+
+.page-header__user-account-other-accounts-heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    color: var(--text-color);
+
+
+    display: none;
 
     @include breakpoint(mobile) {
         display: block;

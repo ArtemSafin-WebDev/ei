@@ -38,6 +38,7 @@ import 'air-datepicker'
 import fileUpload from './fileUpload';
 import datepickers from './datepickers';
 import messages from './messages';
+import mobileUserMenu from './mobileUserAccount';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -78,6 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
     fileUpload();
     datepickers();
     messages();
+    mobileUserMenu();
+    
 });
 
 window.addEventListener('load', function() {
