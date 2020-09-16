@@ -29,11 +29,13 @@
     width: 100%;
     background: #ffffff;
     border-radius: 3rem;
-    padding: 4.8rem;
+    padding: 4.8rem 8.5rem;
     color: var(--text-color);
     position: relative;
     display: flex;
     flex-direction: column;
+
+   
 
     &--wide {
         max-width: 78rem;
@@ -118,6 +120,12 @@
     line-height: 1.8rem;
     text-align: center;
     margin-bottom: 2.4rem;
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
     @include breakpoint(mobile) {
         margin-bottom: 2rem;

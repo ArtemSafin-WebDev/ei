@@ -3199,6 +3199,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="modals__modal" id="register-confirmation">
+                    <div class="modals__modal-content">
+                        <img src="img/logo-green.svg" alt="" class="modals__logo" />
+                        <div class="modals__message">
+                            По адресу <a href="mailto:info@markweber.ru">info@markweber.ru</a> отправлена ссылка для подтверждения электронной почты
+                        </div>
+                        <a href="#" class="modal__btn modal__btn--fullwidth">
+                            Вернуться на главную
+                        </a>
+                    </div>
+                </div>
                 <div class="modals__modal" id="write-org">
                     <div class="modals__modal-content">
                         <button class="modals__modal-close-btn js-modal-close">
@@ -3308,7 +3319,9 @@
 
                         <form action="/" method="POST" class="modals__form" data-need-validation>
                             <div class="modals__form-row">
-                                <button type="submit" class="modal__btn modal__btn--fullwidth">Участвовать через агента</button>
+                                <button type="submit" class="modal__btn modal__btn--fullwidth">
+                                    Участвовать через агента
+                                </button>
                             </div>
                             <div class="modals__form-row">
                                 <label class="modal__checkbox">
@@ -3318,7 +3331,10 @@
                                             <use xlink:href="#checkmark"></use>
                                         </svg>
                                     </span>
-                                    <span class="modal__checkbox-text"> Я принимаю условия <a href="#">Пользовательского соглашения</a> </span>
+                                    <span class="modal__checkbox-text">
+                                        Я принимаю условия
+                                        <a href="#">Пользовательского соглашения</a>
+                                    </span>
                                 </label>
                             </div>
                         </form>
@@ -3412,7 +3428,7 @@
                         <h3 class="modals__heading">
                             Регистрация
                         </h3>
-                        <form action="/" method="POST" class="modals__form" data-need-validation>
+                        <form action="/" method="POST" class="modals__form" data-need-validation id="signup-modal-form">
                             <div class="modals__form-row">
                                 <label for="login-register" class="modals__form-label">
                                     Телефон или email
@@ -3477,7 +3493,10 @@
                                             <use xlink:href="#checkmark"></use>
                                         </svg>
                                     </span>
-                                    <span class="modal__checkbox-text"> Я принимаю условия <a href="#">Пользовательского соглашения</a> </span>
+                                    <span class="modal__checkbox-text">
+                                        Я принимаю условия
+                                        <a href="#">Пользовательского соглашения</a>
+                                    </span>
                                 </label>
                             </div>
                         </form>
@@ -3918,6 +3937,23 @@
                         event.preventDefault();
 
                         window.showMessage('#change-rules-fail-message');
+                    });
+                }
+
+                const signUpModalForm = document.querySelector('#signup-modal-form');
+
+                if (signUpModalForm) {
+                    signUpModalForm.addEventListener('submit', event => {
+                        event.preventDefault();
+                        console.log('Submitting');
+                        if (
+                            $(signUpModalForm)
+                                .parsley()
+                                .isValid()
+                        ) {
+                            window.closeAllModals();
+                            window.openModal('#register-confirmation');
+                        }
                     });
                 }
             </script>
