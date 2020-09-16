@@ -13,7 +13,8 @@
                         <h1 class="main-heading user__heading">
                             Изменить данные
                         </h1>
-                        <form action="/" method="POST" class="user__change-form" data-need-validation>
+                        <form action="/" method="POST" class="user__change-form" data-need-validation
+                            autocomplete="off">
                             <div class="user__change-form-row">
                                 <label for="firstname" class="user__change-form-label">
                                     Имя
@@ -38,7 +39,9 @@
                                 </label>
                                 <div class="user__change-form-input-wrapper" id="city-error">
                                     <select name="city" id="city"
-                                        class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#city-error" data-parsley-errors-container="#city-error" data-trigger="change">
+                                        class="user__change-form-select js-change-detail-select" required
+                                        data-parsley-class-handler="#city-error"
+                                        data-parsley-errors-container="#city-error" data-trigger="change">
                                         <option value="">Выберите город</option>
                                         <option value="kazan">Казань</option>
                                         <option value="moscow">Москва</option>
@@ -57,30 +60,18 @@
                                     <input type="tel" name="phone" id="phone"
                                         class="user__change-form-input js-phone-input" data-parsley-phone required
                                         placeholder="+7 (XXX) XXXX-XX-XX">
+
+                                    <div class="user__change-form-sms-code">
+                                        <span class="user__change-form-sms-code-text">
+                                            Код из СМС
+                                        </span>
+                                        <input type="tel" class="user__change-form-sms-code-input"
+                                            autocomplete="new-password">
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="user__change-form-row">
-                                <label for="email" class="user__change-form-label">
-                                    Фамилия
-                                </label>
-                                <div class="user__change-form-input-wrapper">
-                                    <input type="email" name="email" id="email" class="user__change-form-input" required
-                                        placeholder="Электронная почта">
-                                    <label class="user__change-form-checkbox">
-                                        <input type="checkbox" name="type" value="Y"
-                                            class="user__change-form-checkbox-input">
-                                        <span class="user__change-form-checkbox-mark">
-                                            <svg width="12" height="12" aria-hidden="true" class="icon-checkmark">
-                                                <use xlink:href="#checkmark"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="user__change-form-checkbox-text">
-                                            Я — арбитражный управляющий
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
+
 
 
                             <div class="user__change-form-row">
@@ -88,8 +79,9 @@
                                     Старый пароль
                                 </label>
                                 <div class="user__change-form-input-wrapper">
-                                    <input type="password" name="oldpassword" id="oldpassword" class="user__change-form-input"
-                                        required placeholder="Старый пароль">
+                                    <input type="password" name="oldpassword" id="oldpassword"
+                                        class="user__change-form-input" required placeholder="Старый пароль"
+                                        autocomplete="new-password">
                                 </div>
                             </div>
                             <div class="user__change-form-row">
@@ -98,7 +90,7 @@
                                 </label>
                                 <div class="user__change-form-input-wrapper">
                                     <input type="password" name="password" id="password" class="user__change-form-input"
-                                        required placeholder="Новый пароль">
+                                        required placeholder="Новый пароль" autocomplete="new-password">
                                 </div>
                             </div>
                             <div class="user__change-form-row">
@@ -106,8 +98,9 @@
                                     Повторите новый пароль
                                 </label>
                                 <div class="user__change-form-input-wrapper">
-                                    <input type="password" name="passwordconfirmation" id="passwordconfirmation" class="user__change-form-input"
-                                        required data-parsley-equalto="#password" placeholder="Повторите пароль">
+                                    <input type="password" name="passwordconfirmation" id="passwordconfirmation"
+                                        class="user__change-form-input" required data-parsley-equalto="#password"
+                                        placeholder="Повторите пароль" autocomplete="new-password">
                                 </div>
                             </div>
                             <button type="submit" class="btn user__change-form-submit">

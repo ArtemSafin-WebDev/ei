@@ -51,7 +51,6 @@
     }
 
     .assistant-shown &,
-   
     .assistant-page:not(.mobile-menu-open) & {
         &:link,
         &:visited {
@@ -62,7 +61,6 @@
             color: var(--primary-color);
         }
     }
-
 
     .services-page & {
         &:hover {
@@ -135,6 +133,7 @@
     @include breakpoint(mobile) {
         position: relative;
         z-index: 700;
+        margin-right: auto;
     }
 }
 
@@ -252,7 +251,6 @@
         &:last-child {
             margin-bottom: 0;
         }
-
 
         @include breakpoint(tablet) {
             margin-bottom: 3px;
@@ -414,7 +412,6 @@
         &.icon-heart {
             fill: transparent;
         }
-        
     }
 
     @include breakpoint(mobile) {
@@ -614,7 +611,7 @@
     display: none;
     position: relative;
     z-index: 700;
-    margin-left: auto;
+    
     @include breakpoint(mobile) {
         display: block;
     }
@@ -627,7 +624,7 @@
     & > span {
         width: 22px;
         height: 2px;
-        background-color: var(--text-color);
+        background-color: var(--primary-color);
         transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
         margin-bottom: 4px;
         border-radius: 2px;
@@ -796,4 +793,28 @@
     padding: 0.3rem;
     margin-left: 0.7rem;
     flex-shrink: 0;
+}
+
+.page-header__mobile-account {
+    transition: color .2s;
+    color: var(--primary-color);
+    display: none;
+    margin-right: 2.6rem;
+    flex-shrink: 0;
+    margin-left: auto;
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+    svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        flex-shrink: 0;
+        display: block;
+    }
+
+
+    @include breakpoint(mobile) {
+        display: block;
+    }
 }
