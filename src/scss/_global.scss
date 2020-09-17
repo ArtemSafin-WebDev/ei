@@ -100,9 +100,7 @@ body {
 
 body.sold-lot {
     padding-bottom: 6rem;
-    @include breakpoint(mobile) {
-        padding-bottom: 4rem;
-    }
+    
 }
 
 main {

@@ -1903,9 +1903,6 @@ body {
 
 body.sold-lot {
   padding-bottom: 6rem; }
-  @media only screen and (max-width: 767px) {
-    body.sold-lot {
-      padding-bottom: 4rem; } }
 
 main {
   display: block; }
@@ -7998,8 +7995,7 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 767px) {
     .catalog-detail__sold-lot-message {
       font-size: 1.6rem;
-      line-height: 1.2;
-      height: 4rem; } }
+      line-height: 1.2; } }
   .sold-lot .catalog-detail__sold-lot-message {
     display: -webkit-box;
     display: -ms-flexbox;
