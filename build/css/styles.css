@@ -1901,6 +1901,12 @@ body {
         body.assistant-page::after {
           display: none; } }
 
+body.sold-lot {
+  padding-bottom: 6rem; }
+  @media only screen and (max-width: 767px) {
+    body.sold-lot {
+      padding-bottom: 4rem; } }
+
 main {
   display: block; }
 
@@ -7873,8 +7879,8 @@ select:-webkit-autofill:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2.4rem;
-  -webkit-transition: border-color .2s;
-  transition: border-color .2s; }
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s; }
   .catalog-detail__manager-info:link, .catalog-detail__manager-info:visited {
     color: inherit; }
   .catalog-detail__manager-info:hover {
@@ -7911,8 +7917,8 @@ select:-webkit-autofill:focus {
   font-size: 1.9rem;
   line-height: 2.3rem;
   margin-bottom: 1.3rem;
-  -webkit-transition: color .2s;
-  transition: color .2s; }
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s; }
 
 .catalog-detail__manager-info-rating {
   display: -webkit-box;
@@ -7935,6 +7941,69 @@ select:-webkit-autofill:focus {
 .catalog-detail__manager-info-text {
   font-size: 1.2rem;
   line-height: 1.7rem; }
+
+.catalog-detail__sold-price {
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #99a6b6;
+  background: #ebf1f5;
+  border-radius: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 1.6rem 2rem;
+  margin-bottom: 2.5rem; }
+
+.catalog-detail__sold-lot-message {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FC5555;
+  color: white;
+  z-index: 100;
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .catalog-detail__sold-lot-message {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      height: 4rem; } }
+  .sold-lot .catalog-detail__sold-lot-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .other-lots {
   background: #ebf1f5;
@@ -8102,7 +8171,7 @@ select:-webkit-autofill:focus {
       border-radius: 1rem; } }
 
 .arbitrs__card-cases-count {
-  margin-bottom: 4.8rem;
+  margin-bottom: 7.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8126,12 +8195,12 @@ select:-webkit-autofill:focus {
       margin-bottom: 2.5rem; } }
 
 .arbitrs__card-title {
+  margin-bottom: 1.5rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
   font-weight: 500;
-  font-size: 3rem;
-  line-height: 3.7rem;
-  margin-bottom: 0.8rem;
-  -webkit-transition: color .2s;
-  transition: color .2s; }
+  font-size: 2.4rem;
+  line-height: 2.9rem; }
   @media only screen and (max-width: 767px) {
     .arbitrs__card-title {
       font-size: 2.4rem;
@@ -8400,7 +8469,7 @@ select:-webkit-autofill:focus {
       -ms-flex-align: baseline;
           align-items: baseline;
   width: 50%;
-  max-width: 25rem; }
+  max-width: 40rem; }
   .short-info__table th::after {
     content: '';
     height: 1px;

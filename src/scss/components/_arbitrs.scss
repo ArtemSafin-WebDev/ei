@@ -7,7 +7,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 6.5rem;
 
-
     @include breakpoint(mobile) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         grid-gap: 2rem;
@@ -40,13 +39,11 @@
         color: var(--text-color);
     }
 
-
     &:hover {
         .arbitrs__card-title {
             color: var(--primary-color);
         }
     }
-
 
     @include breakpoint(mobile) {
         padding: 1.6rem;
@@ -56,7 +53,7 @@
 }
 
 .arbitrs__card-cases-count {
-    margin-bottom: 4.8rem;
+    margin-bottom: 7.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,18 +67,18 @@
         fill: var(--primary-color);
     }
 
-
     @include breakpoint(mobile) {
         margin-bottom: 2.5rem;
     }
 }
 
 .arbitrs__card-title {
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+
     font-weight: 500;
-    font-size: 3rem;
-    line-height: 3.7rem;
-    margin-bottom: 0.8rem;
-    transition: color .2s;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
     @include breakpoint(mobile) {
         font-size: 2.4rem;
         line-height: 1.2;

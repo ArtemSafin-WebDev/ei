@@ -23,7 +23,7 @@
         <script src="assets/js/SVGInject.js"></script>
     </head>
 
-    <body class="no-touch  white-bg   " ontouchstart="">
+    <body class="no-touch  white-bg    " ontouchstart="">
         <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
             <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <symbol viewBox="0 0 12 7.42" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -1862,6 +1862,7 @@
                                                 </div>
                                             </a>
                                         </div>
+
                                         <div class="catalog-detail__btns">
                                             <a href="#" class="catalog-detail__btns-likes">
                                                 <svg width="28" height="28" aria-hidden="true" class="icon-heart">
@@ -1954,14 +1955,6 @@
                                                             </th>
                                                             <td>
                                                                 20% от начальной цены
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>
-                                                                Шаг
-                                                            </th>
-                                                            <td>
-                                                                5% — 14 419,31 ₽
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -2079,6 +2072,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="catalog-detail__sold-lot-message">
+                                Лот продан
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -2102,7 +2098,7 @@
                                         <div class="swiper-container">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <div class="lot-card" style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
                                                         <div class="lot-card__image-container">
                                                             <a href="#" class="lot-card__image-link">
                                                                 <img src="img/lots/1.jpg" alt="" class="lot-card__image" />
@@ -2110,11 +2106,12 @@
 
                                                             <div class="lot-card__indicators">
                                                                 <div class="lot-card__indicators-top-row">
-                                                                    <div class="lot-card__indicators-new-lot">
-                                                                        Новый<br />
-                                                                        лот
+                                                                    <div class="lot-card__indicators-items">
+                                                                        <div class="lot-card__indicators-new-lot">
+                                                                            Новый<br />
+                                                                            лот
+                                                                        </div>
                                                                     </div>
-
                                                                     <a href="#" class="lot-card__like-btn">
                                                                         <svg width="18" height="14" aria-hidden="true" class="icon-heart">
                                                                             <use xlink:href="#heart"></use>
@@ -2157,7 +2154,7 @@
                                                         </div>
                                                         <div class="lot-card__content">
                                                             <div class="lot-card__price-block">
-                                                                <div class="lot-card__price-wrapper">
+                                                                <a href="#" class="lot-card__price-wrapper">
                                                                     <div class="lot-card__new-price">
                                                                         900 000 ₽
                                                                     </div>
@@ -2166,10 +2163,15 @@
                                                                             <use xlink:href="#down-trend"></use>
                                                                         </svg>
                                                                     </div>
+                                                                </a>
+                                                                <div class="lot-card__trade-category">
+                                                                    Банкротные торги
                                                                 </div>
-
-                                                                <div class="lot-card__old-price">
+                                                                <a href="#" class="lot-card__old-price">
                                                                     250 000 000 ₽
+                                                                </a>
+                                                                <div class="lot-card__old-price-text">
+                                                                    минимальная цена
                                                                 </div>
                                                             </div>
                                                             <div class="lot-card__title-wrapper">
@@ -2181,14 +2183,25 @@
                                                                 </h3>
 
                                                                 <div class="lot-card__type">
+                                                                    <span class="lot-card__type-category">
+                                                                        Банкротное имущество •
+                                                                    </span>
                                                                     Аукцион
+                                                                </div>
+
+                                                                <div class="lot-card__bottom-links">
+                                                                    <a href="#" class="lot-card__bottom-like-btn">
+                                                                        <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                            <use xlink:href="#heart"></use>
+                                                                        </svg>
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <div class="lot-card" style="--lot-progress: 0.5;" ie-style="--lot-progress: 0.5;">
+                                                    <div class="lot-card  " style="--lot-progress: 0.5;" ie-style="--lot-progress: 0.5;">
                                                         <div class="lot-card__image-container">
                                                             <a href="#" class="lot-card__image-link">
                                                                 <img src="img/lots/2.jpg" alt="" class="lot-card__image" />
@@ -2196,11 +2209,12 @@
 
                                                             <div class="lot-card__indicators">
                                                                 <div class="lot-card__indicators-top-row">
-                                                                    <div class="lot-card__indicators-best-price">
-                                                                        Лучшая<br />
-                                                                        цена
+                                                                    <div class="lot-card__indicators-items">
+                                                                        <div class="lot-card__indicators-best-price">
+                                                                            Лучшая<br />
+                                                                            цена
+                                                                        </div>
                                                                     </div>
-
                                                                     <a href="#" class="lot-card__like-btn">
                                                                         <svg width="18" height="14" aria-hidden="true" class="icon-heart">
                                                                             <use xlink:href="#heart"></use>
@@ -2243,7 +2257,7 @@
                                                         </div>
                                                         <div class="lot-card__content">
                                                             <div class="lot-card__price-block">
-                                                                <div class="lot-card__price-wrapper">
+                                                                <a href="#" class="lot-card__price-wrapper">
                                                                     <div class="lot-card__new-price">
                                                                         306 000 ₽
                                                                     </div>
@@ -2252,10 +2266,15 @@
                                                                             <use xlink:href="#down-trend"></use>
                                                                         </svg>
                                                                     </div>
+                                                                </a>
+                                                                <div class="lot-card__trade-category">
+                                                                    Банкротные торги
                                                                 </div>
-
-                                                                <div class="lot-card__old-price">
+                                                                <a href="#" class="lot-card__old-price">
                                                                     250 000 000 ₽
+                                                                </a>
+                                                                <div class="lot-card__old-price-text">
+                                                                    минимальная цена
                                                                 </div>
                                                             </div>
                                                             <div class="lot-card__title-wrapper">
@@ -2265,12 +2284,20 @@
                                                                         31:15:0204011:29
                                                                     </a>
                                                                 </h3>
+
+                                                                <div class="lot-card__bottom-links">
+                                                                    <a href="#" class="lot-card__bottom-like-btn">
+                                                                        <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                            <use xlink:href="#heart"></use>
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <div class="lot-card" style="--lot-progress: 1;" ie-style="--lot-progress: 1;">
+                                                    <div class="lot-card  lot-card--sold  " style="--lot-progress: 1;" ie-style="--lot-progress: 1;">
                                                         <div class="lot-card__image-container">
                                                             <a href="#" class="lot-card__image-link">
                                                                 <img src="img/lots/3.jpg" alt="" class="lot-card__image" />
@@ -2278,6 +2305,7 @@
 
                                                             <div class="lot-card__indicators">
                                                                 <div class="lot-card__indicators-top-row">
+                                                                    <div class="lot-card__indicators-items"></div>
                                                                     <a href="#" class="lot-card__like-btn">
                                                                         <svg width="18" height="14" aria-hidden="true" class="icon-heart">
                                                                             <use xlink:href="#heart"></use>
@@ -2320,9 +2348,18 @@
                                                         </div>
                                                         <div class="lot-card__content">
                                                             <div class="lot-card__price-block">
-                                                                <div class="lot-card__sold-out">
-                                                                    Продано
+                                                                <a href="#" class="lot-card__price-wrapper">
+                                                                    <div class="lot-card__new-price">
+                                                                        306 000 ₽
+                                                                    </div>
+                                                                </a>
+                                                                <div class="lot-card__trade-category">
+                                                                    Банкротные торги
                                                                 </div>
+
+                                                                <a href="#" class="lot-card__sold-out">
+                                                                    Продано
+                                                                </a>
                                                             </div>
                                                             <div class="lot-card__title-wrapper">
                                                                 <h3 class="lot-card__title">
@@ -2332,14 +2369,25 @@
                                                                 </h3>
 
                                                                 <div class="lot-card__type">
+                                                                    <span class="lot-card__type-category">
+                                                                        Банкротное имущество •
+                                                                    </span>
                                                                     Банкротные торги
+                                                                </div>
+
+                                                                <div class="lot-card__bottom-links">
+                                                                    <a href="#" class="lot-card__bottom-like-btn">
+                                                                        <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                            <use xlink:href="#heart"></use>
+                                                                        </svg>
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <div class="lot-card" style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
                                                         <div class="lot-card__image-container">
                                                             <a href="#" class="lot-card__image-link">
                                                                 <img src="img/lots/4.jpg" alt="" class="lot-card__image" />
@@ -2347,6 +2395,7 @@
 
                                                             <div class="lot-card__indicators">
                                                                 <div class="lot-card__indicators-top-row">
+                                                                    <div class="lot-card__indicators-items"></div>
                                                                     <a href="#" class="lot-card__like-btn">
                                                                         <svg width="18" height="14" aria-hidden="true" class="icon-heart">
                                                                             <use xlink:href="#heart"></use>
@@ -2389,7 +2438,7 @@
                                                         </div>
                                                         <div class="lot-card__content">
                                                             <div class="lot-card__price-block">
-                                                                <div class="lot-card__price-wrapper">
+                                                                <a href="#" class="lot-card__price-wrapper">
                                                                     <div class="lot-card__new-price">
                                                                         900 000 ₽
                                                                     </div>
@@ -2398,10 +2447,15 @@
                                                                             <use xlink:href="#down-trend"></use>
                                                                         </svg>
                                                                     </div>
+                                                                </a>
+                                                                <div class="lot-card__trade-category">
+                                                                    Банкротные торги
                                                                 </div>
-
-                                                                <div class="lot-card__old-price">
+                                                                <a href="#" class="lot-card__old-price">
                                                                     250 000 000 ₽
+                                                                </a>
+                                                                <div class="lot-card__old-price-text">
+                                                                    минимальная цена
                                                                 </div>
                                                             </div>
                                                             <div class="lot-card__title-wrapper">
@@ -2413,7 +2467,18 @@
                                                                 </h3>
 
                                                                 <div class="lot-card__type">
+                                                                    <span class="lot-card__type-category">
+                                                                        Банкротное имущество •
+                                                                    </span>
                                                                     Аукцион
+                                                                </div>
+
+                                                                <div class="lot-card__bottom-links">
+                                                                    <a href="#" class="lot-card__bottom-like-btn">
+                                                                        <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                            <use xlink:href="#heart"></use>
+                                                                        </svg>
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>
