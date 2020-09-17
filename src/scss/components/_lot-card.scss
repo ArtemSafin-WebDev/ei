@@ -72,6 +72,12 @@
         height: 4.5rem;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 92.22%);
     }
+
+    .lot-card--no-photo & {
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .lot-card__image {
@@ -82,6 +88,10 @@
     height: 100%;
     @include objectFitCover();
     transition: transform 0.4s;
+
+    .lot-card--no-photo & {
+        transform: none !important;
+    }
 }
 
 .lot-card__indicators {
@@ -131,9 +141,32 @@
             fill: white;
         }
     }
+
+    .lot-card--no-photo & {
+        color: var(--text-color);
+
+        &:link,
+        &:visited {
+            color: var(--text-color);
+        }
+
+        &.active,
+        &:hover {
+            color: var(--text-color);
+
+            svg {
+                fill: var(--text-color);
+            }
+        }
+    }
 }
 
-.lot-card__indicators-new-lot {
+.lot-card__indicators-items {
+    margin-right: auto;
+}
+
+.lot-card__indicators-new-lot,
+.lot-card__indicators-has-report {
     width: 5.7rem;
     height: 4.1rem;
     display: flex;
@@ -150,7 +183,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: auto;
+    margin-bottom: 1rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     @include breakpoint(mobile) {
         width: 4.2rem;
@@ -158,6 +194,10 @@
         font-size: 0.75rem;
         line-height: 1.2rem;
     }
+}
+
+.lot-card__indicators-has-report {
+    background-image: url('../img/has-report.svg');
 }
 
 .lot-card__indicators-best-price {
@@ -176,7 +216,10 @@
     background-size: contain;
     background-image: url('../img/best-price-bg.svg');
     background-repeat: no-repeat;
-    margin-right: auto;
+    margin-bottom: 1rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     @include breakpoint(mobile) {
         width: 4.57rem;
@@ -192,6 +235,10 @@
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.5rem;
+
+    .lot-card--no-photo & {
+        color: var(--text-color);
+    }
     @include breakpoint(mobile) {
         font-weight: 400;
         font-size: 1rem;
@@ -212,6 +259,19 @@
         circle:nth-child(2) {
             transition: stroke-dashoffset 0.2s;
             stroke-dashoffset: calc(500px - 500px * var(--lot-progress, 0));
+        }
+    }
+
+    .lot-card--no-photo & {
+        svg {
+            circle {
+                &:nth-child(1) {
+                    stroke: #a6adc0;
+                }
+                &:nth-child(2) {
+                    stroke: var(--text-color);
+                }
+            }
         }
     }
 
@@ -237,14 +297,17 @@
 }
 
 .lot-card__sold-out {
-    font-weight: bold;
-    font-size: 1.9rem;
-    line-height: 2.3rem;
-    color: #99a6b6;
-
-    @include breakpoint(mobile) {
-        font-size: 1.4rem;
-        line-height: 1.2;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    background: #fc5555;
+    border-radius: 0.8rem;
+    padding: 0.4rem 0.5rem;
+    color: white;
+    margin-left: 0.5rem;
+    &:link,
+    &:visited {
+        color: white;
     }
 }
 
@@ -254,6 +317,10 @@
     line-height: 2.3rem;
     white-space: nowrap;
     margin-right: 0.5rem;
+
+    .lot-card--sold & {
+        text-decoration: line-through;
+    }
     @include breakpoint(mobile) {
         font-size: 1.5rem;
         line-height: 1.8rem;
@@ -283,6 +350,10 @@
     color: #99a6b6;
     font-size: 1.4rem;
     line-height: 1.6rem;
+    &:link,
+    &:visited {
+        color: #99a6b6;
+    }
     @include breakpoint(mobile) {
         width: 100%;
         font-size: 1.2rem;
@@ -297,6 +368,10 @@
     line-height: 1.2;
     margin-bottom: 1rem;
     transition: color 0.2s;
+
+    .lot-card--sold & {
+        text-decoration: line-through;
+    }
 
     a {
         transition: color 0.2s;
@@ -404,7 +479,7 @@
 
 .lot-card__trade-category {
     display: none;
-    margin-bottom: auto;
+    
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin-top: 0.5rem;
@@ -416,8 +491,18 @@
 }
 
 .list-view {
+
+    .lot-card__sold-out {
+        margin: 0;
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
     .lot-card__trade-category {
         display: block;
+    }
+
+    .lot-card__type-category {
+        display: none;
     }
     .lot-card__old-price-text {
         display: block;

@@ -44,18 +44,19 @@
             "sold": false,
             "partner": "img/partners/interprom.png"
         },
+        
         {
             "image": "img/lots/9.jpg",
             "newLot": false,
             "bestPrice": false,
             "progress": 0.75,
-            "progressText": "59 дней до подачи заявки",
+            "progressText": "Торги окончены",
             "newPrice": "297 283",
             "oldPrice": "35 000",
             "title": "Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1 ",
             "type": "Аукцион",
             "upTrend": true,
-            "sold": false,
+            "sold": true,
             "partner": "img/partners/expobank.png"
         },
         {

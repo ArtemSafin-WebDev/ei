@@ -108,28 +108,36 @@
                             {{#each lots }}
                             <li class="catalog__lots-list-item">
                                 {{#unless this.specialCard}}
-                                <div class="lot-card" style="--lot-progress: {{ this.progress }};"
-                                    ie-style="--lot-progress: {{ this.progress }};">
+                                <div class="lot-card {{#if this.sold}} lot-card--sold {{/if}} {{#if this.noPhoto}} lot-card--no-photo {{/if}}"
+                                    style="--lot-progress: {{this.progress}};"
+                                    ie-style="--lot-progress: {{this.progress}};">
                                     <div class="lot-card__image-container">
                                         <a href="#" class="lot-card__image-link">
-                                            <img src="{{ this.image }}" alt="" class="lot-card__image" />
+                                            <img src="{{this.image}}" alt="" class="lot-card__image">
                                         </a>
 
                                         <div class="lot-card__indicators">
                                             <div class="lot-card__indicators-top-row">
-                                                {{#if this.newLot}}
-                                                <div class="lot-card__indicators-new-lot">
-                                                    Новый<br />
-                                                    лот
+                                                <div class="lot-card__indicators-items">
+                                                    {{#if this.newLot}}
+                                                    <div class="lot-card__indicators-new-lot">
+                                                        Новый<br>
+                                                        лот
+                                                    </div>
+                                                    {{/if}}
+                                                    {{#if this.bestPrice}}
+                                                    <div class="lot-card__indicators-best-price">
+                                                        Лучшая<br>
+                                                        цена
+                                                    </div>
+                                                    {{/if}}
+                                                    {{#if this.hasReport}}
+                                                    <div class="lot-card__indicators-has-report">
+                                                        Есть<br>
+                                                        отчет
+                                                    </div>
+                                                    {{/if}}
                                                 </div>
-                                                {{/if}}
-                                                {{#if this.bestPrice}}
-                                                <div class="lot-card__indicators-best-price">
-                                                    Лучшая<br />
-                                                    цена
-                                                </div>
-                                                {{/if}}
-
                                                 <a href="#" class="lot-card__like-btn">
                                                     <svg width="18" height="14" aria-hidden="true" class="icon-heart">
                                                         <use xlink:href="#heart"></use>
@@ -149,16 +157,19 @@
                                                             </circle>
                                                         </svg>
                                                     </div>
-                                                    {{ this.progressText }}
+                                                    {{this.progressText}}
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="lot-card__content">
                                         <div class="lot-card__price-block">
-                                            {{#unless this.sold}}
+
                                             <a href="#" class="lot-card__price-wrapper">
-                                                <div class="lot-card__new-price">{{ this.newPrice }} ₽</div>
+                                                <div class="lot-card__new-price">
+                                                    {{this.newPrice}} ₽
+                                                </div>
+                                                {{#unless this.sold}}
                                                 <div
                                                     class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
                                                     <svg width="10" height="6" aria-hidden="true"
@@ -166,12 +177,16 @@
                                                         <use xlink:href="#down-trend"></use>
                                                     </svg>
                                                 </div>
+                                                {{/unless}}
                                             </a>
                                             <div class="lot-card__trade-category">
                                                 Банкротные торги
                                             </div>
+                                            {{#unless this.sold}}
                                             {{#if this.oldPrice}}
-                                            <div class="lot-card__old-price">{{ this.oldPrice }} ₽</div>
+                                            <a href="#" class="lot-card__old-price">
+                                                {{this.oldPrice}} ₽
+                                            </a>
                                             {{/if}}
                                             <div class="lot-card__old-price-text">
                                                 минимальная цена
@@ -179,23 +194,30 @@
                                             {{/unless}}
 
                                             {{#if this.sold}}
-                                            <div class="lot-card__sold-out">
+                                            <a href="#" class="lot-card__sold-out">
                                                 Продано
-                                            </div>
+                                            </a>
                                             {{/if}}
+
                                         </div>
                                         <div class="lot-card__title-wrapper">
                                             <h3 class="lot-card__title">
                                                 <a href="#">
-                                                    {{ this.title }}
+                                                    {{this.title}}
                                                 </a>
+
                                             </h3>
+
 
                                             {{#if this.type}}
                                             <div class="lot-card__type">
-                                                {{ this.type }}
+                                                <span class="lot-card__type-category">
+                                                    Банкротное имущество •
+                                                </span>
+                                                {{this.type}}
                                             </div>
                                             {{/if}}
+
 
                                             <div class="lot-card__bottom-links">
                                                 {{#if this.partner}}
@@ -213,16 +235,17 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 {{/unless}}
                                 {{#if this.specialCard}}
                                 <a href="#" class="lot-special-card">
-                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image" />
+                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image">
                                     <h3 class="lot-special-card__title">
                                         <strong>
-                                            {{ this.specialCardNumber }}
+                                            {{this.specialCardNumber}}
                                         </strong>
-                                        {{ this.specialCardText }}
+                                        {{this.specialCardText}}
                                     </h3>
                                 </a>
                                 {{/if}}
@@ -256,28 +279,36 @@
                             {{#each lots }}
                             <li class="catalog__lots-list-item">
                                 {{#unless this.specialCard}}
-                                <div class="lot-card" style="--lot-progress: {{ this.progress }};"
-                                    ie-style="--lot-progress: {{ this.progress }};">
+                                <div class="lot-card {{#if this.sold}} lot-card--sold {{/if}} {{#if this.noPhoto}} lot-card--no-photo {{/if}}"
+                                    style="--lot-progress: {{this.progress}};"
+                                    ie-style="--lot-progress: {{this.progress}};">
                                     <div class="lot-card__image-container">
                                         <a href="#" class="lot-card__image-link">
-                                            <img src="{{ this.image }}" alt="" class="lot-card__image" />
+                                            <img src="{{this.image}}" alt="" class="lot-card__image">
                                         </a>
 
                                         <div class="lot-card__indicators">
                                             <div class="lot-card__indicators-top-row">
-                                                {{#if this.newLot}}
-                                                <div class="lot-card__indicators-new-lot">
-                                                    Новый<br />
-                                                    лот
+                                                <div class="lot-card__indicators-items">
+                                                    {{#if this.newLot}}
+                                                    <div class="lot-card__indicators-new-lot">
+                                                        Новый<br>
+                                                        лот
+                                                    </div>
+                                                    {{/if}}
+                                                    {{#if this.bestPrice}}
+                                                    <div class="lot-card__indicators-best-price">
+                                                        Лучшая<br>
+                                                        цена
+                                                    </div>
+                                                    {{/if}}
+                                                    {{#if this.hasReport}}
+                                                    <div class="lot-card__indicators-has-report">
+                                                        Есть<br>
+                                                        отчет
+                                                    </div>
+                                                    {{/if}}
                                                 </div>
-                                                {{/if}}
-                                                {{#if this.bestPrice}}
-                                                <div class="lot-card__indicators-best-price">
-                                                    Лучшая<br />
-                                                    цена
-                                                </div>
-                                                {{/if}}
-
                                                 <a href="#" class="lot-card__like-btn">
                                                     <svg width="18" height="14" aria-hidden="true" class="icon-heart">
                                                         <use xlink:href="#heart"></use>
@@ -297,16 +328,19 @@
                                                             </circle>
                                                         </svg>
                                                     </div>
-                                                    {{ this.progressText }}
+                                                    {{this.progressText}}
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="lot-card__content">
                                         <div class="lot-card__price-block">
-                                            {{#unless this.sold}}
-                                            <div class="lot-card__price-wrapper">
-                                                <div class="lot-card__new-price">{{ this.newPrice }} ₽</div>
+
+                                            <a href="#" class="lot-card__price-wrapper">
+                                                <div class="lot-card__new-price">
+                                                    {{this.newPrice}} ₽
+                                                </div>
+                                                {{#unless this.sold}}
                                                 <div
                                                     class="lot-card__trend {{#if this.upTrend }} lot-card__trend--up {{/if}}">
                                                     <svg width="10" height="6" aria-hidden="true"
@@ -314,12 +348,16 @@
                                                         <use xlink:href="#down-trend"></use>
                                                     </svg>
                                                 </div>
-                                            </div>
+                                                {{/unless}}
+                                            </a>
                                             <div class="lot-card__trade-category">
                                                 Банкротные торги
                                             </div>
+                                            {{#unless this.sold}}
                                             {{#if this.oldPrice}}
-                                            <div class="lot-card__old-price">{{ this.oldPrice }} ₽</div>
+                                            <a href="#" class="lot-card__old-price">
+                                                {{this.oldPrice}} ₽
+                                            </a>
                                             {{/if}}
                                             <div class="lot-card__old-price-text">
                                                 минимальная цена
@@ -327,23 +365,30 @@
                                             {{/unless}}
 
                                             {{#if this.sold}}
-                                            <div class="lot-card__sold-out">
+                                            <a href="#" class="lot-card__sold-out">
                                                 Продано
-                                            </div>
+                                            </a>
                                             {{/if}}
+
                                         </div>
                                         <div class="lot-card__title-wrapper">
                                             <h3 class="lot-card__title">
                                                 <a href="#">
-                                                    {{ this.title }}
+                                                    {{this.title}}
                                                 </a>
+
                                             </h3>
+
 
                                             {{#if this.type}}
                                             <div class="lot-card__type">
-                                                {{ this.type }}
+                                                <span class="lot-card__type-category">
+                                                    Банкротное имущество •
+                                                </span>
+                                                {{this.type}}
                                             </div>
                                             {{/if}}
+
 
                                             <div class="lot-card__bottom-links">
                                                 {{#if this.partner}}
@@ -361,16 +406,17 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 {{/unless}}
                                 {{#if this.specialCard}}
                                 <a href="#" class="lot-special-card">
-                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image" />
+                                    <img src="{{ this.specialCardImage }}" alt="" class="lot-special-card__image">
                                     <h3 class="lot-special-card__title">
                                         <strong>
-                                            {{ this.specialCardNumber }}
+                                            {{this.specialCardNumber}}
                                         </strong>
-                                        {{ this.specialCardText }}
+                                        {{this.specialCardText}}
                                     </h3>
                                 </a>
                                 {{/if}}
