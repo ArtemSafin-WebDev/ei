@@ -1,0 +1,564 @@
+.lots-on-the-map {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 2rem;
+
+    .container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        pointer-events: none;
+
+        @include breakpoint(mobile) {
+            position: static;
+            pointer-events: initial;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        margin-top: 0;
+    }
+}
+
+.lots-on-the-map__map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f7f9;
+
+    @include breakpoint(mobile) {
+        position: static;
+        height: 36rem;
+    }
+}
+
+.lots-on-the-map__filters {
+    position: absolute;
+    top: 4.8rem;
+    bottom: 0;
+
+    width: 35rem;
+    pointer-events: initial;
+
+    z-index: 20;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-radius: 1.3rem;
+        top: 3.2rem;
+        right: -2.8rem;
+        z-index: -10;
+
+        @include breakpoint(mobile) {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        position: static;
+    }
+}
+
+.lots-on-the-map__filters-main {
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(5, 12, 66, 0.1);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    overflow-x: hidden;
+    padding: 3.2rem 4rem;
+    -webkit-overflow-scrolling: touch;
+
+    @include noScrollbar();
+
+    .catalog-filters__results-btn {
+        display: none;
+    }
+
+    @include breakpoint(mobile) {
+        box-shadow: none;
+        border-radius: 0;
+        background: transparent;
+        position: static;
+        height: auto;
+        padding: 0;
+        overflow: visible;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.lots-on-the-map__filters-main-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    margin-bottom: 3.2rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+.lots-on-the-map__filters-main-close {
+    margin-left: 2rem;
+    flex-shrink: 0;
+    svg {
+        display: block;
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: #99a6b6;
+        flex-shrink: 0;
+        transition: fill 0.2s;
+
+        @include breakpoint(mobile) {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+
+    &:hover {
+        svg {
+            fill: var(--text-color);
+        }
+    }
+}
+
+.lots-on-the-map__list-view {
+    position: absolute;
+    top: 4.8rem;
+    bottom: 0;
+
+    pointer-events: initial;
+    width: 54rem;
+    z-index: 20;
+
+    @include breakpointMF(small-tablet) {
+        .collapsed & {
+            width: 2rem;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        position: static;
+        width: 100%;
+    }
+}
+
+// .lots-on-the-map__list-heading {
+//     font-weight: bold;
+//     font-size: 3rem;
+//     line-height: 3.7rem;
+//     margin-bottom: 3.2rem;
+
+//     @include breakpoint(mobile) {
+//         font-size: 2.4rem;
+//         line-height: 1.2;
+//         margin-bottom: 2rem;
+//     }
+// }
+
+.lots-on-the-map__list-view-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    overflow-x: hidden;
+    padding: 3.2rem 4rem;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0px 1rem 4.5rem rgba(5, 12, 66, 0.25);
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    @include noScrollbar();
+    background-color: #fff;
+
+    @include breakpointMF(small-tablet) {
+        .collapsed & {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        padding: 0;
+        height: auto;
+        box-shadow: none;
+        background: transparent;
+        border-radius: 0;
+        overflow: visible;
+        position: static;
+    }
+}
+
+.lots-on-the-map__list-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 3.2rem;
+
+    @include breakpointMF(small-tablet) {
+        .collapsed & {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+}
+
+.lots-on-the-map__list-filters {
+    display: flex;
+    // flex-wrap: wrap;
+    margin-right: -0.8rem;
+    margin-bottom: -0.8rem;
+    @include breakpointMF(small-tablet) {
+        .collapsed & {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        flex-wrap: wrap;
+    }
+}
+
+.lots-on-the-map__list-filter {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #d1dae6;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    border-radius: 0.9rem;
+    text-align: center;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    white-space: nowrap;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover,
+    &.active {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: white;
+    }
+
+    svg {
+        width: 0.8rem;
+        height: 0.8rem;
+        flex-shrink: 0;
+        margin-left: 0.6rem;
+    }
+}
+
+.lots-on-the-map__results-list {
+    margin-top: 1rem;
+    @include breakpointMF(small-tablet) {
+        .collapsed & {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 1.6rem;
+        grid-row-gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.lots-on-the-map__results-list-item {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid #e9edf3;
+
+    &:last-child {
+        border: none;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 0;
+        border: none;
+    }
+}
+
+.lots-on-the-map__results-card {
+    display: flex;
+    transition: color 0.2s;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
+}
+
+.lots-on-the-map__results-card-image-container {
+    width: 17.6rem;
+    flex-shrink: 0;
+    margin-right: 2.5rem;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
+        @include breakpoint(mobile) {
+            padding-bottom: 72%;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 1.3rem;
+    }
+}
+
+.lots-on-the-map__results-card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+}
+
+.lots-on-the-map__results-card-content {
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+    }
+}
+
+.lots-on-the-map__results-card-title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        order: 2;
+        margin: 0;
+    }
+}
+
+.lots-on-the-map__results-card-price {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    margin-top: auto;
+    svg {
+        width: 1rem;
+        height: 0.6rem;
+        fill: var(--primary-color);
+        flex-shrink: 0;
+        margin-left: 0.8rem;
+        &.icon-down-trend {
+            fill: #fc5555;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
+.lots-on-the-map__list-view-expand-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    width: 3rem;
+    height: 5.6rem;
+    background-color: #fff;
+    position: relative;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    z-index: 50;
+    svg {
+        width: 0.8rem;
+        height: 1.4rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        fill: var(--text-color);
+        transition: fill 0.2s;
+        margin-left: -0.2rem;
+    }
+
+    &:hover {
+        svg {
+            fill: var(--primary-color);
+        }
+    }
+
+    @include breakpointMF(small-tablet) {
+        .collapsed & {
+            width: 5.6rem;
+            border-radius: 50%;
+            box-shadow: 0px 1rem 4.5rem rgba(5, 12, 66, 0.25);
+            svg {
+                transform: translate(-50%, -50%) rotate(180deg);
+                margin: 0;
+            }
+        }
+    }
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
+.lots-on-the-map__top-btns {
+    position: absolute;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 2.4rem;
+    top: 0;
+    z-index: 50;
+    @include breakpointMF(small-tablet) {
+        .collapsed & {
+            margin-left: 0;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        position: static;
+        margin: 0;
+        padding: 2rem 0;
+    }
+}
+
+.lots-on-the-map__top-btn {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    text-align: center;
+    color: var(--text-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 0.4rem 4rem rgba(0, 0, 0, 0.14);
+    border-radius: 1.5rem;
+    margin-right: 2.4rem;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+        margin-right: 1rem;
+    }
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &:hover {
+        color: white;
+        background-color: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        box-shadow: none;
+        padding: 0;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        border-radius: 1rem;
+        margin-right: 1.5rem;
+    }
+}
+
+.lots-on-the-map__close-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5.6rem;
+    height: 5.6rem;
+    box-shadow: 0px 0.4rem 4rem rgba(0, 0, 0, 0.14);
+    border-radius: 1.5rem;
+    background-color: #fff;
+    position: absolute;
+    top: 4.8rem;
+    right: 0;
+    z-index: 40;
+    pointer-events: initial;
+    transition: background-color 0.2s, color 0.2s;
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        flex-shrink: 0;
+        @include breakpoint(mobile) {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    @include breakpoint(mobile) {
+        width: 4rem;
+        height: 4rem;
+        position: static;
+        border-radius: 1rem;
+        display: none;
+    }
+}

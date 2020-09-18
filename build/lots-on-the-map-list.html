@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Подписки - Единый информатор
+            Лоты на карте списком - Единый информатор
         </title>
         <script
             src="https://api-maps.yandex.ru/2.1/?apikey=1c9ab29b-1afd-4a21-b1ea-478c36667e22
@@ -1219,309 +1219,255 @@
                 </button>
             </header>
             <main class="page-main">
-                <section class="subscriptions">
+                <section class="lots-on-the-map">
+                    <div class="lots-on-the-map__map js-lots-map"></div>
                     <div class="container">
-                        <div class="inner-container">
-                            <div class="user">
-                                <div class="user__layout">
-                                    <div class="user__sidebar">
-                                        <div class="user__panel">
-                                            <div class="user__avatar">
-                                                KK
-                                            </div>
-                                            <div class="user__name">
-                                                Константин Константинопольский
-                                            </div>
-                                            <a href="#" class="user__change-data">
-                                                Изменить данные
-                                            </a>
+                        <a href="catalog.html" class="lots-on-the-map__close-btn">
+                            <svg width="26" height="26" aria-hidden="true" class="icon-cross">
+                                <use xlink:href="#cross"></use>
+                            </svg>
+                        </a>
+                        <div class="lots-on-the-map__list-view">
+                            <button class="lots-on-the-map__list-view-expand-btn js-expand-list-view">
+                                <svg width="8" height="14" aria-hidden="true" class="icon-arrow-left">
+                                    <use xlink:href="#arrow-left"></use>
+                                </svg>
+                            </button>
+                            <div class="lots-on-the-map__top-btns">
+                                <a href="lots-on-the-map.html" class="lots-on-the-map__top-btn">
+                                    <svg width="16" height="16" aria-hidden="true" class="icon-filters-view">
+                                        <use xlink:href="#filters-view"></use>
+                                    </svg>
+                                    Фильтр
+                                </a>
+                                <a href="catalog.html" class="lots-on-the-map__top-btn">
+                                    <svg width="16" height="16" aria-hidden="true" class="icon-list-view">
+                                        <use xlink:href="#list-view"></use>
+                                    </svg>
+                                    Показать списком
+                                </a>
+                            </div>
 
-                                            <nav class="user__nav">
-                                                <a href="#" class="user__nav-link">
-                                                    Отчеты и выписки
-                                                </a>
-                                                <a href="#" class="user__nav-link">
-                                                    Избранное
-                                                </a>
-                                                <a href="#" class="user__nav-link">
-                                                    Сохраненные поиски
-                                                </a>
-                                                <a href="#" class="user__nav-link">
-                                                    Уведомления
-                                                </a>
-                                                <a href="#" class="user__nav-link">
-                                                    Подписка
-                                                </a>
-                                            </nav>
-                                            <a href="#" class="user__logout-link">
-                                                Выйти
-                                            </a>
+                            <div class="lots-on-the-map__list-view-main">
+                                <h2 class="lots-on-the-map__list-heading">
+                                    Транспорт и техника
+                                </h2>
+                                <div class="lots-on-the-map__list-filters">
+                                    <a href="#" class="lots-on-the-map__list-filter">
+                                        До 500 000
+                                    </a>
+                                    <a href="#" class="lots-on-the-map__list-filter">
+                                        До 1 000 000
+                                    </a>
+                                    <a href="#" class="lots-on-the-map__list-filter active">
+                                        До 5 000 000
 
-                                            <a href="#" class="user__try-premium">
-                                                <div class="user__try-premium-type">
-                                                    Профессиональный аккаунт
-                                                </div>
-                                                <div class="user__try-premium-slogan">
-                                                    Попробуйте 30 дней бесплатно
-                                                </div>
-                                            </a>
-
-                                            <div class="user__other-accounts">
-                                                <h3 class="user__other-accounts-heading">
-                                                    Другие аккаунты
-                                                </h3>
-                                                <ul class="user__other-accounts-list">
-                                                    <li class="user__other-accounts-list-item">
-                                                        <a href="#" class="user__other-accounts-card">
-                                                            <div class="user__other-accounts-card-avatar">
-                                                                ВК
-                                                            </div>
-                                                            <div class="user__other-accounts-card-content">
-                                                                <div class="user__other-accounts-card-name">
-                                                                    Владимир Константинопольсикй
-                                                                </div>
-                                                                <div class="user__other-accounts-card-email">
-                                                                    konstantin@ei.ru
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                                <a href="#" class="user__other-accounts-create">
-                                                    <div class="user__other-accounts-create-icon">
-                                                        <svg width="12" height="12" aria-hidden="true" class="icon-plus">
-                                                            <use xlink:href="#plus"></use>
-                                                        </svg>
-                                                    </div>
-                                                    Добавить аккаунт
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="user__main">
-                                        <h1 class="main-heading user__heading">
-                                            Отчеты и выписки
-                                        </h1>
-                                        <div class="user__inner-nav user__inner-nav--reports">
-                                            <div class="user__inner-nav-links-wrapper">
-                                                <div class="user__inner-nav-links">
-                                                    <a href="subscriptions.html" class="user__inner-nav-link active">
-                                                        Подписки
-                                                    </a>
-                                                    <a href="cards.html" class="user__inner-nav-link">
-                                                        Карты
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user__subscriptions">
-                                            <ul class="user__subscriptions-list">
-                                                <li class="user__subscriptions-list-item">
-                                                    <div class="user__subscriptions-card">
-                                                        <div class="user__subscriptions-card-image-container">
-                                                            <img src="img/diamond.svg" alt="" class="user__subscriptions-card-image" />
-                                                        </div>
-                                                        <div class="user__subscriptions-card-content">
-                                                            <div class="user__subscriptions-card-top-row">
-                                                                <div class="user__subscriptions-card-top-row-left-col">
-                                                                    <h4 class="user__subscriptions-card-title">
-                                                                        Тариф «Турбо»
-                                                                    </h4>
-                                                                </div>
-                                                                <div class="user__subscriptions-card-top-row-right-col">
-                                                                    <div class="user__subscriptions-card-price">
-                                                                        999 ₽ / мес
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="user__subscriptions-card-info-block">
-                                                                <div class="user__subscriptions-card-info">
-                                                                    Ежемесечная • Обновление подписки 23.08.2020
-                                                                </div>
-                                                                <div class="user__subscriptions-card-payment-card">
-                                                                    Tinkoff Black **** 3883
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="user__subscriptions-card-bottom-links">
-                                                                <a href="#" class="user__subscriptions-card-change-link">
-                                                                    Изменить условия
-                                                                </a>
-                                                                <a
-                                                                    href="#cancel-subscription"
-                                                                    class="user__subscriptions-card-unsubscribe-link js-modal-open"
-                                                                >
-                                                                    Отписаться
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="user__subscriptions-list-item">
-                                                    <div class="user__subscriptions-card">
-                                                        <div
-                                                            class="user__subscriptions-card-image-container user__subscriptions-card-image-container--premium"
-                                                        >
-                                                            <img src="img/premium.svg" alt="" class="user__subscriptions-card-image" />
-                                                        </div>
-                                                        <div class="user__subscriptions-card-content">
-                                                            <div class="user__subscriptions-card-top-row">
-                                                                <div class="user__subscriptions-card-top-row-left-col">
-                                                                    <h4 class="user__subscriptions-card-title">
-                                                                        Тариф «Премиум»
-                                                                    </h4>
-                                                                </div>
-                                                                <div class="user__subscriptions-card-top-row-right-col">
-                                                                    <div class="user__subscriptions-card-price">
-                                                                        9999 ₽ / год
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="user__subscriptions-card-info-block">
-                                                                <div class="user__subscriptions-card-info">
-                                                                    Ежемесечная • Обновление подписки 23.08.2020
-                                                                </div>
-                                                                <div class="user__subscriptions-card-payment-card">
-                                                                    Tinkoff Black **** 3883
-                                                                </div>
-                                                            </div>
-                                                            <div class="user__subscriptions-card-bottom-links">
-                                                                <a href="#" class="user__subscriptions-card-change-link" id="change-rules-fail-btn">
-                                                                    Изменить условия
-                                                                </a>
-                                                                <a
-                                                                    href="#cancel-subscription"
-                                                                    class="user__subscriptions-card-unsubscribe-link js-modal-open"
-                                                                >
-                                                                    Отписаться
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                        <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                            <use xlink:href="#cross"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="lots-on-the-map__list-filter">
+                                        До 10 000 000
+                                    </a>
                                 </div>
+                                <ul class="lots-on-the-map__results-list">
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/8.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-up-trend">
+                                                        <use xlink:href="#up-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/9.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-down-trend">
+                                                        <use xlink:href="#down-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/8.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-up-trend">
+                                                        <use xlink:href="#up-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/9.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-down-trend">
+                                                        <use xlink:href="#down-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/8.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-up-trend">
+                                                        <use xlink:href="#up-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/9.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-down-trend">
+                                                        <use xlink:href="#down-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/8.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-up-trend">
+                                                        <use xlink:href="#up-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/9.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-down-trend">
+                                                        <use xlink:href="#down-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/8.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-up-trend">
+                                                        <use xlink:href="#up-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="lots-on-the-map__results-list-item">
+                                        <a href="#" class="lots-on-the-map__results-card">
+                                            <div class="lots-on-the-map__results-card-image-container">
+                                                <img src="img/lots/9.jpg" alt="" class="lots-on-the-map__results-card-image" />
+                                            </div>
+                                            <div class="lots-on-the-map__results-card-content">
+                                                <h4 class="lots-on-the-map__results-card-title">
+                                                    Здание нежилое, доля в праве 21/100, .н. 58:05:0320103:928, общ. площадь 1204,1 кв. м./ земельный
+                                                    участок, доля в праве 21/100...
+                                                </h4>
+                                                <div class="lots-on-the-map__results-card-price">
+                                                    297 283 ₽
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-down-trend">
+                                                        <use xlink:href="#down-trend"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
-            <footer class="page-footer">
-                <div class="container">
-                    <div class="page-footer__grid">
-                        <div class="page-footer__logo-wrapper">
-                            <a href="index.html" class="page-footer__logo-link">
-                                <img src="img/logo-white.svg" alt="Логотип" class="page-footer__logo-image" width="160" />
-                            </a>
-                        </div>
 
-                        <div class="page-footer__main-content">
-                            <div class="page-footer__contacts">
-                                <h3 class="page-footer__contacts-heading">
-                                    Мы собираем<br />
-                                    и обрабатываем информацию<br />
-                                    с десятков торговых<br />
-                                    площадок страны для вас.
-                                </h3>
-                                <div class="page-footer__contacts-links">
-                                    <a href="tel:+78006003305" class="page-footer__contacts-link">
-                                        8 800 600 33 05
-                                    </a>
-                                    <a href="mailto:help@ei.ru" class="page-footer__contacts-link">
-                                        help@ei.ru
-                                    </a>
-                                    <div class="page-footer__social">
-                                        <a href="#" class="page-footer__social-link">
-                                            <svg width="20" height="20" aria-hidden="true" class="icon-instagram">
-                                                <use xlink:href="#instagram"></use>
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="page-footer__social-link">
-                                            <svg width="20" height="20" aria-hidden="true" class="icon-facebook">
-                                                <use xlink:href="#facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page-footer__nav">
-                                <ul class="page-footer__nav-list">
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Все категории
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Банкротное имущество
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Арестованное имущество
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Имущество организаций
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Муниципальное имущество
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="page-footer__nav-list">
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Арбитражные управляющие
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            СРО
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Должники
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Услуги и тарифы
-                                        </a>
-                                    </li>
-                                    <li class="page-footer__nav-list-item">
-                                        <a href="#" class="page-footer__nav-link">
-                                            Партнерам
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="page-footer__info">
-                            <div class="page-footer__copyright">
-                                © EI.RU, 2020
-                            </div>
-                            <a href="#" class="page-footer__info-link">
-                                Политика конфиденциальности
-                            </a>
-                            <a href="#" class="page-footer__info-link">
-                                Лицензионное соглашение
-                            </a>
-                            <a href="#" class="page-footer__made-by">
-                                Создание сайта
-                                <img src="img/markweber-logo.svg" alt="" class="page-footer__made-by-logo" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
             <div class="modals">
                 <div class="modals__modal" id="cancel-subscription">
                     <div class="modals__modal-content">
@@ -2256,8 +2202,12 @@
                 </div>
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARSAFafQFEYWEZvA02Nc6PE--Vv9gT8OE"></script>
+            <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
             <script src="js/app.js"></script>
             <script src="assets/js/contactsMap.js"></script>
+
+            <script src="assets/js/lotsOnTheMap.js"></script>
             <script>
                 // Тестовые скрипты для демонстрации верстки
 

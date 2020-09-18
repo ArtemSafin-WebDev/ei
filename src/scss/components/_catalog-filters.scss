@@ -310,6 +310,10 @@
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--primary-color);
+    &:placeholder-shown {
+        padding-right: 1.2rem;
+    }
+
     @include placeholder {
         color: #d1dae6;
         font-weight: 400;

@@ -81,7 +81,7 @@ body {
     background-color: var(--background-blue);
 
 
-    
+    overflow-y: scroll;
 
     &.white-bg {
         background: white;
@@ -100,6 +100,9 @@ body {
 
 body.sold-lot {
     padding-bottom: 6rem;
+    @include breakpoint(mobile) {
+        padding-bottom: 5rem;
+    }
     
 }
 

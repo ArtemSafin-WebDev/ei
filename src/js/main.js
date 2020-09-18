@@ -39,6 +39,7 @@ import fileUpload from './fileUpload';
 import datepickers from './datepickers';
 import messages from './messages';
 import mobileUserMenu from './mobileUserAccount';
+import expandListView from './expandListView';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -80,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     datepickers();
     messages();
     mobileUserMenu();
+    expandListView();
     
 });
 
