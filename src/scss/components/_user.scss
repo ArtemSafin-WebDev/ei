@@ -789,7 +789,7 @@ textarea.user__change-form-input {
     align-items: center;
     user-select: none;
     cursor: pointer;
-
+    white-space: nowrap;
     @include breakpoint(mobile) {
         margin: 0;
         margin-top: 2.4rem;
@@ -860,7 +860,7 @@ textarea.user__change-form-input {
     border-radius: 4rem;
     padding: 2.4rem;
     display: flex;
-
+    flex-direction: column;
     @include breakpoint(mobile) {
         padding: 2rem;
         border-radius: 2rem;
@@ -905,33 +905,185 @@ textarea.user__change-form-input {
     width: 50%;
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
 
     @include breakpoint(mobile) {
         width: 100%;
         flex-grow: 0;
+        flex-direction: column;
     }
+}
+
+.user__reports-card-info {
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.user__reports-card-params {
+    width: 25rem;
+    flex-shrink: 0;
+    border-left: 1px solid #bdc3d1;
+    padding-left: 3.8rem;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-shrink: 1;
+        border: none;
+        border-top: 1px solid rgba(#bdc3d1, 0.5);
+        padding: 0;
+        padding-top: 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.user__reports-card-manager {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @include breakpoint(mobile) {
+        width: auto;
+        margin-right: 2rem;
+        align-items: flex-start;
+    }
+}
+
+.user__reports-card-manager-photo {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    @include objectFitCover();
+}
+
+.user__reports-card-manager-info {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.user__reports-card-manager-name {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 132%;
+    margin-bottom: 0.3rem;
+}
+
+.user__reports-card-manager-reports-count {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.user__reports-card-manager-opinion {
+    margin-top: auto;
+    @include breakpoint(mobile) {
+       
+        margin: 0;
+    }
+}
+
+.user__reports-card-manager-opinion-heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
+    white-space: nowrap;
+}
+
+.user__reports-card-manager-opinion-stats {
+    margin-top: auto;
+}
+.user__reports-card-manager-opinion-stats-item {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.user__reports-card-manager-opinion-stats-amount {
+    width: 8rem;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #99a6b6;
+}
+
+.user__reports-card-manager-opinion-stats-amount-progress {
+    width: 1.4rem;
+    height: 1.4rem;
+    flex-shrink: 0;
+    margin-right: 0.6rem;
+    svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+        circle:nth-of-type(1) {
+            stroke: #99a6b6;
+        }
+        circle:nth-of-type(2) {
+            // stroke: var(--primary-color);
+
+            transition: stroke-dashoffset 0.2s;
+            stroke-dashoffset: calc(500px - 500px * var(--amount, 0));
+        }
+    }
+
+    &--blue {
+        svg {
+            circle:nth-of-type(2) {
+                stroke: var(--text-color);
+            }
+        }
+    }
+}
+
+.user__reports-card-manager-opinion-stats-score {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
 
 .user__reports-card-top-row {
     display: flex;
     align-items: baseline;
-    margin-bottom: 0.8rem;
+    justify-content: space-between;
+    margin-bottom: 1.7rem;
 
     @include breakpoint(mobile) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.user__reports-card-bottom-row {
+    display: flex;
+    @include breakpoint(mobile) {
         flex-direction: column;
-        align-items: initial;
-        margin-bottom: 0.6rem;
     }
 }
 
 .user__reports-card-title {
-    width: 50%;
-    flex-grow: 1;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.8rem;
-
+    margin-bottom: 0.7rem;
     @include breakpoint(mobile) {
         width: 100%;
         flex-grow: 0;
@@ -946,9 +1098,7 @@ textarea.user__change-form-input {
     margin-left: 2rem;
 
     @include breakpoint(mobile) {
-        margin: 0;
-        margin-bottom: 0.8rem;
-        order: -1;
+        margin-left: 1.8rem;
     }
 }
 
@@ -963,7 +1113,6 @@ textarea.user__change-form-input {
         font-weight: bold;
         font-size: 1.9rem;
         line-height: 1.2;
-        margin-bottom: 2.4rem;
     }
 }
 
@@ -986,7 +1135,7 @@ textarea.user__change-form-input {
     padding: 1.2rem 1.6rem;
     background: #13b17c;
     border-radius: 0.9rem;
-    color: white;
+    color: rgb(146, 129, 129);
     flex-shrink: 0;
     margin-right: 2.4rem;
     font-size: 1.2rem;
@@ -1031,6 +1180,12 @@ textarea.user__change-form-input {
             margin-bottom: 0;
         }
     }
+}
+
+.user__reports-card-lot-id {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .user__reports-card-details {
@@ -2323,7 +2478,6 @@ textarea.user__change-form-input {
     margin-bottom: 2rem;
     @include breakpoint(mobile) {
         padding: 1.8rem;
-        
     }
 }
 
