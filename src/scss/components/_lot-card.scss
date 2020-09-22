@@ -166,67 +166,38 @@
 }
 
 .lot-card__indicators-new-lot,
-.lot-card__indicators-has-report {
-    width: 5.7rem;
-    height: 4.1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    text-transform: uppercase;
-    color: white;
-    text-align: left;
-    background-image: url('../img/new-lot-bg.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 1rem;
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    @include breakpoint(mobile) {
-        width: 4.2rem;
-        height: 3rem;
-        font-size: 0.75rem;
-        line-height: 1.2rem;
-    }
-}
-
-.lot-card__indicators-has-report {
-    background-image: url('../img/has-report.svg');
-}
-
+.lot-card__indicators-has-report,
 .lot-card__indicators-best-price {
     font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
     text-transform: uppercase;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 6.1rem;
-    height: 4rem;
-    background-position: center;
-    background-size: contain;
-    background-image: url('../img/best-price-bg.svg');
-    background-repeat: no-repeat;
+    padding: 0.8rem;
+    background: linear-gradient(91.34deg, #13b17c 2.06%, #0099cc 100%);
+    border-radius: 0.7rem;
     margin-bottom: 1rem;
+    white-space: nowrap;
+
+    br {
+        display: none;
+    }
     &:last-child {
         margin-bottom: 0;
     }
 
+
     @include breakpoint(mobile) {
-        width: 4.57rem;
-        height: 3rem;
-        font-size: 0.75rem;
-        line-height: 1.2rem;
+        padding: 0.4rem;
+        border-radius: .4rem;
+        font-size: .6rem;
+        margin-bottom: 0.6rem;
     }
+}
+
+
+.lot-card__indicators-best-price {
+    background: linear-gradient(91.34deg, #FC5555 2.06%, #C800CC 100%);
 }
 
 .lot-card__remaining-time {
@@ -479,7 +450,7 @@
 
 .lot-card__trade-category {
     display: none;
-    
+
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin-top: 0.5rem;
@@ -491,7 +462,6 @@
 }
 
 .list-view {
-
     .lot-card__sold-out {
         margin: 0;
         margin-top: 1rem;
