@@ -176,7 +176,7 @@
     }
 
     @include breakpoint(mobile) {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.2;
         min-width: auto;
         padding: 1.4rem 2rem;
@@ -203,10 +203,16 @@
 
 .modals__card-number {
     font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
     text-align: center;
     margin-bottom: 3.2rem;
+
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
 }
 
 .modals__form {
@@ -224,19 +230,30 @@
     }
 
     .parsley-errors-list.filled {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        margin-top: 0.4rem;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+
+        margin-top: 0.8rem;
         color: #fc5555;
+
+        @include breakpoint(mobile) {
+            font-size: 1.4rem;
+            line-height: 1.2;
+        }
     }
 }
 
 .modals__form-label {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
     color: #99a6b6;
     margin-bottom: 0.8rem;
     display: block;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
 }
 
 .modals__form-input {
@@ -278,7 +295,7 @@ textarea.modals__form-input {
 .modals__lot-info {
     display: flex;
     margin-bottom: 3.2rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .modals__lot-info-image-container {
@@ -306,27 +323,33 @@ textarea.modals__form-input {
 }
 
 .modals__lot-info-title {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.8rem;
     font-weight: 400;
 }
 
 .modals__lot-info-number {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     color: #99a6b6;
     font-weight: 400;
 }
 
 .modals__lot-price {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
     text-align: center;
     margin-bottom: 3.2rem;
-
+    font-weight: 400;
     p {
         margin-bottom: 0.8rem;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
     }
 }
 
@@ -456,11 +479,16 @@ textarea.modals__form-input {
 }
 
 .modals__sign-in-with-title {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
     text-align: center;
     margin-bottom: 1.6rem;
     font-weight: 400;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
 }
 
 .modals__sign-in-with-links {
@@ -486,10 +514,15 @@ textarea.modals__form-input {
 }
 
 .modals__not-registered-text {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
 
     margin-bottom: 1.6rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
 
     a {
         font-weight: 700;
@@ -507,8 +540,8 @@ textarea.modals__form-input {
 }
 
 .modals__remember-password {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
 
     color: #99a6b6;
     transition: color 0.2s;
@@ -521,11 +554,22 @@ textarea.modals__form-input {
     &:hover {
         color: var(--primary-color);
     }
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
 }
 
 .modals__form-remark {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     color: #99a6b6;
-    margin-top: 0.4rem;
+    margin-top: 0.8rem;
+    display: block;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
 }

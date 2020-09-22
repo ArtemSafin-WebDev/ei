@@ -15297,7 +15297,7 @@ textarea.user__change-form-input {
     border-color: var(--text-color); }
   @media only screen and (max-width: 767px) {
     .modal__btn {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       line-height: 1.2;
       min-width: auto;
       padding: 1.4rem 2rem;
@@ -15316,10 +15316,14 @@ textarea.user__change-form-input {
 
 .modals__card-number {
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
   text-align: center;
   margin-bottom: 3.2rem; }
+  @media only screen and (max-width: 767px) {
+    .modals__card-number {
+      font-size: 1.6rem;
+      line-height: 1.2; } }
 
 .modals__form {
   margin-bottom: 3.2rem; }
@@ -15332,17 +15336,25 @@ textarea.user__change-form-input {
   .modals__form-row:last-child {
     margin-bottom: 0; }
   .modals__form-row .parsley-errors-list.filled {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-top: 0.4rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 0.8rem;
     color: #fc5555; }
+    @media only screen and (max-width: 767px) {
+      .modals__form-row .parsley-errors-list.filled {
+        font-size: 1.4rem;
+        line-height: 1.2; } }
 
 .modals__form-label {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
   color: #99a6b6;
   margin-bottom: 0.8rem;
   display: block; }
+  @media only screen and (max-width: 767px) {
+    .modals__form-label {
+      font-size: 1.6rem;
+      line-height: 1.2; } }
 
 .modals__form-input {
   border: 2px solid rgba(19, 177, 124, 0.3);
@@ -15378,9 +15390,9 @@ textarea.modals__form-input {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3.2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .modals__lot-info-image-container {
   width: 4.8rem;
@@ -15411,24 +15423,29 @@ textarea.modals__form-input {
           flex-grow: 1; }
 
 .modals__lot-info-title {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 0.8rem;
   font-weight: 400; }
 
 .modals__lot-info-number {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   color: #99a6b6;
   font-weight: 400; }
 
 .modals__lot-price {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
   text-align: center;
-  margin-bottom: 3.2rem; }
+  margin-bottom: 3.2rem;
+  font-weight: 400; }
   .modals__lot-price p {
     margin-bottom: 0.8rem; }
+  @media only screen and (max-width: 767px) {
+    .modals__lot-price {
+      font-size: 1.6rem;
+      line-height: 1.2; } }
 
 .modals__lot-price-amount {
   font-weight: bold;
@@ -15559,11 +15576,15 @@ textarea.modals__form-input {
   margin-bottom: 3.2rem; }
 
 .modals__sign-in-with-title {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
   text-align: center;
   margin-bottom: 1.6rem;
   font-weight: 400; }
+  @media only screen and (max-width: 767px) {
+    .modals__sign-in-with-title {
+      font-size: 1.6rem;
+      line-height: 1.2; } }
 
 .modals__sign-in-with-links {
   display: -webkit-box;
@@ -15595,9 +15616,13 @@ textarea.modals__form-input {
   text-align: center; }
 
 .modals__not-registered-text {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
   margin-bottom: 1.6rem; }
+  @media only screen and (max-width: 767px) {
+    .modals__not-registered-text {
+      font-size: 1.6rem;
+      line-height: 1.2; } }
   .modals__not-registered-text a {
     font-weight: 700;
     color: var(--primary-color); }
@@ -15607,8 +15632,8 @@ textarea.modals__form-input {
       text-decoration: underline; }
 
 .modals__remember-password {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
   color: #99a6b6;
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
@@ -15616,12 +15641,21 @@ textarea.modals__form-input {
     color: #99a6b6; }
   .modals__remember-password:hover {
     color: var(--primary-color); }
+  @media only screen and (max-width: 767px) {
+    .modals__remember-password {
+      font-size: 1.6rem;
+      line-height: 1.2; } }
 
 .modals__form-remark {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   color: #99a6b6;
-  margin-top: 0.4rem; }
+  margin-top: 0.8rem;
+  display: block; }
+  @media only screen and (max-width: 767px) {
+    .modals__form-remark {
+      font-size: 1.4rem;
+      line-height: 1.2; } }
 
 .message {
   position: fixed;
