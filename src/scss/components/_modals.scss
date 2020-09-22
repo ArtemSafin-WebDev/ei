@@ -35,8 +35,6 @@
     display: flex;
     flex-direction: column;
 
-   
-
     &--wide {
         max-width: 78rem;
     }
@@ -101,7 +99,6 @@
     text-align: center;
     margin-bottom: 2rem;
 
-
     &--text-align {
         text-align: left;
     }
@@ -116,11 +113,12 @@
 }
 
 .modals__message {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
     text-align: center;
     margin-bottom: 2.4rem;
 
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    text-align: center;
     a {
         &:hover {
             text-decoration: underline;
@@ -129,7 +127,8 @@
 
     @include breakpoint(mobile) {
         margin-bottom: 2rem;
-
+        font-size: 1.6rem;
+        line-height: 1.2;
         br {
             display: none;
         }
@@ -228,7 +227,7 @@
         font-size: 1.2rem;
         line-height: 1.5rem;
         margin-top: 0.4rem;
-        color: #FC5555;
+        color: #fc5555;
     }
 }
 
@@ -252,9 +251,9 @@
     }
 
     &.parsley-error {
-        border-color: rgba(#FC5555, .3);
+        border-color: rgba(#fc5555, 0.3);
         &:focus {
-            border-color: #FC5555;
+            border-color: #fc5555;
         }
     }
 
@@ -388,9 +387,8 @@ textarea.modals__form-input {
     }
 }
 
-
 .parsley-error .modal__checkbox-mark {
-    border-color: rgba(#FC5555, .3);
+    border-color: rgba(#fc5555, 0.3);
 }
 
 .modal__checkbox-text {

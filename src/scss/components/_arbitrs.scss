@@ -4,8 +4,8 @@
 
 .arbitrs__list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 6.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 4.2rem;
 
     @include breakpoint(mobile) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -26,10 +26,9 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 1.6rem;
-    padding-left: 2.4rem;
+    padding: 2.4rem;
     color: var(--text-color);
-    min-height: 34rem;
+    min-height: 32.5rem;
 
     &--white {
         background-color: #fff;
@@ -53,11 +52,12 @@
 }
 
 .arbitrs__card-cases-count {
-    margin-bottom: 7.5rem;
+    margin-bottom: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.2rem;
+
+    font-size: 1.5rem;
     line-height: 1.7rem;
     svg {
         width: 2.4rem;
@@ -68,20 +68,19 @@
     }
 
     @include breakpoint(mobile) {
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
     }
 }
 
 .arbitrs__card-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     transition: color 0.2s;
-
     font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
     @include breakpoint(mobile) {
-        font-size: 2.4rem;
-        line-height: 1.2;
+        font-size: 1.9rem;
+        line-height: 2.3rem;
     }
 }
 
@@ -89,13 +88,17 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin-bottom: 5.8rem;
     svg {
         flex-shrink: 0;
         margin-right: 0.8rem;
         width: 1.9rem;
         height: 1.9rem;
         fill: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 4rem;
     }
 }
 
@@ -104,3 +107,10 @@
     font-size: 1.2rem;
     line-height: 1.7rem;
 }
+
+.arbitrs__card-info-association {
+    color: #99a6b6;
+    display: block;
+}
+
+

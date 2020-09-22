@@ -40,6 +40,7 @@ import datepickers from './datepickers';
 import messages from './messages';
 import mobileUserMenu from './mobileUserAccount';
 import expandListView from './expandListView';
+import clearableSearch from './clearableSearch';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -82,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     messages();
     mobileUserMenu();
     expandListView();
-    
+    clearableSearch();
 });
 
 window.addEventListener('load', function() {
