@@ -85,7 +85,20 @@
             "image": "img/lots/2.jpg",
             "newLot": false,
             "bestPrice": true,
-            "progress": 0.50,
+            "progress": 0.5,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "306 000",
+            "oldPrice": "250 000 000",
+            "title": "Земельный участок для индивидуального жилищного строительства, кадастровый № 31:15:0204011:29",
+            "upTrend": true,
+            "sold": false
+        },
+        {
+            "image": "img/lots/placeholder-3.jpg",
+            "noPhoto": true,
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "306 000",
             "oldPrice": "250 000 000",
@@ -124,7 +137,7 @@
             "noPhoto": true,
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "306 000",
             "oldPrice": "250 000 000",
@@ -136,10 +149,10 @@
             "image": "img/lots/5.jpg",
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "295 500 000",
-            
+
             "title": "Земельный участок, общей площадью 54 100 кв. м., кадастровый номер: 50:31:0060219:16, Земельный...",
             "upTrend": true,
             "sold": false
@@ -154,7 +167,7 @@
             "image": "img/lots/6.jpg",
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "295 500 000",
             "oldPrice": "250 000 000",
@@ -163,13 +176,26 @@
             "sold": false
         },
         {
+            "image": "img/lots/placeholder-1.jpg",
+            "noPhoto": true,
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.5,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "306 000",
+            "oldPrice": "250 000 000",
+            "title": "Земельный участок для индивидуального жилищного строительства, кадастровый № 31:15:0204011:29",
+            "upTrend": true,
+            "sold": false
+        },
+        {
             "image": "img/lots/7.jpg",
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "80 дней до подачи заявки",
             "newPrice": "295 500 000",
-            
+
             "title": "Автомобиль MITSUBISHI, модель GRANDIS 2.4 6-SEATER, год выпуска 2004 г, VIN JMBLRNA4W4Z002340, ПТС 77 ТС...",
             "upTrend": true,
             "sold": false
@@ -192,7 +218,7 @@
             "noPhoto": true,
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "306 000",
             "oldPrice": "250 000 000",
@@ -204,7 +230,7 @@
             "image": "img/lots/2.jpg",
             "newLot": false,
             "bestPrice": true,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "306 000",
             "oldPrice": "250 000 000",
@@ -239,13 +265,26 @@
             "sold": false
         },
         {
+            "image": "img/lots/placeholder-2.jpg",
+            "noPhoto": true,
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.5,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "306 000",
+            "oldPrice": "250 000 000",
+            "title": "Земельный участок для индивидуального жилищного строительства, кадастровый № 31:15:0204011:29",
+            "upTrend": true,
+            "sold": false
+        },
+        {
             "image": "img/lots/5.jpg",
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "295 500 000",
-            
+
             "title": "Земельный участок, общей площадью 54 100 кв. м., кадастровый номер: 50:31:0060219:16, Земельный...",
             "upTrend": true,
             "sold": false
@@ -260,7 +299,7 @@
             "image": "img/lots/6.jpg",
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "59 дней до подачи заявки",
             "newPrice": "295 500 000",
             "oldPrice": "250 000 000",
@@ -272,16 +311,26 @@
             "image": "img/lots/7.jpg",
             "newLot": false,
             "bestPrice": false,
-            "progress": 0.50,
+            "progress": 0.5,
             "progressText": "80 дней до подачи заявки",
             "newPrice": "295 500 000",
-            
+
             "title": "Автомобиль MITSUBISHI, модель GRANDIS 2.4 6-SEATER, год выпуска 2004 г, VIN JMBLRNA4W4Z002340, ПТС 77 ТС...",
             "upTrend": true,
             "sold": false
+        },
+        {
+            "image": "img/lots/placeholder-4.jpg",
+            "noPhoto": true,
+            "newLot": false,
+            "bestPrice": false,
+            "progress": 0.5,
+            "progressText": "59 дней до подачи заявки",
+            "newPrice": "306 000",
+            "oldPrice": "250 000 000",
+            "title": "Земельный участок для индивидуального жилищного строительства, кадастровый № 31:15:0204011:29",
+            "upTrend": true,
+            "sold": false
         }
-
-
     ]
-    
 }
