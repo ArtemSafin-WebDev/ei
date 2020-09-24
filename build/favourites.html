@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Услуги и тарифы - Единый информатор
+            Избранное - Единый информатор
         </title>
         <script
             src="https://api-maps.yandex.ru/2.1/?apikey=1c9ab29b-1afd-4a21-b1ea-478c36667e22
@@ -23,7 +23,7 @@
         <script src="assets/js/SVGInject.js"></script>
     </head>
 
-    <body class="no-touch  white-bg    services-page  " ontouchstart="">
+    <body class="no-touch  white-bg    " ontouchstart="">
         <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
             <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <symbol viewBox="0 0 12 7.42" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -1219,404 +1219,1853 @@
                 </button>
             </header>
             <main class="page-main">
-                <section class="services-intro">
-                    <div class="services-intro__bg">
-                        <img src="img/services/waves.svg" alt="" class="services-intro__bg-image" />
-                    </div>
+                <section class="catalog">
                     <div class="container">
                         <div class="inner-container">
-                            <div class="breadcrumbs services-intro__breadcrumbs">
+                            <div class="breadcrumbs">
                                 <a href="#" class="breadcrumbs__link">
                                     Главная
                                     <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
                                         <use xlink:href="#arrow-right-rounded"></use>
                                     </svg>
                                 </a>
-                                <a href="#" class="breadcrumbs__link">
-                                    Услуги и тарифы
-                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
-                                        <use xlink:href="#arrow-right-rounded"></use>
-                                    </svg>
-                                </a>
                             </div>
-                            <div class="services-intro__row">
-                                <div class="services-intro__left-col">
-                                    <h1 class="main-heading services-intro__main-heading">
-                                        Полный доступ к информации о лотах у вас в руках
-                                    </h1>
-                                    <div class="services-intro__description">
-                                        <p>
-                                            Все подробности о лотах и торгах будут доступны вам с премиум подпиской
-                                        </p>
-                                    </div>
-                                    <a href="#" class="services-intro__try">
-                                        Попробовать 30 дней бесплатно
-                                    </a>
-                                </div>
-                                <div class="services-intro__right-col">
-                                    <img src="img/services/intro.png" alt="" class="services-intro__image" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="you-will-know-first">
-                    <div class="container">
-                        <div class="inner-container">
-                            <div class="you-will-know-first__row">
-                                <div class="you-will-know-first__left-col">
-                                    <div class="you-will-know-first__phone-block">
-                                        <img src="img/know-first/iphone.png" alt="" class="you-will-know-first__phone-image" />
-                                        <div class="you-will-know-first__phone-message">
-                                            <svg width="29" height="39" aria-hidden="true" class="icon-bell">
-                                                <use xlink:href="#bell"></use>
-                                            </svg>
-                                            <div class="you-will-know-first__phone-message-content">
-                                                <div class="you-will-know-first__phone-message-text">
-                                                    Появились новые торги!
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-type">
-                                                    Банкротные торги
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-category">
-                                                    Категория: Автомобиль
-                                                </div>
+                            <h1 class="main-heading catalog__main-heading">
+                                Избранное
+                                <span class="main-heading__count">
+                                    124
+                                </span>
+                            </h1>
+
+                            <div class="catalog__layout">
+                                <div class="catalog__layout-sidebar">
+                                    <div class="catalog-filters">
+                                        <h2 class="catalog-filters__heading">
+                                            Сортировка и фильтры
+                                            <button class="js-mobile-filters-close">
+                                                <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div class="catalog-filters__applied">
+                                            <div class="catalog-filters__applied-links">
+                                                <a href="#" class="catalog-filters__applied-link">
+                                                    Сначала дешевые
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#cross"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="catalog-filters__applied-link">
+                                                    До 500 000
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#cross"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="catalog-filters__applied-link">
+                                                    Москва
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#cross"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="catalog-filters__applied-link">
+                                                    Только с фото
+                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                                        <use xlink:href="#cross"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="catalog-filters__clear-link">
+                                                    Очистить фильтр
+                                                    <img src="img/clear-cross.svg" alt="" width="16" height="16" />
+                                                </a>
                                             </div>
                                         </div>
-                                        <div class="you-will-know-first__phone-message">
-                                            <svg width="29" height="39" aria-hidden="true" class="icon-bell">
-                                                <use xlink:href="#bell"></use>
-                                            </svg>
-                                            <div class="you-will-know-first__phone-message-content">
-                                                <div class="you-will-know-first__phone-message-text">
-                                                    Появились новые торги!
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-type">
-                                                    Банкротные торги
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-category">
-                                                    Категория: Автомобиль
+                                        <nav class="catalog-filters__nav">
+                                            <ul class="catalog-filters__nav-list">
+                                                <li class="catalog-filters__nav-list-item">
+                                                    <a href="#" class="catalog-filters__nav-root-category-link js-accordion-btn">
+                                                        Транспорт и техника
+                                                    </a>
+                                                    <ul class="catalog-filters__nav-subcategories-list js-accordion-content">
+                                                        <li class="catalog-filters__nav-subcategories-list-item active">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Легковые автомобили
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Грузовые автомобили
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Спецтехника
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Автобусы и микроавтобусы
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Водный транспорт
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Мототранспортные средства
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Летательные аппараты
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Железнодорожный транспорт
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Прицепы и полуприцепы
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Прочее
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <form action="/" method="GET" class="catalog-filters__form js-catalog-filters-form" data-total-found="240">
+                                            <div class="catalog-filters__form-group catalog-filters__form-group--mobile-sort">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Сортировать
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="sortby" class="radio__input" checked />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Сначала дешевые
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="sortby" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Сначала подороже
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="sortby" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Более новые
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="sortby" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Более старые
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="sortby" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Проверенный лот
+                                                            </span>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="you-will-know-first__right-col">
-                                    <h2 class="you-will-know-first__heading">
-                                        Вы узнаете первым
-                                    </h2>
-                                    <div class="you-will-know-first__text">
-                                        <p>
-                                            С премиум подпиской вы будете одним из первых получать уведовления о новых торгах, лотах из интересующих
-                                            вас категорий
-                                        </p>
-                                    </div>
-                                    <a href="#" class="you-will-know-first__link">
-                                        Попробовать 30 дней бесплатно
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="bonuses">
-                    <div class="container">
-                        <div class="inner-container">
-                            <div class="bonuses__row">
-                                <div class="bonuses__left-col">
-                                    <h2 class="bonuses__heading">
-                                        Приятные бонусы
-                                    </h2>
-                                    <div class="bonuses__text">
-                                        <p>
-                                            Вы получите скидку 20% при оформлении покупки через нашего агента
-                                        </p>
-                                    </div>
-                                    <a href="#" class="bonuses__link">
-                                        Попробовать 30 дней бесплатно
-                                    </a>
-                                </div>
-                                <div class="bonuses__right-col">
-                                    <div class="bonuses__amount">
-                                        20%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="tariffs-info">
-                    <div class="container">
-                        <div class="inner-container">
-                            <h2 class="tariffs-info__heading">
-                                Информация от тарифах
-                            </h2>
-                            <div class="tariffs-info__table">
-                                <div class="tariffs-info__table-wrapper">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <span class="visually-hidden">
-                                                        Возможности
+                                            <div class="catalog-filters__form-group catalog-filters__form-group--price">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Цена, ₽
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper">
+                                                        <div class="catalog-filters__form-price-range">
+                                                            <div class="catalog-filters__form-price-range-input-wrapper">
+                                                                <input
+                                                                    type="tel"
+                                                                    name="from"
+                                                                    class="catalog-filters__form-price-range-input js-numeric-input"
+                                                                    placeholder="от 30 000"
+                                                                />
+                                                                <button
+                                                                    type="button"
+                                                                    class="catalog-filters__form-price-range-input-clear-btn js-clear-input"
+                                                                >
+                                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="catalog-filters__form-price-range-input-wrapper">
+                                                                <input
+                                                                    type="tel"
+                                                                    name="to"
+                                                                    class="catalog-filters__form-price-range-input js-numeric-input"
+                                                                    placeholder="до 7 280 990"
+                                                                />
+                                                                <button
+                                                                    type="button"
+                                                                    class="catalog-filters__form-price-range-input-clear-btn js-clear-input"
+                                                                >
+                                                                    <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Типы лотов
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" checked />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Банкротное имущество
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Арестованное
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Имущество организаций
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" disabled />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Муниципальное имущество
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Регион
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__desktop-region">
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" checked />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Москва
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Московская область
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Санкт-Петербург
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Республика Татарстан
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="catalog-filters__show-more-content js-show-more-content">
+                                                            <div
+                                                                class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                            >
+                                                                <label class="checkbox catalog-filters__checkbox">
+                                                                    <input type="checkbox" name="type" class="checkbox__input" />
+                                                                    <span class="checkbox__checkmark">
+                                                                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                            <use xlink:href="#checkmark"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span class="checkbox__text">
+                                                                        Республика Марий Эл
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <button class="catalog-filters__show-more js-show-more">
+                                                            Показать все
+                                                        </button>
+                                                    </div>
+                                                    <div class="catalog-filters__mobile-region">
+                                                        <select multiple name="mobileregion" class="js-mobile-region">
+                                                            <option value="">Найти регион</option>
+                                                            <option value="Moscow">Москва</option>
+                                                            <option value="Moscow Region">Московская область</option>
+                                                            <option value="Peter">Санкт-Петербург</option>
+                                                            <option value="Tatarstan">Татарстан</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Виды торгов
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="selltype" class="radio__input" checked />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Аукцион
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="selltype" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Конкурс
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="selltype" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Продажа без объявления цены
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="selltype" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Публичное предложение
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="selltype" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                Специализированный аукцион
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-filters__form-group catalog-filters__form-group--photo">
+                                                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                    <label class="checkbox catalog-filters__checkbox">
+                                                        <input type="checkbox" name="type" class="checkbox__input" checked />
+                                                        <span class="checkbox__checkmark">
+                                                            <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                <use xlink:href="#checkmark"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="checkbox__text">
+                                                            Только с фото
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                    <label class="checkbox catalog-filters__checkbox">
+                                                        <input type="checkbox" name="type" class="checkbox__input" />
+                                                        <span class="checkbox__checkmark">
+                                                            <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                <use xlink:href="#checkmark"></use>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="checkbox__text">
+                                                            Только с отчетом
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn catalog-filters__form-submit">
+                                                Найти
+                                            </button>
+                                            <button type="button" class="catalog-filters__save-search">
+                                                <span class="catalog-filters__save-search-content">
+                                                    <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                                                        <use xlink:href="#favourites"></use>
+                                                    </svg>
+                                                    Сохранить поиск
+                                                </span>
+                                            </button>
+                                            <button class="catalog-filters__form-reset" type="reset">
+                                                Очистить фильтр
+                                            </button>
+                                        </form>
+                                        <div class="catalog-filters__mobile-btns">
+                                            <a class="catalog-filters__mobile-btn-save">
+                                                <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                                                    <use xlink:href="#favourites"></use>
+                                                </svg>
+                                                Сохранить
+                                            </a>
+                                            <button class="catalog-filters__mobile-btn-submit js-mobile-filters-submit">
+                                                <span class="catalog-filters__mobile-btn-submit-content">
+                                                    <span class="catalog-filters__mobile-btn-submit-text">
+                                                        Показать
                                                     </span>
-                                                </th>
-                                                <th>
-                                                    <div class="tariffs-info__table-user-group tariffs-info__table-user-group--all">
-                                                        <div class="tariffs-info__table-user-group-title">
-                                                            Все пользователи
-                                                        </div>
-                                                        <div class="tariffs-info__table-user-group-amount">
-                                                            0
-                                                            <span class="tariffs-info__table-user-group-amount-currency">
-                                                                ₽
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tariffs-info__table-user-group-description">
-                                                        Все посетители сервиса Единый информатор
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="tariffs-info__table-user-group tariffs-info__table-user-group--authorized">
-                                                        <div class="tariffs-info__table-user-group-title">
-                                                            Авторизированные пользователи
-                                                        </div>
-                                                        <div class="tariffs-info__table-user-group-amount">
-                                                            0
-                                                            <span class="tariffs-info__table-user-group-amount-currency">
-                                                                ₽
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tariffs-info__table-user-group-description">
-                                                        Все посетители сервиса Единый информатор
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="tariffs-info__table-user-group tariffs-info__table-user-group--paid">
-                                                        <div class="tariffs-info__table-user-group-title">
-                                                            Платный доступ
-                                                        </div>
-                                                        <div class="tariffs-info__table-user-group-amount">
-                                                            5320
-                                                            <span class="tariffs-info__table-user-group-amount-currency">
-                                                                ₽
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tariffs-info__table-user-group-description">
-                                                        Все посетители сервиса Единый информатор
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
+                                                    <span class="catalog-filters__mobile-btn-submit-count">
+                                                        124 лота
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__layout-main">
+                                    <div class="catalog__top-block">
+                                        <div class="catalog__view-modes">
+                                            <div class="catalog__view-sort">
+                                                <div class="custom-select">
+                                                    <select name="sort-order" class="js-custom-select">
+                                                        <option value="asc" selected>Сначала дешевые</option>
+                                                        <option value="dsc">Сначала дорогие</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__mobile-filters-btn js-mobile-filters-open">
+                                                <span class="catalog__mobile-filters-btn-content">
+                                                    <svg width="22" height="24" aria-hidden="true" class="icon-mobile-filters">
+                                                        <use xlink:href="#mobile-filters"></use>
+                                                    </svg>
+                                                    Сортировка и фильтры
+                                                </span>
+                                            </button>
+                                            <div class="catalog__view-links">
+                                                <a href="#" class="catalog__view-check-on-the-map">
+                                                    <span class="catalog__view-check-on-the-map-text">
+                                                        Смотреть на карте
+                                                    </span>
 
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    Просмотр информации о лоте
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
+                                                    <svg width="18" height="18" aria-hidden="true" class="icon-map">
+                                                        <use xlink:href="#map"></use>
                                                     </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Добавление в избранное
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Запрос организатору
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Поисковые подборки
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    История просмотров
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Скидка на покупку через агента
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Ссылка на источник торгов
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Уведомление об изменении избранного лота
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tariffs-info__subscribe">
-                                <div class="tariffs-info__subscribe-content">
-                                    <a href="#" class="tariffs-info__subscribe-link">
-                                        Оформить подписку
-                                    </a>
-                                    на 30 дней бесплатно
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                                </a>
 
-                <section class="subscribe">
-                    <div class="container">
-                        <div class="inner-container">
-                            <h2 class="subscribe__heading">
-                                Весь функционал в одном месте<br />
-                                30 дней бесплатно
-                            </h2>
-                            <form action="/" method="POST" class="subscribe__form">
-                                <div class="subscribe__form-group">
-                                    <input type="email" placeholder="Введите email" class="subscribe__form-input" required />
-                                </div>
-                                <div class="subscribe__form-group">
-                                    <button type="submit" class="subscribe__form-submit">
-                                        Оформить подписку
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
+                                                <div class="catalog__view-mode-toggles">
+                                                    <a href="#" class="catalog__view-mode-toggle-link js-grid-view-btn active">
+                                                        <svg width="16" height="16" aria-hidden="true" class="icon-grid">
+                                                            <use xlink:href="#grid"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="catalog__view-mode-toggle-link js-list-view-btn">
+                                                        <svg width="16" height="16" aria-hidden="true" class="icon-list">
+                                                            <use xlink:href="#list"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__applied-filters">
+                                            <a href="#" class="catalog__applied-filters-link">
+                                                Арестованное имущество
+                                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="catalog__applied-filters-link">
+                                                До 500 000
+                                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="catalog__applied-filters-link">
+                                                Только с фото
+                                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="catalog__applied-filters-save-search">
+                                                <svg width="12" height="12" aria-hidden="true" class="icon-favourites">
+                                                    <use xlink:href="#favourites"></use>
+                                                </svg>
+                                                Сохранить поиск
+                                            </a>
+                                            <a href="#" class="catalog__applied-filters-save-clear">
+                                                Очистить фильтр
+                                                <svg width="8" height="8" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__lots">
+                                        <ul class="catalog__lots-list">
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/8.jpg" alt="" class="lot-card__image" />
+                                                        </a>
 
-                <section class="not-offer">
-                    <div class="container">
-                        <div class="inner-container">
-                            <div class="not-offer__row">
-                                Данное предложение не является публичной офертой. Доступно только для авторизованных пользователей
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/spb.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/9.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/kontur.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/8.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/interprom.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div
+                                                    class="lot-card  lot-card--sold  "
+                                                    style="--lot-progress: 0.75;"
+                                                    ie-style="--lot-progress: 0.75;"
+                                                >
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/9.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    Торги окончены
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+
+                                                            <a href="#" class="lot-card__sold-out">
+                                                                Продано
+                                                            </a>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/expobank.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/8.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/spb.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/9.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/kontur.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item catalog__lots-list-item--wide">
+                                                <div class="catalog__dont-miss">
+                                                    <div class="catalog__dont-miss-text-block">
+                                                        <h3 class="catalog__dont-miss-heading">
+                                                            Не пропускайте новые лоты
+                                                        </h3>
+                                                        <p class="catalog__dont-miss-paragraph">
+                                                            с нашей еженедельной почтовой рассылкой
+                                                        </p>
+                                                    </div>
+                                                    <form action="/" method="POST" class="catalog__dont-miss-form">
+                                                        <div class="catalog__dont-miss-form-input-wrapper">
+                                                            <input
+                                                                type="email"
+                                                                name="email"
+                                                                class="catalog__dont-miss-form-input"
+                                                                required
+                                                                placeholder="Введите ваш email"
+                                                            />
+                                                        </div>
+                                                        <button type="submit" class="catalog__dont-miss-form-submit">
+                                                            <svg width="18" height="14" aria-hidden="true" class="icon-arrow-right-long">
+                                                                <use xlink:href="#arrow-right-long"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </li>
+
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/8.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/spb.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/9.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/kontur.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/8.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/interprom.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div
+                                                    class="lot-card  lot-card--sold  "
+                                                    style="--lot-progress: 0.75;"
+                                                    ie-style="--lot-progress: 0.75;"
+                                                >
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/9.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    Торги окончены
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+
+                                                            <a href="#" class="lot-card__sold-out">
+                                                                Продано
+                                                            </a>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/expobank.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/8.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/spb.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="catalog__lots-list-item">
+                                                <div class="lot-card  " style="--lot-progress: 0.75;" ie-style="--lot-progress: 0.75;">
+                                                    <div class="lot-card__image-container">
+                                                        <a href="#" class="lot-card__image-link">
+                                                            <img src="img/lots/9.jpg" alt="" class="lot-card__image" />
+                                                        </a>
+
+                                                        <div class="lot-card__indicators">
+                                                            <div class="lot-card__indicators-top-row">
+                                                                <div class="lot-card__indicators-items"></div>
+                                                                <a href="#" class="lot-card__like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="lot-card__indicators-bottom-row">
+                                                                <div class="lot-card__remaining-time">
+                                                                    <div class="lot-card__remaining-time-progress-circle">
+                                                                        <svg
+                                                                            width="200"
+                                                                            height="200"
+                                                                            viewBox="0 0 200 200"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                        >
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-opacity="0.3"
+                                                                                stroke-width="20"
+                                                                            ></circle>
+                                                                            <circle
+                                                                                cy="100"
+                                                                                cx="100"
+                                                                                r="80"
+                                                                                fill="transparent"
+                                                                                stroke="white"
+                                                                                stroke-width="20"
+                                                                                stroke-dasharray="500"
+                                                                            ></circle>
+                                                                        </svg>
+                                                                    </div>
+                                                                    59 дней до подачи заявки
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lot-card__content">
+                                                        <div class="lot-card__price-block">
+                                                            <a href="#" class="lot-card__price-wrapper">
+                                                                <div class="lot-card__new-price">
+                                                                    297 283 ₽
+                                                                </div>
+                                                                <div class="lot-card__trend ">
+                                                                    <svg width="10" height="6" aria-hidden="true" class="icon-down-trend">
+                                                                        <use xlink:href="#down-trend"></use>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                            <div class="lot-card__trade-category">
+                                                                Банкротные торги
+                                                            </div>
+                                                            <a href="#" class="lot-card__old-price">
+                                                                35 000 ₽
+                                                            </a>
+                                                            <div class="lot-card__old-price-text">
+                                                                минимальная цена
+                                                            </div>
+                                                        </div>
+                                                        <div class="lot-card__title-wrapper">
+                                                            <h3 class="lot-card__title">
+                                                                <a href="#">
+                                                                    Здание нежилое, доля в праве 21/100, .н. 58:05: 0320103:9 28, общ. площадь 1204,1
+                                                                    кв. м./ земельный участок, доля в праве
+                                                                </a>
+                                                            </h3>
+
+                                                            <div class="lot-card__type">
+                                                                <span class="lot-card__type-category">
+                                                                    Банкротное имущество •
+                                                                </span>
+                                                                Аукцион
+                                                            </div>
+
+                                                            <div class="lot-card__bottom-links">
+                                                                <a href="#" class="lot-card__partner">
+                                                                    <img src="img/partners/kontur.png" alt="" class="lot-card__partner-image" />
+                                                                </a>
+
+                                                                <a href="#" class="lot-card__bottom-like-btn">
+                                                                    <svg width="18" height="14" aria-hidden="true" class="icon-heart">
+                                                                        <use xlink:href="#heart"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <div class="catalog__lots-bottom-nav">
+                                            <div class="pagination">
+                                                <ul class="pagination__list">
+                                                    <li class="pagination__list-item active">
+                                                        <a href="#" class="pagination__link">
+                                                            1
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__list-item">
+                                                        <a href="#" class="pagination__link">
+                                                            2
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__list-item">
+                                                        <a href="#" class="pagination__link">
+                                                            3
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__list-item">
+                                                        <a href="#" class="pagination__link">
+                                                            4
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn catalog__lots-show-more-items">
+                                                Показать еще
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

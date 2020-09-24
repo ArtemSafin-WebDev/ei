@@ -208,7 +208,8 @@
                         Пароль
                     </label>
                     <div class="modals__form-input-password-wrapper js-show-password">
-                        <input type="password" name="login" class="modals__form-input" id="password" data-parsley-errors-container="#password-wrapper" required>
+                        <input type="password" name="login" class="modals__form-input" id="password"
+                            data-parsley-errors-container="#password-wrapper" required>
                         <button class="modals__form-input-show-password-btn" type="button">
                             <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
                                 <use xlink:href="#show-password"></use>
@@ -272,7 +273,8 @@
                     <label for="login-register" class="modals__form-label">
                         Телефон или email
                     </label>
-                    <input type="text" name="login-registration" class="modals__form-input" id="login-register" required>
+                    <input type="text" name="login-registration" class="modals__form-input" id="login-register"
+                        required>
                     <span class="modals__form-remark">
                         Данные будут использоваться в качестве логина
                     </span>
@@ -282,7 +284,8 @@
                         Пароль
                     </label>
                     <div class="modals__form-input-password-wrapper js-show-password">
-                        <input type="password" name="password" class="modals__form-input" id="signup-password" data-parsley-errors-container="#signup-password-wrapper" required>
+                        <input type="password" name="password" class="modals__form-input" id="signup-password"
+                            data-parsley-errors-container="#signup-password-wrapper" required>
                         <button class="modals__form-input-show-password-btn" type="button">
                             <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
                                 <use xlink:href="#show-password"></use>
@@ -296,7 +299,9 @@
                         Повторите пароль
                     </label>
                     <div class="modals__form-input-password-wrapper js-show-password">
-                        <input type="password" name="password-confirmation" class="modals__form-input" id="signup-password-confirmation" data-parsley-equalto="#signup-password" required data-parsley-errors-container="#signup-password-confirmation-wrapper">
+                        <input type="password" name="password-confirmation" class="modals__form-input"
+                            id="signup-password-confirmation" data-parsley-equalto="#signup-password" required
+                            data-parsley-errors-container="#signup-password-confirmation-wrapper">
                         <button class="modals__form-input-show-password-btn" type="button">
                             <svg width="12" height="12" aria-hidden="true" class="icon-show-password">
                                 <use xlink:href="#show-password"></use>
@@ -416,7 +421,8 @@
             <h3 class="modals__heading modals__heading--text-align">
                 Добавление нового лота
             </h3>
-            <form action="/" method="POST" class="user__change-form user__change-form--small-padding" data-need-validation>
+            <form action="/" method="POST" class="user__change-form user__change-form--small-padding"
+                data-need-validation>
                 <div class="user__change-form-group">
                     <h4 class="user__change-form-heading">
                         Параметры торгов
@@ -426,7 +432,10 @@
                             Тип торга
                         </label>
                         <div class="user__change-form-input-wrapper" id="trade-type-error">
-                            <select name="trade-type" id="trade-type" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#trade-type-error" data-parsley-errors-container="#trade-type-error" data-trigger="change">
+                            <select name="trade-type" id="trade-type"
+                                class="user__change-form-select js-change-detail-select" required
+                                data-parsley-class-handler="#trade-type-error"
+                                data-parsley-errors-container="#trade-type-error" data-trigger="change">
                                 <option value="">Тип торга</option>
                                 <option value="1">Тип 1</option>
                                 <option value="2">Тип 2</option>
@@ -439,7 +448,10 @@
                         </label>
                         <div class="user__change-form-input-wrapper" id="application-time-errors">
                             <div class="user__change-form-date">
-                                <input type="text" name="application-time" id="application-time" class="user__change-form-input js-datepicker" data-range="true" data-multiple-dates-separator=" - " data-parsley-errors-container="#application-time-errors" readonly required>
+                                <input type="text" name="application-time" id="application-time"
+                                    class="user__change-form-input js-datepicker" data-range="true"
+                                    data-multiple-dates-separator=" - "
+                                    data-parsley-errors-container="#application-time-errors" readonly required>
                             </div>
                         </div>
                     </div>
@@ -449,7 +461,9 @@
                         </label>
                         <div class="user__change-form-input-wrapper" id="trade-end-errors">
                             <div class="user__change-form-date">
-                                <input type="text" name="trade-end" id="trade-end" class="user__change-form-input js-datepicker" data-parsley-errors-container="#trade-end-errors" readonly required>
+                                <input type="text" name="trade-end" id="trade-end"
+                                    class="user__change-form-input js-datepicker"
+                                    data-parsley-errors-container="#trade-end-errors" readonly required>
                             </div>
                         </div>
                     </div>
@@ -459,7 +473,9 @@
                         </label>
                         <div class="user__change-form-input-wrapper" id="trade-pub-errors">
                             <div class="user__change-form-date">
-                                <input type="text" name="trade-pub" id="trade-pub" class="user__change-form-input js-datepicker" data-parsley-errors-container="#trade-pub-errors" readonly required>
+                                <input type="text" name="trade-pub" id="trade-pub"
+                                    class="user__change-form-input js-datepicker"
+                                    data-parsley-errors-container="#trade-pub-errors" readonly required>
                             </div>
                         </div>
                     </div>
@@ -473,7 +489,10 @@
                             Тип лота
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-type-error">
-                            <select name="lot-type" id="lot-type" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-type-error" data-parsley-errors-container="#lot-type-error" data-trigger="change">
+                            <select name="lot-type" id="lot-type"
+                                class="user__change-form-select js-change-detail-select" required
+                                data-parsley-class-handler="#lot-type-error"
+                                data-parsley-errors-container="#lot-type-error" data-trigger="change">
                                 <option value="">Тип лота</option>
                                 <option value="1">Тип 1</option>
                                 <option value="2">Тип 2</option>
@@ -485,7 +504,8 @@
                             Заголовок лота
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <input type="text" name="lot-heading" id="lot-heading" class="user__change-form-input" required placeholder="Заголовок лота">
+                            <input type="text" name="lot-heading" id="lot-heading" class="user__change-form-input"
+                                required placeholder="Заголовок лота">
                         </div>
                     </div>
                     <div class="user__change-form-row">
@@ -493,7 +513,8 @@
                             Описание лота
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <textarea name="lot-desc" id="lot-desc" class="user__change-form-input" required placeholder="Описание лота"></textarea>
+                            <textarea name="lot-desc" id="lot-desc" class="user__change-form-input" required
+                                placeholder="Описание лота"></textarea>
 
                         </div>
                     </div>
@@ -503,24 +524,25 @@
                         </label>
                         <div class="user__change-form-input-wrapper">
                             <div class="user__change-form-file-upload js-file-upload">
-                                <div class="user__change-form-file-upload-dropzone" data-upload-text="Загрузить изображение">
+                                <div class="user__change-form-file-upload-dropzone"
+                                    data-upload-text="Загрузить изображение">
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file1" accept=".jpg, .jpeg, .png"/>
+                                        <input type="file" name="file1" accept=".jpg, .jpeg, .png" />
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file2" accept=".jpg, .jpeg, .png"/>
+                                        <input type="file" name="file2" accept=".jpg, .jpeg, .png" />
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file3" accept=".jpg, .jpeg, .png"/>
+                                        <input type="file" name="file3" accept=".jpg, .jpeg, .png" />
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file4" accept=".jpg, .jpeg, .png"/>
+                                        <input type="file" name="file4" accept=".jpg, .jpeg, .png" />
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file5" accept=".jpg, .jpeg, .png"/>
+                                        <input type="file" name="file5" accept=".jpg, .jpeg, .png" />
                                     </label>
                                     <label class="user__change-form-file-upload-label">
-                                        <input type="file" name="file6" accept=".jpg, .jpeg, .png"/>
+                                        <input type="file" name="file6" accept=".jpg, .jpeg, .png" />
                                     </label>
                                 </div>
                                 <div class="user__change-form-file-upload-files"></div>
@@ -534,7 +556,10 @@
                             Категория лота
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-category-error">
-                            <select name="lot-category" id="lot-category" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-category-error" data-parsley-errors-container="#lot-category-error" data-trigger="change">
+                            <select name="lot-category" id="lot-category"
+                                class="user__change-form-select js-change-detail-select" required
+                                data-parsley-class-handler="#lot-category-error"
+                                data-parsley-errors-container="#lot-category-error" data-trigger="change">
                                 <option value="">Категория лота</option>
                                 <option value="1">Категория 1</option>
                                 <option value="2">Категория 2</option>
@@ -546,7 +571,10 @@
                             Подкатегория лота
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-subcategory-error">
-                            <select name="lot-subcategory" id="lot-subcategory" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-subcategory-error" data-parsley-errors-container="#lot-subcategory-error" data-trigger="change">
+                            <select name="lot-subcategory" id="lot-subcategory"
+                                class="user__change-form-select js-change-detail-select" required
+                                data-parsley-class-handler="#lot-subcategory-error"
+                                data-parsley-errors-container="#lot-subcategory-error" data-trigger="change">
                                 <option value="">Подкатегория лота</option>
                                 <option value="1">Подкатегория 1</option>
                                 <option value="2">Подкатегория 2</option>
@@ -563,7 +591,8 @@
                             Начальная цена
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <input type="tel" name="lot-price" id="lot-price" class="user__change-form-input js-numeric-input" required placeholder="Начальная цена">
+                            <input type="tel" name="lot-price" id="lot-price"
+                                class="user__change-form-input js-numeric-input" required placeholder="Начальная цена">
                         </div>
                     </div>
 
@@ -572,7 +601,10 @@
                             Тип шага торга
                         </label>
                         <div class="user__change-form-input-wrapper" id="lot-step-error">
-                            <select name="lot-step" id="lot-step" class="user__change-form-select js-change-detail-select" required data-parsley-class-handler="#lot-step-error" data-parsley-errors-container="#lot-step-error" data-trigger="change">
+                            <select name="lot-step" id="lot-step"
+                                class="user__change-form-select js-change-detail-select" required
+                                data-parsley-class-handler="#lot-step-error"
+                                data-parsley-errors-container="#lot-step-error" data-trigger="change">
                                 <option value="">Тип шага торга</option>
                                 <option value="1">Тип 1</option>
                                 <option value="2">Тип 2</option>
@@ -584,7 +616,9 @@
                             Задаток для участия
                         </label>
                         <div class="user__change-form-input-wrapper">
-                            <input type="tel" name="lot-price" id="lot-garantee" class="user__change-form-input js-numeric-input" required placeholder="Задаток для участия">
+                            <input type="tel" name="lot-price" id="lot-garantee"
+                                class="user__change-form-input js-numeric-input" required
+                                placeholder="Задаток для участия">
                         </div>
                     </div>
                 </div>
@@ -593,6 +627,358 @@
                     Добавить
                 </button>
             </form>
+        </div>
+    </div>
+    <div class="modals__modal" id="subscribe">
+        <div class="modals__modal-content modals__modal-content--ultrawide">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <img src="img/logo-green.svg" alt="" class="modals__logo">
+            <h3 class="modals__heading">
+                Оформление подписки
+            </h3>
+            <div class="modals__choose-your-plan">
+                <div class="modals__choose-your-plan-tab-btns">
+                    <a href="#" class="modals__choose-your-plan-tab-btn js-tabs-nav">
+                        Ежемесечно
+                    </a>
+                    <a href="#" class="modals__choose-your-plan-tab-btn js-tabs-nav">
+                        Ежегодно
+                        <span class="modals__choose-your-plan-tab-btn-remark">
+                            3 месяца бесплатно
+                        </span>
+                    </a>
+                </div>
+
+
+                <div class="modals__choose-your-plan-intro">
+                    <h3 class="modals__choose-your-plan-heading">
+                        Выберите план
+                    </h3>
+                    <div class="modals__choose-your-plan-text">
+                        <p>
+                            Выберите наиболее подходящий вам план
+                        </p>
+                    </div>
+                </div>
+                <div class="modals__choose-your-plan-tabs">
+                    <div class="modals__choose-your-plan-tab js-tabs-item">
+                        <div class="modals__choose-your-plan-items">
+                            <div class="modals__choose-your-plan-item">
+                                <div class="modals__choose-your-plan-item-header">
+                                    <img src="img/dm.svg" alt="" class="modals__choose-your-plan-item-image">
+                                    Тариф «Турбо»
+                                </div>
+                                <div class="modals__choose-your-plan-item-content">
+                                    <div class="modals__choose-your-plan-item-price">
+                                        250 ₽/мес
+                                    </div>
+                                    <div class="modals__choose-your-plan-item-text">
+                                        Сэкономьте 3 200 ₽ с подпиской на год
+                                    </div>
+                                    <ul class="modals__choose-your-plan-item-advantages-list">
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Просмотр информации о лоте
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Добавление в избранное
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Запрос организатору
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Поисковые подборки
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn modals__choose-your-plan-item-btn">
+                                        Выбрать план
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="modals__choose-your-plan-item">
+                                <div class="modals__choose-your-plan-item-header">
+                                    <img src="img/case.svg" alt="" class="modals__choose-your-plan-item-image">
+                                    Тариф «Премиум»
+                                </div>
+                                <div class="modals__choose-your-plan-item-content">
+                                    <div class="modals__choose-your-plan-item-price">
+                                        500 ₽/мес
+                                    </div>
+                                    <div class="modals__choose-your-plan-item-text">
+                                        Сэкономьте 3 200 ₽ с подпиской на год
+                                    </div>
+                                    <ul class="modals__choose-your-plan-item-advantages-list">
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Просмотр информации о лоте
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Добавление в избранное
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Запрос организатору
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Поисковые подборки
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            История просмотров
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Скидка на покупку через агента
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Ссылка на источник торгов
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Уведомление об изменении избранного лота
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn modals__choose-your-plan-item-btn">
+                                        Выбрать план
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="modals__choose-your-plan-tab js-tabs-item">
+                        <div class="modals__choose-your-plan-items">
+                            <div class="modals__choose-your-plan-item">
+                                <div class="modals__choose-your-plan-item-header">
+                                    <img src="img/dm.svg" alt="" class="modals__choose-your-plan-item-image">
+                                    Тариф «Турбо»
+                                </div>
+                                <div class="modals__choose-your-plan-item-content">
+                                    <div class="modals__choose-your-plan-item-price">
+                                        1000 ₽/год
+                                    </div>
+                                    <div class="modals__choose-your-plan-item-text">
+                                        Сэкономьте 3 200 ₽ с подпиской на год
+                                    </div>
+                                    <ul class="modals__choose-your-plan-item-advantages-list">
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Просмотр информации о лоте
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Добавление в избранное
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Запрос организатору
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Поисковые подборки
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn modals__choose-your-plan-item-btn">
+                                        Выбрать план
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="modals__choose-your-plan-item">
+                                <div class="modals__choose-your-plan-item-header">
+                                    <img src="img/case.svg" alt="" class="modals__choose-your-plan-item-image">
+                                    Тариф «Премиум»
+                                </div>
+                                <div class="modals__choose-your-plan-item-content">
+                                    <div class="modals__choose-your-plan-item-price">
+                                        1500 ₽/год
+                                    </div>
+                                    <div class="modals__choose-your-plan-item-text">
+                                        Сэкономьте 3 200 ₽ с подпиской на год
+                                    </div>
+                                    <ul class="modals__choose-your-plan-item-advantages-list">
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Просмотр информации о лоте
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Добавление в избранное
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Запрос организатору
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Поисковые подборки
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            История просмотров
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Скидка на покупку через агента
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Ссылка на источник торгов
+                                        </li>
+                                        <li class="modals__choose-your-plan-item-advantages-list-item">
+                                            <svg width="12" height="12" aria-hidden="true" class="icon-plus">
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                            Уведомление об изменении избранного лота
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn modals__choose-your-plan-item-btn">
+                                        Выбрать план
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals__modal" id="select-payment">
+        <div class="modals__modal-content modals__modal-content--ultrawide">
+            <button class="modals__modal-close-btn js-modal-close">
+                <svg width="12" height="12" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </button>
+            <img src="img/logo-green.svg" alt="" class="modals__logo">
+            <h3 class="modals__heading">
+                Тариф «Турбо»<br>
+                Подписка на 1 год за 2500 ₽
+            </h3>
+            <div class="modals__heading-remark">
+                Продление подписки можно отключить в любое время
+            </div>
+            <form method="POST" action="/" class="modals__select-payment">
+                <h4 class="modals__select-payment-heading">
+                    Выберите способ оплаты
+                </h4>
+                <div class="modals__select-payment-cards">
+                    <label class="modals__select-payment-cards-checkbox">
+                        <input type="radio" name="card" value="tinkoff"
+                            class="modals__select-payment-cards-checkbox-input">
+                        <span class="user__cards-card">
+                            <img src="img/cards/1.png" alt="" class="user__cards-card-image">
+                            <span class="user__cards-card-content">
+                                <span class="user__cards-card-info">
+                                    <span class="user__cards-card-title">
+                                        Tinkoff Black
+                                    </span>
+                                    <span class="user__cards-card-number">
+                                        5321 **** **** 3883
+                                    </span>
+                                </span>
+
+                            </span>
+                        </span>
+
+                    </label>
+                    <label class="modals__select-payment-cards-checkbox">
+                        <input type="radio" name="card" value="alfa"
+                            class="modals__select-payment-cards-checkbox-input">
+                        <span class="user__cards-card">
+                            <img src="img/cards/2.png" alt="" class="user__cards-card-image">
+                            <span class="user__cards-card-content">
+                                <span class="user__cards-card-info">
+                                    <span class="user__cards-card-title">
+                                        Alfa Bank
+                                    </span>
+                                    <span class="user__cards-card-number">
+                                        5321 **** **** 3883
+                                    </span>
+                                </span>
+
+                            </span>
+                        </span>
+
+                    </label>
+
+                    <a href="#" class="user__cards-add-card">
+                        <div class="user__cards-add-card-icon">
+                            <svg width="26" height="26" aria-hidden="true" class="icon-plus-in-circle">
+                                <use xlink:href="#plus-in-circle"></use>
+                            </svg>
+                        </div>
+                        <div class="user__cards-add-card-content">
+                            Добавить карту
+                        </div>
+                    </a>
+                </div>
+                <button type="submit" class="btn modals__select-payment-submit">
+                    Оформить подписку
+                </button>
+            </form>
+
         </div>
     </div>
 </div>

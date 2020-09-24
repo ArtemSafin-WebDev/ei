@@ -41,6 +41,10 @@ import messages from './messages';
 import mobileUserMenu from './mobileUserAccount';
 import expandListView from './expandListView';
 import clearableSearch from './clearableSearch';
+import linkCopy from './linkCopy';
+import subscribeModal from './subscribeModal';
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -84,6 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileUserMenu();
     expandListView();
     clearableSearch();
+    linkCopy();
+    subscribeModal();
 });
 
 window.addEventListener('load', function() {

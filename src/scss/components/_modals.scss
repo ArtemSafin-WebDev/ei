@@ -38,6 +38,12 @@
     &--wide {
         max-width: 78rem;
     }
+
+    &--ultrawide {
+        max-width: 96rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
     @include breakpoint(mobile) {
         padding: 2rem;
         border-radius: 2rem;
@@ -208,7 +214,6 @@
     text-align: center;
     margin-bottom: 3.2rem;
 
-
     @include breakpoint(mobile) {
         font-size: 1.6rem;
         line-height: 1.2;
@@ -345,7 +350,6 @@ textarea.modals__form-input {
     p {
         margin-bottom: 0.8rem;
     }
-
 
     @include breakpoint(mobile) {
         font-size: 1.6rem;
@@ -572,4 +576,352 @@ textarea.modals__form-input {
         font-size: 1.4rem;
         line-height: 1.2;
     }
+}
+
+.modals__choose-your-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+
+    @include breakpoint(mobile) {
+        margin-top: 1rem;
+    }
+}
+
+.modals__choose-your-plan-tab-btns {
+    display: flex;
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+    }
+}
+
+.modals__choose-your-plan-tab-btn {
+    padding: 1.6rem 2.2rem;
+    border: 2px solid #050c42;
+    background-color: #fff;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+
+    &.active {
+        background-color: var(--text-color);
+        color: white;
+    }
+    &:first-child {
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border-right: none;
+    }
+
+    &:last-child {
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        padding: 1.5rem 1.8rem;
+    }
+}
+
+.modals__choose-your-plan-tab-btn-remark {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 0.3rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+}
+
+.modals__choose-your-plan-intro {
+    text-align: center;
+    margin-bottom: 4.8rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.modals__choose-your-plan-heading {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    margin-bottom: 0.7rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+}
+
+.modals__choose-your-plan-text {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    color: #99a6b6;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+}
+
+.modals__choose-your-plan-tabs {
+    position: relative;
+}
+
+.modals__choose-your-plan-tab {
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, transform 0s linear 0.4s, visibility 0s linear 0.4s;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(20%);
+
+    &.active {
+        position: relative;
+        opacity: 1;
+        visibility: inherit;
+        z-index: 2;
+        transform: translateX(0);
+        transition: all 0.4s, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+
+.modals__choose-your-plan-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 4rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.modals__choose-your-plan-item {
+    background: #ebf1f5;
+    border-radius: 4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        border-radius: 2rem;
+    }
+}
+
+.modals__choose-your-plan-item-header {
+    padding: 2.4rem 3.6rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+
+    background: #d1dae6;
+
+    @include breakpoint(mobile) {
+        padding: 1.8rem 2.4rem;
+    }
+}
+
+.modals__choose-your-plan-item-image {
+    width: 3.4rem;
+    height: 3.4rem;
+    flex-shrink: 0;
+    margin-right: 1.4rem;
+
+    @include objectFitContain();
+
+    @include breakpoint(mobile) {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
+
+.modals__choose-your-plan-item-price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 0.8rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}
+
+.modals__choose-your-plan-item-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.modals__choose-your-plan-item-advantages-list {
+    margin-bottom: 3.5rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+}
+
+.modals__choose-your-plan-item-advantages-list-item {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        flex-shrink: 0;
+        margin-right: 1.2rem;
+        fill: var(--primary-color);
+
+        @include breakpoint(mobile) {
+            width: 1.8rem;
+            height: 1.8rem;
+            margin-right: 0.8rem;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 1.8rem;
+    }
+}
+
+.modals__choose-your-plan-item-content {
+    padding: 3.6rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        padding: 2.4rem;
+    }
+}
+
+.modals__choose-your-plan-item-btn {
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    display: block;
+}
+
+.modals__heading-remark {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #99A6B6;
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+}
+
+.modals__select-payment {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint(mobile) {
+        margin-top: 2rem;
+    }
+}
+
+.modals__select-payment-heading {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4.4rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+    }
+}
+
+
+.modals__select-payment-cards {
+    max-width: 44.5rem;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 2.4rem;
+}
+
+
+.modals__select-payment-cards-checkbox {
+    display: block;
+}
+
+
+.modals__select-payment-cards-checkbox-input {
+    @include visuallyHidden();
+}
+
+
+.modals__select-payment-submit {
+    margin-top: 6rem;
+    align-self: center;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin-top: 3rem;
+    }
+}
+
+
+.modals__select-payment-cards-checkbox-input ~ .user__cards-card {
+    border: 2px solid #EBF1F5;
+    transition: border-color .2s;
+    cursor: pointer;
+
+    @include breakpoint(mobile) {
+        grid-template-areas:
+        'image info';
+    }
+}
+
+.modals__select-payment-cards-checkbox-input:checked ~ .user__cards-card {
+    border: 2px solid var(--primary-color);
 }

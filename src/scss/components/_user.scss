@@ -2395,7 +2395,7 @@ textarea.user__change-form-input {
     align-items: center;
     padding: 2.4rem 2.8rem;
     position: relative;
-    transition: color 0.2s;
+    transition: color 0.2s, border-color .2s;
     border: 1px dashed #d1dae6;
     border-radius: 3rem;
     &:link,
@@ -2405,6 +2405,7 @@ textarea.user__change-form-input {
 
     &:hover {
         color: var(--primary-color);
+        border-color: var(--primary-color);
     }
 
     @include breakpoint(mobile) {

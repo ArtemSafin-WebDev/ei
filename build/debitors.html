@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
         <title>
-            Услуги и тарифы - Единый информатор
+            Должники - Единый информатор
         </title>
         <script
             src="https://api-maps.yandex.ru/2.1/?apikey=1c9ab29b-1afd-4a21-b1ea-478c36667e22
@@ -23,7 +23,7 @@
         <script src="assets/js/SVGInject.js"></script>
     </head>
 
-    <body class="no-touch  white-bg    services-page  " ontouchstart="">
+    <body class="no-touch  white-bg    " ontouchstart="">
         <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
             <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <symbol viewBox="0 0 12 7.42" id="arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -1219,13 +1219,10 @@
                 </button>
             </header>
             <main class="page-main">
-                <section class="services-intro">
-                    <div class="services-intro__bg">
-                        <img src="img/services/waves.svg" alt="" class="services-intro__bg-image" />
-                    </div>
+                <section class="catalog">
                     <div class="container">
                         <div class="inner-container">
-                            <div class="breadcrumbs services-intro__breadcrumbs">
+                            <div class="breadcrumbs">
                                 <a href="#" class="breadcrumbs__link">
                                     Главная
                                     <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
@@ -1233,390 +1230,515 @@
                                     </svg>
                                 </a>
                                 <a href="#" class="breadcrumbs__link">
-                                    Услуги и тарифы
+                                    Реестры
+                                    <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
+                                        <use xlink:href="#arrow-right-rounded"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="breadcrumbs__link">
+                                    Должники
                                     <svg width="8" height="12" aria-hidden="true" class="icon-arrow-right-rounded">
                                         <use xlink:href="#arrow-right-rounded"></use>
                                     </svg>
                                 </a>
                             </div>
-                            <div class="services-intro__row">
-                                <div class="services-intro__left-col">
-                                    <h1 class="main-heading services-intro__main-heading">
-                                        Полный доступ к информации о лотах у вас в руках
-                                    </h1>
-                                    <div class="services-intro__description">
-                                        <p>
-                                            Все подробности о лотах и торгах будут доступны вам с премиум подпиской
-                                        </p>
-                                    </div>
-                                    <a href="#" class="services-intro__try">
-                                        Попробовать 30 дней бесплатно
-                                    </a>
-                                </div>
-                                <div class="services-intro__right-col">
-                                    <img src="img/services/intro.png" alt="" class="services-intro__image" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="you-will-know-first">
-                    <div class="container">
-                        <div class="inner-container">
-                            <div class="you-will-know-first__row">
-                                <div class="you-will-know-first__left-col">
-                                    <div class="you-will-know-first__phone-block">
-                                        <img src="img/know-first/iphone.png" alt="" class="you-will-know-first__phone-image" />
-                                        <div class="you-will-know-first__phone-message">
-                                            <svg width="29" height="39" aria-hidden="true" class="icon-bell">
-                                                <use xlink:href="#bell"></use>
-                                            </svg>
-                                            <div class="you-will-know-first__phone-message-content">
-                                                <div class="you-will-know-first__phone-message-text">
-                                                    Появились новые торги!
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-type">
-                                                    Банкротные торги
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-category">
-                                                    Категория: Автомобиль
+                            <h1 class="main-heading catalog__main-heading">
+                                Должники
+                                <span class="main-heading__count">
+                                    124
+                                </span>
+                            </h1>
+
+                            <div class="catalog__layout">
+                                <div class="catalog__layout-sidebar">
+                                    <div class="catalog-filters">
+                                        <h2 class="catalog-filters__heading">
+                                            Сортировка и фильтры
+                                            <button class="js-mobile-filters-close">
+                                                <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </button>
+                                        </h2>
+
+                                        <nav class="catalog-filters__nav">
+                                            <ul class="catalog-filters__nav-list">
+                                                <li class="catalog-filters__nav-list-item">
+                                                    <a href="#" class="catalog-filters__nav-root-category-link js-accordion-btn">
+                                                        Реестры
+                                                    </a>
+                                                    <ul class="catalog-filters__nav-subcategories-list js-accordion-content">
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Арбитражные управляющие
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item active">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Должники
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                СРО
+                                                            </a>
+                                                        </li>
+                                                        <li class="catalog-filters__nav-subcategories-list-item">
+                                                            <a href="#" class="catalog-filters__nav-subcategories-link">
+                                                                Организации
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <form action="/" method="GET" class="catalog-filters__form js-catalog-filters-form" data-total-found="240">
+                                            <div class="catalog-filters__form-group catalog-filters__form-group--mobile-sort">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Сортировать
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="sortby" class="radio__input" checked />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                От А до Я
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__radio">
+                                                            <input type="radio" name="sortby" class="radio__input" />
+                                                            <span class="radio__checkmark"></span>
+                                                            <span class="radio__text">
+                                                                От Я до А
+                                                            </span>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="you-will-know-first__phone-message">
-                                            <svg width="29" height="39" aria-hidden="true" class="icon-bell">
-                                                <use xlink:href="#bell"></use>
-                                            </svg>
-                                            <div class="you-will-know-first__phone-message-content">
-                                                <div class="you-will-know-first__phone-message-text">
-                                                    Появились новые торги!
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-type">
-                                                    Банкротные торги
-                                                </div>
-                                                <div class="you-will-know-first__phone-message-category">
-                                                    Категория: Автомобиль
+
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Поиск
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__search-input-wrapper js-clearable-search">
+                                                        <input
+                                                            type="search"
+                                                            name="arbitrname"
+                                                            class="catalog-filters__search-input"
+                                                            placeholder="ИНН или ФИО"
+                                                        />
+                                                        <button class="catalog-filters__search-clear" type="button">
+                                                            <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                                                                <use xlink:href="#cross"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="you-will-know-first__right-col">
-                                    <h2 class="you-will-know-first__heading">
-                                        Вы узнаете первым
-                                    </h2>
-                                    <div class="you-will-know-first__text">
-                                        <p>
-                                            С премиум подпиской вы будете одним из первых получать уведовления о новых торгах, лотах из интересующих
-                                            вас категорий
-                                        </p>
-                                    </div>
-                                    <a href="#" class="you-will-know-first__link">
-                                        Попробовать 30 дней бесплатно
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Категория
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" checked />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Банкротное имущество
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Арестованное
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Имущество организаций
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" disabled />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Муниципальное имущество
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Регион
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__desktop-region">
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" checked />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Москва
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Московская область
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Санкт-Петербург
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div
+                                                            class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                        >
+                                                            <label class="checkbox catalog-filters__checkbox">
+                                                                <input type="checkbox" name="type" class="checkbox__input" />
+                                                                <span class="checkbox__checkmark">
+                                                                    <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                        <use xlink:href="#checkmark"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="checkbox__text">
+                                                                    Республика Татарстан
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="catalog-filters__show-more-content js-show-more-content">
+                                                            <div
+                                                                class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox"
+                                                            >
+                                                                <label class="checkbox catalog-filters__checkbox">
+                                                                    <input type="checkbox" name="type" class="checkbox__input" />
+                                                                    <span class="checkbox__checkmark">
+                                                                        <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                            <use xlink:href="#checkmark"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span class="checkbox__text">
+                                                                        Республика Марий Эл
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <button class="catalog-filters__show-more js-show-more">
+                                                            Показать все
+                                                        </button>
+                                                    </div>
+                                                    <div class="catalog-filters__mobile-region">
+                                                        <select multiple name="mobileregion" class="js-mobile-region">
+                                                            <option value="">Найти регион</option>
+                                                            <option value="Moscow">Москва</option>
+                                                            <option value="Moscow Region">Московская область</option>
+                                                            <option value="Peter">Санкт-Петербург</option>
+                                                            <option value="Tatarstan">Татарстан</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-filters__form-group">
+                                                <h4 class="catalog-filters__form-group-heading js-accordion-btn">
+                                                    Тип торгов
+                                                </h4>
+                                                <div class="catalog-filters__accordion-content js-accordion-content">
+                                                    <div class="catalog-filters__results-btn-wrapper catalog-filters__results-btn-wrapper--checkbox">
+                                                        <label class="checkbox catalog-filters__checkbox">
+                                                            <input type="checkbox" name="type" class="checkbox__input" checked />
+                                                            <span class="checkbox__checkmark">
+                                                                <svg width="15" height="12" aria-hidden="true" class="icon-checkmark">
+                                                                    <use xlink:href="#checkmark"></use>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="checkbox__text">
+                                                                Активные торги
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                <section class="bonuses">
-                    <div class="container">
-                        <div class="inner-container">
-                            <div class="bonuses__row">
-                                <div class="bonuses__left-col">
-                                    <h2 class="bonuses__heading">
-                                        Приятные бонусы
-                                    </h2>
-                                    <div class="bonuses__text">
-                                        <p>
-                                            Вы получите скидку 20% при оформлении покупки через нашего агента
-                                        </p>
-                                    </div>
-                                    <a href="#" class="bonuses__link">
-                                        Попробовать 30 дней бесплатно
-                                    </a>
-                                </div>
-                                <div class="bonuses__right-col">
-                                    <div class="bonuses__amount">
-                                        20%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="tariffs-info">
-                    <div class="container">
-                        <div class="inner-container">
-                            <h2 class="tariffs-info__heading">
-                                Информация от тарифах
-                            </h2>
-                            <div class="tariffs-info__table">
-                                <div class="tariffs-info__table-wrapper">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <span class="visually-hidden">
-                                                        Возможности
+                                            <button type="submit" class="btn catalog-filters__form-submit">
+                                                Найти
+                                            </button>
+                                            <button type="button" class="catalog-filters__save-search">
+                                                <span class="catalog-filters__save-search-content">
+                                                    <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                                                        <use xlink:href="#favourites"></use>
+                                                    </svg>
+                                                    Сохранить поиск
+                                                </span>
+                                            </button>
+                                            <button class="catalog-filters__form-reset" type="reset">
+                                                Очистить фильтр
+                                            </button>
+                                        </form>
+                                        <div class="catalog-filters__mobile-btns">
+                                            <a class="catalog-filters__mobile-btn-save">
+                                                <svg width="28" height="28" aria-hidden="true" class="icon-favourites">
+                                                    <use xlink:href="#favourites"></use>
+                                                </svg>
+                                                Сохранить
+                                            </a>
+                                            <button class="catalog-filters__mobile-btn-submit js-mobile-filters-submit">
+                                                <span class="catalog-filters__mobile-btn-submit-content">
+                                                    <span class="catalog-filters__mobile-btn-submit-text">
+                                                        Показать
                                                     </span>
-                                                </th>
-                                                <th>
-                                                    <div class="tariffs-info__table-user-group tariffs-info__table-user-group--all">
-                                                        <div class="tariffs-info__table-user-group-title">
-                                                            Все пользователи
+                                                    <span class="catalog-filters__mobile-btn-submit-count">
+                                                        124 управляющих
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__layout-main">
+                                    <div class="catalog__top-block">
+                                        <div class="catalog__view-modes">
+                                            <div class="catalog__view-sort">
+                                                <div class="custom-select">
+                                                    <select name="sort-order" class="js-custom-select">
+                                                        <option value="asc" selected>От А до Я</option>
+                                                        <option value="dsc">От Я до А</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button class="catalog__mobile-filters-btn js-mobile-filters-open">
+                                                <span class="catalog__mobile-filters-btn-content">
+                                                    <svg width="22" height="24" aria-hidden="true" class="icon-mobile-filters">
+                                                        <use xlink:href="#mobile-filters"></use>
+                                                    </svg>
+                                                    Сортировка и фильтры
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__lots">
+                                        <div class="arbitrs">
+                                            <ul class="arbitrs__list">
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
                                                         </div>
-                                                        <div class="tariffs-info__table-user-group-amount">
-                                                            0
-                                                            <span class="tariffs-info__table-user-group-amount-currency">
-                                                                ₽
-                                                            </span>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Агропроизводственный кооператив «Туношна»
+                                                        </h3>
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
                                                         </div>
-                                                    </div>
-                                                    <div class="tariffs-info__table-user-group-description">
-                                                        Все посетители сервиса Единый информатор
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="tariffs-info__table-user-group tariffs-info__table-user-group--authorized">
-                                                        <div class="tariffs-info__table-user-group-title">
-                                                            Авторизированные пользователи
+                                                    </a>
+                                                </li>
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
                                                         </div>
-                                                        <div class="tariffs-info__table-user-group-amount">
-                                                            0
-                                                            <span class="tariffs-info__table-user-group-amount-currency">
-                                                                ₽
-                                                            </span>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Константинопольский Константин Константинович
+                                                        </h3>
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
                                                         </div>
-                                                    </div>
-                                                    <div class="tariffs-info__table-user-group-description">
-                                                        Все посетители сервиса Единый информатор
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="tariffs-info__table-user-group tariffs-info__table-user-group--paid">
-                                                        <div class="tariffs-info__table-user-group-title">
-                                                            Платный доступ
+                                                    </a>
+                                                </li>
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
                                                         </div>
-                                                        <div class="tariffs-info__table-user-group-amount">
-                                                            5320
-                                                            <span class="tariffs-info__table-user-group-amount-currency">
-                                                                ₽
-                                                            </span>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Агропроизводственный кооператив «Туношна»
+                                                        </h3>
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
                                                         </div>
-                                                    </div>
-                                                    <div class="tariffs-info__table-user-group-description">
-                                                        Все посетители сервиса Единый информатор
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
+                                                    </a>
+                                                </li>
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Константинопольский Константин Константинович
+                                                        </h3>
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Агропроизводственный кооператив «Туношна»
+                                                        </h3>
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Константинопольский Константин Константинович
+                                                        </h3>
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Агропроизводственный кооператив «Туношна»
+                                                        </h3>
 
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    Просмотр информации о лоте
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Добавление в избранное
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Запрос организатору
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Поисковые подборки
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    История просмотров
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Скидка на покупку через агента
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Ссылка на источник торгов
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Уведомление об изменении избранного лота
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-minus">
-                                                        <use xlink:href="#minus"></use>
-                                                    </svg>
-                                                </td>
-                                                <td>
-                                                    <svg width="22" height="22" aria-hidden="true" class="icon-plus">
-                                                        <use xlink:href="#plus"></use>
-                                                    </svg>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tariffs-info__subscribe">
-                                <div class="tariffs-info__subscribe-content">
-                                    <a href="#" class="tariffs-info__subscribe-link">
-                                        Оформить подписку
-                                    </a>
-                                    на 30 дней бесплатно
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="arbitrs__list-item">
+                                                    <a href="#" class="arbitrs__card">
+                                                        <div class="arbitrs__card-top-info">
+                                                            ИНН 7677001212
+                                                            <div class="arbitrs__card-top-info-form">
+                                                                Юридическое лицо
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="arbitrs__card-title arbitrs__card-title--single">
+                                                            Константинопольский Константин Константинович
+                                                        </h3>
 
-                <section class="subscribe">
-                    <div class="container">
-                        <div class="inner-container">
-                            <h2 class="subscribe__heading">
-                                Весь функционал в одном месте<br />
-                                30 дней бесплатно
-                            </h2>
-                            <form action="/" method="POST" class="subscribe__form">
-                                <div class="subscribe__form-group">
-                                    <input type="email" placeholder="Введите email" class="subscribe__form-input" required />
+                                                        <div class="arbitrs__card-info">
+                                                            Челябинская область, г. Челябинск
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="catalog__lots-bottom-nav">
+                                            <div class="pagination">
+                                                <ul class="pagination__list">
+                                                    <li class="pagination__list-item active">
+                                                        <a href="#" class="pagination__link">
+                                                            1
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__list-item">
+                                                        <a href="#" class="pagination__link">
+                                                            2
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__list-item">
+                                                        <a href="#" class="pagination__link">
+                                                            3
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__list-item">
+                                                        <a href="#" class="pagination__link">
+                                                            4
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="btn catalog__lots-show-more-items">
+                                                Показать еще
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="subscribe__form-group">
-                                    <button type="submit" class="subscribe__form-submit">
-                                        Оформить подписку
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="not-offer">
-                    <div class="container">
-                        <div class="inner-container">
-                            <div class="not-offer__row">
-                                Данное предложение не является публичной офертой. Доступно только для авторизованных пользователей
                             </div>
                         </div>
                     </div>

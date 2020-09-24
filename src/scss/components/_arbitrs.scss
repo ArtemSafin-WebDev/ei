@@ -28,7 +28,7 @@
     flex-grow: 1;
     padding: 2.4rem;
     color: var(--text-color);
-    min-height: 32.5rem;
+   
 
     &--white {
         background-color: #fff;
@@ -51,6 +51,17 @@
     }
 }
 
+.arbitrs__card-top-info {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-bottom: 4.8rem;
+}
+
+.arbitrs__card-top-info-form {
+    color: #99A6B6;
+    display: block;
+    margin-top: 0.4rem;
+}
 .arbitrs__card-cases-count {
     margin-bottom: 4.5rem;
     display: flex;
@@ -78,6 +89,14 @@
     font-weight: 500;
     font-size: 1.9rem;
     line-height: 2.3rem;
+
+    &--single {
+        margin-bottom: 7rem;
+        @include breakpoint(mobile) {
+            margin-bottom: 6rem;
+        }
+    }
+
     @include breakpoint(mobile) {
         font-size: 1.9rem;
         line-height: 2.3rem;
@@ -112,5 +131,3 @@
     color: #99a6b6;
     display: block;
 }
-
-
