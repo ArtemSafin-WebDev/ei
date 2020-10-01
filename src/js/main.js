@@ -43,6 +43,7 @@ import expandListView from './expandListView';
 import clearableSearch from './clearableSearch';
 import linkCopy from './linkCopy';
 import subscribeModal from './subscribeModal';
+import showMoreTags from './showMoreTags';
 
 
 
@@ -90,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     clearableSearch();
     linkCopy();
     subscribeModal();
+    showMoreTags();
 });
 
 window.addEventListener('load', function() {
